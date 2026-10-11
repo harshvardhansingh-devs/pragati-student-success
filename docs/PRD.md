@@ -37,7 +37,7 @@ Every screen should answer one of three questions for its user: *Who needs help?
 | **HoD** | "Which of my sections/subjects are causing backlogs? Who is sliding?" | Department view, Subject hotspots |
 | **Faculty mentor** | "Which of *my* 20 mentees need a conversation this week and about what?" | My Mentees, Student 360, AI Brief |
 | **Placement officer (TPO)** | "Who is not placement-ready and what training batch do they need?" | Placement Readiness, Segments |
-| **Student** *(stretch)* | "Where do I stand and what one thing should I improve?" | Self view |
+| **Student** | "Where do I stand and what one thing should I improve?" | My Progress (own Student 360, goal simulator, AI study tips) |
 | **Data admin** | "Is the data complete and fresh?" | Data Integration & Quality |
 
 ## 4. Goals & success metrics
@@ -90,7 +90,7 @@ Priority: **P0** = must ship for the demo (covers the evaluation rubric). **P1**
 | F20 | **Fairness check**: flag-rate parity across gender/category/region; protected attributes never used as model features | Responsible AI | P1 |
 | F21 | **Accreditation export**: NAAC Criterion 2 & 5 / NBA style student-progression tables (PDF/CSV) | Real admin pain point every year | P2 |
 | F22 | **Weekly mentor digest** (email/WhatsApp) | Delivers the insight to where faculty already are | P2 |
-| F23 | **Student self-view + nudges** | Gives students ownership of their own progress | P2 |
+| F23 | **Student self-view + nudges** | Gives students ownership of their own progress | P1 (**built**: self-view, goal simulator, AI coach; nudges are roadmap) |
 | F24 | **Live connectors** (Moodle API, ERP DB, Google Forms) replacing uploads | Scale | P2 |
 
 ### 5.4 Out of scope (for the hackathon)

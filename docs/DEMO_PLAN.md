@@ -17,7 +17,8 @@
 | 2:05 | Segments | **Assign playbook to all** on *Academic Star, Placement-Unready* | "Six segments, each with a playbook. 280 interventions in one click." |
 | 2:20 | AI Copilot | Click a suggested question | "Plain-English questions. The AI calls our analytics tools within the user's scope; it never sees names." |
 | 2:35 | Data Integration | Show the totals and the source table | "118k rows, 6,126 IDs reconciled, 1,021 duplicates removed, all visible per source." |
-| 2:50 | Sign out → HoD | Click **HoD, Computer Science** | "Role-based: the HoD sees only CSE. Live, deployed, and ready for real data." |
+| 2:45 | Sign out → HoD | Click **HoD, Computer Science** | "Role-based: the HoD sees only CSE." |
+| 2:52 | Sign out → Student (on a phone if possible) | Click **Student**, then **Get my tips** | "Students see only their own progress, set goals and get AI study tips. It works on any phone. Live, deployed, and ready for real data." |
 
 ## Slides (10, in the deck)
 1. Cover · 2. Problem · 3. Approach (Integrate → Measure) · 4. Data integration · 5. Success Score · 6. Risk + explainability · 7. Insights · 8. Segments · 9. Architecture & responsible AI · 10. Impact, roadmap, links

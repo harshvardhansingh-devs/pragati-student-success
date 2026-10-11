@@ -20,7 +20,9 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 - **Segmentation** into 6 named personas, each with an intervention playbook
 - **What-if simulator**, **intervention tracker** (single, bulk or whole segment), auto-generated **insight feed**
 - **AI Copilot** (natural-language questions → tool calls on the analytics API) and **AI mentor briefs**, on free-tier LLMs (Groq → OpenRouter → Gemini, fastest first, with automatic fallback)
-- Role-based scoping (Admin / HoD / Mentor / Placement Officer), audit log, fairness check, configurable versioned weights, CSV upload with rollback
+- **Student login ("My Progress")**: students see only their own score, reasons, a goal simulator and AI study tips, in supportive wording
+- Role-based scoping (Admin / HoD / Mentor / Placement Officer / Student), audit log, fairness check, configurable versioned weights, CSV upload with rollback
+- **Works on any device**: phone-friendly login and card layouts, tablet two-column views, full tables on laptops; light and dark mode
 
 ## Docs
 | Doc | Contents |
@@ -50,14 +52,14 @@ cd frontend && npm install && npm run build && cd ..
 Open http://localhost:8000. API docs are at http://localhost:8000/api/docs.
 On first start the app loads `data/raw/*.csv`, runs the pipeline and scores every student (about 5 s). It uses SQLite by default; set `DATABASE_URL` to a Postgres or Supabase connection string for production. Copy `.env.example` to `.env` and add any of `GEMINI_API_KEY`, `GROQ_API_KEY` or `OPENROUTER_API_KEY` to enable the AI Copilot and AI mentor briefs. Providers are tried in order with automatic fallback; everything else works without any key.
 
-To regenerate the synthetic data: `python backend/scripts/generate_data.py`, then delete `backend/pragati.db`.
+To regenerate the synthetic data: `python backend/scripts/generate_data.py`, then delete `backend/pragati.db` (local SQLite file; the name predates the rebrand).
 
 ## Deploy (Render + Supabase)
 1. **Supabase:** create a project → Connect → copy the **Session pooler** URI (port 5432).
 2. **Render:** New → Blueprint → pick this repo (uses `render.yaml` + `Dockerfile`). Set `DATABASE_URL` to the Supabase URI and at least one of the AI keys.
 3. First boot seeds the data and scores everyone. Health check: `/api/v1/health`.
 
-Docker locally: `docker build -t pragati . && docker run -p 8000:8000 pragati`
+Docker locally: `docker build -t prajna . && docker run -p 8000:8000 prajna`
 
 ## Tests
 `python backend/tests/test_pipeline.py` runs an end-to-end check (ID reconciliation, scoring bounds, the 75% rule, model AUC, what-if direction).

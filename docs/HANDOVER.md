@@ -55,7 +55,7 @@ Check: `https://<your-url>/api/v1/health` should list your AI providers.
 - **README:** replace the "Live demo" and repo links with yours.
 - **Docs:** update the links in `docs/SUBMISSION.md`, `docs/DEMO_PLAN.md` and `docs/RULES_COMPLIANCE.md`.
 - **Slides:** the deck is a separate file; ask its owner to share or export it, then update the links on the last slide.
-- **Demo logins:** keep the default password `Prajna@2026`. The login page's one-click buttons rely on it.
+- **Demo logins:** keep the default password `Prajna@2026` (5 roles: admin, hod.cse, mentor, tpo, student `@prajna.demo`). The login page's one-click buttons rely on it.
 
 ## 7. Troubleshooting
 | Symptom | Fix |
