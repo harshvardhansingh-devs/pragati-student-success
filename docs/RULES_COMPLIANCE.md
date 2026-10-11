@@ -17,10 +17,10 @@ Source: `HacXLerate_2026_Virtual Round 1_RuleBook.pdf`
 ## Submission package
 | Item | Where |
 |---|---|
-| Project title, summary, solution description | README + platform form |
-| GitHub repo (code, README, tech stack, implementation details) | repo root `README.md`, `/docs` |
-| **Working deployment link** (Nimbus by byteXL is encouraged, but any host is allowed) | ☐ URL |
-| **Test logins / credentials + evaluator notes** | README "For Evaluators" section with demo accounts per role |
+| Project title, summary, solution description | README + platform form (title: *Pragati: Student Success Intelligence Platform*) |
+| GitHub repo (code, README, tech stack, implementation details) | ✅ https://github.com/harshvardhansingh-devs/pragati-student-success (public) |
+| **Working deployment link** (Nimbus by byteXL is encouraged, but any host is allowed) | ✅ https://pragati-9l3m.onrender.com (kept awake by a GitHub Actions ping every 10 min) |
+| **Test logins / credentials + evaluator notes** | ✅ README "For evaluators": 4 roles, password `Pragati@2026`, one-click buttons on the login page |
 | Challenge deliverables: dashboard prototype, Success Score note, short demo/slides | App, `docs/SUCCESS_SCORE.md`, slides/video link |
 
 ## Mandatory functionality map (what the auto-evaluator is likely to check)
