@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { Bot, Send, User } from 'lucide-react'
 import { api } from '../api'
-import { Button, Card, PageHeader } from '../ui'
+import { Button, Card, Logo, PageHeader } from '../ui'
 
 const SUGGESTIONS = [
   'Which department has the most sliding students?',
@@ -58,7 +58,7 @@ export default function Copilot() {
               </div>
             </div>
           ))}
-          {busy && <p className="text-sm text-muted">Thinking…</p>}
+          {busy && <p className="flex items-center gap-2 text-sm text-muted"><Logo size={22} animated /> Analysing your students…</p>}
         </div>
         <form onSubmit={(e) => ask(q, e)} className="mt-4 flex gap-2 border-t border-line pt-4">
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ask about students, risks, segments, trends…" aria-label="Question" maxLength={500}

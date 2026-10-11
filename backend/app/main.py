@@ -24,7 +24,7 @@ async def lifespan(_):
     yield
 
 
-app = FastAPI(title="Pragati — Student Success Intelligence API", version="1.0.0", lifespan=lifespan,
+app = FastAPI(title="Prajna — Student Success Intelligence API", version="1.0.0", lifespan=lifespan,
               docs_url="/api/docs", openapi_url="/api/openapi.json")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 api = APIRouter(prefix="/api/v1")
@@ -462,4 +462,4 @@ def spa(path: str):
         return FileResponse(f)
     if (DIST / "index.html").exists():
         return FileResponse(DIST / "index.html")
-    return {"message": "Pragati API running. Frontend not built; see /api/docs"}
+    return {"message": "Prajna API running. Frontend not built; see /api/docs"}

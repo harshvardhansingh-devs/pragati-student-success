@@ -1,4 +1,4 @@
-# Run your own copy of Pragati
+# Run your own copy of Prajna
 
 This guide sets up a fully independent copy: your own GitHub repo, database, hosting and AI keys. It takes about 30 minutes, and every service used here has a free tier.
 
@@ -55,7 +55,7 @@ Check: `https://<your-url>/api/v1/health` should list your AI providers.
 - **README:** replace the "Live demo" and repo links with yours.
 - **Docs:** update the links in `docs/SUBMISSION.md`, `docs/DEMO_PLAN.md` and `docs/RULES_COMPLIANCE.md`.
 - **Slides:** the deck is a separate file; ask its owner to share or export it, then update the links on the last slide.
-- **Demo logins:** keep the default password `Pragati@2026`. The login page's one-click buttons rely on it.
+- **Demo logins:** keep the default password `Prajna@2026`. The login page's one-click buttons rely on it.
 
 ## 7. Troubleshooting
 | Symptom | Fix |

@@ -2,16 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><path d='M8 22l6-7 4 4 6-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pragati: AI-powered Student Success Intelligence platform" />
+    <meta name="description" content="Prajna: AI-powered Student Success Intelligence platform. Unified Student 360, explainable success score, academic and placement risk, segments and interventions." />
+    <meta name="theme-color" content="#2a78d6" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <title>Pragati · Student Success Intelligence</title>
+    <title>Prajna · Student Success Intelligence</title>
+    <style>
+      /* Boot splash: shown until React mounts and replaces #root's content */
+      #boot { position: fixed; inset: 0; display: grid; place-items: center; background: #f4f4f1; font-family: Inter, system-ui, sans-serif; color: #52514e; }
+      #boot .in { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+      #boot .name { font-size: 22px; font-weight: 600; color: #0b0b0b; letter-spacing: -0.01em; }
+      #boot .tag { font-size: 13px; }
+      @media (prefers-color-scheme: dark) { #boot { background: #0d0d0d; color: #c3c2b7; } #boot .name { color: #fff; } }
+      @keyframes boot-rise { 0%, 100% { transform: scaleY(0.35); } 45%, 70% { transform: scaleY(1); } }
+      @keyframes boot-spark { 0%, 100% { transform: scale(0.6) rotate(0deg); opacity: 0.55; } 50% { transform: scale(1.15) rotate(45deg); opacity: 1; } }
+      #boot .pb { transform-box: fill-box; transform-origin: 50% 100%; animation: boot-rise 1.4s ease-in-out infinite; }
+      #boot .pb2 { animation-delay: 0.15s; } #boot .pb3 { animation-delay: 0.3s; }
+      #boot .ps { transform-box: fill-box; transform-origin: 50% 50%; animation: boot-spark 1.4s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) { #boot .pb, #boot .ps { animation: none; } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot" role="status" aria-label="Loading Prajna">
+        <div class="in">
+          <svg width="72" height="72" viewBox="0 0 48 48" aria-hidden="true">
+            <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a78d6"/><stop offset="1" stop-color="#4a3aa7"/></linearGradient></defs>
+            <rect width="48" height="48" rx="12" fill="url(#bg)"/>
+            <rect class="pb" x="9" y="28" width="7" height="10" rx="2" fill="#fff" opacity="0.75"/>
+            <rect class="pb pb2" x="20.5" y="21" width="7" height="17" rx="2" fill="#fff" opacity="0.88"/>
+            <rect class="pb pb3" x="32" y="17" width="7" height="21" rx="2" fill="#fff"/>
+            <path class="ps" d="M35.5 3.5 Q36.6 9 41.5 10 Q36.6 11 35.5 16.5 Q34.4 11 29.5 10 Q34.4 9 35.5 3.5 Z" fill="#ffd66b"/>
+          </svg>
+          <div class="name">Prajna</div>
+          <div class="tag">Student Success Intelligence</div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

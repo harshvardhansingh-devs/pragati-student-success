@@ -1,15 +1,15 @@
 # byteXL submission form: ready to paste
 
 **Project title**
-Pragati: AI-Powered Student Success Intelligence Platform
+Prajna: AI-Powered Student Success Intelligence Platform
 
 **Project summary** (short)
-Pragati unifies seven campus data sources into one Student 360 view, computes an explainable Student Success Score (0–100), predicts academic and placement risk early, groups students into six actionable segments, and turns every risk flag into a tracked intervention, with an AI Copilot for plain-English questions.
+Prajna unifies seven campus data sources into one Student 360 view, computes an explainable Student Success Score (0–100), predicts academic and placement risk early, groups students into six actionable segments, and turns every risk flag into a tracked intervention, with an AI Copilot for plain-English questions.
 
 **Solution description**
 Colleges hold attendance, exam, LMS, engagement, placement, skills and feedback data in separate systems that don't share a student ID, so problems such as detention (attendance below 75%), backlogs or placement unreadiness surface too late.
 
-Pragati's pipeline ingests all seven sources, reconciles three different student keys (student ID variants, roll numbers, LMS emails), removes duplicates, and repairs or quarantines bad values. On the demo data that is 118,692 rows, 6,126 IDs reconciled and 1,021 duplicates removed, all reported per source.
+Prajna's pipeline ingests all seven sources, reconciles three different student keys (student ID variants, roll numbers, LMS emails), removes duplicates, and repairs or quarantines bad values. On the demo data that is 118,692 rows, 6,126 IDs reconciled and 1,021 duplicates removed, all reported per source.
 
 The Student Success Score combines 23 indicators across six weighted domains (Academic 30%, Placement 20%, Attendance 15%, LMS 15%, Skills 10%, Engagement 10%), scaled against fixed policy ranges, with year-aware weights an admin can change.
 
@@ -29,10 +29,10 @@ React 19 + TypeScript + Vite + Tailwind + ECharts · FastAPI (Python) · pandas,
 - Success Score note: https://github.com/harshvardhansingh-devs/pragati-student-success/blob/main/docs/SUCCESS_SCORE.md
 
 **Test access / evaluator notes**
-Open the app and click any role on the login page (one click, no typing). Or sign in manually; all accounts use the password `Pragati@2026`:
-- Principal / Admin: admin@pragati.demo (whole institution; can edit score weights and upload data)
-- HoD, CSE: hod.cse@pragati.demo (CSE only)
-- Faculty Mentor: mentor@pragati.demo (own mentees only)
-- Placement Officer: tpo@pragati.demo
+Open the app and click any role on the login page (one click, no typing). Or sign in manually; all accounts use the password `Prajna@2026`:
+- Principal / Admin: admin@prajna.demo (whole institution; can edit score weights and upload data)
+- HoD, CSE: hod.cse@prajna.demo (CSE only)
+- Faculty Mentor: mentor@prajna.demo (own mentees only)
+- Placement Officer: tpo@prajna.demo
 
 Suggested path: Overview → Action Center → At-Risk Students → a student's Student 360 (risk drivers, what-if, Assign, AI brief) → Segments → AI Copilot → Data Integration → Score Methodology. The data is synthetic (1,200 students) and contains no real student information.

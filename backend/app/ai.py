@@ -44,7 +44,7 @@ TOOLS = [
             "group_by": {"type": "string", "enum": ["dept", "year", "section", "segment", "band", "mentor_id"]}, "filters": FILTER_SCHEMA},
             "required": ["group_by"]}}},
 ]
-SYSTEM = """You are Pragati Copilot, an analytics assistant for college administrators and faculty.
+SYSTEM = """You are Prajna Copilot, an analytics assistant for college administrators and faculty.
 For any question about students, answer by calling the tools; never invent numbers. If the user just greets you or asks something
 unrelated to student data, reply in one or two friendly sentences (no tools) and suggest an example question.
 Data covers the current term

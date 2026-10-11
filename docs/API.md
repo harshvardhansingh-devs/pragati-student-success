@@ -61,7 +61,7 @@ The LLM (Gemini, Groq or OpenRouter, first available) gets two **read-only tools
 
 ```bash
 TOKEN=$(curl -s -X POST localhost:8000/api/v1/auth/login -H 'Content-Type: application/json' \
-  -d '{"email":"admin@pragati.demo","password":"Pragati@2026"}' | python -c "import sys,json;print(json.load(sys.stdin)['token'])")
+  -d '{"email":"admin@prajna.demo","password":"Prajna@2026"}' | python -c "import sys,json;print(json.load(sys.stdin)['token'])")
 curl -s localhost:8000/api/v1/students?placement_risk=High\&year=4\&size=5 -H "Authorization: Bearer $TOKEN"
 curl -s -X POST localhost:8000/api/v1/students/CS22-0155/simulate -H "Authorization: Bearer $TOKEN" \
   -H 'Content-Type: application/json' -d '{"overrides":{"coding":60,"mock_interviews":2}}'

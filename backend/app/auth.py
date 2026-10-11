@@ -10,7 +10,8 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 # ponytail: random secret per process if unset → tokens die on restart / differ across instances; set JWT_SECRET in prod
 SECRET = os.getenv("JWT_SECRET") or secrets.token_hex(32)
-DEMO_PASSWORD = os.getenv("DEMO_PASSWORD", "Pragati@2026")
+DEMO_PASSWORD = os.getenv("DEMO_PASSWORD", "Prajna@2026")
+LEGACY_PASSWORD = "Pragati@2026"  # pre-rebrand demo password, still accepted
 _SALT = b"pragati-demo"
 
 
@@ -20,20 +21,26 @@ def _hash(pw):
 
 # Demo accounts (one per role). Scope = which students the role can see.
 USERS = {
-    "admin@pragati.demo": dict(name="Dr. Anita Rao", role="admin", title="Principal / Admin", scope={}),
-    "hod.cse@pragati.demo": dict(name="Dr. Suresh Menon", role="hod", title="HoD, Computer Science", scope={"dept": "CSE"}),
-    "mentor@pragati.demo": dict(name="Prof. Kavitha Iyer", role="mentor", title="Faculty Mentor (CSE Y3)", scope={"mentor_id": "M-CS-31"}),
-    "tpo@pragati.demo": dict(name="Mr. Rajesh Kulkarni", role="tpo", title="Training & Placement Officer", scope={}),
+    "admin@prajna.demo": dict(name="Dr. Anita Rao", role="admin", title="Principal / Admin", scope={}),
+    "hod.cse@prajna.demo": dict(name="Dr. Suresh Menon", role="hod", title="HoD, Computer Science", scope={"dept": "CSE"}),
+    "mentor@prajna.demo": dict(name="Prof. Kavitha Iyer", role="mentor", title="Faculty Mentor (CSE Y3)", scope={"mentor_id": "M-CS-31"}),
+    "tpo@prajna.demo": dict(name="Mr. Rajesh Kulkarni", role="tpo", title="Training & Placement Officer", scope={}),
 }
-_PW = _hash(DEMO_PASSWORD)
+_PW = {_hash(DEMO_PASSWORD), _hash(LEGACY_PASSWORD)}
+
+
+def canonical(email):
+    """Accept pre-rebrand @pragati.demo logins as aliases of @prajna.demo."""
+    return email.lower().strip().replace("@pragati.demo", "@prajna.demo")
 
 
 def login(email, password):
-    u = USERS.get(email.lower().strip())
-    if not u or not hmac.compare_digest(_hash(password), _PW):
+    email = canonical(email)
+    u = USERS.get(email)
+    if not u or not any(hmac.compare_digest(_hash(password), h) for h in _PW):
         raise HTTPException(401, "Invalid email or password")
-    token = jwt.encode({"sub": email.lower().strip(), "exp": datetime.now(timezone.utc) + timedelta(hours=12)}, SECRET, algorithm="HS256")
-    return dict(token=token, user=public(email.lower().strip()))
+    token = jwt.encode({"sub": email, "exp": datetime.now(timezone.utc) + timedelta(hours=12)}, SECRET, algorithm="HS256")
+    return dict(token=token, user=public(email))
 
 
 def public(email):

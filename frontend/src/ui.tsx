@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState, type ReactNode } from 'react'
-import { AlertTriangle, CheckCircle2, CircleDot, Loader2, TrendingDown, TrendingUp, XOctagon } from 'lucide-react'
+import { useCallback, useEffect, useId, useState, type ReactNode } from 'react'
+import { AlertTriangle, CheckCircle2, CircleDot, TrendingDown, TrendingUp, XOctagon } from 'lucide-react'
 import { api } from './api'
 
 export function useApi<T = any>(path: string | null) {
@@ -50,10 +50,39 @@ export function PageHeader({ title, subtitle, children }: { title: string; subti
   )
 }
 
-export function Loading({ label = "Loading…" }: { label?: string }) {
+/** Prajna brand mark: rising bars (growth) + a spark (insight). `animated` turns it into the loader. */
+export function Logo({ size = 36, animated = false }: { size?: number; animated?: boolean }) {
+  const id = useId()
   return (
-    <div className="flex items-center justify-center gap-2 py-16 text-sm text-muted" role="status">
-      <Loader2 className="h-4 w-4 animate-spin" /> {label}
+    <svg width={size} height={size} viewBox="0 0 48 48" className={`shrink-0 ${animated ? 'prajna-anim' : ''}`} role="img" aria-label="Prajna">
+      <defs>
+        <linearGradient id={id} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#2a78d6" /><stop offset="1" stopColor="#4a3aa7" /></linearGradient>
+      </defs>
+      <rect width="48" height="48" rx="12" fill={`url(#${id})`} />
+      <rect className="pb pb1" x="9" y="28" width="7" height="10" rx="2" fill="#fff" opacity="0.75" />
+      <rect className="pb pb2" x="20.5" y="21" width="7" height="17" rx="2" fill="#fff" opacity="0.88" />
+      <rect className="pb pb3" x="32" y="17" width="7" height="21" rx="2" fill="#fff" />
+      <path className="ps" d="M35.5 3.5 Q36.6 9 41.5 10 Q36.6 11 35.5 16.5 Q34.4 11 29.5 10 Q34.4 9 35.5 3.5 Z" fill="#ffd66b" />
+    </svg>
+  )
+}
+
+export function Wordmark({ size = 36, light = false }: { size?: number; light?: boolean }) {
+  return (
+    <span className="flex items-center gap-2.5">
+      <Logo size={size} />
+      <span className="leading-tight">
+        <span className={`block font-semibold tracking-tight ${light ? 'text-white' : 'text-ink'}`} style={{ fontSize: size * 0.5 }}>Prajna</span>
+        <span className={`block text-[11px] ${light ? 'text-white/75' : 'text-muted'}`}>Student Success Intelligence</span>
+      </span>
+    </span>
+  )
+}
+
+export function Loading({ label = 'Loading…' }: { label?: string }) {
+  return (
+    <div className="flex flex-col items-center justify-center gap-3 py-16 text-sm text-muted" role="status">
+      <Logo size={44} animated /> {label}
     </div>
   )
 }
@@ -211,6 +240,7 @@ export function Skeleton({ className = '' }: { className?: string }) {
 export function PageSkeleton() {
   return (
     <div role="status" aria-label="Loading">
+      <div className="mb-4 flex items-center gap-2 text-sm text-muted"><Logo size={22} animated /> Loading insights…</div>
       <Skeleton className="mb-5 h-28 w-full rounded-2xl" />
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-24" />)}</div>
       <div className="mt-4 grid gap-4 lg:grid-cols-2"><Skeleton className="h-72" /><Skeleton className="h-72" /></div>

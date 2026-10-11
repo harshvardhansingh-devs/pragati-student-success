@@ -1,16 +1,16 @@
 import { useState, type FormEvent } from 'react'
-import { GraduationCap, KeyRound, ShieldCheck, Sparkles, Users } from 'lucide-react'
+import { KeyRound, ShieldCheck, Sparkles, Users } from 'lucide-react'
 import { api } from '../api'
 import { useAuth } from '../App'
-import { Button } from '../ui'
+import { Button, Logo, Wordmark } from '../ui'
 
 const DEMO = [
-  { email: 'admin@pragati.demo', role: 'Principal / Admin', desc: 'Whole institution, edit score weights, upload data' },
-  { email: 'hod.cse@pragati.demo', role: 'HoD, Computer Science', desc: 'CSE department only' },
-  { email: 'mentor@pragati.demo', role: 'Faculty Mentor', desc: 'Own mentees only (CSE Year 3)' },
-  { email: 'tpo@pragati.demo', role: 'Placement Officer', desc: 'Whole institution, placement focus' },
+  { email: 'admin@prajna.demo', role: 'Principal / Admin', desc: 'Whole institution, edit score weights, upload data' },
+  { email: 'hod.cse@prajna.demo', role: 'HoD, Computer Science', desc: 'CSE department only' },
+  { email: 'mentor@prajna.demo', role: 'Faculty Mentor', desc: 'Own mentees only (CSE Year 3)' },
+  { email: 'tpo@prajna.demo', role: 'Placement Officer', desc: 'Whole institution, placement focus' },
 ]
-const DEMO_PASSWORD = 'Pragati@2026'
+const DEMO_PASSWORD = 'Prajna@2026'
 
 export default function Login() {
   const { login } = useAuth()
@@ -38,12 +38,12 @@ export default function Login() {
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/10" aria-hidden />
         <div className="absolute -bottom-32 -left-16 h-96 w-96 rounded-full bg-white/5" aria-hidden />
         <div className="relative flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-white/15 text-white ring-1 ring-white/25"><GraduationCap className="h-6 w-6" /></div>
-          <div className="text-xl font-semibold text-white">Pragati</div>
+          <div className="rounded-xl ring-1 ring-white/30"><Logo size={44} /></div>
+          <div><div className="text-xl font-semibold text-white">Prajna</div><div className="text-xs text-white/75">प्रज्ञा · insight for every student</div></div>
         </div>
         <div className="relative max-w-md">
           <h1 className="text-3xl font-semibold leading-tight text-white">Know which students need help, why, and what to do next.</h1>
-          <p className="mt-4 text-sm leading-relaxed">Pragati brings attendance, academics, LMS, engagement, placement, skills and feedback together into one Student 360 view.
+          <p className="mt-4 text-sm leading-relaxed">Prajna brings attendance, academics, LMS, engagement, placement, skills and feedback together into one Student 360 view.
             It computes an explainable Student Success Score, predicts academic and placement risk early, and turns every flag into a tracked intervention.</p>
           <div className="mt-6 grid grid-cols-3 gap-3">
             {[['7', 'data sources unified'], ['23', 'indicators per student'], ['2', 'risk models + rules']].map(([n, l]) => (
@@ -62,7 +62,7 @@ export default function Login() {
       <div className="flex items-center justify-center p-4 sm:p-8">
         <div className="w-full max-w-md">
           <div className="mb-6 flex items-center gap-2 lg:hidden">
-            <GraduationCap className="h-6 w-6 text-accent" /> <span className="text-lg font-semibold">Pragati</span>
+            <Wordmark size={36} />
           </div>
           <h2 className="text-2xl font-semibold">Sign in</h2>
           <p className="mt-1 text-sm text-ink-2">Choose a demo role for one-click access, or sign in below.</p>

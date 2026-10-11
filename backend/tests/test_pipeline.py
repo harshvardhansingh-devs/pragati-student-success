@@ -27,6 +27,15 @@ def test_end_to_end():
     from app.main import apply_filters
     assert len(apply_filters(s, segment="Academic Star, Placement-Unready")) == (s.segment == "Academic Star, Placement-Unready").sum() > 0
     assert len(apply_filters(s, academic_risk="High,Medium")) == s.academic_risk.isin(["High", "Medium"]).sum()
+    # auth: new Prajna logins work, pre-rebrand Pragati logins still work, wrong password fails
+    from fastapi import HTTPException
+    from app import auth
+    assert auth.login("admin@prajna.demo", "Prajna@2026")["user"]["role"] == "admin"
+    assert auth.login("admin@pragati.demo", "Pragati@2026")["user"]["email"] == "admin@prajna.demo"
+    try:
+        auth.login("admin@prajna.demo", "wrong"); raise AssertionError("bad password accepted")
+    except HTTPException as e:
+        assert e.status_code == 401
     # what-if: better coding + mocks must not increase placement risk
     row = s[s.placement_risk == "High"].iloc[0].to_dict()
     feats = {k: row[k] for k in ["student_id", "dept", "year"] + list(scoring.INDICATORS) + ["attendance_trend", "lms_trend"]}

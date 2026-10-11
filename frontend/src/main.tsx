@@ -4,7 +4,7 @@ import './index.css'
 import App from './App'
 
 try {
-  const t = localStorage.getItem('pragati.theme')
+  const t = localStorage.getItem('prajna.theme')
   if (t) document.documentElement.dataset.theme = t
 } catch { /* storage blocked */ }
 

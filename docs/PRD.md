@@ -1,6 +1,6 @@
-# PRD — Pragati: Student Success Intelligence Platform
+# PRD — Prajna: Student Success Intelligence Platform
 
-> *Pragati* (प्रगति) = progress. Working name, rename freely.
+> *Prajna* (प्रज्ञा) = wisdom, insight: the clarity to see which student needs help, and why.
 
 | | |
 |---|---|

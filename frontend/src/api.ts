@@ -1,4 +1,4 @@
-const KEY = 'pragati.session'
+const KEY = 'prajna.session'
 
 export type User = { email: string; name: string; role: 'admin' | 'hod' | 'mentor' | 'tpo'; title: string; scope: Record<string, string> }
 export type Session = { token: string; user: User }

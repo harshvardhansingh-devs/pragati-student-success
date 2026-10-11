@@ -82,3 +82,12 @@ body { margin: 0; font-family: var(--font-sans); -webkit-font-smoothing: antiali
 @media (prefers-reduced-motion: reduce) { .skeleton, .toast { animation: none; } }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 input[type="range"] { accent-color: var(--accent); }
+
+/* ---------- Prajna brand mark animation ---------- */
+@keyframes prajna-rise { 0%, 100% { transform: scaleY(0.35); } 45%, 70% { transform: scaleY(1); } }
+@keyframes prajna-spark { 0%, 100% { transform: scale(0.6) rotate(0deg); opacity: 0.55; } 50% { transform: scale(1.15) rotate(45deg); opacity: 1; } }
+.prajna-anim .pb { transform-box: fill-box; transform-origin: 50% 100%; animation: prajna-rise 1.4s ease-in-out infinite; }
+.prajna-anim .pb2 { animation-delay: 0.15s; }
+.prajna-anim .pb3 { animation-delay: 0.3s; }
+.prajna-anim .ps { transform-box: fill-box; transform-origin: 50% 50%; animation: prajna-spark 1.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .prajna-anim .pb, .prajna-anim .ps { animation: none; } }

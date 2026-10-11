@@ -1,13 +1,13 @@
 # Demo & Slides Plan
 
-- **Live app:** https://pragati-9l3m.onrender.com (all demo logins use password `Pragati@2026`; one-click role buttons on the login page)
+- **Live app:** https://pragati-9l3m.onrender.com (all demo logins use password `Prajna@2026`; one-click role buttons on the login page)
 - **Slides:** 10-slide deck with speaker notes (the Claude artifact link; export to PDF/PPTX from its Share menu)
 - **Repo:** https://github.com/harshvardhansingh-devs/pragati-student-success
 
 ## 3-minute demo video script (record the screen)
 | Time | Screen | Do | Say |
 |---|---|---|---|
-| 0:00 | Login | Click **Principal / Admin** | "Pragati turns seven disconnected college systems into who needs help, why, and what to do." |
+| 0:00 | Login | Click **Principal / Admin** | "Prajna turns seven disconnected college systems into who needs help, why, and what to do." |
 | 0:15 | Overview | Point at the hero line, then the **Action Center** | "404 students are at high risk and 61 are sliding fast. The Action Center turns that into four decisions for this week." |
 | 0:35 | Overview → AI insights | Scroll to insights; click **View students** on *Sliding students* | "Insights come from cross-checking all sources, for example LMS completion predicting academic risk 5.2×." |
 | 0:55 | At-Risk → Placement tab | Open a High placement-risk final-year student | "Every flag has a probability, the rule that fired, and its top drivers." |

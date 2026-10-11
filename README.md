@@ -1,4 +1,8 @@
-# Pragati: Student Success Intelligence Platform
+<p align="center"><img src="frontend/public/favicon.svg" width="88" alt="Prajna logo"></p>
+
+# Prajna: Student Success Intelligence Platform
+
+> *Prajna* (प्रज्ञा) means wisdom and insight: the clarity to see which student needs help, and why.
 
 AI-powered platform that brings scattered student data together into one Student 360 view, scores every student, predicts **academic** and **placement** risk, explains *why*, and turns each insight into a tracked intervention.
 
@@ -59,13 +63,13 @@ Docker locally: `docker build -t pragati . && docker run -p 8000:8000 pragati`
 `python backend/tests/test_pipeline.py` runs an end-to-end check (ID reconciliation, scoring bounds, the 75% rule, model AUC, what-if direction).
 
 ## For evaluators: demo logins
-All accounts use the password **`Pragati@2026`**. The login page also has one-click buttons.
+All accounts use the password **`Prajna@2026`**. The login page also has one-click buttons.
 | Role | Email | Sees |
 |---|---|---|
-| Principal / Admin | admin@pragati.demo | Whole institution; can edit score weights and upload data |
-| HoD, CSE | hod.cse@pragati.demo | CSE department only |
-| Faculty Mentor | mentor@pragati.demo | Own mentees only |
-| Placement Officer | tpo@pragati.demo | Whole institution |
+| Principal / Admin | admin@prajna.demo | Whole institution; can edit score weights and upload data |
+| HoD, CSE | hod.cse@prajna.demo | CSE department only |
+| Faculty Mentor | mentor@prajna.demo | Own mentees only |
+| Placement Officer | tpo@prajna.demo | Whole institution |
 
 ## Repo layout
 ```

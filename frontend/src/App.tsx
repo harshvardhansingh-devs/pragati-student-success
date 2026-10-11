@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { BrowserRouter, NavLink, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
-import { Bot, Boxes, Database, GraduationCap, LayoutDashboard, ListChecks, LogOut, Menu, Moon, Scale, Search, ShieldAlert, Sun, Users, X } from 'lucide-react'
+import { Bot, Boxes, Database, LayoutDashboard, ListChecks, LogOut, Menu, Moon, Scale, Search, ShieldAlert, Sun, Users, X } from 'lucide-react'
 import { api, getSession, setSession, type Session } from './api'
-import { Avatar, BandBadge, Toaster, fmt, useApi } from './ui'
+import { Avatar, BandBadge, Toaster, Wordmark, fmt, useApi } from './ui'
 import Login from './pages/Login'
 import Overview from './pages/Overview'
 import Students from './pages/Students'
@@ -38,11 +38,11 @@ const TITLES: Record<string, string> = { '/': 'Overview', '/at-risk': 'At-Risk S
 
 function ThemeToggle() {
   const [theme, setTheme] = useState<string | null>(() => {
-    try { return localStorage.getItem('pragati.theme') } catch { return null }
+    try { return localStorage.getItem('prajna.theme') } catch { return null }
   })
   useEffect(() => {
     if (theme) document.documentElement.dataset.theme = theme
-    try { if (theme) localStorage.setItem('pragati.theme', theme) } catch { /* ignore */ }
+    try { if (theme) localStorage.setItem('prajna.theme', theme) } catch { /* ignore */ }
   }, [theme])
   const dark = theme ? theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
   return (
@@ -122,13 +122,7 @@ function Layout({ children }: { children: ReactNode }) {
 
   const nav = (
     <nav className="flex h-full flex-col bg-nav text-nav-ink" aria-label="Main">
-      <div className="flex items-center gap-2.5 px-5 py-5">
-        <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[#2a78d6] to-[#4a3aa7] text-white shadow-lg"><GraduationCap className="h-5 w-5" /></div>
-        <div>
-          <div className="text-base font-semibold tracking-tight text-white">Pragati</div>
-          <div className="text-[11px] leading-tight opacity-80">Student Success Intelligence</div>
-        </div>
-      </div>
+      <div className="px-5 py-5"><Wordmark size={38} light /></div>
       <div className="flex-1 overflow-y-auto px-3">
         {NAV.map((g) => (
           <div key={g.group} className="mb-4">
