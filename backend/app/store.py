@@ -70,7 +70,7 @@ def bootstrap():
 
 
 def table(name):
-    df = pd.read_sql_table(name, engine)
+    df = pd.read_sql(text(f'SELECT * FROM "{name}"'), engine)  # plain SELECT: no per-table reflection round-trips
     df.columns = [str(c) for c in df.columns]
     return df
 

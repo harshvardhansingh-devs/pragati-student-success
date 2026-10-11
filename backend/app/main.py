@@ -20,6 +20,7 @@ from .db import ROOT, engine
 @asynccontextmanager
 async def lifespan(_):
     store.bootstrap()
+    store.state()  # warm the cache before serving, so the first visitor never waits
     yield
 
 

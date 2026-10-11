@@ -7,6 +7,8 @@ import re
 import numpy as np
 import pandas as pd
 
+from sqlalchemy import text
+
 from .db import ROOT, engine
 
 SOURCES = {
@@ -31,7 +33,7 @@ def load_raw_csvs():
 
 
 def read_raw(name):
-    df = pd.read_sql_table(f"raw_{name}", engine)
+    df = pd.read_sql(text(f'SELECT * FROM "raw_{name}"'), engine)  # no reflection round-trips
     df.columns = [str(c) for c in df.columns]  # SQLAlchemy quoted_name → str
     return df
 
