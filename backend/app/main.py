@@ -4,7 +4,6 @@ import math
 from contextlib import asynccontextmanager
 from datetime import date, timedelta
 
-import anthropic
 import numpy as np
 import pandas as pd
 from fastapi import APIRouter, Depends, FastAPI, File, Form, HTTPException, UploadFile
@@ -425,15 +424,12 @@ class Question(BaseModel):
 
 @api.post("/copilot/query")
 def copilot(body: Question, user=Depends(current_user)):
-    try:
-        return clean(ai.copilot(body.question, scores(user)))
-    except anthropic.APIError as e:
-        raise HTTPException(502, f"AI service error: {getattr(e, 'message', e)}")
+    return clean(ai.copilot(body.question, scores(user)))
 
 
 @api.get("/health")
 def health():
-    return {"status": "ok", "ai_enabled": ai.enabled()}
+    return {"status": "ok", "ai_providers": ai.enabled()}
 
 
 app.include_router(api)

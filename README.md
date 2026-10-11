@@ -13,7 +13,7 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 - **Sliding alerts** for students who are declining fast, even while their score still looks fine
 - **Segmentation** into 6 named personas, each with an intervention playbook
 - **What-if simulator**, **intervention tracker** (single, bulk or whole segment), auto-generated **insight feed**
-- **AI Copilot** (natural-language questions) and **AI mentor briefs**, powered by Claude
+- **AI Copilot** (natural-language questions → tool calls on the analytics API) and **AI mentor briefs**, on free-tier LLMs (Gemini → Groq → OpenRouter with automatic fallback)
 - Role-based scoping (Admin / HoD / Mentor / Placement Officer), audit log, fairness check, configurable versioned weights, CSV upload with rollback
 
 ## Docs
@@ -29,7 +29,7 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 | [Rules Compliance](docs/RULES_COMPLIANCE.md) | Rulebook checklist, submission package, mandatory-feature map |
 
 ## Tech stack
-React 19 · TypeScript · Vite · Tailwind CSS v4 · ECharts │ FastAPI · Pydantic · SQLAlchemy │ PostgreSQL (Supabase) / SQLite │ pandas · scikit-learn · SciPy │ Claude API │ Docker · Render
+React 19 · TypeScript · Vite · Tailwind CSS v4 · ECharts │ FastAPI · Pydantic · SQLAlchemy │ PostgreSQL (Supabase) / SQLite │ pandas · scikit-learn · SciPy │ Gemini · Groq · OpenRouter (OpenAI-compatible) │ Docker · Render
 
 ## Run locally (Windows / macOS / Linux)
 Needs Python 3.12+ and Node 20+.
@@ -40,13 +40,13 @@ cd frontend && npm install && npm run build && cd ..
 .venv/Scripts/python -m uvicorn app.main:app --app-dir backend --port 8000
 ```
 Open http://localhost:8000. API docs are at http://localhost:8000/api/docs.
-On first start the app loads `data/raw/*.csv`, runs the pipeline and scores every student (about 5 s). It uses SQLite by default; set `DATABASE_URL` to a Postgres or Supabase connection string for production. Set `ANTHROPIC_API_KEY` to enable the AI Copilot and AI mentor briefs. Everything else works without it.
+On first start the app loads `data/raw/*.csv`, runs the pipeline and scores every student (about 5 s). It uses SQLite by default; set `DATABASE_URL` to a Postgres or Supabase connection string for production. Copy `.env.example` to `.env` and add any of `GEMINI_API_KEY`, `GROQ_API_KEY` or `OPENROUTER_API_KEY` to enable the AI Copilot and AI mentor briefs. Providers are tried in order with automatic fallback; everything else works without any key.
 
 To regenerate the synthetic data: `python backend/scripts/generate_data.py`, then delete `backend/pragati.db`.
 
 ## Deploy (Render + Supabase)
 1. **Supabase:** create a project → Connect → copy the **Session pooler** URI (port 5432).
-2. **Render:** New → Blueprint → pick this repo (uses `render.yaml` + `Dockerfile`). Set `DATABASE_URL` to the Supabase URI, and optionally `ANTHROPIC_API_KEY`.
+2. **Render:** New → Blueprint → pick this repo (uses `render.yaml` + `Dockerfile`). Set `DATABASE_URL` to the Supabase URI and at least one of the AI keys.
 3. First boot seeds the data and scores everyone. Health check: `/api/v1/health`.
 
 Docker locally: `docker build -t pragati . && docker run -p 8000:8000 pragati`

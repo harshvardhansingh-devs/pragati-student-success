@@ -1,39 +1,51 @@
-"""AI Copilot (natural-language analytics via read-only tools) and AI Mentor Briefs, powered by Claude.
+"""AI Copilot (natural-language analytics via read-only tools) and AI Mentor Briefs.
 
-Privacy: only student IDs and numeric indicators are sent to the model — never names, emails or protected attributes.
+Free-tier LLM providers via their OpenAI-compatible endpoints, tried in order with automatic fallback
+(rate limit / outage / bad model → next provider). Configure keys in .env; models are overridable.
+Privacy: only student IDs and numeric indicators are sent, never names, emails or protected attributes.
 """
 import json
 import os
 
-import anthropic
+import openai
 import pandas as pd
 
-MODEL = "claude-opus-5-5"
+PROVIDERS = {
+    "gemini": ("Gemini", "GEMINI_API_KEY", "https://generativelanguage.googleapis.com/v1beta/openai/", "GEMINI_MODEL", "gemini-2.5-flash"),
+    "groq": ("Groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1", "GROQ_MODEL", "llama-3.3-70b-versatile"),
+    "openrouter": ("OpenRouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1", "OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"),
+}
 NUMERIC = ["success_score", "cgpa", "active_backlogs", "attendance_term", "attendance_recent", "assignment_completion",
            "logins_per_week", "aptitude", "coding", "mock_interviews", "technical", "soft_skills", "certifications",
            "activities", "satisfaction", "trend_4w", "academic_risk_prob", "placement_risk_prob", "internal_avg"]
-CATEGORICAL = ["dept", "year", "section", "band", "academic_risk", "placement_risk", "segment", "sliding", "mentor_id"]
+CATEGORICAL = {
+    "dept": "CSE, IT, ECE, ME or CE", "year": "1-4", "section": "A, B or C", "band": "Thriving, On track, Watch or At risk",
+    "academic_risk": "High, Medium or Low", "placement_risk": "High, Medium or Low", "segment": "segment name", "sliding": "true or false",
+    "mentor_id": "mentor id",
+}
 FILTER_SCHEMA = {
     "type": "object",
     "properties": {
-        **{c: {"type": ["string", "integer", "boolean"], "description": f"exact match on {c}"} for c in CATEGORICAL},
+        **{c: {"type": "string", "description": f"exact match: {d}"} for c, d in CATEGORICAL.items()},
         "conditions": {"type": "array", "description": "numeric conditions", "items": {"type": "object", "properties": {
             "field": {"type": "string", "enum": NUMERIC}, "op": {"type": "string", "enum": [">", ">=", "<", "<=", "=="]},
             "value": {"type": "number"}}, "required": ["field", "op", "value"]}},
     },
 }
 TOOLS = [
-    {"name": "search_students", "description": "Find students matching filters. Returns count and up to `limit` rows (student_id + key metrics).",
-     "input_schema": {"type": "object", "properties": {
-         "filters": FILTER_SCHEMA, "sort_by": {"type": "string", "enum": NUMERIC}, "descending": {"type": "boolean"},
-         "limit": {"type": "integer", "minimum": 1, "maximum": 50}}}},
-    {"name": "group_summary", "description": "Aggregate students by a dimension: count, average success score, % High academic/placement risk, sliding count.",
-     "input_schema": {"type": "object", "properties": {
-         "group_by": {"type": "string", "enum": ["dept", "year", "section", "segment", "band", "mentor_id"]}, "filters": FILTER_SCHEMA},
-         "required": ["group_by"]}},
+    {"type": "function", "function": {
+        "name": "search_students", "description": "Find students matching filters. Returns count and up to `limit` rows (student_id + key metrics).",
+        "parameters": {"type": "object", "properties": {
+            "filters": FILTER_SCHEMA, "sort_by": {"type": "string", "enum": NUMERIC}, "descending": {"type": "boolean"},
+            "limit": {"type": "integer", "description": "1-50, default 15"}}}}},
+    {"type": "function", "function": {
+        "name": "group_summary", "description": "Aggregate students by a dimension: count, average success score, % High academic/placement risk, sliding count.",
+        "parameters": {"type": "object", "properties": {
+            "group_by": {"type": "string", "enum": ["dept", "year", "section", "segment", "band", "mentor_id"]}, "filters": FILTER_SCHEMA},
+            "required": ["group_by"]}}},
 ]
 SYSTEM = """You are Pragati Copilot, an analytics assistant for college administrators and faculty.
-Answer questions about students using the tools; never invent numbers. Data covers the current term
+Always answer by calling the tools; never invent numbers. Data covers the current term
 (dept: CSE, IT, ECE, ME, CE; year 1-4; band: Thriving/On track/Watch/At risk; risk tiers: High/Medium/Low;
 segments: All-rounders, Academic Star, Placement-Unready, Placement-Ready, Academically Average, Engaged but Struggling,
 Silent Disengager, Multi-domain Risk). Students are identified by ID only.
@@ -41,20 +53,31 @@ Reply in 2-5 concise sentences with the key numbers and one suggested action. Pl
 COLS = ["student_id", "dept", "year", "success_score", "band", "academic_risk", "placement_risk", "segment", "cgpa", "attendance_term", "coding"]
 
 
+def providers():
+    order = [p.strip() for p in os.getenv("AI_PROVIDER_ORDER", "gemini,groq,openrouter").split(",")]
+    out = []
+    for key in order:
+        if key in PROVIDERS and os.getenv(PROVIDERS[key][1]):
+            name, env, url, model_env, default = PROVIDERS[key]
+            out.append((name, openai.OpenAI(api_key=os.getenv(env), base_url=url, timeout=40, max_retries=1), os.getenv(model_env, default)))
+    return out
+
+
 def enabled():
-    return bool(os.getenv("ANTHROPIC_API_KEY"))
+    return [p[0] for p in providers()]
 
 
 def _filter(df, f):
     f = f or {}
     for c in CATEGORICAL:
-        if c in f and f[c] not in (None, ""):
-            v = f[c]
-            if c == "year":
-                v = int(v)
-            elif c == "sliding":
-                v = v in (True, "true", "True", 1)
-            df = df[df[c] == v]
+        v = f.get(c)
+        if v in (None, ""):
+            continue
+        if c == "year":
+            v = int(v)
+        elif c == "sliding":
+            v = str(v).lower() == "true"
+        df = df[df[c] == v]
     for cond in f.get("conditions") or []:
         if cond.get("field") in NUMERIC and cond.get("op") in (">", ">=", "<", "<=", "=="):
             df = df.query(f"`{cond['field']}` {cond['op']} {float(cond['value'])}")
@@ -66,7 +89,7 @@ def run_tool(name, args, df):
         r = _filter(df, args.get("filters"))
         if args.get("sort_by") in NUMERIC:
             r = r.sort_values(args["sort_by"], ascending=not args.get("descending", True))
-        rows = r[COLS].head(int(args.get("limit") or 15))
+        rows = r[COLS].head(max(1, min(int(args.get("limit") or 15), 50)))
         return {"count": len(r), "rows": json.loads(rows.to_json(orient="records"))}
     if name == "group_summary":
         r = _filter(df, args.get("filters"))
@@ -79,40 +102,46 @@ def run_tool(name, args, df):
     raise ValueError(f"unknown tool {name}")
 
 
-def copilot(question, df):
-    if not enabled():
-        return dict(answer="The AI Copilot needs an ANTHROPIC_API_KEY on the server. Every other feature works without it.", table=None, tools_used=[])
-    client = anthropic.Anthropic()
-    messages = [{"role": "user", "content": question}]
+def _copilot_once(client, model, question, df):
+    messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": question}]
     table, used = None, []
     for _ in range(6):
-        resp = client.beta.messages.create(
-            model=MODEL, max_tokens=16000, system=SYSTEM, tools=TOOLS, messages=messages,
-            output_config={"effort": "low"}, betas=["server-side-fallback-2026-07-01"], fallbacks="default")
-        if resp.stop_reason == "refusal":
-            return dict(answer="I can't help with that request.", table=None, tools_used=used)
-        calls = [b for b in resp.content if b.type == "tool_use"]
-        if not calls:
-            text = "".join(b.text for b in resp.content if b.type == "text").strip()
-            return dict(answer=text or "No answer.", table=table, tools_used=used)
-        messages.append({"role": "assistant", "content": resp.content})
-        results = []
-        for b in calls:
-            used.append(b.name)
+        msg = client.chat.completions.create(model=model, messages=messages, tools=TOOLS, temperature=0.2).choices[0].message
+        if not msg.tool_calls:
+            return dict(answer=(msg.content or "").strip() or "No answer.", table=table, tools_used=used)
+        messages.append({"role": "assistant", "content": msg.content or "",
+                         "tool_calls": [{"id": c.id, "type": "function", "function": {"name": c.function.name, "arguments": c.function.arguments}}
+                                        for c in msg.tool_calls]})
+        for c in msg.tool_calls:
+            used.append(c.function.name)
             try:
-                out = run_tool(b.name, b.input, df)
+                out = run_tool(c.function.name, json.loads(c.function.arguments or "{}"), df)
                 table = out.get("rows") or out.get("groups") or table
-                results.append({"type": "tool_result", "tool_use_id": b.id, "content": json.dumps(out)})
+                content = json.dumps(out)
             except Exception as e:  # bad filter from the model → let it correct itself
-                results.append({"type": "tool_result", "tool_use_id": b.id, "content": f"Error: {e}", "is_error": True})
-        messages.append({"role": "user", "content": results})
+                content = f"Error: {e}"
+            messages.append({"role": "tool", "tool_call_id": c.id, "content": content})
     return dict(answer="That question needed too many steps; try narrowing it.", table=table, tools_used=used)
 
 
+def copilot(question, df):
+    errors = []
+    for name, client, model in providers():
+        try:
+            return {**_copilot_once(client, model, question, df), "provider": f"{name} · {model}"}
+        except openai.OpenAIError as e:  # rate limit, outage, unsupported model → next provider
+            errors.append(f"{name}: {type(e).__name__}")
+    if not errors:
+        return dict(answer="The AI Copilot needs at least one key (GEMINI_API_KEY, GROQ_API_KEY or OPENROUTER_API_KEY) on the server. "
+                           "Every other feature works without it.", table=None, tools_used=[], provider=None)
+    return dict(answer=f"All AI providers failed ({'; '.join(errors)}). Try again in a minute.", table=None, tools_used=[], provider=None)
+
+
 def template_brief(s):
-    """Deterministic brief used when the AI is unavailable."""
+    """Deterministic brief used when no AI provider is available."""
     d = sorted(((k, s[f"d_{k}"]) for k in ["academic", "attendance", "lms", "placement", "skills", "engagement"]), key=lambda x: x[1])
-    concerns = [x["label"] for x in (s["academic_drivers"] + s["placement_drivers"])[:3]]
+    drivers = (s["academic_drivers"] if s["academic_risk"] != "Low" else []) + (s["placement_drivers"] if s["placement_risk"] != "Low" else [])
+    concerns = [x["label"] for x in drivers[:3]]
     return (f"Strengths: {d[-1][0]} ({d[-1][1]:.0f}) and {d[-2][0]} ({d[-2][1]:.0f}).\n"
             f"Concerns: {', '.join(concerns) or 'none flagged'}; weakest area is {d[0][0]} ({d[0][1]:.0f}).\n"
             f"Risk: academic {s['academic_risk']}, placement {s['placement_risk']}; score trend {s['trend_4w']:+.1f} over 4 weeks.\n"
@@ -120,8 +149,6 @@ def template_brief(s):
 
 
 def brief(s, actions):
-    if not enabled():
-        return dict(brief=template_brief(s), source="template")
     keep = ["student_id", "dept", "year", "success_score", "band", "trend_4w", "segment", "academic_risk", "academic_risk_prob",
             "placement_risk", "placement_risk_prob", "academic_rules", "academic_drivers", "placement_drivers", "cgpa",
             "active_backlogs", "attendance_term", "attendance_recent", "assignment_completion", "coding", "aptitude",
@@ -130,13 +157,12 @@ def brief(s, actions):
     prompt = ("Write a mentor-meeting brief for this student (data below). Exactly 4 short labelled lines: "
               "Strengths, Concerns, Talking points, Suggested action. Under 90 words, plain text, warm and non-judgemental. "
               f"Recommended actions available: {actions}.\n\n{json.dumps(payload, default=str)}")
-    try:
-        resp = anthropic.Anthropic().beta.messages.create(
-            model=MODEL, max_tokens=4000, messages=[{"role": "user", "content": prompt}],
-            output_config={"effort": "low"}, betas=["server-side-fallback-2026-07-01"], fallbacks="default")
-        text = "".join(b.text for b in resp.content if b.type == "text").strip()
-        if resp.stop_reason == "refusal" or not text:
-            raise ValueError("no text")
-        return dict(brief=text, source="ai")
-    except (anthropic.APIError, ValueError):
-        return dict(brief=template_brief(s), source="template")
+    for name, client, model in providers():
+        try:
+            text = (client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], temperature=0.4)
+                    .choices[0].message.content or "").strip()
+            if text:
+                return dict(brief=text, source="ai", provider=f"{name} · {model}")
+        except openai.OpenAIError:
+            continue
+    return dict(brief=template_brief(s), source="template", provider=None)

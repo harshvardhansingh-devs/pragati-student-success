@@ -9,7 +9,7 @@
 | API | **FastAPI (Python)** + Pydantic | Same language as the ML; typed validation; OpenAPI docs at `/api/docs` |
 | Database | **PostgreSQL** (Supabase in production) · SQLite for local dev | One `DATABASE_URL` switch; SQLAlchemy keeps the code DB-agnostic |
 | Data / ML | pandas, scikit-learn (logistic regression, K-Means), SciPy (Hungarian matching) | Industry-standard and interpretable. See [ML_APPROACH.md](ML_APPROACH.md) |
-| AI | **Claude API** (`claude-opus-5-5`, tool use, server-side refusal fallback) | Copilot (natural language → analytics tools) and mentor briefs |
+| AI | **Gemini → Groq → OpenRouter** free tiers via their OpenAI-compatible APIs (`openai` SDK), automatic fallback on rate limit or outage | Copilot (natural language → analytics tools) and mentor briefs; zero AI cost |
 | Auth | JWT (PyJWT), PBKDF2 password hashing, role-based scoping | Admin / HoD / Mentor / Placement Officer |
 | Deploy | Docker (multi-stage: Node build → Python runtime) on Render; Supabase Postgres | One container, stateless, horizontally scalable |
 
@@ -32,7 +32,7 @@
  │ an_scores · an_weekly_scores · an_data_quality · …   │   │ interventions · weight_configs ·       │
  └───────────────────────┬──────────────────────────────┘   │ pipeline_runs · audit_log              │
                          ▼  app/store.py (per-process cache, refreshed when a new run lands)        │
- ┌────────────────── FastAPI /api/v1 (JWT + role scoping) ──────────────────┐  ────► Claude API     │
+ ┌────────────────── FastAPI /api/v1 (JWT + role scoping) ──────────────────┐  ────► LLM (Gemini/Groq/OpenRouter)     │
  │ overview · students · simulate · brief · segments · interventions ·      │  (IDs + numbers only)  │
  │ data-quality · upload · weights · model · fairness · copilot             │                        │
  └──────────────────────────┬───────────────────────────────────────────────┘
@@ -76,7 +76,7 @@ backend/
   app/pipeline.py    ingest, validate, clean, integrate, weekly features
   app/scoring.py     score, risk models, explanations, segments, insights, what-if, fairness
   app/store.py       pipeline runs, persistence, cache
-  app/ai.py          Claude Copilot (tool use) + mentor briefs
+  app/ai.py          LLM Copilot (tool use, multi-provider fallback) + mentor briefs
   app/auth.py        demo users, JWT, role scoping
   app/db.py          engine (SQLite / Postgres / Supabase), app tables
   scripts/generate_data.py   synthetic messy dataset generator

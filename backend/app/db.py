@@ -1,10 +1,12 @@
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
 ROOT = Path(__file__).resolve().parents[2]
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{ROOT / 'backend' / 'pragati.db'}")
+load_dotenv(ROOT / ".env")  # local dev; in production the host sets env vars
+DATABASE_URL = os.getenv("DATABASE_URL") or f"sqlite:///{ROOT / 'backend' / 'pragati.db'}"
 # Supabase/Heroku-style URLs → SQLAlchemy psycopg3 driver
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg://", 1)

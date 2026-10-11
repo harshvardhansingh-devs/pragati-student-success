@@ -50,12 +50,12 @@ Every response is automatically restricted to the caller's scope (an HoD sees on
 ## AI Copilot
 | Method | Path | Purpose |
 |---|---|---|
-| POST | `/copilot/query` | `{"question": "..."}` → `{answer, table, tools_used}` |
+| POST | `/copilot/query` | `{"question": "..."}` → `{answer, table, tools_used, provider}` |
 
-Claude gets two **read-only tools**, `search_students(filters, sort_by, limit)` and `group_summary(group_by, filters)`, executed server-side inside the user's scope. No free-form SQL. Only IDs and numbers are sent.
+The LLM (Gemini, Groq or OpenRouter, first available) gets two **read-only tools**, `search_students(filters, sort_by, limit)` and `group_summary(group_by, filters)`, executed server-side inside the user's scope. No free-form SQL. Only IDs and numbers are sent.
 
 ## Health
-`GET /health` → `{"status": "ok", "ai_enabled": true|false}`
+`GET /health` → `{"status": "ok", "ai_providers": ["Gemini", "Groq", ...]}`
 
 ## Examples
 

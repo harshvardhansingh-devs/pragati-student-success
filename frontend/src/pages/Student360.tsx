@@ -151,7 +151,7 @@ export default function Student360() {
         <Card title={<span className="inline-flex items-center gap-1.5"><Bot className="h-4 w-4" /> AI mentor brief</span>} subtitle="One-click briefing before a mentor meeting (IDs and numbers only are sent to the AI)"
           action={<Button onClick={getBrief} disabled={briefBusy}>{briefBusy ? 'Generating…' : brief ? 'Regenerate' : 'Generate'}</Button>}>
           {brief ? <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{brief.brief}</pre> : <p className="text-sm text-ink-2">Generate a short brief with strengths, concerns, talking points and a suggested action.</p>}
-          {brief && <p className="mt-2 text-xs text-muted">Source: {brief.source === 'ai' ? 'Claude AI' : 'rule-based template (AI key not configured)'}</p>}
+          {brief && <p className="mt-2 text-xs text-muted">Source: {brief.source === 'ai' ? brief.provider : 'rule-based template (no AI provider available)'}</p>}
           {p.comments && <div className="mt-4 flex gap-2 rounded-lg bg-surface-2 p-3 text-sm text-ink-2"><MessageSquareQuote className="h-4 w-4 shrink-0" /> Student feedback: "{p.comments}"</div>}
         </Card>
       </div>

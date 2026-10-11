@@ -10,5 +10,11 @@ services:
         sync: false
       - key: JWT_SECRET
         generateValue: true
-      - key: ANTHROPIC_API_KEY   # optional: enables AI Copilot & AI briefs
+      - key: GEMINI_API_KEY      # any one AI key enables Copilot & AI briefs (fallback order below)
         sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: AI_PROVIDER_ORDER
+        value: gemini,groq,openrouter

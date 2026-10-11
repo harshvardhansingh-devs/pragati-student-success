@@ -10,7 +10,7 @@ const SUGGESTIONS = [
   'Compare average success score and placement risk by segment',
   'Year 4 students with High placement risk and zero mock interviews',
 ]
-type Msg = { role: 'user' | 'ai'; text: string; table?: any[]; tools?: string[] }
+type Msg = { role: 'user' | 'ai'; text: string; table?: any[]; tools?: string[]; provider?: string }
 
 export default function Copilot() {
   const [msgs, setMsgs] = useState<Msg[]>([])
@@ -25,7 +25,7 @@ export default function Copilot() {
     setBusy(true)
     try {
       const r = await api('/copilot/query', { body: { question } })
-      setMsgs((m) => [...m, { role: 'ai', text: r.answer, table: r.table, tools: r.tools_used }])
+      setMsgs((m) => [...m, { role: 'ai', text: r.answer, table: r.table, tools: r.tools_used, provider: r.provider }])
     } catch (err: any) {
       setMsgs((m) => [...m, { role: 'ai', text: `Error: ${err.message}` }])
     } finally { setBusy(false) }
@@ -54,7 +54,7 @@ export default function Copilot() {
                     </table>
                   </div>
                 )}
-                {m.tools && m.tools.length > 0 && <p className="mt-1 text-[11px] text-muted">Tools used: {[...new Set(m.tools)].join(', ')}</p>}
+                {m.tools && m.tools.length > 0 && <p className="mt-1 text-[11px] text-muted">Tools used: {[...new Set(m.tools)].join(', ')}{m.provider && ` · answered by ${m.provider}`}</p>}
               </div>
             </div>
           ))}

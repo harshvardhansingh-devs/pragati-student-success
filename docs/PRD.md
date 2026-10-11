@@ -135,5 +135,5 @@ Real student PII, production SSO, mobile app, streaming ingestion, model retrain
 ## 10. Build status (v1.0)
 | Built | Not built (roadmap) |
 |---|---|
-| F1–F20 except F13 and F18 notes below; F14 Copilot and F15 Briefs (need `ANTHROPIC_API_KEY`; the brief has a template fallback) | F13 effectiveness analytics beyond "score at start → now"; F21 accreditation export; F22 digests; F23 student self-view; F24 live connectors |
+| F1–F20 except F13 and F18 notes below; F14 Copilot and F15 Briefs (need any one of the Gemini / Groq / OpenRouter keys; the brief has a template fallback) | F13 effectiveness analytics beyond "score at start → now"; F21 accreditation export; F22 digests; F23 student self-view; F24 live connectors |
 | F18 configurable weights (admin, versioned, live re-score) | PII masking in exports (no export feature yet) |
