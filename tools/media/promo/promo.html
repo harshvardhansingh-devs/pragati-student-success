@@ -1,0 +1,246 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Global timeline: every animation-delay below is an absolute time in seconds (0–70). */
+@property --n { syntax: '<integer>'; inherits: true; initial-value: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #070d1a; font-family: Inter, sans-serif; color: #fff; }
+.stage { position: absolute; inset: 0; overflow: hidden; }
+.bg { position: absolute; inset: 0; background: radial-gradient(1200px 700px at 20% 10%, #13274a 0%, transparent 60%), radial-gradient(1000px 700px at 85% 90%, #231a55 0%, transparent 60%), #070d1a; }
+.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .55; }
+.b1 { width: 700px; height: 700px; background: #2a78d6; left: -150px; top: -200px; animation: drift1 70s linear 0s both; }
+.b2 { width: 600px; height: 600px; background: #4a3aa7; right: -150px; bottom: -200px; animation: drift2 70s linear 0s both; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); }
+@keyframes drift1 { 0% { transform: translate(0,0) } 50% { transform: translate(500px, 260px) } 100% { transform: translate(150px, 420px) } }
+@keyframes drift2 { 0% { transform: translate(0,0) } 50% { transform: translate(-520px, -240px) } 100% { transform: translate(-120px, -380px) } }
+
+.scene { position: absolute; inset: 0; opacity: 0; }
+@keyframes show { 0% { opacity: 0 } 7% { opacity: 1 } 93% { opacity: 1 } 100% { opacity: 0 } }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(40px); filter: blur(6px) } to { opacity: 1; transform: none; filter: blur(0) } }
+@keyframes fadeOut { to { opacity: 0; transform: translateY(-30px); filter: blur(6px) } }
+@keyframes pop { 0% { opacity: 0; transform: scale(.55) } 70% { opacity: 1; transform: scale(1.06) } 100% { opacity: 1; transform: scale(1) } }
+@keyframes rise { from { transform: scaleY(.05) } to { transform: scaleY(1) } }
+@keyframes spark { 0% { opacity: 0; transform: scale(0) rotate(-90deg) } 70% { opacity: 1; transform: scale(1.3) rotate(20deg) } 100% { opacity: 1; transform: scale(1) rotate(0) } }
+@keyframes glow { 0%, 100% { opacity: .35; transform: scale(1) } 50% { opacity: .7; transform: scale(1.12) } }
+@keyframes kenburns { from { transform: scale(1.02) translate(0, 0) } to { transform: scale(1.12) translate(-2.5%, -3%) } }
+@keyframes kenburns2 { from { transform: scale(1.1) translate(-3%, -2%) } to { transform: scale(1.02) translate(0, 0) } }
+@keyframes slideL { from { opacity: 0; transform: translateX(120px) rotate(2deg) } to { opacity: 1; transform: none } }
+@keyframes phoneUp { from { opacity: 0; transform: translateY(160px) rotate(var(--r)) } to { opacity: 1; transform: translateY(0) rotate(var(--r)) } }
+@keyframes count { from { --n: 0 } to { --n: var(--to) } }
+@keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
+@keyframes converge { 0% { transform: translate(0,0) scale(1); opacity: 1 } 100% { transform: translate(var(--dx), var(--dy)) scale(.15); opacity: 0 } }
+@keyframes underline { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+
+.anim { animation-fill-mode: both; }
+.grad { background: linear-gradient(90deg, #86b6ef, #b9a8ff 60%, #ffd66b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.h-xl { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 104px; line-height: 1.04; letter-spacing: -2px; }
+.h-lg { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 78px; line-height: 1.05; letter-spacing: -1.5px; }
+.eyebrow { font-size: 22px; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; color: #86b6ef; }
+.sub { font-size: 30px; line-height: 1.45; color: #c9d3e1; }
+
+/* ---- Scene 1: hook ---- */
+.hook { position: absolute; left: 0; right: 0; top: 380px; text-align: center; }
+.chip { position: absolute; padding: 18px 30px; border-radius: 999px; font-size: 28px; font-weight: 600; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); backdrop-filter: blur(6px); white-space: nowrap; }
+.chip i { font-style: normal; margin-right: 10px; }
+.chipwrap { position: absolute; }
+
+/* ---- Logo ---- */
+.logo { position: absolute; left: 50%; top: 50%; width: 260px; height: 260px; margin: -230px 0 0 -130px; }
+.halo { position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -360px 0 0 -260px; border-radius: 50%; background: radial-gradient(circle, rgba(42,120,214,.55), transparent 65%); }
+.bar { transform-box: fill-box; transform-origin: 50% 100%; }
+.spk { transform-box: fill-box; transform-origin: 50% 50%; }
+
+/* ---- Features ---- */
+.feat { position: absolute; inset: 0; display: grid; grid-template-columns: 620px 1fr; gap: 70px; padding: 0 110px; align-items: center; }
+.ftext { display: flex; flex-direction: column; gap: 26px; }
+.num { font-family: 'Space Grotesk'; font-weight: 700; font-size: 26px; color: #ffd66b; letter-spacing: 3px; }
+.line { height: 4px; width: 120px; border-radius: 4px; background: linear-gradient(90deg, #2a78d6, #ffd66b); transform-origin: left; }
+.browser { border-radius: 22px; overflow: hidden; background: #0f1b2d; box-shadow: 0 40px 120px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.12); }
+.bbar { height: 52px; display: flex; align-items: center; gap: 10px; padding: 0 22px; background: #111c30; border-bottom: 1px solid rgba(255,255,255,.08); }
+.dot { width: 14px; height: 14px; border-radius: 50%; }
+.url { margin-left: 22px; flex: 1; height: 32px; border-radius: 10px; background: rgba(255,255,255,.07); color: #9fb0c8; font-size: 17px; display: flex; align-items: center; padding: 0 16px; }
+.shot { position: relative; height: 640px; overflow: hidden; background: #f4f4f1; }
+.shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+
+.phone { position: absolute; width: 340px; height: 700px; border-radius: 52px; padding: 14px; background: #0b0f18; box-shadow: 0 50px 120px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,255,.14); }
+.phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 40px; display: block; }
+.notch { position: absolute; top: 24px; left: 50%; width: 110px; height: 30px; margin-left: -55px; border-radius: 20px; background: #0b0f18; }
+
+/* ---- Stats ---- */
+.stats { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 70px; }
+.srow { display: grid; grid-template-columns: repeat(4, 340px); gap: 34px; }
+.stat { padding: 40px 34px; border-radius: 28px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+.stat b { display: block; font-family: 'Space Grotesk'; font-size: 96px; line-height: 1; font-weight: 700; }
+.ctr::after { counter-reset: n var(--n); content: counter(n); }
+.stat span { display: block; margin-top: 16px; font-size: 24px; color: #c9d3e1; line-height: 1.35; }
+
+/* ---- Pillars ---- */
+.pillars { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 46px; }
+.pill { font-family: 'Space Grotesk'; font-weight: 700; font-size: 88px; letter-spacing: -1px; }
+.pdot { width: 18px; height: 18px; border-radius: 50%; background: #ffd66b; }
+</style></head>
+<body><div class="stage">
+  <div class="bg"></div><div class="blob b1"></div><div class="blob b2"></div><div class="grid"></div>
+
+  <!-- ===== Scene 1 · Hook (0–8s) ===== -->
+  <div class="scene" style="animation: show 8s linear 0s both">
+    <div class="hook">
+      <div class="h-xl anim" style="animation: fadeUp .9s cubic-bezier(.2,.7,.2,1) .4s both, fadeOut .6s ease-in 5.6s forwards">Colleges have the data.</div>
+      <div class="h-xl grad anim" style="margin-top:18px; animation: fadeUp .9s cubic-bezier(.2,.7,.2,1) 2.4s both, fadeOut .6s ease-in 5.6s forwards">But not the decisions.</div>
+    </div>
+    <!-- seven disconnected sources drift in, then converge into the logo -->
+    <div class="chipwrap" style="left:150px; top:150px; --dx:760px; --dy:340px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.1s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 1.1s both, float 4s ease-in-out 1.9s infinite"><i>🗓️</i>Attendance</div></div>
+    <div class="chipwrap" style="left:1450px; top:170px; --dx:-560px; --dy:330px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.15s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 1.3s both, float 4.4s ease-in-out 2.1s infinite"><i>📘</i>Exams & marks</div></div>
+    <div class="chipwrap" style="left:90px; top:640px; --dx:820px; --dy:-140px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.2s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 1.5s both, float 3.8s ease-in-out 2.3s infinite"><i>💻</i>LMS activity</div></div>
+    <div class="chipwrap" style="left:1520px; top:690px; --dx:-640px; --dy:-180px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.25s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 1.7s both, float 4.2s ease-in-out 2.5s infinite"><i>🎯</i>Placement tests</div></div>
+    <div class="chipwrap" style="left:330px; top:900px; --dx:580px; --dy:-380px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.3s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 1.9s both, float 4.6s ease-in-out 2.7s infinite"><i>🏆</i>Clubs & events</div></div>
+    <div class="chipwrap" style="left:1250px; top:920px; --dx:-330px; --dy:-400px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.35s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 2.1s both, float 3.9s ease-in-out 2.9s infinite"><i>🧠</i>Skills</div></div>
+    <div class="chipwrap" style="left:860px; top:110px; --dx:60px; --dy:400px; animation: converge 1.4s cubic-bezier(.6,0,.4,1) 6.4s both"><div class="chip anim" style="animation: fadeUp .8s ease-out 2.3s both, float 4.1s ease-in-out 3.1s infinite"><i>💬</i>Feedback</div></div>
+  </div>
+
+  <!-- ===== Scene 2 · Logo reveal (7.4–13s) ===== -->
+  <div class="scene" style="animation: show 5.6s linear 7.4s both">
+    <div class="halo anim" style="animation: pop .8s ease-out 7.6s both, glow 3s ease-in-out 8.4s infinite"></div>
+    <svg class="logo anim" viewBox="0 0 48 48" style="animation: pop .9s cubic-bezier(.2,.9,.3,1.2) 7.6s both">
+      <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a78d6"/><stop offset="1" stop-color="#4a3aa7"/></linearGradient></defs>
+      <rect width="48" height="48" rx="12" fill="url(#lg)" stroke="#fff" stroke-opacity=".3" stroke-width=".6"/>
+      <rect class="bar anim" style="animation: rise .7s cubic-bezier(.2,.8,.2,1) 8.0s both" x="9" y="28" width="7" height="10" rx="2" fill="#fff" opacity=".75"/>
+      <rect class="bar anim" style="animation: rise .7s cubic-bezier(.2,.8,.2,1) 8.18s both" x="20.5" y="21" width="7" height="17" rx="2" fill="#fff" opacity=".88"/>
+      <rect class="bar anim" style="animation: rise .7s cubic-bezier(.2,.8,.2,1) 8.36s both" x="32" y="17" width="7" height="21" rx="2" fill="#fff"/>
+      <path class="spk anim" style="animation: spark .8s cubic-bezier(.2,.9,.3,1.3) 8.8s both" d="M35.5 3.5 Q36.6 9 41.5 10 Q36.6 11 35.5 16.5 Q34.4 11 29.5 10 Q34.4 9 35.5 3.5 Z" fill="#ffd66b"/>
+    </svg>
+    <div style="position:absolute; left:0; right:0; top:610px; text-align:center">
+      <div class="anim" style="font-family:'Space Grotesk'; font-weight:700; font-size:132px; letter-spacing:-3px; animation: fadeUp .9s cubic-bezier(.2,.7,.2,1) 9.2s both">Prajna</div>
+      <div class="sub anim" style="font-size:34px; margin-top:6px; animation: fadeUp .9s ease-out 9.7s both">Student Success Intelligence</div>
+      <div class="anim" style="font-size:24px; margin-top:14px; color:#ffd66b; letter-spacing:2px; animation: fadeUp .9s ease-out 10.3s both">प्रज्ञा · wisdom, insight</div>
+    </div>
+  </div>
+
+  <!-- ===== Scenes 3–8 · Features (13–49s, 6s each) ===== -->
+  <!-- F1 -->
+  <div class="scene" style="animation: show 6s linear 13s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 13.3s both">01 · MONITOR</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 13.5s both">Know who<br><span class="grad">needs help.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 14.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 14.3s both">Seven campus systems in one view. One sentence sums up the institution, and every number drills down.</div>
+    </div>
+    <div class="browser anim" style="animation: slideL 1s cubic-bezier(.2,.7,.2,1) 13.4s both">
+      <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">prajna-w5i3.onrender.com</span></div>
+      <div class="shot"><img src="shots/overview.png" class="anim" style="animation: kenburns 6s linear 13s both"></div>
+    </div>
+  </div></div>
+  <!-- F2 -->
+  <div class="scene" style="animation: show 6s linear 19s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 19.3s both">02 · EXPLAIN</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 19.5s both">Know<br><span class="grad">why.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 20.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 20.3s both">An explainable Success Score and the top reasons behind every academic and placement risk flag.</div>
+    </div>
+    <div class="browser anim" style="animation: slideL 1s cubic-bezier(.2,.7,.2,1) 19.4s both">
+      <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">Student 360</span></div>
+      <div class="shot">
+        <img src="shots/student360.png" class="anim" style="animation: kenburns 3.4s linear 19s both">
+        <img src="shots/drivers.png" class="anim" style="opacity:0; animation: fadeUp .6s ease-out 22.2s both, kenburns2 3s linear 22.2s both">
+      </div>
+    </div>
+  </div></div>
+  <!-- F3 -->
+  <div class="scene" style="animation: show 6s linear 25s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 25.3s both">03 · ACT</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 25.5s both">Know what<br><span class="grad">to do.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 26.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 26.3s both">Simulate the target, get a recommended action, and assign it with an owner and a due date in one click.</div>
+    </div>
+    <div class="browser anim" style="animation: slideL 1s cubic-bezier(.2,.7,.2,1) 25.4s both">
+      <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">What-if simulator · Interventions</span></div>
+      <div class="shot"><img src="shots/whatif.png" class="anim" style="animation: kenburns 6s linear 25s both"></div>
+    </div>
+  </div></div>
+  <!-- F4 -->
+  <div class="scene" style="animation: show 6s linear 31s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 31.3s both">04 · SCALE</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 31.5s both">Act at<br><span class="grad">scale.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 32.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 32.3s both">Machine learning finds six student segments. Give a whole group the right playbook at once.</div>
+    </div>
+    <div class="browser anim" style="animation: slideL 1s cubic-bezier(.2,.7,.2,1) 31.4s both">
+      <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">Segments</span></div>
+      <div class="shot"><img src="shots/segments.png" class="anim" style="animation: kenburns2 6s linear 31s both"></div>
+    </div>
+  </div></div>
+  <!-- F5 -->
+  <div class="scene" style="animation: show 6s linear 37s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 37.3s both">05 · ASK</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 37.5s both">Ask in<br><span class="grad">plain English.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 38.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 38.3s both">An AI Copilot that answers from your real data, within each user's permissions, and never sees student names.</div>
+    </div>
+    <div class="browser anim" style="animation: slideL 1s cubic-bezier(.2,.7,.2,1) 37.4s both">
+      <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">AI Copilot</span></div>
+      <div class="shot"><img src="shots/copilot.png" class="anim" style="animation: kenburns 6s linear 37s both"></div>
+    </div>
+  </div></div>
+  <!-- F6 · devices -->
+  <div class="scene" style="animation: show 6s linear 43s both"><div class="feat">
+    <div class="ftext">
+      <div class="num anim" style="animation: fadeUp .7s ease-out 43.3s both">06 · EVERYONE</div>
+      <div class="h-lg anim" style="animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) 43.5s both">For every student.<br><span class="grad">On every device.</span></div>
+      <div class="line anim" style="animation: underline .8s ease-out 44.1s both"></div>
+      <div class="sub anim" style="animation: fadeUp .8s ease-out 44.3s both">Principals, HoDs, mentors and placement officers, plus students tracking their own goals.</div>
+    </div>
+    <div style="position:relative; height:820px">
+      <div class="browser anim" style="position:absolute; left:0; top:60px; width:660px; animation: slideL 1s cubic-bezier(.2,.7,.2,1) 43.3s both">
+        <div class="bbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">Dark mode</span></div>
+        <div class="shot" style="height:470px"><img src="shots/atrisk_dark.png"></div>
+      </div>
+      <div class="phone anim" style="left:380px; top:40px; --r:-6deg; animation: phoneUp 1s cubic-bezier(.2,.7,.2,1) 43.8s both"><img src="shots/phone_login.png"><div class="notch"></div></div>
+      <div class="phone anim" style="left:640px; top:110px; --r:5deg; animation: phoneUp 1s cubic-bezier(.2,.7,.2,1) 44.2s both"><img src="shots/phone_student.png"><div class="notch"></div></div>
+    </div>
+  </div></div>
+
+  <!-- ===== Scene 9 · Stats (49–56s) ===== -->
+  <div class="scene" style="animation: show 7s linear 49s both"><div class="stats">
+    <div class="h-lg anim" style="font-size:64px; animation: fadeUp .8s ease-out 49.3s both">Built on <span class="grad">real machine learning</span>, not just charts</div>
+    <div class="srow">
+      <div class="stat anim" style="animation: fadeUp .7s ease-out 49.9s both"><b class="ctr anim" style="--to:7; animation: count 1.2s ease-out 50.1s both"></b><span>campus data sources unified</span></div>
+      <div class="stat anim" style="animation: fadeUp .7s ease-out 50.15s both"><b class="ctr anim" style="--to:23; animation: count 1.4s ease-out 50.35s both"></b><span>indicators in every Success Score</span></div>
+      <div class="stat anim" style="animation: fadeUp .7s ease-out 50.4s both"><b class="ctr anim" style="--to:1200; animation: count 1.6s ease-out 50.6s both"></b><span>students scored and explained in seconds</span></div>
+      <div class="stat anim" style="animation: fadeUp .7s ease-out 50.65s both"><b class="grad">0.87</b><span>AUC, academic-risk model (5-fold cross-validated)</span></div>
+    </div>
+  </div></div>
+
+  <!-- ===== Scene 10 · Pillars (56–63s) ===== -->
+  <div class="scene" style="animation: show 7s linear 56s both"><div class="pillars">
+    <div class="pill anim" style="animation: fadeUp .6s ease-out 56.3s both">Integrate</div><div class="pdot anim" style="animation: pop .4s ease-out 56.7s both"></div>
+    <div class="pill anim" style="animation: fadeUp .6s ease-out 56.9s both">Score</div><div class="pdot anim" style="animation: pop .4s ease-out 57.3s both"></div>
+    <div class="pill anim" style="animation: fadeUp .6s ease-out 57.5s both">Predict</div><div class="pdot anim" style="animation: pop .4s ease-out 57.9s both"></div>
+    <div class="pill anim" style="animation: fadeUp .6s ease-out 58.1s both">Explain</div><div class="pdot anim" style="animation: pop .4s ease-out 58.5s both"></div>
+    <div class="pill grad anim" style="animation: fadeUp .6s ease-out 58.7s both">Act.</div>
+  </div></div>
+
+  <!-- ===== Scene 11 · End card (63–70s) ===== -->
+  <div class="scene" style="animation: show 7.4s linear 63s both">
+    <div class="halo anim" style="animation: pop .8s ease-out 63.2s both, glow 3s ease-in-out 64s infinite"></div>
+    <svg class="logo anim" viewBox="0 0 48 48" style="animation: pop .9s cubic-bezier(.2,.9,.3,1.2) 63.2s both">
+      <defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a78d6"/><stop offset="1" stop-color="#4a3aa7"/></linearGradient></defs>
+      <rect width="48" height="48" rx="12" fill="url(#lg2)" stroke="#fff" stroke-opacity=".3" stroke-width=".6"/>
+      <rect x="9" y="28" width="7" height="10" rx="2" fill="#fff" opacity=".75"/><rect x="20.5" y="21" width="7" height="17" rx="2" fill="#fff" opacity=".88"/>
+      <rect x="32" y="17" width="7" height="21" rx="2" fill="#fff"/>
+      <path d="M35.5 3.5 Q36.6 9 41.5 10 Q36.6 11 35.5 16.5 Q34.4 11 29.5 10 Q34.4 9 35.5 3.5 Z" fill="#ffd66b"/>
+    </svg>
+    <div style="position:absolute; left:0; right:0; top:610px; text-align:center">
+      <div class="anim" style="font-family:'Space Grotesk'; font-weight:700; font-size:120px; letter-spacing:-3px; animation: fadeUp .9s cubic-bezier(.2,.7,.2,1) 63.6s both">Prajna</div>
+      <div class="sub anim" style="font-size:32px; margin-top:4px; animation: fadeUp .9s ease-out 64.1s both">Know which students need help, why, and what to do next.</div>
+      <div class="anim" style="display:inline-block; margin-top:34px; padding:16px 34px; border-radius:999px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.25); font-size:28px; font-weight:600; animation: fadeUp .9s ease-out 64.8s both">prajna-w5i3.onrender.com</div>
+      <div class="anim" style="margin-top:16px; font-size:24px; color:#c9d3e1; animation: fadeUp .9s ease-out 65.1s both">github.com/Natural-navya/Prajna</div>
+      <div class="anim" style="margin-top:26px; font-size:22px; color:#9fb0c8; letter-spacing:2px; animation: fadeUp .9s ease-out 65.4s both">KPMG × byteXL · HacXLerate 2026</div>
+    </div>
+  </div>
+</div></body></html>

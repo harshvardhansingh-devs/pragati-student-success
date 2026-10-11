@@ -1,0 +1,15 @@
+.venv/
+node_modules/
+promo/shots/
+promo/stills/
+promo/fin/
+promo/*.mp4
+promo/*.wav
+promo/*.jpg
+promo/*.png
+deck/assets/
+deck/icons.json
+deck/render*/
+deck/*.pptx
+deck/*.jpg
+video_out/

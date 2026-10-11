@@ -14,8 +14,8 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 
 ## Highlights
 - **7-source data integration** with ID reconciliation, cleaning and a data-quality report
-- **Student Success Score (0–100)** across 6 domains, banded and explainable ([methodology](docs/SUCCESS_SCORE.md))
-- **Dual risk prediction** (academic + placement): hard rules + logistic-regression models retrained on every data load, with exact per-student drivers ([ML approach](docs/ML_APPROACH.md))
+- **Student Success Score (0–100)** across 6 domains, banded and explainable ([methodology](handbook/SUCCESS_SCORE.md))
+- **Dual risk prediction** (academic + placement): hard rules + logistic-regression models retrained on every data load, with exact per-student drivers ([ML approach](handbook/ML_APPROACH.md))
 - **Sliding alerts** for students who are declining fast, even while their score still looks fine
 - **Segmentation** into 6 named personas, each with an intervention playbook
 - **What-if simulator**, **intervention tracker** (single, bulk or whole segment), auto-generated **insight feed**
@@ -25,18 +25,20 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 - **Works on any device**: phone-friendly login and card layouts, tablet two-column views, full tables on laptops; light and dark mode
 
 ## Docs
+All documentation lives in **[`handbook/`](handbook/README.md)**. New contributors and AI agents: start with [CONTEXT](handbook/CONTEXT.md) → [AI_HANDOFF](handbook/AI_HANDOFF.md) → [DECISIONS](handbook/DECISIONS.md) → [ROADMAP](handbook/ROADMAP.md).
+
 | Doc | Contents |
 |---|---|
-| [PRD](docs/PRD.md) | Problem, personas, prioritised features, flows, NFRs |
-| [Architecture](docs/ARCHITECTURE.md) | Stack, system diagram, pipeline, scalability, security |
-| [Data Model](docs/DATA_MODEL.md) | Sources, schemas, synthetic data design |
-| [API](docs/API.md) | REST endpoints with examples |
-| [Success Score](docs/SUCCESS_SCORE.md) | **Submission note:** indicators, weights, risk, explainability, segments |
-| [ML Approach](docs/ML_APPROACH.md) | What is ML, how it adapts, why not deep learning or RAG |
-| [Demo Plan](docs/DEMO_PLAN.md) | 5-minute script, slide outline, rubric checklist |
-| [Rules Compliance](docs/RULES_COMPLIANCE.md) | Rulebook checklist, submission package, mandatory-feature map |
-| [Submission](docs/SUBMISSION.md) | Ready-to-paste text for the byteXL submission form |
-| [Handover](docs/HANDOVER.md) | Run your own copy: fork, Supabase, Render, your own AI keys |
+| [PRD](handbook/PRD.md) | Problem, personas, prioritised features, flows, NFRs |
+| [Architecture](handbook/ARCHITECTURE.md) | Stack, system diagram, pipeline, scalability, security |
+| [Data Model](handbook/DATA_MODEL.md) | Sources, schemas, synthetic data design |
+| [API](handbook/API.md) | REST endpoints with examples |
+| [Success Score](handbook/SUCCESS_SCORE.md) | **Submission note:** indicators, weights, risk, explainability, segments |
+| [ML Approach](handbook/ML_APPROACH.md) | What is ML, how it adapts, why not deep learning or RAG |
+| [Demo Plan](handbook/DEMO_PLAN.md) | 5-minute script, slide outline, rubric checklist |
+| [Rules Compliance](handbook/RULES_COMPLIANCE.md) | Rulebook checklist, submission package, mandatory-feature map |
+| [Submission](handbook/SUBMISSION.md) | Ready-to-paste text for the byteXL submission form |
+| [Handover](handbook/HANDOVER.md) | Run your own copy: fork, Supabase, Render, your own AI keys |
 
 ## Tech stack
 React 19 · TypeScript · Vite · Tailwind CSS v4 · ECharts │ FastAPI · Pydantic · SQLAlchemy │ PostgreSQL (Supabase) / SQLite │ pandas · scikit-learn · SciPy │ Gemini · Groq · OpenRouter (OpenAI-compatible) │ Docker · Render
@@ -79,5 +81,5 @@ All accounts use the password **`Prajna@2026`**. The login page also has one-cli
 backend/   FastAPI app, pipeline, ML, AI
 frontend/  React + Vite dashboard (built into frontend/dist, served by FastAPI)
 data/raw/  synthetic source CSVs
-docs/      product & technical docs
+handbook/  all project docs: context, AI handoff, PRD, architecture, API, runbook…
 ```

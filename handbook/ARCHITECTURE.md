@@ -85,6 +85,7 @@ backend/
   tests/test_pipeline.py     end-to-end check
 frontend/src/        React pages, charts, UI kit
 data/raw/            the 8 source CSVs + outcome labels
-docs/                PRD, architecture, API, data model, score note, ML approach, demo plan, rules
+handbook/            all project docs (start at handbook/README.md)
+tools/media/         scripts that regenerate the demo video, promo video and pitch deck
 Dockerfile, render.yaml
 ```

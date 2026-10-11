@@ -1,6 +1,6 @@
 """Student Success Score, dual risk models, explanations, segmentation, insights, what-if.
 
-See docs/SUCCESS_SCORE.md for the methodology.
+See handbook/SUCCESS_SCORE.md for the methodology.
 """
 import numpy as np
 import pandas as pd

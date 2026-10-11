@@ -25,7 +25,7 @@
 
 ## Rubric checklist
 - [x] Data Integration (30): Data Integration page, Student 360 by source, cross-source insights
-- [x] Score & Risk (25): methodology note (`docs/SUCCESS_SCORE.md`), model metrics, segments (bonus)
+- [x] Score & Risk (25): methodology note (`handbook/SUCCESS_SCORE.md`), model metrics, segments (bonus)
 - [x] Dashboard (25): interactive filters, drill-down, explainable score and drivers (bonus)
 - [x] Problem understanding (10): personas and roles, Indian campus rules (75%, backlogs), DPDP
 - [ ] Presentation (10): fill team names on the cover slide, record the video above, submit early

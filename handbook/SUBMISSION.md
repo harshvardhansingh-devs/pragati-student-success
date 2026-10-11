@@ -26,7 +26,7 @@ React 19 + TypeScript + Vite + Tailwind + ECharts · FastAPI (Python) · pandas,
 - Deployed app: https://pragati-9l3m.onrender.com
 - GitHub: https://github.com/harshvardhansingh-devs/pragati-student-success
 - API docs: https://pragati-9l3m.onrender.com/api/docs
-- Success Score note: https://github.com/harshvardhansingh-devs/pragati-student-success/blob/main/docs/SUCCESS_SCORE.md
+- Success Score note: https://github.com/harshvardhansingh-devs/pragati-student-success/blob/main/handbook/SUCCESS_SCORE.md
 
 **Test access / evaluator notes**
 Open the app and click any role on the login page (one click, no typing). Or sign in manually; all accounts use the password `Prajna@2026`:
