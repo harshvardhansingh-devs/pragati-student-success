@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Bot, FlaskConical, Lightbulb, MessageSquareQuote, ShieldAlert } from 'lucide-react'
 import { api } from '../api'
 import { Diverging, LineChart, Radar } from '../charts'
-import { Avatar, BandBadge, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, PageSkeleton, RiskBadge, ScoreRing, Trend, fmt, pct, toast, useApi } from '../ui'
+import { Avatar, BandBadge, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, PageSkeleton, RichText, RiskBadge, ScoreRing, Trend, fmt, pct, toast, useApi } from '../ui'
 import AssignPanel from './AssignPanel'
 
 const SIM_FIELDS = ['attendance_term', 'attendance_recent', 'assignment_completion', 'internal_avg', 'coding', 'aptitude', 'mock_interviews', 'certifications']
@@ -172,7 +172,7 @@ export default function Student360({ selfId }: { selfId?: string }) {
         </Card>
         <Card title={<span className="inline-flex items-center gap-1.5"><Bot className="h-4 w-4" /> {self ? 'My AI coach' : 'AI mentor brief'}</span>} subtitle={self ? 'Personal tips from your data (only numbers are sent to the AI, never your name)' : 'One-click briefing before a mentor meeting (IDs and numbers only are sent to the AI)'}
           action={<Button onClick={getBrief} disabled={briefBusy}>{briefBusy ? 'Generating…' : brief ? 'Regenerate' : self ? 'Get my tips' : 'Generate'}</Button>}>
-          {brief ? <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{brief.brief}</pre> : <p className="text-sm text-ink-2">{self ? 'Get your strengths, one focus area and a plan for this week.' : 'Generate a short brief with strengths, concerns, talking points and a suggested action.'}</p>}
+          {brief ? <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink"><RichText text={brief.brief} /></pre> : <p className="text-sm text-ink-2">{self ? 'Get your strengths, one focus area and a plan for this week.' : 'Generate a short brief with strengths, concerns, talking points and a suggested action.'}</p>}
           {brief && <p className="mt-2 text-xs text-muted">Source: {brief.source === 'ai' ? brief.provider : 'rule-based template (no AI provider available)'}</p>}
           {p.comments && <div className="mt-4 flex gap-2 rounded-lg bg-surface-2 p-3 text-sm text-ink-2"><MessageSquareQuote className="h-4 w-4 shrink-0" /> {self ? 'Your feedback' : 'Student feedback'}: "{p.comments}"</div>}
         </Card>

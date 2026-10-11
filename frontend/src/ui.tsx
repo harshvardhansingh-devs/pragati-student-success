@@ -283,3 +283,9 @@ export function Toaster() {
     </div>
   )
 }
+
+/** Render LLM text safely: **bold** becomes <b>, stray markdown symbols are dropped (no HTML injection). */
+export function RichText({ text }: { text: string }) {
+  const clean = text.replace(/^#+\s*/gm, '').replace(/^\s*[-*]\s+/gm, '• ')
+  return <>{clean.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <b key={i}>{part}</b> : part.replace(/\*/g, '')))}</>
+}
