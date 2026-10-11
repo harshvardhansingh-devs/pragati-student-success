@@ -10,7 +10,7 @@ from sqlalchemy import text
 from . import pipeline, scoring
 from .db import engine, has_table, init_app_tables
 
-PIPELINE_VERSION = 3  # bump when scoring logic changes → deployed instances re-score on boot
+PIPELINE_VERSION = 4  # bump when scoring logic changes → deployed instances re-score on boot
 JSON_COLS = ["academic_drivers", "placement_drivers", "academic_rules", "placement_rules"]
 _lock = threading.Lock()
 _state = {"run_id": None, "checked": 0.0}

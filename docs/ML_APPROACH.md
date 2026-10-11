@@ -33,11 +33,11 @@ These are marketing terms rather than technical categories. Mapped onto what we 
 |---|---|---|
 | Explainability (bonus criterion) | Exact per-feature contributions | Needs SHAP approximations |
 | Data size (one college ≈ 1–10k students) | Ideal | Overfits small tabular data |
-| Accuracy on this data | AUC 0.87 / 0.77 | Typically within ±0.02 on tabular data of this size |
+| Accuracy on this data (5-fold CV) | AUC 0.87 / 0.81 | Typically within ±0.02 on tabular data of this size |
 | Faculty trust / auditability | High | Low |
 | Speed | 1,200 students scored in < 4 s, including retraining | Slower |
 
-With **real** multi-year data, the code is built so the model can be swapped to gradient boosting (`scoring.RiskModel`) behind the same interface. We would only do it if it measurably beats the baseline on a hold-out set.
+With **real** multi-year data, the code is built so the model can be swapped to gradient boosting (`scoring.RiskModel`) behind the same interface. We would only do it if it measurably beats the baseline under the same cross-validation.
 
 ## What about "System One" decision models (Jev, Laya)?
 We evaluated **Jev** (TypeSafe AI: hosted, proprietary) and **Laya** (open-source, Apache-2.0, built on the ModernBERT encoder, with a Jev-compatible `/v1/systemone` API). Both return typed decisions (`choice`, `score`, `noul` yes/no) with probabilities in a single fast pass, instead of generating text.

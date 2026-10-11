@@ -29,6 +29,7 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 | [ML Approach](docs/ML_APPROACH.md) | What is ML, how it adapts, why not deep learning or RAG |
 | [Demo Plan](docs/DEMO_PLAN.md) | 5-minute script, slide outline, rubric checklist |
 | [Rules Compliance](docs/RULES_COMPLIANCE.md) | Rulebook checklist, submission package, mandatory-feature map |
+| [Submission](docs/SUBMISSION.md) | Ready-to-paste text for the byteXL submission form |
 
 ## Tech stack
 React 19 · TypeScript · Vite · Tailwind CSS v4 · ECharts │ FastAPI · Pydantic · SQLAlchemy │ PostgreSQL (Supabase) / SQLite │ pandas · scikit-learn · SciPy │ Gemini · Groq · OpenRouter (OpenAI-compatible) │ Docker · Render

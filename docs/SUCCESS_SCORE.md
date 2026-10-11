@@ -65,7 +65,7 @@ The score says *where a student stands*. Risk says *where they are heading*.
 
 - **Model:** logistic regression on standardised features, one per risk type, retrained on every pipeline run.
 - **Tiers:** High ≥ 0.70, Medium ≥ 0.40, else Low. Final tier = High if any rule fires, else the model tier.
-- **Validation:** stratified 75/25 hold-out on the demo data gives academic AUC 0.87 (recall 67% at Medium+) and placement AUC 0.77 (recall 69%). The labels are synthetic, so these numbers show that the method works, not how it performs on real students.
+- **Validation:** 5-fold stratified cross-validation on the demo data gives academic AUC 0.87 ± 0.06 (recall 69% at Medium+) and placement AUC 0.81 ± 0.03 (recall 74%). The labels are synthetic, so these numbers show that the method works, not how it performs on real students.
 - **Explainability (risk):** for a linear model, `coefficient × standardised value` is the exact additive contribution of each feature to the log-odds (equivalent to linear SHAP). The top 3 risk-increasing features are shown as "drivers" with the student's value and the cohort median.
 - **What-if:** edit any indicator, then the score, band and both risk probabilities are recomputed live.
 

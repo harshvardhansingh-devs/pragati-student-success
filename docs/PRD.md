@@ -45,7 +45,7 @@ Every screen should answer one of three questions for its user: *Who needs help?
 | Goal | Metric (demo) | Metric (real deployment) |
 |---|---|---|
 | Unified view | 7 sources → 1 Student 360, quality report shown | % students with complete profile > 95% |
-| Early identification | Risk model AUC ≥ 0.80 on hold-out | % at-risk flagged ≥ 6 weeks before exam |
+| Early identification | Risk model AUC ≥ 0.80 (5-fold CV) | % at-risk flagged ≥ 6 weeks before exam |
 | Explainability | Top-3 drivers shown for every score/flag | Mentor trust survey |
 | Actionability | Every flag has a suggested intervention | % flags with an intervention logged in 7 days |
 | Impact | Before/after score on intervened students | Reduction in backlogs / detention / unplaced % |

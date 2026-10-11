@@ -59,7 +59,7 @@ export default function Methodology() {
           <p className="mt-1 text-sm text-ink-2">Two interpretable logistic-regression models predict <b>academic setback</b> and <b>placement unreadiness</b>. Tiers: High ≥ {data.risk.high * 100}%, Medium ≥ {data.risk.medium * 100}%. Hard rules always flag High (attendance &lt; 75% detention rule, ≥ 3 backlogs, final year with coding &lt; 30). Per-student drivers are exact additive contributions (coefficient × standardised value).</p>
           <div className="mt-3 grid grid-cols-2 gap-2 text-center text-sm">
             {Object.entries(m).map(([k, v]: any) => (
-              <div key={k} className="rounded-lg bg-surface-2 p-3"><div className="text-xs text-muted">{k} model (hold-out)</div><div className="mt-1 font-semibold tnum">AUC {v.auc}</div><div className="text-xs text-muted">recall {Math.round(v.recall_high_or_medium * 100)}% · base rate {Math.round(v.base_rate * 100)}%</div></div>
+              <div key={k} className="rounded-lg bg-surface-2 p-3"><div className="text-xs text-muted">{k} model (5-fold CV)</div><div className="mt-1 font-semibold tnum">AUC {v.auc} ± {v.auc_std}</div><div className="text-xs text-muted">recall {Math.round(v.recall_high_or_medium * 100)}% · base rate {Math.round(v.base_rate * 100)}%</div></div>
             ))}
           </div>
         </Card>

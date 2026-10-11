@@ -8,7 +8,7 @@ from scipy.optimize import linear_sum_assignment
 from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import recall_score, roc_auc_score, silhouette_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedKFold, cross_val_predict
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -157,16 +157,19 @@ class RiskModel:
 
     def __init__(self, kind, feats, labels):
         self.kind, self.cols = kind, RISK_FEATURES[kind]
+        feats = feats.sort_index()  # deterministic split regardless of database row order
         X = feats[self.cols].astype(float)
         self.fill = X.median()
         X = X.fillna(self.fill)
         y = labels.reindex(feats.index)[LABEL_COL[kind]].fillna(0).astype(int)
-        Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
-        m = make_pipeline(StandardScaler(), LogisticRegression(C=0.5, max_iter=1000)).fit(Xtr, ytr)
-        p = m.predict_proba(Xte)[:, 1]
-        self.metrics = dict(model="Logistic regression (standardised)", target=LABEL_COL[kind], auc=round(roc_auc_score(yte, p), 3),
-                            recall_high_or_medium=round(recall_score(yte, p >= MEDIUM), 3), base_rate=round(float(y.mean()), 3),
-                            train_rows=len(Xtr), test_rows=len(Xte))
+        # 5-fold stratified cross-validation: every student is scored once by a model that never saw them
+        cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+        p = cross_val_predict(make_pipeline(StandardScaler(), LogisticRegression(C=0.5, max_iter=1000)), X, y, cv=cv, method="predict_proba")[:, 1]
+        fold_auc = [roc_auc_score(y.iloc[te], p[te]) for _, te in cv.split(X, y)]
+        self.metrics = dict(model="Logistic regression (standardised)", target=LABEL_COL[kind], validation="5-fold stratified CV",
+                            auc=round(float(np.mean(fold_auc)), 3), auc_std=round(float(np.std(fold_auc)), 3),
+                            recall_high_or_medium=round(recall_score(y, p >= MEDIUM), 3), base_rate=round(float(y.mean()), 3),
+                            rows=len(X))
         self.model = make_pipeline(StandardScaler(), LogisticRegression(C=0.5, max_iter=1000)).fit(X, y)
         self.sc, self.lr = self.model[0], self.model[1]
         self.metrics["coefficients"] = {c: round(float(v), 3) for c, v in zip(self.cols, self.lr.coef_[0])}
