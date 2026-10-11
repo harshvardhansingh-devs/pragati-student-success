@@ -71,7 +71,7 @@ export function LineChart({ x, series, height = 280, label, yMin, colors }: { x:
 export function StackedBar({ categories, stacks, height = 260, label }: { categories: string[]; stacks: { name: string; data: number[]; color: string }[]; height?: number; label: string }) {
   return (
     <Chart label={label} height={height} option={(t) => ({
-      legend: { top: 0, icon: 'roundRect', itemWidth: 10, itemHeight: 10, textStyle: { color: t.ink2, fontSize: 12 } },
+      legend: { top: 0, type: 'scroll', icon: 'roundRect', itemWidth: 10, itemHeight: 10, itemGap: 12, textStyle: { color: t.ink2, fontSize: 12 } },
       grid: { left: 44, right: 16, top: 34, bottom: 24 },
       tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
       xAxis: { type: 'value', ...axis(t) },

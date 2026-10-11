@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { ArrowRight, CheckCircle2, Database, Scale, Upload } from 'lucide-react'
 import { api } from '../api'
 import { useAuth } from '../App'
-import { Button, Card, ErrorBox, Loading, PageHeader, fmt, useApi } from '../ui'
+import { Button, Card, ErrorBox, Loading, PageHeader, PageSkeleton, fmt, toast, useApi } from '../ui'
 
 export default function DataHub() {
   const { data, error, loading, reload } = useApi('/data-quality')
@@ -12,7 +12,7 @@ export default function DataHub() {
   const [source, setSource] = useState('attendance')
   const [msg, setMsg] = useState('')
   const [busy, setBusy] = useState(false)
-  if (loading && !data) return <Loading />
+  if (loading && !data) return <PageSkeleton />
   if (error) return <ErrorBox error={error} />
   const src = data.sources
   const total = (k: string) => src.reduce((a: number, s: any) => a + (s[k] || 0), 0)
@@ -28,13 +28,14 @@ export default function DataHub() {
     try {
       const r = await api('/ingest/upload', { form })
       setMsg(`Loaded ${r.rows.toLocaleString()} rows; all scores recomputed in ${r.summary.seconds}s.`)
+      toast('Data uploaded and all students re-scored')
       reload()
-    } catch (err: any) { setMsg(err.message) } finally { setBusy(false) }
+    } catch (err: any) { setMsg(err.message); toast(err.message, 'error') } finally { setBusy(false) }
   }
 
   return (
     <div>
-      <PageHeader title="Data Integration & Quality" subtitle={`${src.length} source systems unified into one Student 360 record per student · last pipeline run #${data.run.run_id} at ${new Date(data.run.finished_at).toLocaleString()} (${data.run.seconds}s)`} />
+      <PageHeader title="Data Integration & Quality" subtitle={`Student master + ${src.length - 1} data sources unified into one Student 360 record per student · last pipeline run #${data.run.run_id} at ${new Date(data.run.finished_at).toLocaleString()} (${data.run.seconds}s)`} />
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
         {[['Raw rows ingested', total('rows_in')], ['Duplicates removed', total('duplicates_removed')], ['IDs reconciled', total('ids_normalized')],
@@ -65,8 +66,8 @@ export default function DataHub() {
               {src.map((s: any) => (
                 <tr key={s.source} className="border-b border-line last:border-0">
                   <td className="py-2 pr-3"><div className="font-medium">{s.label}</div><div className="text-xs text-muted">{s.source}</div></td>
-                  <td className="py-2 pr-3">{s.rows_in.toLocaleString()}</td><td className="py-2 pr-3">{s.duplicates_removed}</td><td className="py-2 pr-3">{s.ids_normalized.toLocaleString()}</td>
-                  <td className="py-2 pr-3">{s.unmatched_ids}</td><td className="py-2 pr-3">{s.values_fixed}</td><td className="py-2 pr-3">{s.quarantined}</td>
+                  <td className="py-2 pr-3">{s.rows_in.toLocaleString()}</td><td className="py-2 pr-3">{s.duplicates_removed.toLocaleString()}</td><td className="py-2 pr-3">{s.ids_normalized.toLocaleString()}</td>
+                  <td className="py-2 pr-3">{s.unmatched_ids.toLocaleString()}</td><td className="py-2 pr-3">{s.values_fixed.toLocaleString()}</td><td className="py-2 pr-3">{s.quarantined.toLocaleString()}</td>
                   <td className="py-2 pr-3">{Number(s.rows_clean).toLocaleString()}</td><td className="py-2 pr-3">{fmt(s.students_covered)}%</td><td className="py-2">{fmt(s.completeness)}%</td>
                 </tr>
               ))}

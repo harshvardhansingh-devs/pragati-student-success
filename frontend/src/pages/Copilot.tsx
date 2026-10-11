@@ -48,7 +48,7 @@ export default function Copilot() {
                 <p className="whitespace-pre-wrap text-sm leading-relaxed">{m.text}</p>
                 {m.table && m.table.length > 0 && (
                   <div className="mt-2 max-h-72 overflow-auto rounded-lg border border-line">
-                    <table className="w-full text-xs tnum">
+                    <table className="w-full whitespace-nowrap text-xs tnum">
                       <thead className="sticky top-0 bg-surface-2 text-left text-muted"><tr>{Object.keys(m.table[0]).map((k) => <th key={k} className="px-2 py-1.5 font-medium">{k.replace(/_/g, ' ')}</th>)}</tr></thead>
                       <tbody>{m.table.map((r, j) => <tr key={j} className="border-t border-line">{Object.entries(r).map(([k, v]: any) => <td key={k} className="px-2 py-1.5">{k === 'student_id' ? <Link className="text-accent-ink hover:underline" to={`/students/${v}`}>{v}</Link> : typeof v === 'number' ? Math.round(v * 100) / 100 : String(v ?? '–')}</td>)}</tr>)}</tbody>
                     </table>

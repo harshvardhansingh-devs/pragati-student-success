@@ -34,22 +34,29 @@ export default function Login() {
 
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
-      <div className="hidden flex-col justify-between bg-nav p-10 text-nav-ink lg:flex">
-        <div className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-accent text-white"><GraduationCap className="h-6 w-6" /></div>
+      <div className="hero relative hidden flex-col justify-between overflow-hidden p-10 text-white/85 lg:flex">
+        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/10" aria-hidden />
+        <div className="absolute -bottom-32 -left-16 h-96 w-96 rounded-full bg-white/5" aria-hidden />
+        <div className="relative flex items-center gap-3">
+          <div className="grid h-10 w-10 place-items-center rounded-xl bg-white/15 text-white ring-1 ring-white/25"><GraduationCap className="h-6 w-6" /></div>
           <div className="text-xl font-semibold text-white">Pragati</div>
         </div>
-        <div className="max-w-md">
+        <div className="relative max-w-md">
           <h1 className="text-3xl font-semibold leading-tight text-white">Know which students need help, why, and what to do next.</h1>
           <p className="mt-4 text-sm leading-relaxed">Pragati brings attendance, academics, LMS, engagement, placement, skills and feedback together into one Student 360 view.
             It computes an explainable Student Success Score, predicts academic and placement risk early, and turns every flag into a tracked intervention.</p>
+          <div className="mt-6 grid grid-cols-3 gap-3">
+            {[['7', 'data sources unified'], ['23', 'indicators per student'], ['2', 'risk models + rules']].map(([n, l]) => (
+              <div key={l} className="rounded-xl bg-white/10 p-3 ring-1 ring-white/15"><div className="text-2xl font-semibold text-white">{n}</div><div className="text-[11px] leading-tight">{l}</div></div>
+            ))}
+          </div>
           <ul className="mt-6 space-y-3 text-sm">
             <li className="flex gap-2"><Users className="h-4 w-4 shrink-0 text-white" /> 7 data sources, one unified student view</li>
             <li className="flex gap-2"><Sparkles className="h-4 w-4 shrink-0 text-white" /> Explainable scores, risk drivers and what-if simulation</li>
             <li className="flex gap-2"><ShieldCheck className="h-4 w-4 shrink-0 text-white" /> Role-based access, audit log, fairness checks</li>
           </ul>
         </div>
-        <p className="text-xs">Demo uses synthetic data for 1,200 students. No real student data.</p>
+        <p className="relative text-xs">Demo uses synthetic data for 1,200 students. No real student data.</p>
       </div>
 
       <div className="flex items-center justify-center p-4 sm:p-8">

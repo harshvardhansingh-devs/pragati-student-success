@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CheckCircle2 } from 'lucide-react'
 import { api } from '../api'
-import { Button } from '../ui'
+import { Button, toast } from '../ui'
 
 const PRESETS = [
   ['Attendance counselling + parent connect', 'Mentor'],
@@ -27,10 +27,11 @@ export default function AssignPanel({ ids, onDone, preset, reason }: { ids: stri
     setBusy(true)
     try {
       const r = await api('/interventions', { body: { student_ids: ids, action, owner, due_in_days: due, notes: notes || null, reason: reason ?? null } })
-      setMsg(`Assigned to ${r.created} student${r.created > 1 ? 's' : ''}.`)
-      setTimeout(onDone, 900)
+      toast(`Intervention assigned to ${r.created} student${r.created > 1 ? 's' : ''}`)
+      onDone()
     } catch (e: any) {
       setMsg(e.message)
+      toast(e.message, 'error')
     } finally {
       setBusy(false)
     }

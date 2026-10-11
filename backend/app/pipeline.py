@@ -119,7 +119,9 @@ def run(students_only=False):
     done["wgp"] = done.gp * done.credits
     sem = done.groupby(["student_id", "semester"]).agg(wgp=("wgp", "sum"), cr=("credits", "sum")).reset_index()
     sem["sgpa"] = sem.wgp / sem.cr
-    cgpa = sem.groupby("student_id").apply(lambda g: g.wgp.sum() / g.cr.sum(), include_groups=False).rename("cgpa")
+    # CGPA over cleared credits (common university practice); failed subjects are tracked as active backlogs instead
+    passed = done[done.gp > 0].groupby("student_id")[["wgp", "credits"]].sum()
+    cgpa = (passed.wgp / passed.credits).rename("cgpa")
     trend = sem.sort_values("semester").groupby("student_id").sgpa.apply(lambda s: s.iloc[-1] - s.iloc[-2] if len(s) > 1 else np.nan).rename("sgpa_trend")
     backlogs = done[done.total < 40].groupby("student_id").size().rename("active_backlogs")
     cur = ac[ac.current].copy()

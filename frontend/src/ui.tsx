@@ -50,7 +50,7 @@ export function PageHeader({ title, subtitle, children }: { title: string; subti
   )
 }
 
-export function Loading({ label = 'Loading…' }: { label?: string }) {
+export function Loading({ label = "Loading…" }: { label?: string }) {
   return (
     <div className="flex items-center justify-center gap-2 py-16 text-sm text-muted" role="status">
       <Loader2 className="h-4 w-4 animate-spin" /> {label}
@@ -154,6 +154,102 @@ export function Bar({ value, max = 100, color = 'var(--accent)' }: { value: numb
   return (
     <div className="h-1.5 w-full rounded-full bg-surface-2" aria-hidden>
       <div className="h-1.5 rounded-full" style={{ width: `${w}%`, background: color }} />
+    </div>
+  )
+}
+
+// ---------- Visual primitives ----------
+const BAND_COLOR: Record<string, string> = { Thriving: 'var(--good)', 'On track': 'var(--s1)', Watch: 'var(--warn)', 'At risk': 'var(--critical)' }
+export const bandColor = (band: string) => BAND_COLOR[band] ?? 'var(--s1)'
+export const bandFor = (score: number) => (score >= 75 ? 'Thriving' : score >= 60 ? 'On track' : score >= 45 ? 'Watch' : 'At risk')
+
+/** Donut ring for a 0-100 score, coloured by band. */
+export function ScoreRing({ score, size = 44, stroke = 5, label = true }: { score: number | null; size?: number; stroke?: number; label?: boolean }) {
+  const v = score ?? 0
+  const r = (size - stroke) / 2
+  const c = 2 * Math.PI * r
+  const color = bandColor(bandFor(v))
+  return (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label={`Success Score ${fmt(score, 0)} out of 100`} className="shrink-0">
+      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--grid)" strokeWidth={stroke} />
+      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round"
+        strokeDasharray={`${(c * v) / 100} ${c}`} transform={`rotate(-90 ${size / 2} ${size / 2})`} />
+      {label && <text x="50%" y="50%" dominantBaseline="central" textAnchor="middle" fontSize={size * 0.3} fontWeight={600} fill="var(--ink)">{fmt(score, 0)}</text>}
+    </svg>
+  )
+}
+
+export function Avatar({ name, band, size = 32 }: { name: string; band?: string; size?: number }) {
+  const initials = name.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase()
+  return (
+    <span aria-hidden className="grid shrink-0 place-items-center rounded-full font-semibold text-white"
+      style={{ width: size, height: size, fontSize: size * 0.38, background: band ? bandColor(band) : 'var(--s7)' }}>
+      {initials}
+    </span>
+  )
+}
+
+/** Tiny trend line, decorative (value is always shown as text next to it). */
+export function Sparkline({ data, width = 96, height = 28, color = 'currentColor' }: { data: number[]; width?: number; height?: number; color?: string }) {
+  const vals = data.filter((d) => d !== null && d !== undefined)
+  if (vals.length < 2) return null
+  const min = Math.min(...vals), max = Math.max(...vals), span = max - min || 1
+  const pts = vals.map((v, i) => `${(i / (vals.length - 1)) * (width - 4) + 2},${height - 3 - ((v - min) / span) * (height - 6)}`).join(' ')
+  const last = pts.split(' ').pop()!.split(',')
+  return (
+    <svg width={width} height={height} aria-hidden className="overflow-visible">
+      <polyline points={pts} fill="none" stroke={color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+      <circle cx={last[0]} cy={last[1]} r={3} fill={color} />
+    </svg>
+  )
+}
+
+export function Skeleton({ className = '' }: { className?: string }) {
+  return <div className={`skeleton ${className}`} aria-hidden />
+}
+
+export function PageSkeleton() {
+  return (
+    <div role="status" aria-label="Loading">
+      <Skeleton className="mb-5 h-28 w-full rounded-2xl" />
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">{[0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-24" />)}</div>
+      <div className="mt-4 grid gap-4 lg:grid-cols-2"><Skeleton className="h-72" /><Skeleton className="h-72" /></div>
+    </div>
+  )
+}
+
+export function Empty({ icon, title, text, action }: { icon?: ReactNode; title: string; text?: string; action?: ReactNode }) {
+  return (
+    <div className="flex flex-col items-center justify-center gap-2 py-12 text-center">
+      {icon && <div className="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent-ink">{icon}</div>}
+      <div className="text-sm font-semibold">{title}</div>
+      {text && <p className="max-w-sm text-sm text-muted">{text}</p>}
+      {action}
+    </div>
+  )
+}
+
+// ---------- Toasts ----------
+type ToastMsg = { id: number; text: string; tone: 'success' | 'error' }
+let pushToast: (t: ToastMsg) => void = () => {}
+export const toast = (text: string, tone: ToastMsg['tone'] = 'success') => pushToast({ id: Date.now() + Math.random(), text, tone })
+
+export function Toaster() {
+  const [items, setItems] = useState<ToastMsg[]>([])
+  useEffect(() => {
+    pushToast = (t) => {
+      setItems((s) => [...s, t])
+      setTimeout(() => setItems((s) => s.filter((x) => x.id !== t.id)), 3500)
+    }
+    return () => { pushToast = () => {} }
+  }, [])
+  return (
+    <div className="pointer-events-none fixed bottom-4 right-4 z-50 flex flex-col gap-2" role="status" aria-live="polite">
+      {items.map((t) => (
+        <div key={t.id} className={`toast pointer-events-auto flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-medium text-white shadow-lg ${t.tone === 'success' ? 'bg-[#0f6b2f]' : 'bg-[#b42828]'}`}>
+          {t.tone === 'success' ? <CheckCircle2 className="h-4 w-4" /> : <XOctagon className="h-4 w-4" />} {t.text}
+        </div>
+      ))}
     </div>
   )
 }

@@ -9,7 +9,7 @@
 | API | **FastAPI (Python)** + Pydantic | Same language as the ML; typed validation; OpenAPI docs at `/api/docs` |
 | Database | **PostgreSQL** (Supabase in production) · SQLite for local dev | One `DATABASE_URL` switch; SQLAlchemy keeps the code DB-agnostic |
 | Data / ML | pandas, scikit-learn (logistic regression, K-Means), SciPy (Hungarian matching) | Industry-standard and interpretable. See [ML_APPROACH.md](ML_APPROACH.md) |
-| AI | **Gemini → Groq → OpenRouter** free tiers via their OpenAI-compatible APIs (`openai` SDK), automatic fallback on rate limit or outage | Copilot (natural language → analytics tools) and mentor briefs; zero AI cost |
+| AI | **Groq (gpt-oss-120b) → OpenRouter (Nemotron 3 Super) → Gemini (3.8 Flash)** free tiers via their OpenAI-compatible APIs (`openai` SDK), automatic fallback on rate limit or outage | Copilot (natural language → analytics tools) and mentor briefs; zero AI cost |
 | Auth | JWT (PyJWT), PBKDF2 password hashing, role-based scoping | Admin / HoD / Mentor / Placement Officer |
 | Deploy | Docker (multi-stage: Node build → Python runtime) on Render; Supabase Postgres | One container, stateless, horizontally scalable |
 

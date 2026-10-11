@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Bot, FlaskConical, Lightbulb, MessageSquareQuote, ShieldAlert } from 'lucide-react'
 import { api } from '../api'
 import { Diverging, LineChart, Radar } from '../charts'
-import { BandBadge, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, Loading, RiskBadge, Trend, fmt, pct, useApi } from '../ui'
+import { Avatar, BandBadge, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, PageSkeleton, RiskBadge, ScoreRing, Trend, fmt, pct, toast, useApi } from '../ui'
 import AssignPanel from './AssignPanel'
 
 const SIM_FIELDS = ['attendance_term', 'attendance_recent', 'assignment_completion', 'internal_avg', 'coding', 'aptitude', 'mock_interviews', 'certifications']
@@ -19,7 +19,7 @@ export default function Student360() {
   const [briefBusy, setBriefBusy] = useState(false)
   const [assign, setAssign] = useState<any>(null)
 
-  if (loading && !d) return <Loading label="Building Student 360…" />
+  if (loading && !d) return <PageSkeleton />
   if (error) return <ErrorBox error={error} />
   if (!d) return null
   const p = d.profile, sc = d.score
@@ -32,7 +32,7 @@ export default function Student360() {
   }
   const getBrief = async () => {
     setBriefBusy(true)
-    try { setBrief(await api(`/students/${id}/brief`, { method: 'POST' })) } finally { setBriefBusy(false) }
+    try { setBrief(await api(`/students/${id}/brief`, { method: 'POST' })) } catch (e: any) { toast(e.message, 'error') } finally { setBriefBusy(false) }
   }
   const waterfall = d.explanation.items.filter((i: any) => i.vs_cohort !== null).sort((a: any, b: any) => Math.abs(b.vs_cohort) - Math.abs(a.vs_cohort)).slice(0, 12)
 
@@ -40,27 +40,41 @@ export default function Student360() {
     <div>
       <button onClick={() => nav(-1)} className="mb-3 inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink"><ArrowLeft className="h-4 w-4" /> Back</button>
 
-      <div className="card mb-4 flex flex-wrap items-center justify-between gap-4 p-5">
-        <div className="min-w-0">
-          <h1 className="text-2xl font-semibold">{p.name}</h1>
-          <p className="mt-1 text-sm text-ink-2">{p.student_id} · {p.program} {p.dept} · Year {p.year} · Section {p.section} · Mentor {p.mentor_id}</p>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <span className="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-medium text-accent-ink">Segment: {sc.segment}</span>
-            {sc.sliding && <span className="rounded-full bg-critical/10 px-2 py-0.5 text-xs font-medium text-critical-text">Sliding: score fell {Math.abs(sc.trend_4w).toFixed(1)} pts in 4 weeks</span>}
-            {sc.low_confidence && <span className="rounded-full bg-warn/15 px-2 py-0.5 text-xs font-medium text-warn-text">Low confidence: missing data</span>}
+      <div className="card mb-4 overflow-hidden">
+        <div className="hero h-16 sm:h-20" aria-hidden />
+        <div className="flex flex-wrap items-end justify-between gap-5 px-5 pb-5">
+          <div className="-mt-8 flex min-w-0 items-end gap-4">
+            <div className="rounded-full ring-4 ring-[var(--surface)]"><Avatar name={p.name} band={sc.band} size={72} /></div>
+            <div className="min-w-0 pb-1">
+              <h1 className="truncate text-2xl font-semibold tracking-tight">{p.name}</h1>
+              <p className="mt-0.5 text-sm text-ink-2">{p.student_id} · {p.program} {p.dept} · Year {p.year} · Section {p.section} · Mentor {p.mentor_id}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <ScoreRing score={sc.success_score} size={88} stroke={8} />
+            <div>
+              <div className="text-xs font-medium text-muted">Student Success Score</div>
+              <div className="mt-1 flex items-center gap-2"><BandBadge band={sc.band} /><Trend value={sc.trend_4w} /></div>
+              <div className="mt-1 text-xs text-muted">{fmt(sc.cohort_percentile, 0)}th percentile in {p.dept} Y{p.year} · cohort avg {fmt(sc.cohort_avg, 0)}</div>
+            </div>
           </div>
         </div>
-        <div className="flex items-center gap-6">
-          <div className="text-right">
-            <div className="text-xs text-muted">Student Success Score</div>
-            <div className="text-5xl font-semibold leading-none">{fmt(sc.success_score, 0)}<span className="text-lg text-muted">/100</span></div>
-            <div className="mt-1.5 flex items-center justify-end gap-2"><BandBadge band={sc.band} /><Trend value={sc.trend_4w} /></div>
-            <div className="mt-1 text-xs text-muted">{fmt(sc.cohort_percentile, 0)}th percentile in {p.dept} Y{p.year} (avg {fmt(sc.cohort_avg, 0)})</div>
-          </div>
+        <div className="flex flex-wrap items-center gap-2 border-t border-line px-5 py-3">
+          <span className="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-ink">Segment: {sc.segment}</span>
+          <RiskBadge tier={d.risk.academic.tier} label="Academic risk" />
+          <RiskBadge tier={d.risk.placement.tier} label="Placement risk" />
+          {sc.sliding && <span className="rounded-full bg-critical/10 px-2.5 py-1 text-xs font-medium text-critical-text">Sliding: −{Math.abs(sc.trend_4w).toFixed(1)} pts in 4 weeks</span>}
+          {sc.low_confidence && <span className="rounded-full bg-warn/15 px-2.5 py-1 text-xs font-medium text-warn-text">Low confidence: missing data</span>}
+          <nav className="ml-auto flex flex-wrap gap-1 text-xs" aria-label="Sections">
+            {[['risk', 'Risk'], ['drivers', 'Drivers'], ['whatif', 'What-if'], ['actions', 'Actions'], ['data', 'All data']].map(([id, l]) => (
+              <a key={id} href={`#${id}`} onClick={(e) => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
+                className="rounded-lg px-2.5 py-1 font-medium text-ink-2 hover:bg-surface-2 hover:text-ink">{l}</a>
+            ))}
+          </nav>
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div id="risk" className="grid scroll-mt-20 gap-4 lg:grid-cols-2">
         {(['academic', 'placement'] as const).map((k) => {
           const r = d.risk[k]
           return (
@@ -84,7 +98,7 @@ export default function Student360() {
         })}
       </div>
 
-      <div className="mt-4 grid gap-4 lg:grid-cols-2">
+      <div id="drivers" className="mt-4 grid scroll-mt-20 gap-4 lg:grid-cols-2">
         <Card title="Domain profile vs cohort" subtitle="Six domain sub-scores (0–100) against the dept × year average">
           <Radar label="Domain scores vs cohort" indicators={DOMAINS.map((x) => DOMAIN_LABEL[x])}
             series={[{ name: p.name.split(' ')[0], data: DOMAINS.map((x) => sc.domains[x]) }, { name: 'Cohort avg', data: DOMAINS.map((x) => sc.cohort_domains[x]) }]} />
@@ -94,7 +108,7 @@ export default function Student360() {
         </Card>
       </div>
 
-      <div className="mt-4 grid gap-4 lg:grid-cols-5">
+      <div id="whatif" className="mt-4 grid scroll-mt-20 gap-4 lg:grid-cols-5">
         <Card className="lg:col-span-3" title="Success Score trend" subtitle="Weekly snapshots this term vs cohort average">
           <LineChart label="Weekly success score" x={d.history.weeks.map((w: number) => `Wk ${w}`)} height={240}
             series={[{ name: 'Student', data: d.history.score }, { name: 'Cohort avg', data: d.history.cohort, dashed: true, color: 'var(--muted)' }]}
@@ -127,7 +141,7 @@ export default function Student360() {
         </Card>
       </div>
 
-      <div className="mt-4 grid gap-4 lg:grid-cols-2">
+      <div id="actions" className="mt-4 grid scroll-mt-20 gap-4 lg:grid-cols-2">
         <Card title={<span className="inline-flex items-center gap-1.5"><Lightbulb className="h-4 w-4" /> Recommended interventions</span>} subtitle="Generated from this student's risk drivers and segment playbook">
           {assign && <AssignPanel ids={[p.student_id]} preset={[assign.action, assign.owner]} reason={assign.reason} onDone={() => { setAssign(null); reload() }} />}
           <ul className="space-y-2">
@@ -156,6 +170,7 @@ export default function Student360() {
         </Card>
       </div>
 
+      <div id="data" className="scroll-mt-20" />
       <Card className="mt-4" title="Unified Student 360: all indicators by source" subtitle="Raw values after cleaning and integration, compared with the cohort median">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {SOURCES.filter((s) => d.indicators.some((i: any) => i.source === s)).map((s) => (

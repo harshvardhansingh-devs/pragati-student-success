@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api'
 import { useAuth } from '../App'
-import { Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, Loading, PageHeader, useApi } from '../ui'
+import { Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, PageHeader, PageSkeleton, toast, useApi } from '../ui'
 
 export default function Methodology() {
   const { data, error, loading, reload } = useApi('/model')
@@ -10,7 +10,7 @@ export default function Methodology() {
   const [msg, setMsg] = useState('')
   const [busy, setBusy] = useState(false)
   useEffect(() => { if (data) setW(Object.fromEntries(DOMAINS.map((d) => [d, Math.round(data.weights[d] * 100)]))) }, [data])
-  if (loading && !data) return <Loading />
+  if (loading && !data) return <PageSkeleton />
   if (error) return <ErrorBox error={error} />
   const sum = Object.values(w).reduce((a, b) => a + b, 0)
   const admin = session!.user.role === 'admin'
@@ -21,6 +21,7 @@ export default function Methodology() {
     try {
       const r = await api('/config/weights', { method: 'PUT', body: { weights: Object.fromEntries(DOMAINS.map((d) => [d, w[d] / 100])) } })
       setMsg(`Saved as version ${r.version}; ${r.summary.students} students re-scored in ${r.summary.seconds}s.`)
+      toast(`Weights v${r.version} saved; all students re-scored`)
       reload()
     } catch (e: any) { setMsg(e.message) } finally { setBusy(false) }
   }
@@ -30,7 +31,7 @@ export default function Methodology() {
     <div>
       <PageHeader title="Student Success Score: Methodology" subtitle="Transparent, weighted, explainable. Every score and risk flag can be traced back to its indicators." />
       <div className="grid gap-4 lg:grid-cols-2">
-        <Card title="1 · Domain weights" subtitle={`Version ${data.weights_version}. For Years 1–2, ${Math.round(data.early_year_shift * 100)} pts of the Placement weight move to Academic.`}>
+        <Card title="1 · Domain weights" subtitle={`${data.weights_version ? `Version ${data.weights_version}` : 'Default weights'}. For Years 1–2, ${Math.round(data.early_year_shift * 100)} pts of the Placement weight move to Academic.`}>
           <ul className="space-y-3">
             {DOMAINS.map((d) => (
               <li key={d}>
@@ -55,7 +56,7 @@ export default function Methodology() {
             <li>Sliding alert: score dropped ≥ 10 points across the last 4 weekly snapshots.</li>
           </ol>
           <h3 className="mt-4 text-sm font-semibold">3 · Risk flags (separate from the score)</h3>
-          <p className="mt-1 text-sm text-ink-2">Two interpretable logistic-regression models predict <b>academic setback</b> and <b>placement unreadiness</b>. Tiers: High ≥ {data.risk.high * 100}%, Medium ≥ {data.risk.medium * 100}%. Hard rules always flag High (attendance &lt; 75% detention rule, ≥ 2 backlogs, final year with coding &lt; 30). Per-student drivers are exact additive contributions (coefficient × standardised value).</p>
+          <p className="mt-1 text-sm text-ink-2">Two interpretable logistic-regression models predict <b>academic setback</b> and <b>placement unreadiness</b>. Tiers: High ≥ {data.risk.high * 100}%, Medium ≥ {data.risk.medium * 100}%. Hard rules always flag High (attendance &lt; 75% detention rule, ≥ 3 backlogs, final year with coding &lt; 30). Per-student drivers are exact additive contributions (coefficient × standardised value).</p>
           <div className="mt-3 grid grid-cols-2 gap-2 text-center text-sm">
             {Object.entries(m).map(([k, v]: any) => (
               <div key={k} className="rounded-lg bg-surface-2 p-3"><div className="text-xs text-muted">{k} model (hold-out)</div><div className="mt-1 font-semibold tnum">AUC {v.auc}</div><div className="text-xs text-muted">recall {Math.round(v.recall_high_or_medium * 100)}% · base rate {Math.round(v.base_rate * 100)}%</div></div>

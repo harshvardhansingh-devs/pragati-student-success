@@ -53,14 +53,14 @@ RISK_FEATURES = {
 }
 LABEL_COL = {"academic": "academic_setback", "placement": "placement_unready"}
 TREND_LABELS = {"attendance_trend": "Attendance change (4 wks)", "lms_trend": "Assignment completion change (4 wks)"}
-HIGH, MEDIUM = 0.60, 0.35
-SEGMENTS = {  # prototype domain profiles (academic, attendance, lms, placement, skills, engagement) + playbook
-    "All-rounders": ([80, 85, 80, 75, 75, 65], "Peer mentors; stretch goals and competitive placements"),
-    "Academic Star, Placement-Unready": ([80, 82, 78, 35, 45, 40], "DSA / coding bootcamp, 2 mock interviews, certification track"),
-    "Placement-Ready, Academically Average": ([55, 72, 60, 70, 68, 55], "Protect CGPA cut-offs: backlog clearance, subject remedials"),
-    "Engaged but Struggling": ([45, 68, 55, 45, 55, 70], "Remedial classes + time-management coaching; keep club involvement"),
-    "Silent Disengager": ([55, 45, 30, 45, 50, 30], "Mentor outreach within a week; counselling; parent connect"),
-    "Multi-domain Risk": ([35, 55, 40, 30, 35, 30], "Intensive case management: weekly mentor meetings across all areas"),
+HIGH, MEDIUM = 0.70, 0.40
+SEGMENTS = {  # relative profile in z-units vs all students (academic, attendance, lms, placement, skills, engagement) + playbook
+    "All-rounders": ([1, 0.5, 0.7, 1.2, 1.2, 0.5], "Peer mentors; stretch goals and competitive placements"),
+    "Academic Star, Placement-Unready": ([0.8, 0.5, 0.7, -0.3, -0.3, -1], "DSA / coding bootcamp, 2 mock interviews, certification track"),
+    "Campus-Active, Placement-Unready": ([0.5, 0.5, 0.5, -0.3, 0, 1.2], "Channel club energy into placement prep: coding club, hackathons, mock interviews"),
+    "Engaged but Struggling": ([-1, -0.3, -0.6, 0, 0, 0.8], "Remedial classes + time-management coaching; keep club involvement"),
+    "Silent Disengager": ([-1, -2, -1.5, -0.3, -0.3, -0.5], "Mentor outreach within a week; counselling; parent connect"),
+    "Multi-domain Risk": ([-0.7, 0, -0.3, -1, -1, -1], "Intensive case management: weekly mentor meetings across all areas"),
 }
 ACTIONS = {
     "attendance": ("Attendance counselling + parent connect", "Mentor"),
@@ -145,7 +145,7 @@ def rules(row, kind):
     if kind == "academic":
         if row.get("attendance_term", 100) < 75:
             r.append("Attendance below 75% (detention risk)")
-        if row.get("active_backlogs", 0) >= 2:
+        if row.get("active_backlogs", 0) >= 3:
             r.append(f"{int(row['active_backlogs'])} active backlogs")
     elif row.get("year") == 4 and row.get("coding", 100) < 30:
         r.append("Final year with coding score below 30")
@@ -186,7 +186,9 @@ class RiskModel:
 
 
 def segment(dom):
-    X = dom[DOMAINS].values
+    """K-Means on standardised domain scores; clusters named by matching centroids to relative prototype profiles."""
+    raw = dom[DOMAINS].values
+    X = (raw - raw.mean(axis=0)) / raw.std(axis=0)
     km = KMeans(n_clusters=len(SEGMENTS), n_init=10, random_state=42).fit(X)
     names = list(SEGMENTS)
     proto = np.array([SEGMENTS[n][0] for n in names])

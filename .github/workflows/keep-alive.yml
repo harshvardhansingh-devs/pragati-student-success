@@ -1,0 +1,11 @@
+# Render's free tier sleeps after 15 min idle; ping it so evaluators never hit a cold start.
+name: keep-alive
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsS -m 120 --retry 3 --retry-delay 20 https://pragati-9l3m.onrender.com/api/v1/health

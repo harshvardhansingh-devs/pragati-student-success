@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Search } from 'lucide-react'
+import { ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Search, SearchX, X } from 'lucide-react'
 import { qs } from '../api'
-import { BandBadge, Card, ErrorBox, Loading, PageHeader, RiskBadge, Select, Trend, fmt, pct, useApi } from '../ui'
+import { Avatar, BandBadge, Card, Empty, ErrorBox, PageHeader, RiskBadge, ScoreRing, Select, Skeleton, Trend, fmt, pct, useApi } from '../ui'
 import AssignPanel from './AssignPanel'
 
-const SEGMENTS = ['All-rounders', 'Academic Star, Placement-Unready', 'Placement-Ready, Academically Average', 'Engaged but Struggling', 'Silent Disengager', 'Multi-domain Risk']
+const SEGMENTS = ['All-rounders', 'Academic Star, Placement-Unready', 'Campus-Active, Placement-Unready', 'Engaged but Struggling', 'Silent Disengager', 'Multi-domain Risk']
 const TABS = {
   academic: { label: 'Academic risk', filter: { academic_risk: 'High,Medium' }, sort: '-academic_risk_prob' },
   placement: { label: 'Placement risk', filter: { placement_risk: 'High,Medium' }, sort: '-placement_risk_prob' },
@@ -31,9 +31,9 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
   const page = Number(f('page') || 1)
   const query = useMemo(() => qs({
     ...(mode === 'risk' ? TABS[tab].filter : {}),
-    dept: f('dept'), year: f('year'), band: f('band'), segment: f('segment'), q: f('q'),
+    dept: f('dept'), year: f('year'), band: f('band'), segment: f('segment'), q: f('q'), below_75: f('below_75'),
     ...(mode === 'all' ? { academic_risk: f('academic_risk'), placement_risk: f('placement_risk'), sliding: f('sliding') } : {}),
-    sort, page, size: 25,
+    focus: mode === 'risk' && tab !== 'sliding' ? tab : undefined, sort, page, size: 25,
   }), [params, mode]) // eslint-disable-line
   const { data, error, loading, reload } = useApi(`/students?${query}`)
 
@@ -93,14 +93,21 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
           ) : <div />}
         </div>
 
+        {f('below_75') && (
+          <div className="mb-3 flex flex-wrap gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-critical/10 px-3 py-1 text-xs font-medium text-critical-text">
+              Term attendance below 75% <button aria-label="Clear filter" onClick={() => set('below_75', '')}><X className="h-3.5 w-3.5" /></button>
+            </span>
+          </div>
+        )}
         {selected.size > 0 && <AssignPanel ids={[...selected]} onDone={() => { setSelected(new Set()); reload() }} />}
 
-        {error ? <ErrorBox error={error} /> : loading && !data ? <Loading /> : (
+        {error ? <ErrorBox error={error} /> : loading && !data ? <div className="space-y-2">{Array.from({ length: 8 }, (_, i) => <Skeleton key={i} className="h-12" />)}</div> : (
           <>
             <div className="mb-2 text-xs text-muted">{data.total.toLocaleString()} students match · select rows to assign an intervention in bulk</div>
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[960px] text-sm tnum">
-                <thead className="text-left text-xs text-muted">
+              <table className="w-full min-w-[1180px] text-sm tnum">
+                <thead className="whitespace-nowrap text-left text-xs text-muted">
                   <tr className="border-b border-line">
                     <th className="w-8 py-2"><input type="checkbox" aria-label="Select all on page" checked={items.length > 0 && items.every((i) => selected.has(i.student_id))}
                       onChange={(e) => setSelected((s) => { const n = new Set(s); items.forEach((i) => e.target.checked ? n.add(i.student_id) : n.delete(i.student_id)); return n })} /></th>
@@ -118,26 +125,29 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
                 </thead>
                 <tbody>
                   {items.map((s) => (
-                    <tr key={s.student_id} className="border-b border-line last:border-0 hover:bg-surface-2">
+                    <tr key={s.student_id} className={`border-b border-line last:border-0 hover:bg-surface-2 ${selected.has(s.student_id) ? 'bg-accent-soft' : ''}`}>
                       <td className="py-2"><input type="checkbox" aria-label={`Select ${s.name}`} checked={selected.has(s.student_id)} onChange={() => toggle(s.student_id)} /></td>
                       <td className="py-2 pr-3">
-                        <button onClick={() => nav(`/students/${s.student_id}`)} className="text-left">
-                          <div className="font-medium text-ink hover:text-accent-ink hover:underline">{s.name}</div>
-                          <div className="text-xs text-muted">{s.student_id}</div>
+                        <button onClick={() => nav(`/students/${s.student_id}`)} className="flex items-center gap-2.5 text-left">
+                          <Avatar name={s.name} band={s.band} size={32} />
+                          <span>
+                            <span className="block whitespace-nowrap font-medium text-ink hover:text-accent-ink hover:underline">{s.name}</span>
+                            <span className="block text-xs text-muted">{s.student_id}</span>
+                          </span>
                         </button>
                       </td>
-                      <td className="py-2 pr-3 text-ink-2">{s.dept} · {s.year}{s.section}</td>
-                      <td className="py-2 pr-3"><div className="flex items-center gap-2"><span className="w-9 font-semibold">{fmt(s.success_score)}</span><BandBadge band={s.band} /></div></td>
+                      <td className="whitespace-nowrap py-2 pr-3 text-ink-2">{s.dept} · {s.year}{s.section}</td>
+                      <td className="py-2 pr-3"><div className="flex items-center gap-2"><ScoreRing score={s.success_score} size={36} stroke={4} /><BandBadge band={s.band} /></div></td>
                       <td className="py-2 pr-3"><Trend value={s.trend_4w} /></td>
                       <td className="py-2 pr-3"><div className="flex items-center gap-1.5"><RiskBadge tier={s.academic_risk} /><span className="text-xs text-muted">{pct(s.academic_risk_prob)}</span></div></td>
                       <td className="py-2 pr-3"><div className="flex items-center gap-1.5"><RiskBadge tier={s.placement_risk} /><span className="text-xs text-muted">{pct(s.placement_risk_prob)}</span></div></td>
-                      <td className="max-w-[180px] truncate py-2 pr-3 text-xs text-ink-2" title={s.top_driver ?? ''}>{s.top_driver ?? '–'}</td>
+                      <td className="max-w-[200px] truncate py-2 pr-3 text-xs text-ink-2" title={s.top_driver ?? ''}>{s.top_driver ?? '–'}</td>
                       <td className="max-w-[160px] truncate py-2 pr-3 text-xs text-ink-2" title={s.segment}>{s.segment}</td>
                       <td className={`py-2 pr-3 ${s.attendance_term < 75 ? 'font-semibold text-critical-text' : ''}`}>{fmt(s.attendance_term, 0)}%</td>
                       <td className="py-2 pr-3">{fmt(s.cgpa, 2)}</td>
                     </tr>
                   ))}
-                  {!items.length && <tr><td colSpan={11} className="py-10 text-center text-muted">No students match these filters.</td></tr>}
+                  {!items.length && <tr><td colSpan={11}><Empty icon={<SearchX className="h-5 w-5" />} title="No students match these filters" text="Try removing a filter or searching by a different name or ID." /></td></tr>}
                 </tbody>
               </table>
             </div>

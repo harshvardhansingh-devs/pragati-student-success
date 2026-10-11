@@ -73,15 +73,19 @@ def interventions_df():
 
 
 def apply_filters(df, dept=None, year=None, section=None, band=None, academic_risk=None, placement_risk=None,
-                  segment=None, sliding=None, q=None, mentor_id=None):
+                  segment=None, sliding=None, q=None, mentor_id=None, below_75=None):
     for col, v in [("dept", dept), ("section", section), ("band", band), ("academic_risk", academic_risk),
-                   ("placement_risk", placement_risk), ("segment", segment), ("mentor_id", mentor_id)]:
+                   ("placement_risk", placement_risk), ("mentor_id", mentor_id)]:
         if v:
-            df = df[df[col].isin(v.split(","))]
+            df = df[df[col].isin(v.split(","))]  # comma = OR
+    if segment:
+        df = df[df.segment == segment]  # segment names contain commas, so exact match only
     if year:
         df = df[df.year.isin([int(y) for y in str(year).split(",")])]
     if sliding is not None:
         df = df[df.sliding == sliding]
+    if below_75:
+        df = df[df.attendance_term < 75]
     if q:
         df = df[df.name.str.contains(q, case=False) | df.student_id.str.contains(q, case=False)]
     return df
@@ -133,6 +137,9 @@ def overview(user=Depends(current_user)):
                   academic_high=int((df.academic_risk == "High").sum()), placement_high=int((df.placement_risk == "High").sum()),
                   academic_medium=int((df.academic_risk == "Medium").sum()), placement_medium=int((df.placement_risk == "Medium").sum()),
                   sliding=int(df.sliding.sum()), below_75=int((df.attendance_term < 75).sum()),
+                  needs_attention=int(((df.academic_risk == "High") | (df.placement_risk == "High")).sum()),
+                  senior_placement_high=int(((df.year >= 3) & (df.placement_risk == "High")).sum()),
+                  star_unready=int((df.segment == "Academic Star, Placement-Unready").sum()),
                   open_interventions=int((iv.status != "done").sum()) if len(iv) else 0, sources=len(pipeline.SOURCES) - 1),
         by_dept=records(by_dept),
         band_by_dept=dict(depts=list(band_dept.index), bands=list(band_dept.columns), values=band_dept.values.tolist()),
@@ -173,15 +180,22 @@ def hotspots(user=Depends(current_user)):
 @api.get("/students")
 def list_students(dept: str = None, year: str = None, section: str = None, band: str = None, academic_risk: str = None,
                   placement_risk: str = None, segment: str = None, sliding: bool = None, q: str = None, mentor_id: str = None,
-                  sort: str = "-academic_risk_prob", page: int = 1, size: int = 25, user=Depends(current_user)):
-    df = apply_filters(scores(user), dept, year, section, band, academic_risk, placement_risk, segment, sliding, q, mentor_id)
+                  below_75: bool = None, focus: str = None, sort: str = "-academic_risk_prob", page: int = 1, size: int = 25,
+                  user=Depends(current_user)):
+    df = apply_filters(scores(user), dept, year, section, band, academic_risk, placement_risk, segment, sliding, q, mentor_id, below_75)
     key = sort.lstrip("-")
     if key in df.columns:
         df = df.sort_values(key, ascending=not sort.startswith("-"), na_position="last")
     size = max(1, min(size, 200))
     out = df.iloc[(page - 1) * size: page * size].copy()
-    out["top_driver"] = [((a[0]["label"] if a else None) if ar != "Low" else None) or ((p[0]["label"] if p else None) if pr != "Low" else None)
-                         for a, p, ar, pr in zip(out.academic_drivers, out.placement_drivers, out.academic_risk, out.placement_risk)]
+    def top(r):  # driver of the risk being viewed (focus), else of the more likely risk
+        kinds = ["placement", "academic"] if focus == "placement" or (focus != "academic" and r["placement_risk_prob"] > r["academic_risk_prob"]) else ["academic", "placement"]
+        for k in kinds:
+            if r[f"{k}_risk"] != "Low" and r[f"{k}_drivers"]:
+                label = r[f"{k}_drivers"][0]["label"]
+                return label if focus else f"{label} ({k})"
+        return None
+    out["top_driver"] = [top(r) for r in out.to_dict("records")] if len(out) else []
     return clean(dict(total=len(df), page=page, size=size, items=records(out[LIST_COLS + ["top_driver"]])))
 
 

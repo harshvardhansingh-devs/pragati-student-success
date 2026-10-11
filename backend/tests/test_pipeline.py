@@ -23,6 +23,10 @@ def test_end_to_end():
     assert all(m.metrics["auc"] > 0.65 for m in st["models"].values())
     # rule: below 75% attendance is always High academic risk
     assert (s[s.attendance_term < 75].academic_risk == "High").all()
+    # filters: segment names contain commas and must still match exactly
+    from app.main import apply_filters
+    assert len(apply_filters(s, segment="Academic Star, Placement-Unready")) == (s.segment == "Academic Star, Placement-Unready").sum() > 0
+    assert len(apply_filters(s, academic_risk="High,Medium")) == s.academic_risk.isin(["High", "Medium"]).sum()
     # what-if: better coding + mocks must not increase placement risk
     row = s[s.placement_risk == "High"].iloc[0].to_dict()
     feats = {k: row[k] for k in ["student_id", "dept", "year"] + list(scoring.INDICATORS) + ["attendance_trend", "lms_trend"]}

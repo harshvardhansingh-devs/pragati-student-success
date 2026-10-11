@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api } from '../api'
-import { Bar, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, Loading, PageHeader, fmt, useApi } from '../ui'
+import { Bar, Button, Card, DOMAINS, DOMAIN_LABEL, ErrorBox, PageHeader, PageSkeleton, ScoreRing, fmt, toast, useApi } from '../ui'
 
 export default function Segments() {
   const { data, error, loading } = useApi('/segments')
   const nav = useNavigate()
   const [msg, setMsg] = useState<Record<string, string>>({})
-  if (loading && !data) return <Loading />
+  if (loading && !data) return <PageSkeleton />
   if (error) return <ErrorBox error={error} />
 
   const assignAll = async (seg: string, playbook: string) => {
+    try { await doAssign(seg, playbook) } catch (e: any) { toast(e.message, 'error') }
+  }
+  const doAssign = async (seg: string, playbook: string) => {
     const ids: string[] = []
     for (let page = 1; ; page++) {
       const r = await api(`/students?segment=${encodeURIComponent(seg)}&size=200&page=${page}`)
@@ -19,6 +22,7 @@ export default function Segments() {
     }
     const r = await api('/interventions', { body: { student_ids: ids, action: playbook, owner: 'Mentor', reason: `Segment playbook: ${seg}`, due_in_days: 30 } })
     setMsg({ ...msg, [seg]: `Playbook assigned to ${r.created} students` })
+    toast(`${seg}: playbook assigned to ${r.created} students`)
   }
 
   return (
@@ -26,7 +30,7 @@ export default function Segments() {
       <PageHeader title="Student Segments" subtitle={<>K-Means clustering (k = {data.method.k}, silhouette {data.method.silhouette}) on the six domain scores. Clusters are named by matching each centroid to an interpretable profile, and each segment carries a targeted playbook.</>} />
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {data.segments.map((s: any) => (
-          <Card key={s.segment} title={s.segment} subtitle={`${s.students} students · avg score ${fmt(s.avg_score, 0)}`}>
+          <Card key={s.segment} title={s.segment} subtitle={`${s.students} students · ${s.academic_high + s.placement_high} high-risk flags`} action={<ScoreRing score={s.avg_score} size={44} stroke={5} />}>
             <ul className="space-y-1.5">
               {DOMAINS.map((d) => (
                 <li key={d} className="grid grid-cols-[110px_1fr_32px] items-center gap-2 text-xs">

@@ -10,6 +10,7 @@ from sqlalchemy import text
 from . import pipeline, scoring
 from .db import engine, has_table, init_app_tables
 
+PIPELINE_VERSION = 3  # bump when scoring logic changes → deployed instances re-score on boot
 JSON_COLS = ["academic_drivers", "placement_drivers", "academic_rules", "placement_rules"]
 _lock = threading.Lock()
 _state = {"run_id": None, "checked": 0.0}
@@ -48,7 +49,7 @@ def run_pipeline():
     }
     for name, df in tables.items():
         df.to_sql(name, engine, if_exists="replace", index=False, chunksize=2000)
-    summary = dict(students=len(scores), seconds=round(time.time() - t0, 1), segments=seg_info,
+    summary = dict(version=PIPELINE_VERSION, students=len(scores), seconds=round(time.time() - t0, 1), segments=seg_info,
                    models={k: m.metrics for k, m in models.items()})
     with engine.begin() as c:
         rid = (c.execute(text("SELECT COALESCE(MAX(run_id), 0) FROM app_pipeline_runs")).scalar() or 0) + 1
@@ -63,8 +64,8 @@ def bootstrap():
     if not has_table("raw_erp_students"):
         pipeline.load_raw_csvs()
     with engine.connect() as c:
-        runs = c.execute(text("SELECT COUNT(*) FROM app_pipeline_runs")).scalar()
-    if not runs or not has_table("an_scores"):
+        last = c.execute(text("SELECT summary FROM app_pipeline_runs ORDER BY run_id DESC LIMIT 1")).scalar()
+    if not last or not has_table("an_scores") or json.loads(last).get("version") != PIPELINE_VERSION:
         run_pipeline()
 
 

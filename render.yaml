@@ -16,5 +16,5 @@ services:
         sync: false
       - key: OPENROUTER_API_KEY
         sync: false
-      - key: AI_PROVIDER_ORDER
-        value: gemini,groq,openrouter
+      - key: AI_PROVIDER_PRIORITY
+        value: groq,openrouter,gemini

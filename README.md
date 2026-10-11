@@ -6,6 +6,8 @@ AI-powered platform that brings scattered student data together into one Student
 
 Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Student Analytics and Success Platform*.
 
+**Live demo:** https://pragati-9l3m.onrender.com  ·  **API docs:** https://pragati-9l3m.onrender.com/api/docs  ·  logins below
+
 ## Highlights
 - **7-source data integration** with ID reconciliation, cleaning and a data-quality report
 - **Student Success Score (0–100)** across 6 domains, banded and explainable ([methodology](docs/SUCCESS_SCORE.md))
@@ -13,7 +15,7 @@ Built for the KPMG × byteXL **HacXlerate** problem statement: *AI-Powered Stude
 - **Sliding alerts** for students who are declining fast, even while their score still looks fine
 - **Segmentation** into 6 named personas, each with an intervention playbook
 - **What-if simulator**, **intervention tracker** (single, bulk or whole segment), auto-generated **insight feed**
-- **AI Copilot** (natural-language questions → tool calls on the analytics API) and **AI mentor briefs**, on free-tier LLMs (Gemini → Groq → OpenRouter with automatic fallback)
+- **AI Copilot** (natural-language questions → tool calls on the analytics API) and **AI mentor briefs**, on free-tier LLMs (Groq → OpenRouter → Gemini, fastest first, with automatic fallback)
 - Role-based scoping (Admin / HoD / Mentor / Placement Officer), audit log, fairness check, configurable versioned weights, CSV upload with rollback
 
 ## Docs

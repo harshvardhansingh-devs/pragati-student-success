@@ -11,9 +11,9 @@ import openai
 import pandas as pd
 
 PROVIDERS = {
-    "gemini": ("Gemini", "GEMINI_API_KEY", "https://generativelanguage.googleapis.com/v1beta/openai/", "GEMINI_MODEL", "gemini-2.5-flash"),
-    "groq": ("Groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1", "GROQ_MODEL", "llama-3.3-70b-versatile"),
-    "openrouter": ("OpenRouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1", "OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"),
+    "gemini": ("Gemini", "GEMINI_API_KEY", "https://generativelanguage.googleapis.com/v1beta/openai/", "GEMINI_MODEL", "gemini-3.8-flash"),
+    "groq": ("Groq", "GROQ_API_KEY", "https://api.groq.com/openai/v1", "GROQ_MODEL", "openai/gpt-oss-120b"),
+    "openrouter": ("OpenRouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1", "OPENROUTER_MODEL", "nvidia/nemotron-3-super-120b-a12b:free"),
 }
 NUMERIC = ["success_score", "cgpa", "active_backlogs", "attendance_term", "attendance_recent", "assignment_completion",
            "logins_per_week", "aptitude", "coding", "mock_interviews", "technical", "soft_skills", "certifications",
@@ -47,14 +47,15 @@ TOOLS = [
 SYSTEM = """You are Pragati Copilot, an analytics assistant for college administrators and faculty.
 Always answer by calling the tools; never invent numbers. Data covers the current term
 (dept: CSE, IT, ECE, ME, CE; year 1-4; band: Thriving/On track/Watch/At risk; risk tiers: High/Medium/Low;
-segments: All-rounders, Academic Star, Placement-Unready, Placement-Ready, Academically Average, Engaged but Struggling,
+segments: All-rounders, Academic Star, Placement-Unready, Campus-Active, Placement-Unready, Engaged but Struggling,
 Silent Disengager, Multi-domain Risk). Students are identified by ID only.
 Reply in 2-5 concise sentences with the key numbers and one suggested action. Plain text, no markdown tables."""
 COLS = ["student_id", "dept", "year", "success_score", "band", "academic_risk", "placement_risk", "segment", "cgpa", "attendance_term", "coding"]
 
 
 def providers():
-    order = [p.strip() for p in os.getenv("AI_PROVIDER_ORDER", "gemini,groq,openrouter").split(",")]
+    # fastest first (measured on the copilot: Groq ~1.5 s, OpenRouter ~4 s, Gemini ~15 s)
+    order = [p.strip() for p in os.getenv("AI_PROVIDER_PRIORITY", "groq,openrouter,gemini").split(",")]
     out = []
     for key in order:
         if key in PROVIDERS and os.getenv(PROVIDERS[key][1]):
@@ -89,7 +90,7 @@ def run_tool(name, args, df):
         r = _filter(df, args.get("filters"))
         if args.get("sort_by") in NUMERIC:
             r = r.sort_values(args["sort_by"], ascending=not args.get("descending", True))
-        rows = r[COLS].head(max(1, min(int(args.get("limit") or 15), 50)))
+        rows = r[COLS].head(max(10, min(int(args.get("limit") or 15), 50)))  # show at least 10 so the table matches the stated count
         return {"count": len(r), "rows": json.loads(rows.to_json(orient="records"))}
     if name == "group_summary":
         r = _filter(df, args.get("filters"))
@@ -109,9 +110,8 @@ def _copilot_once(client, model, question, df):
         msg = client.chat.completions.create(model=model, messages=messages, tools=TOOLS, temperature=0.2).choices[0].message
         if not msg.tool_calls:
             return dict(answer=(msg.content or "").strip() or "No answer.", table=table, tools_used=used)
-        messages.append({"role": "assistant", "content": msg.content or "",
-                         "tool_calls": [{"id": c.id, "type": "function", "function": {"name": c.function.name, "arguments": c.function.arguments}}
-                                        for c in msg.tool_calls]})
+        # echo the message back unchanged: keeps provider extras such as Gemini's thought_signature on tool calls
+        messages.append(msg.model_dump(exclude_none=True))
         for c in msg.tool_calls:
             used.append(c.function.name)
             try:
