@@ -91,3 +91,11 @@ input[type="range"] { accent-color: var(--accent); }
 .prajna-anim .pb3 { animation-delay: 0.3s; }
 .prajna-anim .ps { transform-box: fill-box; transform-origin: 50% 50%; animation: prajna-spark 1.4s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .prajna-anim .pb, .prajna-anim .ps { animation: none; } }
+
+/* ---------- Mobile ergonomics ---------- */
+html { -webkit-text-size-adjust: 100%; }
+body { -webkit-tap-highlight-color: transparent; padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+@media (max-width: 640px) {
+  /* 16px stops iOS Safari auto-zooming into focused fields */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea { font-size: 16px; }
+}

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Search, SearchX, X } from 'lucide-react'
+import { ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Search, SearchX, SlidersHorizontal, X } from 'lucide-react'
 import { qs } from '../api'
 import { Avatar, BandBadge, Card, Empty, ErrorBox, PageHeader, RiskBadge, ScoreRing, Select, Skeleton, Trend, fmt, pct, useApi } from '../ui'
 import AssignPanel from './AssignPanel'
@@ -26,6 +26,8 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
   const [q, setQ] = useState(f('q'))
   useEffect(() => { const t = setTimeout(() => q !== f('q') && set('q', q), 300); return () => clearTimeout(t) }, [q]) // eslint-disable-line
   const [selected, setSelected] = useState<Set<string>>(new Set())
+  const [showFilters, setShowFilters] = useState(false)
+  const activeFilters = ['dept', 'year', 'band', 'segment', 'academic_risk', 'placement_risk', 'sliding', 'below_75'].filter((k) => params.get(k)).length
 
   const sort = f('sort') || (mode === 'risk' ? TABS[tab].sort : '-academic_risk_prob')
   const page = Number(f('page') || 1)
@@ -37,11 +39,11 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
   }), [params, mode]) // eslint-disable-line
   const { data, error, loading, reload } = useApi(`/students?${query}`)
 
-  const SortHead = ({ k, children }: { k: string; children: string }) => {
+  const SortHead = ({ k, children, wide }: { k: string; children: string; wide?: boolean }) => {
     const active = sort.replace('-', '') === k
     const desc = sort.startsWith('-')
     return (
-      <th className="py-2 pr-3 font-medium">
+      <th className={`py-2 pr-3 font-medium ${wide ? 'hidden 2xl:table-cell' : ''}`}>
         <button className="inline-flex items-center gap-0.5 hover:text-ink" onClick={() => set('sort', active && desc ? k : `-${k}`)}>
           {children}{active && (desc ? <ArrowDown className="h-3 w-3" /> : <ArrowUp className="h-3 w-3" />)}
         </button>
@@ -57,16 +59,20 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
         subtitle={mode === 'risk' ? 'Risk flags combine an ML model (probability) with hard rules (e.g. attendance below 75%). Each flag lists its top drivers.' : 'Unified Student 360 records across all seven sources. Click a student for the full profile.'} />
 
       {mode === 'risk' && (
-        <div className="mb-4 flex flex-wrap gap-1 rounded-xl border border-line bg-surface p-1" role="tablist">
+        <div className="mb-4 flex gap-1 overflow-x-auto rounded-xl border border-line bg-surface p-1" role="tablist">
           {(Object.keys(TABS) as (keyof typeof TABS)[]).map((t) => (
             <button key={t} role="tab" aria-selected={tab === t} onClick={() => { const p = new URLSearchParams(); p.set('tab', t); setParams(p) }}
-              className={`rounded-lg px-3 py-1.5 text-sm ${tab === t ? 'bg-accent text-white' : 'text-ink-2 hover:bg-surface-2'}`}>{TABS[t].label}</button>
+              className={`shrink-0 whitespace-nowrap rounded-lg px-3 py-2 text-sm ${tab === t ? 'bg-accent text-white' : 'text-ink-2 hover:bg-surface-2'}`}>{TABS[t].label}</button>
           ))}
         </div>
       )}
 
       <Card>
-        <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-7">
+        <button onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}
+          className="mb-3 inline-flex h-10 items-center gap-2 rounded-lg border border-line px-3 text-sm font-medium md:hidden">
+          <SlidersHorizontal className="h-4 w-4" /> {showFilters ? 'Hide filters' : 'Filters'}{activeFilters > 0 && <span className="rounded-full bg-accent px-1.5 text-xs text-white">{activeFilters}</span>}
+        </button>
+        <div className={`mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-7 ${showFilters ? '' : 'max-md:[&>*:not(:first-child)]:hidden'}`}>
           <label className="col-span-2 flex flex-col gap-1 text-xs text-muted sm:col-span-3 lg:col-span-2">
             Search
             <span className="relative">
@@ -104,9 +110,27 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
 
         {error ? <ErrorBox error={error} /> : loading && !data ? <div className="space-y-2">{Array.from({ length: 8 }, (_, i) => <Skeleton key={i} className="h-12" />)}</div> : (
           <>
-            <div className="mb-2 text-xs text-muted">{data.total.toLocaleString()} students match · select rows to assign an intervention in bulk</div>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[1180px] text-sm tnum">
+            <div className="mb-2 text-xs text-muted">{data.total.toLocaleString()} students match · <span className="hidden xl:inline">select rows</span><span className="xl:hidden">tick students</span> to assign an intervention in bulk</div>
+            {/* Phones / small tablets: tappable cards instead of a wide table */}
+            <ul className="grid gap-2 md:grid-cols-2 xl:hidden">
+              {items.map((s) => (
+                <li key={s.student_id} className={`flex items-stretch gap-2 rounded-xl border border-line ${selected.has(s.student_id) ? 'bg-accent-soft' : 'bg-surface'}`}>
+                  <label className="flex items-center pl-3"><input type="checkbox" className="h-5 w-5" aria-label={`Select ${s.name}`} checked={selected.has(s.student_id)} onChange={() => toggle(s.student_id)} /></label>
+                  <button onClick={() => nav(`/students/${s.student_id}`)} className="flex min-w-0 flex-1 items-center gap-3 py-3 pr-3 text-left">
+                    <ScoreRing score={s.success_score} size={46} stroke={5} />
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-center gap-1.5"><span className="truncate font-semibold">{s.name}</span><Trend value={s.trend_4w} /></span>
+                      <span className="block text-xs text-muted">{s.student_id} · {s.dept} Y{s.year}{s.section} · CGPA {fmt(s.cgpa, 1)} · Att {fmt(s.attendance_term, 0)}%</span>
+                      <span className="mt-1.5 flex flex-wrap gap-1"><BandBadge band={s.band} /><RiskBadge tier={s.academic_risk} label="Acad" /><RiskBadge tier={s.placement_risk} label="Place" /></span>
+                      {s.top_driver && <span className="mt-1 block truncate text-xs text-ink-2">Why: {s.top_driver}</span>}
+                    </span>
+                  </button>
+                </li>
+              ))}
+              {!items.length && <li><Empty icon={<SearchX className="h-5 w-5" />} title="No students match these filters" text="Try removing a filter or searching by a different name or ID." /></li>}
+            </ul>
+            <div className="hidden overflow-x-auto xl:block">
+              <table className="w-full min-w-[880px] text-sm tnum 2xl:min-w-[1180px]">
                 <thead className="whitespace-nowrap text-left text-xs text-muted">
                   <tr className="border-b border-line">
                     <th className="w-8 py-2"><input type="checkbox" aria-label="Select all on page" checked={items.length > 0 && items.every((i) => selected.has(i.student_id))}
@@ -118,9 +142,9 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
                     <SortHead k="academic_risk_prob">Academic risk</SortHead>
                     <SortHead k="placement_risk_prob">Placement risk</SortHead>
                     <th className="py-2 pr-3 font-medium">Top driver</th>
-                    <th className="py-2 pr-3 font-medium">Segment</th>
-                    <SortHead k="attendance_term">Attend.</SortHead>
-                    <SortHead k="cgpa">CGPA</SortHead>
+                    <th className="hidden py-2 pr-3 font-medium 2xl:table-cell">Segment</th>
+                    <SortHead k="attendance_term" wide>Attend.</SortHead>
+                    <SortHead k="cgpa" wide>CGPA</SortHead>
                   </tr>
                 </thead>
                 <tbody>
@@ -142,19 +166,19 @@ export default function Students({ mode }: { mode: 'all' | 'risk' }) {
                       <td className="py-2 pr-3"><div className="flex items-center gap-1.5"><RiskBadge tier={s.academic_risk} /><span className="text-xs text-muted">{pct(s.academic_risk_prob)}</span></div></td>
                       <td className="py-2 pr-3"><div className="flex items-center gap-1.5"><RiskBadge tier={s.placement_risk} /><span className="text-xs text-muted">{pct(s.placement_risk_prob)}</span></div></td>
                       <td className="max-w-[200px] truncate py-2 pr-3 text-xs text-ink-2" title={s.top_driver ?? ''}>{s.top_driver ?? '–'}</td>
-                      <td className="max-w-[160px] truncate py-2 pr-3 text-xs text-ink-2" title={s.segment}>{s.segment}</td>
-                      <td className={`py-2 pr-3 ${s.attendance_term < 75 ? 'font-semibold text-critical-text' : ''}`}>{fmt(s.attendance_term, 0)}%</td>
-                      <td className="py-2 pr-3">{fmt(s.cgpa, 2)}</td>
+                      <td className="hidden max-w-[160px] truncate py-2 pr-3 text-xs text-ink-2 2xl:table-cell" title={s.segment}>{s.segment}</td>
+                      <td className={`hidden py-2 pr-3 2xl:table-cell ${s.attendance_term < 75 ? 'font-semibold text-critical-text' : ''}`}>{fmt(s.attendance_term, 0)}%</td>
+                      <td className="hidden py-2 pr-3 2xl:table-cell">{fmt(s.cgpa, 2)}</td>
                     </tr>
                   ))}
                   {!items.length && <tr><td colSpan={11}><Empty icon={<SearchX className="h-5 w-5" />} title="No students match these filters" text="Try removing a filter or searching by a different name or ID." /></td></tr>}
                 </tbody>
               </table>
             </div>
-            <div className="mt-3 flex items-center justify-end gap-2 text-sm">
+            <div className="mt-3 flex items-center justify-between gap-2 text-sm xl:justify-end">
               <span className="text-muted">Page {page} of {Math.max(1, Math.ceil(data.total / 25))}</span>
-              <button aria-label="Previous page" disabled={page <= 1} onClick={() => set('page', String(page - 1))} className="rounded-lg border border-line p-1.5 disabled:opacity-40"><ChevronLeft className="h-4 w-4" /></button>
-              <button aria-label="Next page" disabled={page * 25 >= data.total} onClick={() => set('page', String(page + 1))} className="rounded-lg border border-line p-1.5 disabled:opacity-40"><ChevronRight className="h-4 w-4" /></button>
+              <button aria-label="Previous page" disabled={page <= 1} onClick={() => set('page', String(page - 1))} className="rounded-lg border border-line p-2.5 disabled:opacity-40 xl:p-1.5"><ChevronLeft className="h-4 w-4" /></button>
+              <button aria-label="Next page" disabled={page * 25 >= data.total} onClick={() => set('page', String(page + 1))} className="rounded-lg border border-line p-2.5 disabled:opacity-40 xl:p-1.5"><ChevronRight className="h-4 w-4" /></button>
             </div>
           </>
         )}

@@ -119,10 +119,10 @@ export function Radar({ indicators, series, height = 280, label }: { indicators:
 export function Diverging({ labels, values, height, label, unit = 'pts' }: { labels: string[]; values: number[]; height?: number; label: string; unit?: string }) {
   return (
     <Chart label={label} height={height ?? Math.max(160, labels.length * 26 + 30)} option={(t) => ({
-      grid: { left: 170, right: 40, top: 6, bottom: 20 },
+      grid: { left: window.innerWidth < 640 ? 118 : 170, right: 40, top: 6, bottom: 20 },
       tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: (v: number) => `${v > 0 ? '+' : ''}${v.toFixed(2)} ${unit} vs cohort` },
       xAxis: { type: 'value', ...axis(t) },
-      yAxis: { type: 'category', data: labels, inverse: true, ...axis(t), axisLabel: { color: t.ink2, fontSize: 11, width: 160, overflow: 'truncate' } },
+      yAxis: { type: 'category', data: labels, inverse: true, ...axis(t), axisLabel: { color: t.ink2, fontSize: 11, width: window.innerWidth < 640 ? 110 : 160, overflow: 'truncate' } },
       series: [{ type: 'bar', barWidth: 12, data: values.map((v) => ({ value: v, itemStyle: { color: v >= 0 ? t.series[0] : t.critical, borderRadius: v >= 0 ? [0, 4, 4, 0] : [4, 0, 0, 4] } })),
         label: { show: true, position: 'right', color: t.ink2, fontSize: 11, formatter: (p: any) => `${p.value > 0 ? '+' : ''}${p.value.toFixed(1)}` } }],
     })} />

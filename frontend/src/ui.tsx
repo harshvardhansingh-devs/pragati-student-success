@@ -148,7 +148,7 @@ export function Select({ value, onChange, options, label }: { value: string; onC
     <label className="flex flex-col gap-1 text-xs text-muted">
       {label}
       <select value={value} onChange={(e) => onChange(e.target.value)}
-        className="h-9 rounded-lg border border-line bg-surface px-2 text-sm text-ink">
+        className="h-10 rounded-lg border border-line bg-surface px-2 text-sm text-ink sm:h-9">
         <option value="">All</option>
         {options.map((o) => {
           const [v, l] = Array.isArray(o) ? o : [o, o]
@@ -167,7 +167,7 @@ export function Button({ children, onClick, variant = 'primary', disabled, type 
   }[variant]
   return (
     <button type={type} onClick={onClick} disabled={disabled}
-      className={`inline-flex h-9 items-center justify-center gap-1.5 rounded-lg px-3 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50 ${v} ${className}`}>
+      className={`inline-flex h-10 items-center justify-center gap-1.5 rounded-lg px-3 text-sm font-medium transition sm:h-9 disabled:cursor-not-allowed disabled:opacity-50 ${v} ${className}`}>
       {children}
     </button>
   )

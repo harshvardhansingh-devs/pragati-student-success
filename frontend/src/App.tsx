@@ -90,9 +90,9 @@ function GlobalSearch() {
           if (e.key === 'Enter' && items[active]) go(items[active].student_id)
           if (e.key === 'Escape') ref.current?.blur()
         }}
-        placeholder="Search students by name or ID…" aria-label="Search students" role="combobox" aria-expanded={open && items.length > 0}
-        className="h-9 w-full rounded-xl border border-line bg-surface-2 pl-9 pr-10 text-sm text-ink placeholder:text-muted focus:bg-surface" />
-      <kbd className="pointer-events-none absolute right-2.5 top-2 rounded border border-line px-1.5 text-[11px] text-muted">/</kbd>
+        placeholder="Search students…" aria-label="Search students" role="combobox" aria-expanded={open && items.length > 0}
+        className="h-10 w-full rounded-xl border border-line bg-surface-2 pl-9 pr-3 text-sm text-ink placeholder:text-muted focus:bg-surface sm:h-9 sm:pr-10" />
+      <kbd className="pointer-events-none absolute right-2.5 top-2 hidden rounded border border-line px-1.5 text-[11px] text-muted sm:block">/</kbd>
       {open && items.length > 0 && (
         <ul className="card absolute left-0 right-0 top-11 z-40 overflow-hidden p-1 shadow-xl" role="listbox">
           {items.map((s, i) => (

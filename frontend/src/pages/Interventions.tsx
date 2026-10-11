@@ -18,7 +18,26 @@ export default function Interventions() {
       <PageHeader title="Interventions" subtitle="Every risk flag becomes a tracked action with an owner and due date, closing the loop from insight to outcome." />
       <div className="grid gap-4 xl:grid-cols-4">
         <Card className="xl:col-span-3" title="Action tracker" action={<div className="w-40"><Select label="Status" value={status} onChange={setStatus} options={[['open', 'Open'], ['in_progress', 'In progress'], ['done', 'Done']]} /></div>}>
-          <div className="overflow-x-auto">
+          <ul className="grid gap-2 md:grid-cols-2 xl:hidden">
+            {data.items.map((i: any) => (
+              <li key={i.id} className="rounded-xl border border-line p-3">
+                <div className="flex items-start justify-between gap-2">
+                  <Link to={`/students/${i.student_id}`} className="min-w-0"><span className="block truncate font-semibold">{i.name}</span><span className="block text-xs text-muted">{i.student_id} · {i.dept} Y{i.year}</span></Link>
+                  {i.band && <BandBadge band={i.band} />}
+                </div>
+                <p className="mt-2 text-sm">{i.action}</p>
+                <p className="text-xs text-muted">{i.reason}</p>
+                <div className="mt-2 flex items-center justify-between gap-2 text-xs text-ink-2">
+                  <span>{i.owner} · due {i.due_date} · score {fmt(i.score_at_creation, 0)} → {fmt(i.success_score, 0)}</span>
+                  <select aria-label="Status" value={i.status} onChange={(e) => update(i.id, e.target.value)} className="h-10 shrink-0 rounded-lg border border-line bg-surface px-2 text-sm">
+                    <option value="open">Open</option><option value="in_progress">In progress</option><option value="done">Done</option>
+                  </select>
+                </div>
+              </li>
+            ))}
+            {!data.items.length && <li><Empty icon={<ClipboardList className="h-5 w-5" />} title="No interventions yet" text="Assign one from a student profile, the At-Risk list, or a whole segment's playbook." /></li>}
+          </ul>
+          <div className="hidden overflow-x-auto xl:block">
             <table className="w-full min-w-[1000px] text-sm">
               <thead className="text-left text-xs text-muted">
                 <tr className="border-b border-line"><th className="py-2 pr-3 font-medium">Student</th><th className="py-2 pr-3 font-medium">Action</th><th className="py-2 pr-3 font-medium">Owner</th><th className="py-2 pr-3 font-medium">Due</th><th className="py-2 pr-3 font-medium">Score at start → now</th><th className="py-2 font-medium">Status</th></tr>

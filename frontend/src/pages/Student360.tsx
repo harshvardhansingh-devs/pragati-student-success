@@ -50,8 +50,8 @@ export default function Student360({ selfId }: { selfId?: string }) {
       <div className="card mb-4 overflow-hidden">
         <div className="hero h-16 sm:h-20" aria-hidden />
         <div className="flex flex-wrap items-end justify-between gap-5 px-5 pb-5">
-          <div className="-mt-8 flex min-w-0 items-end gap-4">
-            <div className="rounded-full ring-4 ring-[var(--surface)]"><Avatar name={p.name} band={sc.band} size={72} /></div>
+          <div className="flex min-w-0 flex-col gap-2 sm:-mt-8 sm:flex-row sm:items-end sm:gap-4">
+            <div className="-mt-9 self-start rounded-full ring-4 ring-[var(--surface)] sm:mt-0"><Avatar name={p.name} band={sc.band} size={72} /></div>
             <div className="min-w-0 pb-1">
               <h1 className="truncate text-2xl font-semibold tracking-tight">{p.name}</h1>
               <p className="mt-0.5 text-sm text-ink-2">{p.student_id} · {p.program} {p.dept} · Year {p.year} · Section {p.section} · Mentor {p.mentor_id}</p>
@@ -72,10 +72,10 @@ export default function Student360({ selfId }: { selfId?: string }) {
           <RiskBadge tier={d.risk.placement.tier} label="Placement risk" text={self ? `Placement: ${STUDENT_TIER[d.risk.placement.tier]}` : undefined} />
           {sc.sliding && <span className="rounded-full bg-critical/10 px-2.5 py-1 text-xs font-medium text-critical-text">Sliding: −{Math.abs(sc.trend_4w).toFixed(1)} pts in 4 weeks</span>}
           {sc.low_confidence && <span className="rounded-full bg-warn/15 px-2.5 py-1 text-xs font-medium text-warn-text">Low confidence: missing data</span>}
-          <nav className="ml-auto flex flex-wrap gap-1 text-xs" aria-label="Sections">
+          <nav className="-mx-1 flex w-full gap-1 overflow-x-auto text-xs sm:mx-0 sm:ml-auto sm:w-auto sm:flex-wrap" aria-label="Sections">
             {[['risk', 'Risk'], ['drivers', 'Drivers'], ['whatif', 'What-if'], ['actions', 'Actions'], ['data', 'All data']].map(([id, l]) => (
               <a key={id} href={`#${id}`} onClick={(e) => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
-                className="rounded-lg px-2.5 py-1 font-medium text-ink-2 hover:bg-surface-2 hover:text-ink">{l}</a>
+                className="shrink-0 rounded-lg px-2.5 py-2 font-medium text-ink-2 hover:bg-surface-2 hover:text-ink sm:py-1">{l}</a>
             ))}
           </nav>
         </div>

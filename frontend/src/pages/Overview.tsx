@@ -129,7 +129,7 @@ export default function Overview() {
                     <s.Icon className="h-4 w-4 text-ink-2" aria-hidden />
                     <span className="text-sm font-semibold">{i.title}</span>
                     <span className={`rounded-full px-1.5 py-0.5 text-[11px] font-medium ${s.tagCls}`}>{s.tag}</span>
-                    {link && <button onClick={() => nav(link)} className="ml-auto text-xs font-semibold text-accent-ink hover:underline">View students →</button>}
+                    {link && <button onClick={() => nav(link)} className="ml-auto rounded-md px-1.5 py-1.5 text-xs font-semibold text-accent-ink hover:underline">View students →</button>}
                   </div>
                   <p className="mt-1 text-sm leading-relaxed text-ink-2">{i.text}</p>
                 </li>
@@ -137,7 +137,7 @@ export default function Overview() {
             })}
           </ul>
         </Card>
-        <Card className="xl:col-span-2" title="Priority students" subtitle="Highest combined risk; sliding students boosted" action={<button onClick={() => nav('/at-risk')} className="text-xs font-semibold text-accent-ink hover:underline">View all →</button>}>
+        <Card className="xl:col-span-2" title="Priority students" subtitle="Highest combined risk; sliding students boosted" action={<button onClick={() => nav('/at-risk')} className="rounded-md px-1.5 py-1.5 text-xs font-semibold text-accent-ink hover:underline">View all →</button>}>
           <ul className="divide-y divide-line">
             {d.priority.map((s: any) => (
               <li key={s.student_id}>
