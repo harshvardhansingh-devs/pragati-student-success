@@ -434,7 +434,7 @@ def put_weights(body: Weights, user=Depends(require_admin)):
 
 
 class Question(BaseModel):
-    question: str = Field(min_length=3, max_length=500)
+    question: str = Field(min_length=1, max_length=500)
 
 
 @api.post("/copilot/query")

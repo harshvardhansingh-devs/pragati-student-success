@@ -63,7 +63,7 @@ export default function Copilot() {
         <form onSubmit={(e) => ask(q, e)} className="mt-4 flex gap-2 border-t border-line pt-4">
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ask about students, risks, segments, trends…" aria-label="Question" maxLength={500}
             className="h-10 flex-1 rounded-lg border border-line bg-surface px-3 text-sm" />
-          <Button type="submit" disabled={busy || q.trim().length < 3}><Send className="h-4 w-4" /> Ask</Button>
+          <Button type="submit" disabled={busy || !q.trim()}><Send className="h-4 w-4" /> Ask</Button>
         </form>
       </Card>
     </div>
