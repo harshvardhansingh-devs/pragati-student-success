@@ -1,0 +1,1209 @@
+student_id,roll_no,name,email,gender,dob,dept,program,year,section,mentor_id,admission_category,home_state
+ME25-0102,R25ME102,Tanvi Mehta,tanvi.mehta.me25102@pragati.edu,F,2007-05-16,ME,B.Tech,1,B,M-ME-12,OBC,Karnataka
+IT24-0103,R24IT103,Sai Kulkarni,sai.kulkarni.it24103@pragati.edu,M,2006-06-14,IT,B.Tech,2,B,M-IT-22,General,Uttar Pradesh
+CE24-0101,R24CE101,Aarav Nair,aarav.nair.ce24101@pragati.edu,M,2006-10-30,CE,B.Tech,2,B,M-CE-23,General,West Bengal
+ME24-0101,R24ME101,Isha Mehta,isha.mehta.me24101@pragati.edu,F,2006-02-08,ME,B.Tech,2,B,M-ME-22,General,Andhra Pradesh
+CS23-0103,R23CS103,Ishaan Gupta,ishaan.gupta.cs23103@pragati.edu,M,2005-06-02,CSE,B.Tech,3,A,M-CS-33,EWS,Odisha
+CE23-0101,R23CE101,Yash Reddy,yash.reddy.ce23101@pragati.edu,M,2005-02-07,CE,B.Tech,3,C,M-CE-33,EWS,Kerala
+ME24-0102,R24ME102,Rohan Kumar,rohan.kumar.me24102@pragati.edu,M,2006-10-20,ME,B.Tech,2,C,M-ME-21,OBC,Maharashtra
+ME24-0105,R24ME105,Pallavi Singh,pallavi.singh.me24105@pragati.edu,F,2006-12-25,ME,B.Tech,2,A,M-ME-23,OBC,Odisha
+CS23-0105,R23CS105,Sneha Kumar,sneha.kumar.cs23105@pragati.edu,F,2005-10-10,CSE,B.Tech,3,A,M-CS-31,OBC,Maharashtra
+EC24-0102,R24EC102,Diya Banerjee,diya.banerjee.ec24102@pragati.edu,F,2006-04-22,ECE,B.Tech,2,A,M-EC-22,General,Bihar
+IT22-0101,R22IT101,Aman Mehta,aman.mehta.it22101@pragati.edu,M,2004-02-08,IT,B.Tech,4,C,M-IT-43,EWS,Telangana
+CE22-0102,R22CE102,Sai Chopra,sai.chopra.ce22102@pragati.edu,M,2004-01-31,CE,B.Tech,4,A,M-CE-42,ST,Bihar
+EC25-0102,R25EC102,Rohan Rao,rohan.rao.ec25102@pragati.edu,M,2007-11-07,ECE,B.Tech,1,B,M-EC-11,General,Karnataka
+ME24-0108,R24ME108,Reyansh Rao,reyansh.rao.me24108@pragati.edu,M,2006-12-06,ME,B.Tech,2,B,M-ME-23,General,Odisha
+IT25-0101,R25IT101,Priya Kulkarni,priya.kulkarni.it25101@pragati.edu,F,2007-12-08,IT,B.Tech,1,B,M-IT-11,General,Maharashtra
+CS22-0103,R22CS103,Rohan Kulkarni,rohan.kulkarni.cs22103@pragati.edu,M,2004-07-03,CSE,B.Tech,4,B,M-CS-42,General,Uttar Pradesh
+EC23-0103,R23EC103,Sai Singh,sai.singh.ec23103@pragati.edu,M,2005-06-13,ECE,B.Tech,3,A,M-EC-32,General,Andhra Pradesh
+CS25-0101,R25CS101,Rahul Chopra,rahul.chopra.cs25101@pragati.edu,M,2007-12-28,CSE,B.Tech,1,C,M-CS-13,OBC,Uttar Pradesh
+ME25-0104,R25ME104,Saanvi Sharma,saanvi.sharma.me25104@pragati.edu,F,2007-07-18,ME,B.Tech,1,A,M-ME-12,General,West Bengal
+EC24-0105,R24EC105,Yash Kulkarni,yash.kulkarni.ec24105@pragati.edu,M,2006-11-15,ECE,B.Tech,2,B,M-EC-23,OBC,Tamil Nadu
+ME22-0101,R22ME101,Krishna Agarwal,krishna.agarwal.me22101@pragati.edu,M,2004-09-02,ME,B.Tech,4,C,M-ME-41,SC,Bihar
+IT25-0104,R25IT104,Harsh Kulkarni,harsh.kulkarni.it25104@pragati.edu,M,2007-12-19,IT,B.Tech,1,C,M-IT-11,SC,West Bengal
+CE22-0104,R22CE104,Isha Rao,isha.rao.ce22104@pragati.edu,F,2004-07-26,CE,B.Tech,4,C,M-CE-43,EWS,Maharashtra
+CE23-0102,R23CE102,Vivaan Gupta,vivaan.gupta.ce23102@pragati.edu,M,2005-02-27,CE,B.Tech,3,C,M-CE-33,General,Kerala
+ME25-0106,R25ME106,Krishna Chopra,krishna.chopra.me25106@pragati.edu,M,2007-01-24,ME,B.Tech,1,C,M-ME-11,SC,Odisha
+CS23-0107,R23CS107,Manish Das,manish.das.cs23107@pragati.edu,M,2005-12-13,CSE,B.Tech,3,C,M-CS-32,SC,Andhra Pradesh
+EC23-0105,R23EC105,Ishaan Das,ishaan.das.ec23105@pragati.edu,M,2005-04-28,ECE,B.Tech,3,C,M-EC-31,EWS,Bihar
+CS25-0104,R25CS104,Sai Mehta,sai.mehta.cs25104@pragati.edu,M,2007-07-01,CSE,B.Tech,1,B,M-CS-12,OBC,West Bengal
+CS25-0107,R25CS107,Nikhil Nair,nikhil.nair.cs25107@pragati.edu,M,2007-03-25,CSE,B.Tech,1,A,M-CS-12,General,Odisha
+ME22-0104,R22ME104,Pooja Pillai,pooja.pillai.me22104@pragati.edu,F,2004-10-12,ME,B.Tech,4,B,M-ME-42,OBC,West Bengal
+ME22-0107,R22ME107,Saanvi Mehta,saanvi.mehta.me22107@pragati.edu,F,2004-06-04,ME,B.Tech,4,B,M-ME-43,General,Tamil Nadu
+CE25-0102,R25CE102,Pooja Reddy,pooja.reddy.ce25102@pragati.edu,F,2007-09-30,CE,B.Tech,1,A,M-CE-11,General,Tamil Nadu
+IT23-0101,R23IT101,Shreya Pillai,shreya.pillai.it23101@pragati.edu,F,2005-10-05,IT,B.Tech,3,B,M-IT-31,General,Tamil Nadu
+IT25-0107,R25IT107,Karthik Kulkarni,karthik.kulkarni.it25107@pragati.edu,M,2007-09-15,IT,B.Tech,1,A,M-IT-12,SC,Karnataka
+EC25-0104,R25EC104,Saanvi Iyer,saanvi.iyer.ec25104@pragati.edu,F,2007-03-06,ECE,B.Tech,1,A,M-EC-11,General,Telangana
+CS24-0103,R24CS103,Aadhya Deshpande,aadhya.deshpande.cs24103@pragati.edu,F,2006-05-15,CSE,B.Tech,2,A,M-CS-23,EWS,Maharashtra
+CS23-0109,R23CS109,Shreya Kulkarni,shreya.kulkarni.cs23109@pragati.edu,F,2005-11-28,CSE,B.Tech,3,B,M-CS-32,OBC,Maharashtra
+EC23-0108,R23EC108,Karthik Das,karthik.das.ec23108@pragati.edu,M,2005-11-02,ECE,B.Tech,3,C,M-EC-33,ST,Andhra Pradesh
+CS24-0104,R24CS104,Kavya Pillai,kavya.pillai.cs24104@pragati.edu,F,2006-04-08,CSE,B.Tech,2,A,M-CS-21,General,Bihar
+ME25-0108,R25ME108,Aishwarya Menon,aishwarya.menon.me25108@pragati.edu,F,2007-05-28,ME,B.Tech,1,C,M-ME-11,ST,Bihar
+IT25-0108,R25IT108,Divya Agarwal,divya.agarwal.it25108@pragati.edu,F,2007-10-25,IT,B.Tech,1,C,M-IT-12,General,Bihar
+ME22-0109,R22ME109,Yash Mehta,yash.mehta.me22109@pragati.edu,M,2004-05-18,ME,B.Tech,4,C,M-ME-41,General,Odisha
+ME23-0103,R23ME103,Siddharth Menon,siddharth.menon.me23103@pragati.edu,M,2005-02-02,ME,B.Tech,3,B,M-ME-32,OBC,Bihar
+IT22-0103,R22IT103,Pooja Pillai,pooja.pillai.it22103@pragati.edu,F,2004-09-08,IT,B.Tech,4,C,M-IT-43,SC,West Bengal
+ME25-0110,R25ME110,Isha Reddy,isha.reddy.me25110@pragati.edu,F,2007-03-15,ME,B.Tech,1,B,M-ME-13,General,Uttar Pradesh
+ME24-0109,R24ME109,Ananya Patel,ananya.patel.me24109@pragati.edu,F,2006-02-19,ME,B.Tech,2,A,M-ME-21,General,Bihar
+IT23-0103,R23IT103,Aman Iyer,aman.iyer.it23103@pragati.edu,M,2005-03-18,IT,B.Tech,3,C,M-IT-33,General,Telangana
+CS23-0112,R23CS112,Harsh Reddy,harsh.reddy.cs23112@pragati.edu,M,2005-03-10,CSE,B.Tech,3,B,M-CS-33,SC,Bihar
+ME25-0113,R25ME113,Harsh Patel,harsh.patel.me25113@pragati.edu,M,2007-11-10,ME,B.Tech,1,B,M-ME-13,ST,Bihar
+CS22-0104,R22CS104,Yash Pillai,yash.pillai.cs22104@pragati.edu,M,2004-01-03,CSE,B.Tech,4,C,M-CS-43,EWS,West Bengal
+CS24-0106,R24CS106,Saanvi Das,saanvi.das.cs24106@pragati.edu,F,2006-02-05,CSE,B.Tech,2,A,M-CS-22,General,Bihar
+CS23-0115,R23CS115,Neha Deshpande,neha.deshpande.cs23115@pragati.edu,F,2005-12-08,CSE,B.Tech,3,C,M-CS-33,General,Telangana
+ME22-0112,R22ME112,Aadhya Mehta,aadhya.mehta.me22112@pragati.edu,F,2004-11-03,ME,B.Tech,4,B,M-ME-42,General,West Bengal
+ME23-0105,R23ME105,Ananya Joshi,ananya.joshi.me23105@pragati.edu,F,2005-11-13,ME,B.Tech,3,C,M-ME-31,General,Tamil Nadu
+ME22-0114,R22ME114,Lakshmi Reddy,lakshmi.reddy.me22114@pragati.edu,F,2004-08-19,ME,B.Tech,4,A,M-ME-41,ST,Odisha
+ME22-0115,R22ME115,Riya Agarwal,riya.agarwal.me22115@pragati.edu,F,2004-07-30,ME,B.Tech,4,C,M-ME-41,General,Andhra Pradesh
+EC25-0105,R25EC105,Sai Singh,sai.singh.ec25105@pragati.edu,M,2007-01-27,ECE,B.Tech,1,A,M-EC-13,OBC,Maharashtra
+EC22-0101,R22EC101,Pooja Kumar,pooja.kumar.ec22101@pragati.edu,F,2004-07-09,ECE,B.Tech,4,B,M-EC-43,General,Maharashtra
+CS25-0110,R25CS110,Kabir Menon,kabir.menon.cs25110@pragati.edu,M,2007-11-04,CSE,B.Tech,1,A,M-CS-11,General,Maharashtra
+CS23-0117,R23CS117,Nandini Reddy,nandini.reddy.cs23117@pragati.edu,F,2005-04-18,CSE,B.Tech,3,A,M-CS-32,General,Tamil Nadu
+ME23-0107,R23ME107,Sneha Mehta,sneha.mehta.me23107@pragati.edu,F,2005-09-07,ME,B.Tech,3,A,M-ME-32,SC,Bihar
+EC25-0108,R25EC108,Varun Rao,varun.rao.ec25108@pragati.edu,M,2007-07-19,ECE,B.Tech,1,C,M-EC-12,OBC,Uttar Pradesh
+EC23-0111,R23EC111,Tanvi Reddy,tanvi.reddy.ec23111@pragati.edu,F,2005-01-27,ECE,B.Tech,3,C,M-EC-33,OBC,Kerala
+ME25-0115,R25ME115,Rohan Reddy,rohan.reddy.me25115@pragati.edu,M,2007-02-04,ME,B.Tech,1,A,M-ME-12,General,Andhra Pradesh
+EC22-0102,R22EC102,Kavya Das,kavya.das.ec22102@pragati.edu,F,2004-04-01,ECE,B.Tech,4,C,M-EC-43,SC,Kerala
+EC24-0108,R24EC108,Saanvi Agarwal,saanvi.agarwal.ec24108@pragati.edu,F,2006-10-02,ECE,B.Tech,2,C,M-EC-21,OBC,West Bengal
+EC24-0110,R24EC110,Lakshmi Deshpande,lakshmi.deshpande.ec24110@pragati.edu,F,2006-12-09,ECE,B.Tech,2,B,M-EC-21,EWS,West Bengal
+IT22-0106,R22IT106,Nikhil Menon,nikhil.menon.it22106@pragati.edu,M,2004-07-29,IT,B.Tech,4,B,M-IT-42,SC,Maharashtra
+CS22-0106,R22CS106,Kavya Gupta,kavya.gupta.cs22106@pragati.edu,F,2004-02-08,CSE,B.Tech,4,C,M-CS-43,General,Kerala
+IT22-0107,R22IT107,Sai Iyer,sai.iyer.it22107@pragati.edu,M,2004-10-20,IT,B.Tech,4,A,M-IT-41,General,Odisha
+CS23-0119,R23CS119,Kabir Kumar,kabir.kumar.cs23119@pragati.edu,M,2005-07-20,CSE,B.Tech,3,A,M-CS-32,OBC,West Bengal
+IT25-0111,R25IT111,Rohan Kulkarni,rohan.kulkarni.it25111@pragati.edu,M,2007-08-29,IT,B.Tech,1,C,M-IT-12,General,Bihar
+CE25-0105,R25CE105,Vivaan Reddy,vivaan.reddy.ce25105@pragati.edu,M,2007-05-09,CE,B.Tech,1,B,M-CE-13,SC,Karnataka
+CS23-0120,R23CS120,Sai Deshpande,sai.deshpande.cs23120@pragati.edu,M,2005-06-23,CSE,B.Tech,3,A,M-CS-32,General,Andhra Pradesh
+CS22-0108,R22CS108,Aishwarya Kumar,aishwarya.kumar.cs22108@pragati.edu,F,2004-03-14,CSE,B.Tech,4,C,M-CS-43,EWS,Andhra Pradesh
+CS25-0113,R25CS113,Ishaan Mehta,ishaan.mehta.cs25113@pragati.edu,M,2007-08-21,CSE,B.Tech,1,B,M-CS-12,SC,Andhra Pradesh
+CS23-0121,R23CS121,Lakshmi Pillai,lakshmi.pillai.cs23121@pragati.edu,F,2005-02-17,CSE,B.Tech,3,C,M-CS-31,General,Tamil Nadu
+ME24-0110,R24ME110,Tanvi Rao,tanvi.rao.me24110@pragati.edu,F,2006-03-14,ME,B.Tech,2,C,M-ME-23,OBC,Karnataka
+EC24-0113,R24EC113,Sai Patel,sai.patel.ec24113@pragati.edu,M,2006-11-10,ECE,B.Tech,2,B,M-EC-21,OBC,Telangana
+ME22-0118,R22ME118,Reyansh Patel,reyansh.patel.me22118@pragati.edu,M,2004-10-19,ME,B.Tech,4,C,M-ME-41,General,Uttar Pradesh
+ME24-0113,R24ME113,Divya Rao,divya.rao.me24113@pragati.edu,F,2006-06-15,ME,B.Tech,2,A,M-ME-21,OBC,Maharashtra
+IT23-0105,R23IT105,Ananya Patel,ananya.patel.it23105@pragati.edu,F,2005-05-31,IT,B.Tech,3,A,M-IT-32,OBC,Karnataka
+ME24-0115,R24ME115,Yash Kulkarni,yash.kulkarni.me24115@pragati.edu,M,2006-10-04,ME,B.Tech,2,B,M-ME-23,General,Maharashtra
+CS25-0116,R25CS116,Varun Chopra,varun.chopra.cs25116@pragati.edu,M,2007-07-03,CSE,B.Tech,1,B,M-CS-11,EWS,West Bengal
+CS23-0122,R23CS122,Saanvi Kumar,saanvi.kumar.cs23122@pragati.edu,F,2005-01-29,CSE,B.Tech,3,B,M-CS-31,General,Odisha
+CS24-0107,R24CS107,Gayatri Patel,gayatri.patel.cs24107@pragati.edu,F,2006-06-23,CSE,B.Tech,2,B,M-CS-22,EWS,Bihar
+ME23-0110,R23ME110,Pallavi Agarwal,pallavi.agarwal.me23110@pragati.edu,F,2005-04-05,ME,B.Tech,3,C,M-ME-32,OBC,West Bengal
+EC22-0103,R22EC103,Ishaan Pillai,ishaan.pillai.ec22103@pragati.edu,M,2004-04-20,ECE,B.Tech,4,B,M-EC-43,General,Kerala
+CS24-0109,R24CS109,Riya Gupta,riya.gupta.cs24109@pragati.edu,F,2006-09-19,CSE,B.Tech,2,A,M-CS-23,General,Bihar
+EC25-0110,R25EC110,Neha Mehta,neha.mehta.ec25110@pragati.edu,F,2007-02-15,ECE,B.Tech,1,A,M-EC-13,SC,Uttar Pradesh
+CS22-0110,R22CS110,Riya Joshi,riya.joshi.cs22110@pragati.edu,F,2004-02-29,CSE,B.Tech,4,A,M-CS-43,General,Karnataka
+ME22-0119,R22ME119,Yash Nair,yash.nair.me22119@pragati.edu,M,2004-12-23,ME,B.Tech,4,B,M-ME-42,General,Tamil Nadu
+IT23-0106,R23IT106,Kabir Nair,kabir.nair.it23106@pragati.edu,M,2005-12-07,IT,B.Tech,3,A,M-IT-31,SC,Bihar
+IT23-0109,R23IT109,Neha Deshpande,neha.deshpande.it23109@pragati.edu,F,2005-06-29,IT,B.Tech,3,A,M-IT-33,SC,West Bengal
+IT25-0112,R25IT112,Diya Banerjee,diya.banerjee.it25112@pragati.edu,F,2007-05-08,IT,B.Tech,1,A,M-IT-13,OBC,Karnataka
+EC22-0104,R22EC104,Sneha Kumar,sneha.kumar.ec22104@pragati.edu,F,2004-11-10,ECE,B.Tech,4,C,M-EC-43,General,Maharashtra
+IT23-0111,R23IT111,Aditya Kumar,aditya.kumar.it23111@pragati.edu,M,2005-07-21,IT,B.Tech,3,B,M-IT-32,General,Odisha
+CS23-0125,R23CS125,Aarav Menon,aarav.menon.cs23125@pragati.edu,M,2005-03-24,CSE,B.Tech,3,C,M-CS-31,General,Kerala
+CS25-0119,R25CS119,Aishwarya Reddy,aishwarya.reddy.cs25119@pragati.edu,F,2007-01-05,CSE,B.Tech,1,A,M-CS-12,General,Kerala
+CE25-0107,R25CE107,Priya Reddy,priya.reddy.ce25107@pragati.edu,F,2007-05-02,CE,B.Tech,1,C,M-CE-12,General,Maharashtra
+CE23-0103,R23CE103,Lakshmi Agarwal,lakshmi.agarwal.ce23103@pragati.edu,F,2005-11-24,CE,B.Tech,3,A,M-CE-32,EWS,West Bengal
+ME24-0116,R24ME116,Riya Singh,riya.singh.me24116@pragati.edu,F,2006-06-24,ME,B.Tech,2,C,M-ME-22,General,Telangana
+CS25-0121,R25CS121,Sai Gupta,sai.gupta.cs25121@pragati.edu,M,2007-06-28,CSE,B.Tech,1,A,M-CS-13,General,Tamil Nadu
+CE22-0106,R22CE106,Isha Patel,isha.patel.ce22106@pragati.edu,F,2004-09-11,CE,B.Tech,4,A,M-CE-41,General,Uttar Pradesh
+ME25-0117,R25ME117,Divya Joshi,divya.joshi.me25117@pragati.edu,F,2007-02-14,ME,B.Tech,1,C,M-ME-13,General,Bihar
+ME23-0112,R23ME112,Gayatri Banerjee,gayatri.banerjee.me23112@pragati.edu,F,2005-09-15,ME,B.Tech,3,C,M-ME-31,SC,Kerala
+IT22-0110,R22IT110,Nikhil Das,nikhil.das.it22110@pragati.edu,M,2004-02-06,IT,B.Tech,4,B,M-IT-43,ST,Karnataka
+CS23-0127,R23CS127,Kavya Sharma,kavya.sharma.cs23127@pragati.edu,F,2005-03-10,CSE,B.Tech,3,C,M-CS-33,General,Karnataka
+CS24-0110,R24CS110,Pallavi Iyer,pallavi.iyer.cs24110@pragati.edu,F,2006-09-16,CSE,B.Tech,2,B,M-CS-21,General,West Bengal
+CE23-0106,R23CE106,Aishwarya Gupta,aishwarya.gupta.ce23106@pragati.edu,F,2005-10-04,CE,B.Tech,3,B,M-CE-32,OBC,Uttar Pradesh
+EC22-0106,R22EC106,Gayatri Kulkarni,gayatri.kulkarni.ec22106@pragati.edu,F,2004-01-29,ECE,B.Tech,4,A,M-EC-43,OBC,Uttar Pradesh
+CS22-0113,R22CS113,Vivaan Agarwal,vivaan.agarwal.cs22113@pragati.edu,M,2004-01-25,CSE,B.Tech,4,A,M-CS-41,OBC,Maharashtra
+IT24-0106,R24IT106,Nikhil Iyer,nikhil.iyer.it24106@pragati.edu,M,2006-05-18,IT,B.Tech,2,C,M-IT-22,OBC,Uttar Pradesh
+EC25-0111,R25EC111,Krishna Banerjee,krishna.banerjee.ec25111@pragati.edu,M,2007-01-26,ECE,B.Tech,1,C,M-EC-13,General,Tamil Nadu
+CS25-0124,R25CS124,Aditya Joshi,aditya.joshi.cs25124@pragati.edu,M,2007-11-08,CSE,B.Tech,1,A,M-CS-12,EWS,Maharashtra
+CE25-0109,R25CE109,Varun Chopra,varun.chopra.ce25109@pragati.edu,M,2007-01-19,CE,B.Tech,1,C,M-CE-12,General,Tamil Nadu
+ME23-0113,R23ME113,Isha Kumar,isha.kumar.me23113@pragati.edu,F,2005-04-30,ME,B.Tech,3,A,M-ME-32,General,Maharashtra
+ME23-0116,R23ME116,Varun Verma,varun.verma.me23116@pragati.edu,M,2005-03-28,ME,B.Tech,3,A,M-ME-31,SC,Andhra Pradesh
+IT25-0115,R25IT115,Nikhil Gupta,nikhil.gupta.it25115@pragati.edu,M,2007-10-03,IT,B.Tech,1,B,M-IT-11,General,Tamil Nadu
+EC23-0113,R23EC113,Nikhil Nair,nikhil.nair.ec23113@pragati.edu,M,2005-10-17,ECE,B.Tech,3,C,M-EC-31,General,Kerala
+EC22-0108,R22EC108,Divya Chopra,divya.chopra.ec22108@pragati.edu,F,2004-12-21,ECE,B.Tech,4,C,M-EC-42,General,Odisha
+EC22-0111,R22EC111,Sai Verma,sai.verma.ec22111@pragati.edu,M,2004-03-13,ECE,B.Tech,4,A,M-EC-43,OBC,Karnataka
+CS25-0127,R25CS127,Shreya Pillai,shreya.pillai.cs25127@pragati.edu,F,2007-03-11,CSE,B.Tech,1,B,M-CS-12,SC,Maharashtra
+IT24-0109,R24IT109,Neha Iyer,neha.iyer.it24109@pragati.edu,F,2006-06-25,IT,B.Tech,2,B,M-IT-23,OBC,Kerala
+CS23-0129,R23CS129,Lakshmi Iyer,lakshmi.iyer.cs23129@pragati.edu,F,2005-08-23,CSE,B.Tech,3,C,M-CS-33,OBC,Tamil Nadu
+EC25-0113,R25EC113,Nikhil Iyer,nikhil.iyer.ec25113@pragati.edu,M,2007-03-22,ECE,B.Tech,1,C,M-EC-12,ST,Telangana
+IT23-0113,R23IT113,Rahul Patel,rahul.patel.it23113@pragati.edu,M,2005-05-15,IT,B.Tech,3,B,M-IT-32,General,West Bengal
+CS25-0128,R25CS128,Riya Sharma,riya.sharma.cs25128@pragati.edu,F,2007-10-25,CSE,B.Tech,1,A,M-CS-11,EWS,West Bengal
+CS22-0115,R22CS115,Rahul Agarwal,rahul.agarwal.cs22115@pragati.edu,M,2004-07-20,CSE,B.Tech,4,C,M-CS-43,SC,Bihar
+EC24-0116,R24EC116,Aditya Mehta,aditya.mehta.ec24116@pragati.edu,M,2006-12-10,ECE,B.Tech,2,C,M-EC-21,General,Bihar
+CS25-0129,R25CS129,Varun Singh,varun.singh.cs25129@pragati.edu,M,2007-02-23,CSE,B.Tech,1,C,M-CS-12,OBC,Karnataka
+CE22-0108,R22CE108,Krishna Agarwal,krishna.agarwal.ce22108@pragati.edu,M,2004-11-29,CE,B.Tech,4,B,M-CE-43,General,Telangana
+EC22-0114,R22EC114,Nikhil Iyer,nikhil.iyer.ec22114@pragati.edu,M,2004-10-12,ECE,B.Tech,4,B,M-EC-42,General,Andhra Pradesh
+IT23-0116,R23IT116,Priya Sharma,priya.sharma.it23116@pragati.edu,F,2005-12-21,IT,B.Tech,3,A,M-IT-32,EWS,Tamil Nadu
+EC24-0118,R24EC118,Divya Agarwal,divya.agarwal.ec24118@pragati.edu,F,2006-01-10,ECE,B.Tech,2,A,M-EC-23,OBC,Uttar Pradesh
+CS23-0130,R23CS130,Priya Rao,priya.rao.cs23130@pragati.edu,F,2005-01-16,CSE,B.Tech,3,B,M-CS-33,SC,Tamil Nadu
+CE23-0107,R23CE107,Harsh Patel,harsh.patel.ce23107@pragati.edu,M,2005-09-12,CE,B.Tech,3,B,M-CE-31,OBC,Odisha
+EC24-0119,R24EC119,Krishna Nair,krishna.nair.ec24119@pragati.edu,M,2006-06-14,ECE,B.Tech,2,C,M-EC-21,ST,Maharashtra
+ME25-0119,R25ME119,Kavya Chopra,kavya.chopra.me25119@pragati.edu,F,2007-12-11,ME,B.Tech,1,B,M-ME-11,General,Maharashtra
+CS23-0133,R23CS133,Kabir Menon,kabir.menon.cs23133@pragati.edu,M,2005-09-01,CSE,B.Tech,3,A,M-CS-31,OBC,Karnataka
+EC25-0115,R25EC115,Manish Mehta,manish.mehta.ec25115@pragati.edu,M,2007-10-28,ECE,B.Tech,1,C,M-EC-12,OBC,Bihar
+EC23-0115,R23EC115,Riya Verma,riya.verma.ec23115@pragati.edu,F,2005-04-16,ECE,B.Tech,3,C,M-EC-32,OBC,Karnataka
+CE24-0103,R24CE103,Rohan Nair,rohan.nair.ce24103@pragati.edu,M,2006-10-28,CE,B.Tech,2,A,M-CE-21,ST,Tamil Nadu
+EC23-0118,R23EC118,Aman Sharma,aman.sharma.ec23118@pragati.edu,M,2005-08-31,ECE,B.Tech,3,A,M-EC-32,EWS,Karnataka
+EC24-0121,R24EC121,Karthik Joshi,karthik.joshi.ec24121@pragati.edu,M,2006-02-08,ECE,B.Tech,2,A,M-EC-22,SC,Tamil Nadu
+CS22-0117,R22CS117,Aditya Pillai,aditya.pillai.cs22117@pragati.edu,M,2004-07-28,CSE,B.Tech,4,A,M-CS-42,OBC,Andhra Pradesh
+IT24-0112,R24IT112,Siddharth Banerjee,siddharth.banerjee.it24112@pragati.edu,M,2006-09-30,IT,B.Tech,2,B,M-IT-21,SC,Tamil Nadu
+EC25-0118,R25EC118,Sneha Iyer,sneha.iyer.ec25118@pragati.edu,F,2007-04-04,ECE,B.Tech,1,B,M-EC-13,General,Odisha
+IT22-0112,R22IT112,Vivaan Chopra,vivaan.chopra.it22112@pragati.edu,M,2004-05-23,IT,B.Tech,4,B,M-IT-43,OBC,Kerala
+CS22-0118,R22CS118,Kabir Singh,kabir.singh.cs22118@pragati.edu,M,2004-03-03,CSE,B.Tech,4,C,M-CS-41,OBC,Kerala
+ME22-0121,R22ME121,Aarav Kumar,aarav.kumar.me22121@pragati.edu,M,2004-07-22,ME,B.Tech,4,A,M-ME-43,SC,Tamil Nadu
+CE25-0110,R25CE110,Priya Joshi,priya.joshi.ce25110@pragati.edu,F,2007-11-22,CE,B.Tech,1,B,M-CE-12,General,Telangana
+CS23-0134,R23CS134,Lakshmi Verma,lakshmi.verma.cs23134@pragati.edu,F,2005-07-29,CSE,B.Tech,3,B,M-CS-33,General,Bihar
+EC25-0121,R25EC121,Neha Agarwal,neha.agarwal.ec25121@pragati.edu,F,2007-01-13,ECE,B.Tech,1,B,M-EC-13,ST,Kerala
+CS23-0136,R23CS136,Sneha Mehta,sneha.mehta.cs23136@pragati.edu,F,2005-07-11,CSE,B.Tech,3,B,M-CS-33,OBC,Telangana
+ME25-0122,R25ME122,Siddharth Agarwal,siddharth.agarwal.me25122@pragati.edu,M,2007-08-08,ME,B.Tech,1,B,M-ME-12,OBC,Uttar Pradesh
+CS25-0130,R25CS130,Vikram Reddy,vikram.reddy.cs25130@pragati.edu,M,2007-10-06,CSE,B.Tech,1,C,M-CS-11,OBC,Uttar Pradesh
+ME23-0119,R23ME119,Isha Singh,isha.singh.me23119@pragati.edu,F,2005-01-30,ME,B.Tech,3,B,M-ME-32,General,Uttar Pradesh
+ME23-0122,R23ME122,Yash Menon,yash.menon.me23122@pragati.edu,M,2005-04-12,ME,B.Tech,3,A,M-ME-32,SC,Tamil Nadu
+ME22-0122,R22ME122,Nandini Iyer,nandini.iyer.me22122@pragati.edu,F,2004-07-09,ME,B.Tech,4,A,M-ME-43,OBC,Kerala
+CS25-0133,R25CS133,Yash Patel,yash.patel.cs25133@pragati.edu,M,2007-01-21,CSE,B.Tech,1,B,M-CS-11,SC,Karnataka
+CE23-0110,R23CE110,Reyansh Nair,reyansh.nair.ce23110@pragati.edu,M,2005-12-14,CE,B.Tech,3,B,M-CE-32,General,Karnataka
+CS23-0137,R23CS137,Ishaan Menon,ishaan.menon.cs23137@pragati.edu,M,2005-11-20,CSE,B.Tech,3,A,M-CS-32,SC,Telangana
+CS23-0139,R23CS139,Harsh Singh,harsh.singh.cs23139@pragati.edu,M,2005-06-19,CSE,B.Tech,3,B,M-CS-33,SC,Maharashtra
+EC25-0123,R25EC123,Gayatri Kumar,gayatri.kumar.ec25123@pragati.edu,F,2007-11-04,ECE,B.Tech,1,B,M-EC-12,EWS,Kerala
+IT25-0116,R25IT116,Yash Das,yash.das.it25116@pragati.edu,M,2007-02-22,IT,B.Tech,1,B,M-IT-11,General,Kerala
+ME25-0123,R25ME123,Ishaan Verma,ishaan.verma.me25123@pragati.edu,M,2007-06-29,ME,B.Tech,1,C,M-ME-12,General,Andhra Pradesh
+ME25-0126,R25ME126,Gayatri Mehta,gayatri.mehta.me25126@pragati.edu,F,2007-08-14,ME,B.Tech,1,C,M-ME-12,OBC,Andhra Pradesh
+IT24-0114,R24IT114,Aishwarya Gupta,aishwarya.gupta.it24114@pragati.edu,F,2006-02-24,IT,B.Tech,2,B,M-IT-23,OBC,Uttar Pradesh
+CE22-0109,R22CE109,Rahul Joshi,rahul.joshi.ce22109@pragati.edu,M,2004-11-16,CE,B.Tech,4,A,M-CE-41,EWS,Bihar
+CS23-0140,R23CS140,Manish Iyer,manish.iyer.cs23140@pragati.edu,M,2005-06-23,CSE,B.Tech,3,B,M-CS-32,OBC,Uttar Pradesh
+EC23-0119,R23EC119,Nandini Mehta,nandini.mehta.ec23119@pragati.edu,F,2005-11-30,ECE,B.Tech,3,A,M-EC-32,EWS,Telangana
+CS22-0119,R22CS119,Reyansh Kulkarni,reyansh.kulkarni.cs22119@pragati.edu,M,2004-01-08,CSE,B.Tech,4,C,M-CS-42,General,Odisha
+CE25-0113,R25CE113,Ishaan Reddy,ishaan.reddy.ce25113@pragati.edu,M,2007-04-29,CE,B.Tech,1,A,M-CE-13,SC,West Bengal
+CS22-0122,R22CS122,Sai Pillai,sai.pillai.cs22122@pragati.edu,M,2004-08-04,CSE,B.Tech,4,C,M-CS-41,OBC,Andhra Pradesh
+CS23-0141,R23CS141,Reyansh Patel,reyansh.patel.cs23141@pragati.edu,M,2005-12-06,CSE,B.Tech,3,B,M-CS-33,OBC,Odisha
+IT24-0117,R24IT117,Arjun Pillai,arjun.pillai.it24117@pragati.edu,M,2006-08-10,IT,B.Tech,2,A,M-IT-22,SC,West Bengal
+CE22-0110,R22CE110,Aadhya Chopra,aadhya.chopra.ce22110@pragati.edu,F,2004-07-19,CE,B.Tech,4,C,M-CE-41,SC,Uttar Pradesh
+CE23-0112,R23CE112,Kabir Patel,kabir.patel.ce23112@pragati.edu,M,2005-09-30,CE,B.Tech,3,C,M-CE-33,General,Tamil Nadu
+ME24-0119,R24ME119,Meera Banerjee,meera.banerjee.me24119@pragati.edu,F,2006-06-09,ME,B.Tech,2,A,M-ME-22,SC,Tamil Nadu
+CE23-0114,R23CE114,Sai Mehta,sai.mehta.ce23114@pragati.edu,M,2005-08-22,CE,B.Tech,3,B,M-CE-32,General,Bihar
+CE24-0104,R24CE104,Priya Nair,priya.nair.ce24104@pragati.edu,F,2006-07-30,CE,B.Tech,2,B,M-CE-23,EWS,Tamil Nadu
+EC23-0122,R23EC122,Meera Kumar,meera.kumar.ec23122@pragati.edu,F,2005-06-28,ECE,B.Tech,3,A,M-EC-33,SC,Uttar Pradesh
+IT23-0118,R23IT118,Manish Rao,manish.rao.it23118@pragati.edu,M,2005-10-20,IT,B.Tech,3,B,M-IT-31,ST,Karnataka
+ME24-0121,R24ME121,Aditya Kumar,aditya.kumar.me24121@pragati.edu,M,2006-07-13,ME,B.Tech,2,C,M-ME-21,SC,Odisha
+ME22-0123,R22ME123,Nandini Banerjee,nandini.banerjee.me22123@pragati.edu,F,2004-05-03,ME,B.Tech,4,A,M-ME-42,SC,Odisha
+IT22-0114,R22IT114,Aadhya Chopra,aadhya.chopra.it22114@pragati.edu,F,2004-03-15,IT,B.Tech,4,A,M-IT-42,General,Karnataka
+CS25-0134,R25CS134,Priya Das,priya.das.cs25134@pragati.edu,F,2007-04-05,CSE,B.Tech,1,A,M-CS-12,OBC,Kerala
+ME24-0124,R24ME124,Pooja Kumar,pooja.kumar.me24124@pragati.edu,F,2006-03-10,ME,B.Tech,2,A,M-ME-22,OBC,Andhra Pradesh
+CS25-0137,R25CS137,Sneha Kulkarni,sneha.kulkarni.cs25137@pragati.edu,F,2007-04-09,CSE,B.Tech,1,A,M-CS-11,General,Karnataka
+CE23-0115,R23CE115,Reyansh Das,reyansh.das.ce23115@pragati.edu,M,2005-09-09,CE,B.Tech,3,A,M-CE-33,SC,Kerala
+CS23-0142,R23CS142,Aditya Menon,aditya.menon.cs23142@pragati.edu,M,2005-04-10,CSE,B.Tech,3,C,M-CS-32,SC,Uttar Pradesh
+CS23-0143,R23CS143,Manish Patel,manish.patel.cs23143@pragati.edu,M,2005-03-09,CSE,B.Tech,3,B,M-CS-31,General,Odisha
+ME25-0129,R25ME129,Nandini Rao,nandini.rao.me25129@pragati.edu,F,2007-04-24,ME,B.Tech,1,A,M-ME-13,General,Telangana
+CS25-0139,R25CS139,Arjun Kulkarni,arjun.kulkarni.cs25139@pragati.edu,M,2007-08-09,CSE,B.Tech,1,B,M-CS-11,ST,Bihar
+CS24-0113,R24CS113,Aarav Sharma,aarav.sharma.cs24113@pragati.edu,M,2006-07-05,CSE,B.Tech,2,C,M-CS-21,SC,Andhra Pradesh
+EC25-0124,R25EC124,Nikhil Patel,nikhil.patel.ec25124@pragati.edu,M,2007-10-05,ECE,B.Tech,1,B,M-EC-11,General,Kerala
+CE23-0116,R23CE116,Karthik Chopra,karthik.chopra.ce23116@pragati.edu,M,2005-11-06,CE,B.Tech,3,B,M-CE-31,General,Telangana
+CS25-0140,R25CS140,Gayatri Verma,gayatri.verma.cs25140@pragati.edu,F,2007-11-08,CSE,B.Tech,1,C,M-CS-11,General,Tamil Nadu
+IT22-0115,R22IT115,Aditya Gupta,aditya.gupta.it22115@pragati.edu,M,2004-10-14,IT,B.Tech,4,C,M-IT-43,General,Uttar Pradesh
+ME24-0126,R24ME126,Riya Rao,riya.rao.me24126@pragati.edu,F,2006-01-06,ME,B.Tech,2,A,M-ME-22,General,West Bengal
+CE25-0115,R25CE115,Lakshmi Gupta,lakshmi.gupta.ce25115@pragati.edu,F,2007-11-18,CE,B.Tech,1,B,M-CE-11,SC,Tamil Nadu
+EC23-0125,R23EC125,Aadhya Rao,aadhya.rao.ec23125@pragati.edu,F,2005-04-11,ECE,B.Tech,3,C,M-EC-31,General,Andhra Pradesh
+CS23-0144,R23CS144,Vivaan Sharma,vivaan.sharma.cs23144@pragati.edu,M,2005-01-29,CSE,B.Tech,3,B,M-CS-31,SC,Tamil Nadu
+CS22-0123,R22CS123,Reyansh Chopra,reyansh.chopra.cs22123@pragati.edu,M,2004-12-16,CSE,B.Tech,4,A,M-CS-42,OBC,Andhra Pradesh
+CS24-0116,R24CS116,Sai Das,sai.das.cs24116@pragati.edu,M,2006-08-31,CSE,B.Tech,2,A,M-CS-22,OBC,Telangana
+CS25-0141,R25CS141,Meera Rao,meera.rao.cs25141@pragati.edu,F,2007-05-09,CSE,B.Tech,1,B,M-CS-13,OBC,Odisha
+ME24-0127,R24ME127,Vivaan Reddy,vivaan.reddy.me24127@pragati.edu,M,2006-12-11,ME,B.Tech,2,B,M-ME-22,General,Andhra Pradesh
+CS22-0126,R22CS126,Vikram Joshi,vikram.joshi.cs22126@pragati.edu,M,2004-02-05,CSE,B.Tech,4,A,M-CS-43,General,Tamil Nadu
+EC22-0116,R22EC116,Aman Pillai,aman.pillai.ec22116@pragati.edu,M,2004-11-19,ECE,B.Tech,4,B,M-EC-42,EWS,Karnataka
+ME24-0128,R24ME128,Divya Sharma,divya.sharma.me24128@pragati.edu,F,2006-10-22,ME,B.Tech,2,A,M-ME-23,General,Kerala
+EC23-0128,R23EC128,Saanvi Iyer,saanvi.iyer.ec23128@pragati.edu,F,2005-11-19,ECE,B.Tech,3,C,M-EC-31,General,Tamil Nadu
+CS23-0145,R23CS145,Shreya Sharma,shreya.sharma.cs23145@pragati.edu,F,2005-07-25,CSE,B.Tech,3,C,M-CS-31,General,Uttar Pradesh
+ME25-0131,R25ME131,Diya Mehta,diya.mehta.me25131@pragati.edu,F,2007-05-26,ME,B.Tech,1,A,M-ME-12,ST,Maharashtra
+ME23-0123,R23ME123,Manish Deshpande,manish.deshpande.me23123@pragati.edu,M,2005-07-12,ME,B.Tech,3,B,M-ME-31,General,West Bengal
+ME25-0134,R25ME134,Neha Chopra,neha.chopra.me25134@pragati.edu,F,2007-07-10,ME,B.Tech,1,B,M-ME-11,General,Karnataka
+CS24-0119,R24CS119,Kabir Agarwal,kabir.agarwal.cs24119@pragati.edu,M,2006-01-28,CSE,B.Tech,2,C,M-CS-22,General,Uttar Pradesh
+CS23-0148,R23CS148,Meera Joshi,meera.joshi.cs23148@pragati.edu,F,2005-11-16,CSE,B.Tech,3,B,M-CS-33,OBC,Andhra Pradesh
+CE22-0111,R22CE111,Vikram Joshi,vikram.joshi.ce22111@pragati.edu,M,2004-09-18,CE,B.Tech,4,A,M-CE-41,ST,Odisha
+IT24-0119,R24IT119,Ananya Banerjee,ananya.banerjee.it24119@pragati.edu,F,2006-09-10,IT,B.Tech,2,C,M-IT-22,OBC,Odisha
+IT25-0118,R25IT118,Nandini Agarwal,nandini.agarwal.it25118@pragati.edu,F,2007-08-06,IT,B.Tech,1,B,M-IT-11,General,Karnataka
+EC25-0127,R25EC127,Saanvi Reddy,saanvi.reddy.ec25127@pragati.edu,F,2007-11-17,ECE,B.Tech,1,A,M-EC-13,OBC,Uttar Pradesh
+ME25-0135,R25ME135,Vivaan Iyer,vivaan.iyer.me25135@pragati.edu,M,2007-12-28,ME,B.Tech,1,A,M-ME-12,SC,Tamil Nadu
+CE25-0117,R25CE117,Diya Pillai,diya.pillai.ce25117@pragati.edu,F,2007-10-02,CE,B.Tech,1,C,M-CE-12,OBC,Bihar
+CS23-0150,R23CS150,Kavya Singh,kavya.singh.cs23150@pragati.edu,F,2005-07-21,CSE,B.Tech,3,A,M-CS-32,SC,Telangana
+CE22-0114,R22CE114,Karthik Joshi,karthik.joshi.ce22114@pragati.edu,M,2004-09-12,CE,B.Tech,4,B,M-CE-41,SC,Karnataka
+CS23-0153,R23CS153,Yash Gupta,yash.gupta.cs23153@pragati.edu,M,2005-05-24,CSE,B.Tech,3,C,M-CS-33,OBC,Bihar
+EC24-0123,R24EC123,Siddharth Das,siddharth.das.ec24123@pragati.edu,M,2006-09-06,ECE,B.Tech,2,B,M-EC-23,SC,West Bengal
+EC23-0131,R23EC131,Krishna Verma,krishna.verma.ec23131@pragati.edu,M,2005-07-18,ECE,B.Tech,3,C,M-EC-32,OBC,Uttar Pradesh
+CS25-0144,R25CS144,Krishna Singh,krishna.singh.cs25144@pragati.edu,M,2007-11-02,CSE,B.Tech,1,B,M-CS-13,SC,Uttar Pradesh
+CS25-0147,R25CS147,Nikhil Kulkarni,nikhil.kulkarni.cs25147@pragati.edu,M,2007-02-26,CSE,B.Tech,1,A,M-CS-11,OBC,Maharashtra
+IT24-0122,R24IT122,Gayatri Iyer,gayatri.iyer.it24122@pragati.edu,F,2006-02-11,IT,B.Tech,2,A,M-IT-21,SC,West Bengal
+CE24-0106,R24CE106,Aishwarya Joshi,aishwarya.joshi.ce24106@pragati.edu,F,2006-08-16,CE,B.Tech,2,A,M-CE-23,SC,Bihar
+EC22-0117,R22EC117,Neha Mehta,neha.mehta.ec22117@pragati.edu,F,2004-11-01,ECE,B.Tech,4,A,M-EC-41,General,Andhra Pradesh
+CE22-0116,R22CE116,Ananya Pillai,ananya.pillai.ce22116@pragati.edu,F,2004-09-29,CE,B.Tech,4,B,M-CE-43,SC,West Bengal
+ME24-0129,R24ME129,Neha Pillai,neha.pillai.me24129@pragati.edu,F,2006-10-12,ME,B.Tech,2,A,M-ME-21,EWS,Kerala
+EC22-0120,R22EC120,Shreya Gupta,shreya.gupta.ec22120@pragati.edu,F,2004-12-13,ECE,B.Tech,4,B,M-EC-43,General,Kerala
+ME25-0136,R25ME136,Kabir Das,kabir.das.me25136@pragati.edu,M,2007-03-14,ME,B.Tech,1,C,M-ME-12,OBC,Maharashtra
+CS24-0121,R24CS121,Krishna Kulkarni,krishna.kulkarni.cs24121@pragati.edu,M,2006-04-28,CSE,B.Tech,2,B,M-CS-23,OBC,Bihar
+CS22-0127,R22CS127,Sneha Chopra,sneha.chopra.cs22127@pragati.edu,F,2004-08-22,CSE,B.Tech,4,B,M-CS-42,General,Kerala
+ME22-0124,R22ME124,Rohan Patel,rohan.patel.me22124@pragati.edu,M,2004-10-20,ME,B.Tech,4,B,M-ME-41,SC,Karnataka
+ME24-0130,R24ME130,Priya Patel,priya.patel.me24130@pragati.edu,F,2006-04-01,ME,B.Tech,2,C,M-ME-21,General,Kerala
+CS25-0150,R25CS150,Kavya Banerjee,kavya.banerjee.cs25150@pragati.edu,F,2007-11-18,CSE,B.Tech,1,B,M-CS-11,OBC,Tamil Nadu
+EC25-0129,R25EC129,Reyansh Agarwal,reyansh.agarwal.ec25129@pragati.edu,M,2007-05-19,ECE,B.Tech,1,C,M-EC-13,ST,Tamil Nadu
+EC24-0126,R24EC126,Karthik Patel,karthik.patel.ec24126@pragati.edu,M,2006-04-12,ECE,B.Tech,2,A,M-EC-21,General,Kerala
+CE24-0108,R24CE108,Pallavi Das,pallavi.das.ce24108@pragati.edu,F,2006-08-13,CE,B.Tech,2,A,M-CE-23,OBC,Karnataka
+EC24-0128,R24EC128,Vivaan Rao,vivaan.rao.ec24128@pragati.edu,M,2006-01-10,ECE,B.Tech,2,B,M-EC-21,OBC,Odisha
+IT24-0125,R24IT125,Tanvi Pillai,tanvi.pillai.it24125@pragati.edu,F,2006-11-13,IT,B.Tech,2,B,M-IT-23,SC,Odisha
+IT22-0117,R22IT117,Neha Iyer,neha.iyer.it22117@pragati.edu,F,2004-08-20,IT,B.Tech,4,C,M-IT-43,General,Kerala
+IT23-0119,R23IT119,Yash Joshi,yash.joshi.it23119@pragati.edu,M,2005-12-08,IT,B.Tech,3,A,M-IT-31,SC,West Bengal
+ME22-0127,R22ME127,Meera Das,meera.das.me22127@pragati.edu,F,2004-03-18,ME,B.Tech,4,A,M-ME-41,ST,Bihar
+CE24-0110,R24CE110,Rohan Deshpande,rohan.deshpande.ce24110@pragati.edu,M,2006-01-31,CE,B.Tech,2,B,M-CE-21,General,Telangana
+EC22-0121,R22EC121,Krishna Iyer,krishna.iyer.ec22121@pragati.edu,M,2004-12-26,ECE,B.Tech,4,C,M-EC-42,General,Karnataka
+CS23-0154,R23CS154,Pooja Banerjee,pooja.banerjee.cs23154@pragati.edu,F,2005-12-10,CSE,B.Tech,3,B,M-CS-33,General,Odisha
+CS22-0128,R22CS128,Pallavi Banerjee,pallavi.banerjee.cs22128@pragati.edu,F,2004-02-01,CSE,B.Tech,4,A,M-CS-43,General,West Bengal
+ME24-0132,R24ME132,Divya Sharma,divya.sharma.me24132@pragati.edu,F,2006-03-22,ME,B.Tech,2,B,M-ME-22,SC,Uttar Pradesh
+ME24-0133,R24ME133,Ananya Reddy,ananya.reddy.me24133@pragati.edu,F,2006-01-06,ME,B.Tech,2,B,M-ME-22,OBC,Uttar Pradesh
+CS22-0129,R22CS129,Aman Chopra,aman.chopra.cs22129@pragati.edu,M,2004-07-26,CSE,B.Tech,4,C,M-CS-42,General,Andhra Pradesh
+CS23-0157,R23CS157,Varun Das,varun.das.cs23157@pragati.edu,M,2005-10-08,CSE,B.Tech,3,A,M-CS-31,General,Odisha
+EC22-0123,R22EC123,Harsh Das,harsh.das.ec22123@pragati.edu,M,2004-06-22,ECE,B.Tech,4,C,M-EC-43,General,Bihar
+CS22-0131,R22CS131,Diya Singh,diya.singh.cs22131@pragati.edu,F,2004-09-06,CSE,B.Tech,4,B,M-CS-41,General,Kerala
+ME24-0135,R24ME135,Diya Chopra,diya.chopra.me24135@pragati.edu,F,2006-05-14,ME,B.Tech,2,C,M-ME-23,General,Telangana
+IT24-0128,R24IT128,Vivaan Deshpande,vivaan.deshpande.it24128@pragati.edu,M,2006-09-04,IT,B.Tech,2,A,M-IT-22,OBC,Andhra Pradesh
+CS24-0124,R24CS124,Rohan Iyer,rohan.iyer.cs24124@pragati.edu,M,2006-02-10,CSE,B.Tech,2,A,M-CS-21,OBC,Tamil Nadu
+CE23-0118,R23CE118,Nandini Rao,nandini.rao.ce23118@pragati.edu,F,2005-09-18,CE,B.Tech,3,B,M-CE-31,General,Odisha
+CS23-0159,R23CS159,Rahul Pillai,rahul.pillai.cs23159@pragati.edu,M,2005-07-10,CSE,B.Tech,3,B,M-CS-31,General,Bihar
+CS22-0134,R22CS134,Lakshmi Nair,lakshmi.nair.cs22134@pragati.edu,F,2004-07-12,CSE,B.Tech,4,A,M-CS-42,OBC,Odisha
+CS22-0135,R22CS135,Priya Mehta,priya.mehta.cs22135@pragati.edu,F,2004-05-24,CSE,B.Tech,4,B,M-CS-41,ST,Andhra Pradesh
+CS24-0125,R24CS125,Nandini Verma,nandini.verma.cs24125@pragati.edu,F,2006-03-17,CSE,B.Tech,2,B,M-CS-22,OBC,Karnataka
+CS23-0162,R23CS162,Vivaan Das,vivaan.das.cs23162@pragati.edu,M,2005-07-01,CSE,B.Tech,3,B,M-CS-31,General,Odisha
+CS25-0151,R25CS151,Harsh Kulkarni,harsh.kulkarni.cs25151@pragati.edu,M,2007-03-06,CSE,B.Tech,1,A,M-CS-12,EWS,Uttar Pradesh
+CS22-0138,R22CS138,Lakshmi Reddy,lakshmi.reddy.cs22138@pragati.edu,F,2004-01-26,CSE,B.Tech,4,B,M-CS-41,General,Andhra Pradesh
+CS23-0165,R23CS165,Ananya Chopra,ananya.chopra.cs23165@pragati.edu,F,2005-05-06,CSE,B.Tech,3,B,M-CS-31,OBC,Bihar
+EC25-0131,R25EC131,Arjun Das,arjun.das.ec25131@pragati.edu,M,2007-03-15,ECE,B.Tech,1,B,M-EC-12,OBC,Karnataka
+ME25-0137,R25ME137,Saanvi Nair,saanvi.nair.me25137@pragati.edu,F,2007-01-27,ME,B.Tech,1,B,M-ME-12,General,Odisha
+IT24-0129,R24IT129,Kabir Nair,kabir.nair.it24129@pragati.edu,M,2006-01-06,IT,B.Tech,2,A,M-IT-22,ST,Maharashtra
+IT25-0119,R25IT119,Vikram Mehta,vikram.mehta.it25119@pragati.edu,M,2007-03-09,IT,B.Tech,1,C,M-IT-11,EWS,Kerala
+EC25-0133,R25EC133,Karthik Patel,karthik.patel.ec25133@pragati.edu,M,2007-07-20,ECE,B.Tech,1,C,M-EC-11,General,Maharashtra
+CE22-0119,R22CE119,Aman Patel,aman.patel.ce22119@pragati.edu,M,2004-12-11,CE,B.Tech,4,A,M-CE-42,OBC,Karnataka
+CE23-0121,R23CE121,Sai Verma,sai.verma.ce23121@pragati.edu,M,2005-05-24,CE,B.Tech,3,B,M-CE-33,General,Uttar Pradesh
+CS22-0141,R22CS141,Neha Joshi,neha.joshi.cs22141@pragati.edu,F,2004-04-04,CSE,B.Tech,4,A,M-CS-42,OBC,Uttar Pradesh
+CS22-0142,R22CS142,Varun Iyer,varun.iyer.cs22142@pragati.edu,M,2004-04-16,CSE,B.Tech,4,C,M-CS-41,OBC,Karnataka
+CS25-0152,R25CS152,Aman Banerjee,aman.banerjee.cs25152@pragati.edu,M,2007-04-13,CSE,B.Tech,1,B,M-CS-12,General,Telangana
+CS25-0155,R25CS155,Kavya Kumar,kavya.kumar.cs25155@pragati.edu,F,2007-08-25,CSE,B.Tech,1,A,M-CS-13,General,Maharashtra
+EC23-0134,R23EC134,Nandini Patel,nandini.patel.ec23134@pragati.edu,F,2005-07-16,ECE,B.Tech,3,B,M-EC-33,General,Andhra Pradesh
+IT25-0120,R25IT120,Aadhya Nair,aadhya.nair.it25120@pragati.edu,F,2007-08-04,IT,B.Tech,1,B,M-IT-12,General,Tamil Nadu
+CS22-0145,R22CS145,Arjun Agarwal,arjun.agarwal.cs22145@pragati.edu,M,2004-09-16,CSE,B.Tech,4,C,M-CS-43,OBC,Tamil Nadu
+IT22-0118,R22IT118,Ananya Deshpande,ananya.deshpande.it22118@pragati.edu,F,2004-08-03,IT,B.Tech,4,B,M-IT-43,General,Maharashtra
+EC22-0125,R22EC125,Krishna Sharma,krishna.sharma.ec22125@pragati.edu,M,2004-07-08,ECE,B.Tech,4,A,M-EC-42,OBC,Andhra Pradesh
+CS23-0167,R23CS167,Aarav Reddy,aarav.reddy.cs23167@pragati.edu,M,2005-07-03,CSE,B.Tech,3,C,M-CS-31,General,Kerala
+ME24-0137,R24ME137,Ananya Verma,ananya.verma.me24137@pragati.edu,F,2006-01-12,ME,B.Tech,2,C,M-ME-22,General,Maharashtra
+CS22-0146,R22CS146,Aditya Banerjee,aditya.banerjee.cs22146@pragati.edu,M,2004-06-13,CSE,B.Tech,4,A,M-CS-42,General,Bihar
+CE25-0120,R25CE120,Kavya Singh,kavya.singh.ce25120@pragati.edu,F,2007-07-15,CE,B.Tech,1,C,M-CE-13,OBC,Tamil Nadu
+CS23-0169,R23CS169,Gayatri Chopra,gayatri.chopra.cs23169@pragati.edu,F,2005-08-27,CSE,B.Tech,3,B,M-CS-33,SC,Uttar Pradesh
+ME25-0140,R25ME140,Reyansh Iyer,reyansh.iyer.me25140@pragati.edu,M,2007-01-26,ME,B.Tech,1,C,M-ME-11,OBC,West Bengal
+CE25-0121,R25CE121,Shreya Banerjee,shreya.banerjee.ce25121@pragati.edu,F,2007-03-05,CE,B.Tech,1,A,M-CE-13,SC,Karnataka
+CE25-0124,R25CE124,Aditya Joshi,aditya.joshi.ce25124@pragati.edu,M,2007-06-13,CE,B.Tech,1,B,M-CE-12,General,Telangana
+ME23-0125,R23ME125,Aditya Iyer,aditya.iyer.me23125@pragati.edu,M,2005-12-23,ME,B.Tech,3,C,M-ME-31,ST,Bihar
+ME23-0128,R23ME128,Ishaan Agarwal,ishaan.agarwal.me23128@pragati.edu,M,2005-07-23,ME,B.Tech,3,C,M-ME-31,General,Maharashtra
+EC24-0131,R24EC131,Manish Rao,manish.rao.ec24131@pragati.edu,M,2006-07-16,ECE,B.Tech,2,B,M-EC-23,General,Maharashtra
+ME22-0128,R22ME128,Aarav Agarwal,aarav.agarwal.me22128@pragati.edu,M,2004-03-12,ME,B.Tech,4,A,M-ME-43,General,Odisha
+CS25-0157,R25CS157,Isha Joshi,isha.joshi.cs25157@pragati.edu,F,2007-12-16,CSE,B.Tech,1,C,M-CS-13,OBC,Tamil Nadu
+EC24-0133,R24EC133,Siddharth Mehta,siddharth.mehta.ec24133@pragati.edu,M,2006-10-17,ECE,B.Tech,2,B,M-EC-22,ST,Odisha
+EC23-0137,R23EC137,Pallavi Sharma,pallavi.sharma.ec23137@pragati.edu,F,2005-11-26,ECE,B.Tech,3,C,M-EC-33,EWS,Karnataka
+CE22-0121,R22CE121,Ishaan Verma,ishaan.verma.ce22121@pragati.edu,M,2004-03-16,CE,B.Tech,4,B,M-CE-41,OBC,Kerala
+EC24-0136,R24EC136,Siddharth Rao,siddharth.rao.ec24136@pragati.edu,M,2006-05-23,ECE,B.Tech,2,B,M-EC-21,EWS,Tamil Nadu
+IT25-0122,R25IT122,Vivaan Joshi,vivaan.joshi.it25122@pragati.edu,M,2007-10-24,IT,B.Tech,1,C,M-IT-11,General,Odisha
+EC23-0140,R23EC140,Nandini Mehta,nandini.mehta.ec23140@pragati.edu,F,2005-01-07,ECE,B.Tech,3,C,M-EC-32,EWS,Odisha
+CS25-0159,R25CS159,Aishwarya Gupta,aishwarya.gupta.cs25159@pragati.edu,F,2007-01-25,CSE,B.Tech,1,C,M-CS-12,SC,Odisha
+CS25-0160,R25CS160,Divya Mehta,divya.mehta.cs25160@pragati.edu,F,2007-09-23,CSE,B.Tech,1,B,M-CS-12,General,Odisha
+EC22-0126,R22EC126,Divya Banerjee,divya.banerjee.ec22126@pragati.edu,F,2004-09-12,ECE,B.Tech,4,B,M-EC-42,General,Bihar
+IT22-0120,R22IT120,Aishwarya Banerjee,aishwarya.banerjee.it22120@pragati.edu,F,2004-09-18,IT,B.Tech,4,B,M-IT-41,General,Karnataka
+CS24-0127,R24CS127,Arjun Iyer,arjun.iyer.cs24127@pragati.edu,M,2006-03-24,CSE,B.Tech,2,A,M-CS-23,General,Kerala
+IT24-0130,R24IT130,Rohan Rao,rohan.rao.it24130@pragati.edu,M,2006-02-23,IT,B.Tech,2,B,M-IT-22,SC,Karnataka
+IT24-0132,R24IT132,Kabir Banerjee,kabir.banerjee.it24132@pragati.edu,M,2006-11-06,IT,B.Tech,2,C,M-IT-23,SC,Bihar
+IT23-0120,R23IT120,Nikhil Patel,nikhil.patel.it23120@pragati.edu,M,2005-10-04,IT,B.Tech,3,A,M-IT-32,General,Tamil Nadu
+IT23-0123,R23IT123,Kabir Iyer,kabir.iyer.it23123@pragati.edu,M,2005-04-15,IT,B.Tech,3,A,M-IT-32,OBC,Andhra Pradesh
+ME25-0141,R25ME141,Saanvi Mehta,saanvi.mehta.me25141@pragati.edu,F,2007-12-17,ME,B.Tech,1,A,M-ME-13,SC,West Bengal
+CS24-0130,R24CS130,Nikhil Sharma,nikhil.sharma.cs24130@pragati.edu,M,2006-07-27,CSE,B.Tech,2,A,M-CS-21,ST,Uttar Pradesh
+CE23-0122,R23CE122,Nandini Rao,nandini.rao.ce23122@pragati.edu,F,2005-07-27,CE,B.Tech,3,C,M-CE-32,OBC,Uttar Pradesh
+CE24-0112,R24CE112,Kabir Gupta,kabir.gupta.ce24112@pragati.edu,M,2006-08-27,CE,B.Tech,2,B,M-CE-22,EWS,Tamil Nadu
+EC23-0141,R23EC141,Manish Iyer,manish.iyer.ec23141@pragati.edu,M,2005-12-03,ECE,B.Tech,3,A,M-EC-31,General,Uttar Pradesh
+IT22-0122,R22IT122,Sai Banerjee,sai.banerjee.it22122@pragati.edu,M,2004-11-18,IT,B.Tech,4,B,M-IT-43,General,Bihar
+EC24-0139,R24EC139,Harsh Patel,harsh.patel.ec24139@pragati.edu,M,2006-11-13,ECE,B.Tech,2,C,M-EC-21,General,West Bengal
+ME25-0142,R25ME142,Aarav Singh,aarav.singh.me25142@pragati.edu,M,2007-09-03,ME,B.Tech,1,B,M-ME-13,OBC,Uttar Pradesh
+ME25-0144,R25ME144,Priya Menon,priya.menon.me25144@pragati.edu,F,2007-05-31,ME,B.Tech,1,C,M-ME-13,General,Kerala
+ME25-0145,R25ME145,Aadhya Das,aadhya.das.me25145@pragati.edu,F,2007-06-07,ME,B.Tech,1,C,M-ME-13,ST,Maharashtra
+EC23-0142,R23EC142,Karthik Sharma,karthik.sharma.ec23142@pragati.edu,M,2005-09-22,ECE,B.Tech,3,B,M-EC-32,OBC,Kerala
+EC23-0143,R23EC143,Arjun Sharma,arjun.sharma.ec23143@pragati.edu,M,2005-09-01,ECE,B.Tech,3,C,M-EC-32,General,Kerala
+CS24-0133,R24CS133,Gayatri Nair,gayatri.nair.cs24133@pragati.edu,F,2006-04-03,CSE,B.Tech,2,B,M-CS-23,General,Andhra Pradesh
+ME22-0131,R22ME131,Rahul Pillai,rahul.pillai.me22131@pragati.edu,M,2004-11-15,ME,B.Tech,4,C,M-ME-41,OBC,Andhra Pradesh
+CS22-0149,R22CS149,Rohan Sharma,rohan.sharma.cs22149@pragati.edu,M,2004-09-13,CSE,B.Tech,4,B,M-CS-42,General,Odisha
+ME24-0140,R24ME140,Nandini Verma,nandini.verma.me24140@pragati.edu,F,2006-09-29,ME,B.Tech,2,C,M-ME-23,SC,Uttar Pradesh
+CE25-0126,R25CE126,Meera Chopra,meera.chopra.ce25126@pragati.edu,F,2007-01-13,CE,B.Tech,1,A,M-CE-12,EWS,Karnataka
+CS22-0151,R22CS151,Rohan Iyer,rohan.iyer.cs22151@pragati.edu,M,2004-05-13,CSE,B.Tech,4,B,M-CS-42,General,Uttar Pradesh
+EC22-0129,R22EC129,Shreya Nair,shreya.nair.ec22129@pragati.edu,F,2004-09-20,ECE,B.Tech,4,B,M-EC-43,General,Tamil Nadu
+CS23-0170,R23CS170,Neha Joshi,neha.joshi.cs23170@pragati.edu,F,2005-12-03,CSE,B.Tech,3,C,M-CS-32,OBC,Andhra Pradesh
+ME24-0143,R24ME143,Manish Gupta,manish.gupta.me24143@pragati.edu,M,2006-07-14,ME,B.Tech,2,A,M-ME-23,General,Uttar Pradesh
+CS22-0153,R22CS153,Aditya Banerjee,aditya.banerjee.cs22153@pragati.edu,M,2004-06-07,CSE,B.Tech,4,A,M-CS-42,EWS,Karnataka
+CE23-0125,R23CE125,Ishaan Nair,ishaan.nair.ce23125@pragati.edu,M,2005-09-06,CE,B.Tech,3,A,M-CE-32,ST,Maharashtra
+CS24-0136,R24CS136,Sai Reddy,sai.reddy.cs24136@pragati.edu,M,2006-03-01,CSE,B.Tech,2,A,M-CS-22,OBC,Kerala
+CE23-0128,R23CE128,Aishwarya Gupta,aishwarya.gupta.ce23128@pragati.edu,F,2005-09-05,CE,B.Tech,3,A,M-CE-31,General,Andhra Pradesh
+ME23-0129,R23ME129,Aman Deshpande,aman.deshpande.me23129@pragati.edu,M,2005-05-01,ME,B.Tech,3,B,M-ME-31,OBC,Karnataka
+EC24-0142,R24EC142,Yash Pillai,yash.pillai.ec24142@pragati.edu,M,2006-05-20,ECE,B.Tech,2,C,M-EC-22,OBC,Maharashtra
+ME25-0147,R25ME147,Shreya Menon,shreya.menon.me25147@pragati.edu,F,2007-10-24,ME,B.Tech,1,A,M-ME-12,General,Maharashtra
+ME25-0149,R25ME149,Isha Menon,isha.menon.me25149@pragati.edu,F,2007-11-07,ME,B.Tech,1,B,M-ME-12,OBC,Kerala
+CE24-0113,R24CE113,Kavya Kumar,kavya.kumar.ce24113@pragati.edu,F,2006-09-17,CE,B.Tech,2,C,M-CE-21,OBC,Karnataka
+CS22-0155,R22CS155,Krishna Gupta,krishna.gupta.cs22155@pragati.edu,M,2004-10-02,CSE,B.Tech,4,C,M-CS-41,General,Telangana
+EC24-0144,R24EC144,Nikhil Nair,nikhil.nair.ec24144@pragati.edu,M,2006-07-11,ECE,B.Tech,2,B,M-EC-22,ST,Uttar Pradesh
+CS25-0163,R25CS163,Ishaan Nair,ishaan.nair.cs25163@pragati.edu,M,2007-07-13,CSE,B.Tech,1,B,M-CS-13,General,West Bengal
+EC22-0130,R22EC130,Rahul Deshpande,rahul.deshpande.ec22130@pragati.edu,M,2004-07-02,ECE,B.Tech,4,A,M-EC-42,General,Kerala
+CS23-0171,R23CS171,Pooja Patel,pooja.patel.cs23171@pragati.edu,F,2005-05-26,CSE,B.Tech,3,B,M-CS-31,General,Bihar
+EC23-0145,R23EC145,Aadhya Banerjee,aadhya.banerjee.ec23145@pragati.edu,F,2005-12-31,ECE,B.Tech,3,C,M-EC-33,General,Andhra Pradesh
+EC23-0147,R23EC147,Neha Kulkarni,neha.kulkarni.ec23147@pragati.edu,F,2005-01-07,ECE,B.Tech,3,B,M-EC-32,SC,Kerala
+EC22-0132,R22EC132,Meera Iyer,meera.iyer.ec22132@pragati.edu,F,2004-03-17,ECE,B.Tech,4,C,M-EC-42,OBC,Maharashtra
+EC23-0148,R23EC148,Rahul Nair,rahul.nair.ec23148@pragati.edu,M,2005-09-06,ECE,B.Tech,3,C,M-EC-32,OBC,West Bengal
+ME23-0131,R23ME131,Lakshmi Kumar,lakshmi.kumar.me23131@pragati.edu,F,2005-04-11,ME,B.Tech,3,C,M-ME-32,SC,Bihar
+ME22-0132,R22ME132,Nikhil Verma,nikhil.verma.me22132@pragati.edu,M,2004-04-19,ME,B.Tech,4,B,M-ME-41,General,Odisha
+EC25-0136,R25EC136,Meera Kumar,meera.kumar.ec25136@pragati.edu,F,2007-02-13,ECE,B.Tech,1,B,M-EC-12,SC,Andhra Pradesh
+EC25-0137,R25EC137,Saanvi Pillai,saanvi.pillai.ec25137@pragati.edu,F,2007-09-08,ECE,B.Tech,1,B,M-EC-12,General,Telangana
+CE22-0123,R22CE123,Sai Deshpande,sai.deshpande.ce22123@pragati.edu,M,2004-05-25,CE,B.Tech,4,A,M-CE-41,OBC,Maharashtra
+CS24-0138,R24CS138,Vikram Nair,vikram.nair.cs24138@pragati.edu,M,2006-07-29,CSE,B.Tech,2,C,M-CS-21,General,Tamil Nadu
+CS23-0172,R23CS172,Aishwarya Mehta,aishwarya.mehta.cs23172@pragati.edu,F,2005-02-09,CSE,B.Tech,3,C,M-CS-33,EWS,Tamil Nadu
+CS24-0139,R24CS139,Gayatri Patel,gayatri.patel.cs24139@pragati.edu,F,2006-12-27,CSE,B.Tech,2,B,M-CS-22,SC,Odisha
+ME23-0133,R23ME133,Pooja Patel,pooja.patel.me23133@pragati.edu,F,2005-07-07,ME,B.Tech,3,A,M-ME-31,General,Uttar Pradesh
+IT22-0123,R22IT123,Rohan Rao,rohan.rao.it22123@pragati.edu,M,2004-02-13,IT,B.Tech,4,C,M-IT-42,OBC,West Bengal
+ME22-0134,R22ME134,Sneha Iyer,sneha.iyer.me22134@pragati.edu,F,2004-08-27,ME,B.Tech,4,B,M-ME-41,General,Bihar
+ME23-0136,R23ME136,Manish Das,manish.das.me23136@pragati.edu,M,2005-11-17,ME,B.Tech,3,C,M-ME-33,General,Uttar Pradesh
+IT24-0135,R24IT135,Priya Verma,priya.verma.it24135@pragati.edu,F,2006-06-23,IT,B.Tech,2,C,M-IT-23,OBC,Uttar Pradesh
+CE23-0129,R23CE129,Diya Pillai,diya.pillai.ce23129@pragati.edu,F,2005-07-10,CE,B.Tech,3,A,M-CE-31,SC,Tamil Nadu
+ME25-0150,R25ME150,Lakshmi Iyer,lakshmi.iyer.me25150@pragati.edu,F,2007-01-08,ME,B.Tech,1,A,M-ME-12,OBC,Telangana
+CS23-0174,R23CS174,Siddharth Verma,siddharth.verma.cs23174@pragati.edu,M,2005-07-07,CSE,B.Tech,3,A,M-CS-33,ST,Odisha
+IT25-0125,R25IT125,Yash Nair,yash.nair.it25125@pragati.edu,M,2007-07-22,IT,B.Tech,1,A,M-IT-11,General,West Bengal
+IT24-0136,R24IT136,Riya Deshpande,riya.deshpande.it24136@pragati.edu,F,2006-12-17,IT,B.Tech,2,B,M-IT-23,OBC,Tamil Nadu
+CS24-0140,R24CS140,Rahul Banerjee,rahul.banerjee.cs24140@pragati.edu,M,2006-09-08,CSE,B.Tech,2,B,M-CS-23,OBC,Bihar
+CS25-0164,R25CS164,Harsh Joshi,harsh.joshi.cs25164@pragati.edu,M,2007-10-14,CSE,B.Tech,1,B,M-CS-12,OBC,Uttar Pradesh
+CE23-0132,R23CE132,Saanvi Kulkarni,saanvi.kulkarni.ce23132@pragati.edu,F,2005-06-06,CE,B.Tech,3,A,M-CE-33,General,Kerala
+IT25-0126,R25IT126,Manish Deshpande,manish.deshpande.it25126@pragati.edu,M,2007-10-08,IT,B.Tech,1,A,M-IT-12,SC,Odisha
+IT25-0127,R25IT127,Rohan Iyer,rohan.iyer.it25127@pragati.edu,M,2007-10-23,IT,B.Tech,1,C,M-IT-13,EWS,Andhra Pradesh
+ME22-0135,R22ME135,Shreya Kumar,shreya.kumar.me22135@pragati.edu,F,2004-09-13,ME,B.Tech,4,B,M-ME-43,General,Uttar Pradesh
+EC23-0149,R23EC149,Lakshmi Iyer,lakshmi.iyer.ec23149@pragati.edu,F,2005-01-16,ECE,B.Tech,3,B,M-EC-32,OBC,Karnataka
+CE24-0114,R24CE114,Kavya Gupta,kavya.gupta.ce24114@pragati.edu,F,2006-06-23,CE,B.Tech,2,A,M-CE-21,SC,Tamil Nadu
+ME22-0136,R22ME136,Kavya Mehta,kavya.mehta.me22136@pragati.edu,F,2004-12-26,ME,B.Tech,4,B,M-ME-43,General,West Bengal
+EC22-0134,R22EC134,Aarav Menon,aarav.menon.ec22134@pragati.edu,M,2004-11-24,ECE,B.Tech,4,B,M-EC-42,ST,Odisha
+IT25-0129,R25IT129,Siddharth Patel,siddharth.patel.it25129@pragati.edu,M,2007-10-28,IT,B.Tech,1,A,M-IT-12,SC,Kerala
+CE24-0115,R24CE115,Kavya Das,kavya.das.ce24115@pragati.edu,F,2006-10-24,CE,B.Tech,2,C,M-CE-23,OBC,Telangana
+ME23-0138,R23ME138,Karthik Gupta,karthik.gupta.me23138@pragati.edu,M,2005-02-15,ME,B.Tech,3,A,M-ME-33,EWS,West Bengal
+CE25-0127,R25CE127,Aishwarya Iyer,aishwarya.iyer.ce25127@pragati.edu,F,2007-11-09,CE,B.Tech,1,A,M-CE-12,OBC,Odisha
+CS23-0176,R23CS176,Aadhya Pillai,aadhya.pillai.cs23176@pragati.edu,F,2005-12-06,CSE,B.Tech,3,C,M-CS-31,OBC,Andhra Pradesh
+CE25-0130,R25CE130,Isha Banerjee,isha.banerjee.ce25130@pragati.edu,F,2007-03-21,CE,B.Tech,1,A,M-CE-11,EWS,Maharashtra
+EC22-0136,R22EC136,Reyansh Deshpande,reyansh.deshpande.ec22136@pragati.edu,M,2004-05-31,ECE,B.Tech,4,C,M-EC-41,SC,Odisha
+CS23-0179,R23CS179,Varun Chopra,varun.chopra.cs23179@pragati.edu,M,2005-01-18,CSE,B.Tech,3,C,M-CS-32,OBC,Kerala
+EC24-0146,R24EC146,Aarav Nair,aarav.nair.ec24146@pragati.edu,M,2006-09-03,ECE,B.Tech,2,A,M-EC-22,OBC,Karnataka
+ME23-0141,R23ME141,Sai Iyer,sai.iyer.me23141@pragati.edu,M,2005-09-04,ME,B.Tech,3,A,M-ME-32,General,Uttar Pradesh
+CS25-0167,R25CS167,Krishna Patel,krishna.patel.cs25167@pragati.edu,M,2007-06-17,CSE,B.Tech,1,C,M-CS-11,OBC,Odisha
+EC25-0140,R25EC140,Yash Chopra,yash.chopra.ec25140@pragati.edu,M,2007-01-26,ECE,B.Tech,1,A,M-EC-12,OBC,Andhra Pradesh
+ME22-0137,R22ME137,Meera Reddy,meera.reddy.me22137@pragati.edu,F,2004-02-03,ME,B.Tech,4,A,M-ME-43,ST,Odisha
+CS25-0169,R25CS169,Riya Kumar,riya.kumar.cs25169@pragati.edu,F,2007-08-21,CSE,B.Tech,1,B,M-CS-11,General,Andhra Pradesh
+EC25-0141,R25EC141,Nandini Patel,nandini.patel.ec25141@pragati.edu,F,2007-09-12,ECE,B.Tech,1,C,M-EC-11,General,Maharashtra
+IT24-0137,R24IT137,Vivaan Kulkarni,vivaan.kulkarni.it24137@pragati.edu,M,2006-07-09,IT,B.Tech,2,A,M-IT-23,OBC,Uttar Pradesh
+IT24-0138,R24IT138,Manish Deshpande,manish.deshpande.it24138@pragati.edu,M,2006-02-21,IT,B.Tech,2,B,M-IT-22,ST,West Bengal
+CE23-0135,R23CE135,Manish Deshpande,manish.deshpande.ce23135@pragati.edu,M,2005-07-26,CE,B.Tech,3,C,M-CE-33,General,West Bengal
+ME22-0140,R22ME140,Ishaan Singh,ishaan.singh.me22140@pragati.edu,M,2004-07-02,ME,B.Tech,4,B,M-ME-43,OBC,Tamil Nadu
+CS23-0182,R23CS182,Priya Banerjee,priya.banerjee.cs23182@pragati.edu,F,2005-11-01,CSE,B.Tech,3,A,M-CS-33,OBC,Kerala
+CE22-0126,R22CE126,Vikram Gupta,vikram.gupta.ce22126@pragati.edu,M,2004-05-18,CE,B.Tech,4,B,M-CE-43,General,Karnataka
+CE24-0117,R24CE117,Divya Gupta,divya.gupta.ce24117@pragati.edu,F,2006-06-30,CE,B.Tech,2,A,M-CE-23,ST,Uttar Pradesh
+CS24-0141,R24CS141,Riya Reddy,riya.reddy.cs24141@pragati.edu,F,2006-08-02,CSE,B.Tech,2,C,M-CS-21,General,Bihar
+ME24-0144,R24ME144,Kavya Singh,kavya.singh.me24144@pragati.edu,F,2006-11-16,ME,B.Tech,2,B,M-ME-23,ST,Telangana
+CS23-0184,R23CS184,Varun Patel,varun.patel.cs23184@pragati.edu,M,2005-06-23,CSE,B.Tech,3,C,M-CS-32,OBC,Bihar
+CE23-0137,R23CE137,Aman Chopra,aman.chopra.ce23137@pragati.edu,M,2005-06-01,CE,B.Tech,3,B,M-CE-31,General,Telangana
+ME22-0143,R22ME143,Neha Deshpande,neha.deshpande.me22143@pragati.edu,F,2004-08-05,ME,B.Tech,4,A,M-ME-42,General,West Bengal
+ME23-0143,R23ME143,Aditya Banerjee,aditya.banerjee.me23143@pragati.edu,M,2005-03-15,ME,B.Tech,3,A,M-ME-33,SC,Uttar Pradesh
+CS22-0156,R22CS156,Ananya Nair,ananya.nair.cs22156@pragati.edu,F,2004-03-18,CSE,B.Tech,4,B,M-CS-42,EWS,Tamil Nadu
+CE25-0132,R25CE132,Sai Kumar,sai.kumar.ce25132@pragati.edu,M,2007-07-08,CE,B.Tech,1,C,M-CE-11,General,Karnataka
+CS25-0170,R25CS170,Karthik Singh,karthik.singh.cs25170@pragati.edu,M,2007-09-24,CSE,B.Tech,1,A,M-CS-13,General,Kerala
+CS25-0173,R25CS173,Tanvi Patel,tanvi.patel.cs25173@pragati.edu,F,2007-06-21,CSE,B.Tech,1,C,M-CS-12,SC,Telangana
+CS25-0176,R25CS176,Aishwarya Reddy,aishwarya.reddy.cs25176@pragati.edu,F,2007-08-24,CSE,B.Tech,1,A,M-CS-12,OBC,Tamil Nadu
+ME24-0146,R24ME146,Tanvi Patel,tanvi.patel.me24146@pragati.edu,F,2006-02-03,ME,B.Tech,2,B,M-ME-23,SC,Telangana
+CS23-0185,R23CS185,Pallavi Rao,pallavi.rao.cs23185@pragati.edu,F,2005-04-09,CSE,B.Tech,3,A,M-CS-32,SC,Odisha
+CE22-0129,R22CE129,Harsh Joshi,harsh.joshi.ce22129@pragati.edu,M,2004-08-18,CE,B.Tech,4,A,M-CE-41,SC,Andhra Pradesh
+ME24-0147,R24ME147,Aadhya Kulkarni,aadhya.kulkarni.me24147@pragati.edu,F,2006-08-24,ME,B.Tech,2,A,M-ME-22,General,West Bengal
+CS22-0159,R22CS159,Aditya Reddy,aditya.reddy.cs22159@pragati.edu,M,2004-05-24,CSE,B.Tech,4,B,M-CS-43,ST,Tamil Nadu
+CS22-0162,R22CS162,Shreya Kulkarni,shreya.kulkarni.cs22162@pragati.edu,F,2004-02-22,CSE,B.Tech,4,C,M-CS-41,ST,Tamil Nadu
+CS24-0144,R24CS144,Pallavi Gupta,pallavi.gupta.cs24144@pragati.edu,F,2006-04-22,CSE,B.Tech,2,B,M-CS-22,ST,Kerala
+EC24-0147,R24EC147,Krishna Rao,krishna.rao.ec24147@pragati.edu,M,2006-05-27,ECE,B.Tech,2,C,M-EC-21,General,Karnataka
+ME22-0145,R22ME145,Ishaan Rao,ishaan.rao.me22145@pragati.edu,M,2004-03-11,ME,B.Tech,4,A,M-ME-41,ST,West Bengal
+CS24-0145,R24CS145,Ishaan Reddy,ishaan.reddy.cs24145@pragati.edu,M,2006-12-15,CSE,B.Tech,2,B,M-CS-23,SC,Maharashtra
+ME24-0148,R24ME148,Harsh Rao,harsh.rao.me24148@pragati.edu,M,2006-05-15,ME,B.Tech,2,A,M-ME-22,General,Telangana
+CS22-0165,R22CS165,Harsh Menon,harsh.menon.cs22165@pragati.edu,M,2004-09-01,CSE,B.Tech,4,A,M-CS-42,ST,Odisha
+ME24-0150,R24ME150,Riya Gupta,riya.gupta.me24150@pragati.edu,F,2006-09-02,ME,B.Tech,2,C,M-ME-23,General,Uttar Pradesh
+CE23-0140,R23CE140,Krishna Pillai,krishna.pillai.ce23140@pragati.edu,M,2005-03-12,CE,B.Tech,3,C,M-CE-31,General,Andhra Pradesh
+ME22-0147,R22ME147,Divya Nair,divya.nair.me22147@pragati.edu,F,2004-11-06,ME,B.Tech,4,C,M-ME-43,EWS,Karnataka
+ME23-0144,R23ME144,Diya Mehta,diya.mehta.me23144@pragati.edu,F,2005-06-28,ME,B.Tech,3,C,M-ME-32,OBC,Uttar Pradesh
+ME25-0152,R25ME152,Ishaan Mehta,ishaan.mehta.me25152@pragati.edu,M,2007-07-14,ME,B.Tech,1,B,M-ME-12,General,Kerala
+CS24-0147,R24CS147,Karthik Kumar,karthik.kumar.cs24147@pragati.edu,M,2006-06-09,CSE,B.Tech,2,B,M-CS-23,OBC,Karnataka
+CS25-0179,R25CS179,Pallavi Das,pallavi.das.cs25179@pragati.edu,F,2007-12-05,CSE,B.Tech,1,A,M-CS-13,SC,Uttar Pradesh
+CS23-0188,R23CS188,Arjun Verma,arjun.verma.cs23188@pragati.edu,M,2005-11-09,CSE,B.Tech,3,A,M-CS-32,General,Uttar Pradesh
+EC23-0151,R23EC151,Vivaan Iyer,vivaan.iyer.ec23151@pragati.edu,M,2005-07-25,ECE,B.Tech,3,C,M-EC-31,OBC,Odisha
+ME25-0155,R25ME155,Meera Patel,meera.patel.me25155@pragati.edu,F,2007-03-08,ME,B.Tech,1,C,M-ME-11,ST,Bihar
+EC22-0137,R22EC137,Reyansh Menon,reyansh.menon.ec22137@pragati.edu,M,2004-09-29,ECE,B.Tech,4,C,M-EC-43,General,Kerala
+CE22-0131,R22CE131,Sneha Banerjee,sneha.banerjee.ce22131@pragati.edu,F,2004-10-30,CE,B.Tech,4,B,M-CE-43,General,West Bengal
+CS23-0189,R23CS189,Yash Singh,yash.singh.cs23189@pragati.edu,M,2005-05-16,CSE,B.Tech,3,C,M-CS-31,General,Uttar Pradesh
+ME25-0158,R25ME158,Yash Reddy,yash.reddy.me25158@pragati.edu,M,2007-11-22,ME,B.Tech,1,A,M-ME-11,General,Kerala
+CS22-0168,R22CS168,Manish Mehta,manish.mehta.cs22168@pragati.edu,M,2004-01-20,CSE,B.Tech,4,A,M-CS-42,ST,Maharashtra
+CS22-0171,R22CS171,Aditya Das,aditya.das.cs22171@pragati.edu,M,2004-08-12,CSE,B.Tech,4,B,M-CS-41,SC,Karnataka
+ME22-0148,R22ME148,Arjun Agarwal,arjun.agarwal.me22148@pragati.edu,M,2004-02-06,ME,B.Tech,4,C,M-ME-43,OBC,West Bengal
+CE24-0119,R24CE119,Nandini Gupta,nandini.gupta.ce24119@pragati.edu,F,2006-04-20,CE,B.Tech,2,B,M-CE-23,OBC,West Bengal
+EC23-0152,R23EC152,Nandini Iyer,nandini.iyer.ec23152@pragati.edu,F,2005-05-19,ECE,B.Tech,3,B,M-EC-31,General,West Bengal
+CS22-0173,R22CS173,Pallavi Sharma,pallavi.sharma.cs22173@pragati.edu,F,2004-12-19,CSE,B.Tech,4,A,M-CS-42,General,Bihar
+EC24-0149,R24EC149,Kabir Sharma,kabir.sharma.ec24149@pragati.edu,M,2006-01-20,ECE,B.Tech,2,C,M-EC-22,General,Odisha
+CS23-0192,R23CS192,Siddharth Iyer,siddharth.iyer.cs23192@pragati.edu,M,2005-11-16,CSE,B.Tech,3,C,M-CS-32,SC,Odisha
+CE25-0134,R25CE134,Gayatri Deshpande,gayatri.deshpande.ce25134@pragati.edu,F,2007-12-29,CE,B.Tech,1,C,M-CE-13,SC,West Bengal
+ME24-0153,R24ME153,Siddharth Reddy,siddharth.reddy.me24153@pragati.edu,M,2006-09-10,ME,B.Tech,2,B,M-ME-23,OBC,Kerala
+CS24-0150,R24CS150,Kavya Menon,kavya.menon.cs24150@pragati.edu,F,2006-08-09,CSE,B.Tech,2,C,M-CS-23,General,Tamil Nadu
+CS22-0176,R22CS176,Rahul Menon,rahul.menon.cs22176@pragati.edu,M,2004-01-28,CSE,B.Tech,4,B,M-CS-41,General,Tamil Nadu
+CS24-0152,R24CS152,Divya Gupta,divya.gupta.cs24152@pragati.edu,F,2006-11-05,CSE,B.Tech,2,C,M-CS-21,OBC,Kerala
+CE22-0133,R22CE133,Sneha Deshpande,sneha.deshpande.ce22133@pragati.edu,F,2004-04-18,CE,B.Tech,4,C,M-CE-42,OBC,Telangana
+EC25-0142,R25EC142,Priya Chopra,priya.chopra.ec25142@pragati.edu,F,2007-05-02,ECE,B.Tech,1,C,M-EC-11,General,West Bengal
+ME22-0151,R22ME151,Gayatri Kulkarni,gayatri.kulkarni.me22151@pragati.edu,F,2004-11-11,ME,B.Tech,4,B,M-ME-42,OBC,West Bengal
+EC24-0151,R24EC151,Harsh Mehta,harsh.mehta.ec24151@pragati.edu,M,2006-01-12,ECE,B.Tech,2,B,M-EC-23,General,Karnataka
+EC25-0144,R25EC144,Pooja Mehta,pooja.mehta.ec25144@pragati.edu,F,2007-04-16,ECE,B.Tech,1,B,M-EC-11,SC,West Bengal
+CS24-0153,R24CS153,Aadhya Nair,aadhya.nair.cs24153@pragati.edu,F,2006-03-23,CSE,B.Tech,2,B,M-CS-21,SC,West Bengal
+CE25-0135,R25CE135,Pallavi Kulkarni,pallavi.kulkarni.ce25135@pragati.edu,F,2007-08-03,CE,B.Tech,1,A,M-CE-13,OBC,West Bengal
+IT25-0130,R25IT130,Varun Joshi,varun.joshi.it25130@pragati.edu,M,2007-01-10,IT,B.Tech,1,A,M-IT-12,General,Bihar
+EC25-0147,R25EC147,Pallavi Mehta,pallavi.mehta.ec25147@pragati.edu,F,2007-02-08,ECE,B.Tech,1,C,M-EC-13,ST,Karnataka
+ME24-0155,R24ME155,Isha Pillai,isha.pillai.me24155@pragati.edu,F,2006-01-04,ME,B.Tech,2,C,M-ME-23,ST,Karnataka
+EC25-0148,R25EC148,Gayatri Das,gayatri.das.ec25148@pragati.edu,F,2007-04-01,ECE,B.Tech,1,B,M-EC-12,SC,Karnataka
+CE23-0142,R23CE142,Nikhil Menon,nikhil.menon.ce23142@pragati.edu,M,2005-02-23,CE,B.Tech,3,B,M-CE-32,OBC,West Bengal
+CS24-0154,R24CS154,Isha Joshi,isha.joshi.cs24154@pragati.edu,F,2006-06-17,CSE,B.Tech,2,B,M-CS-23,General,Odisha
+EC25-0149,R25EC149,Gayatri Rao,gayatri.rao.ec25149@pragati.edu,F,2007-05-08,ECE,B.Tech,1,B,M-EC-12,General,Bihar
+IT24-0139,R24IT139,Tanvi Joshi,tanvi.joshi.it24139@pragati.edu,F,2006-11-01,IT,B.Tech,2,A,M-IT-21,OBC,Uttar Pradesh
+EC25-0151,R25EC151,Ananya Kulkarni,ananya.kulkarni.ec25151@pragati.edu,F,2007-07-15,ECE,B.Tech,1,C,M-EC-13,General,Maharashtra
+CS24-0157,R24CS157,Divya Agarwal,divya.agarwal.cs24157@pragati.edu,F,2006-01-24,CSE,B.Tech,2,C,M-CS-22,OBC,Odisha
+CS25-0180,R25CS180,Nikhil Mehta,nikhil.mehta.cs25180@pragati.edu,M,2007-05-19,CSE,B.Tech,1,C,M-CS-11,SC,Odisha
+CS22-0179,R22CS179,Nandini Sharma,nandini.sharma.cs22179@pragati.edu,F,2004-07-06,CSE,B.Tech,4,C,M-CS-43,EWS,West Bengal
+IT23-0126,R23IT126,Tanvi Reddy,tanvi.reddy.it23126@pragati.edu,F,2005-07-27,IT,B.Tech,3,C,M-IT-31,General,Andhra Pradesh
+IT25-0132,R25IT132,Ananya Reddy,ananya.reddy.it25132@pragati.edu,F,2007-09-28,IT,B.Tech,1,A,M-IT-13,OBC,Maharashtra
+EC22-0138,R22EC138,Yash Menon,yash.menon.ec22138@pragati.edu,M,2004-09-18,ECE,B.Tech,4,B,M-EC-41,SC,Kerala
+EC22-0139,R22EC139,Ananya Sharma,ananya.sharma.ec22139@pragati.edu,F,2004-09-27,ECE,B.Tech,4,B,M-EC-43,General,Maharashtra
+IT22-0125,R22IT125,Varun Gupta,varun.gupta.it22125@pragati.edu,M,2004-05-01,IT,B.Tech,4,C,M-IT-41,General,Telangana
+IT25-0133,R25IT133,Sai Kulkarni,sai.kulkarni.it25133@pragati.edu,M,2007-01-25,IT,B.Tech,1,A,M-IT-11,OBC,Telangana
+CS23-0193,R23CS193,Aishwarya Verma,aishwarya.verma.cs23193@pragati.edu,F,2005-09-07,CSE,B.Tech,3,A,M-CS-31,OBC,Andhra Pradesh
+EC25-0153,R25EC153,Ishaan Agarwal,ishaan.agarwal.ec25153@pragati.edu,M,2007-09-30,ECE,B.Tech,1,A,M-EC-12,SC,Odisha
+IT23-0128,R23IT128,Shreya Agarwal,shreya.agarwal.it23128@pragati.edu,F,2005-07-08,IT,B.Tech,3,B,M-IT-32,EWS,Karnataka
+CS23-0195,R23CS195,Aditya Menon,aditya.menon.cs23195@pragati.edu,M,2005-07-02,CSE,B.Tech,3,B,M-CS-31,General,Uttar Pradesh
+IT25-0134,R25IT134,Aadhya Joshi,aadhya.joshi.it25134@pragati.edu,F,2007-03-31,IT,B.Tech,1,A,M-IT-13,General,Karnataka
+EC24-0154,R24EC154,Kabir Patel,kabir.patel.ec24154@pragati.edu,M,2006-12-16,ECE,B.Tech,2,C,M-EC-21,OBC,Karnataka
+CS23-0198,R23CS198,Sneha Singh,sneha.singh.cs23198@pragati.edu,F,2005-10-10,CSE,B.Tech,3,A,M-CS-32,General,Odisha
+EC24-0155,R24EC155,Arjun Joshi,arjun.joshi.ec24155@pragati.edu,M,2006-06-14,ECE,B.Tech,2,C,M-EC-22,OBC,Karnataka
+EC22-0142,R22EC142,Sneha Das,sneha.das.ec22142@pragati.edu,F,2004-08-07,ECE,B.Tech,4,C,M-EC-42,OBC,Karnataka
+ME22-0153,R22ME153,Lakshmi Mehta,lakshmi.mehta.me22153@pragati.edu,F,2004-05-11,ME,B.Tech,4,B,M-ME-42,General,Telangana
+EC23-0153,R23EC153,Lakshmi Reddy,lakshmi.reddy.ec23153@pragati.edu,F,2005-04-06,ECE,B.Tech,3,B,M-EC-32,General,Andhra Pradesh
+ME24-0157,R24ME157,Aman Das,aman.das.me24157@pragati.edu,M,2006-02-24,ME,B.Tech,2,C,M-ME-23,General,Telangana
+IT24-0142,R24IT142,Vivaan Reddy,vivaan.reddy.it24142@pragati.edu,M,2006-11-05,IT,B.Tech,2,B,M-IT-23,General,Kerala
+ME24-0159,R24ME159,Meera Chopra,meera.chopra.me24159@pragati.edu,F,2006-03-20,ME,B.Tech,2,A,M-ME-21,OBC,Maharashtra
+EC24-0157,R24EC157,Nandini Agarwal,nandini.agarwal.ec24157@pragati.edu,F,2006-06-28,ECE,B.Tech,2,C,M-EC-23,SC,Maharashtra
+IT23-0131,R23IT131,Pooja Sharma,pooja.sharma.it23131@pragati.edu,F,2005-03-06,IT,B.Tech,3,B,M-IT-33,OBC,Karnataka
+EC24-0158,R24EC158,Varun Iyer,varun.iyer.ec24158@pragati.edu,M,2006-03-16,ECE,B.Tech,2,C,M-EC-21,OBC,Bihar
+IT25-0135,R25IT135,Shreya Kumar,shreya.kumar.it25135@pragati.edu,F,2007-02-20,IT,B.Tech,1,A,M-IT-13,General,Andhra Pradesh
+EC22-0144,R22EC144,Aditya Nair,aditya.nair.ec22144@pragati.edu,M,2004-08-27,ECE,B.Tech,4,B,M-EC-41,General,Bihar
+ME24-0162,R24ME162,Divya Patel,divya.patel.me24162@pragati.edu,F,2006-03-18,ME,B.Tech,2,C,M-ME-21,ST,Tamil Nadu
+CE23-0145,R23CE145,Nandini Chopra,nandini.chopra.ce23145@pragati.edu,F,2005-12-08,CE,B.Tech,3,B,M-CE-33,EWS,Karnataka
+CE22-0134,R22CE134,Aishwarya Rao,aishwarya.rao.ce22134@pragati.edu,F,2004-06-12,CE,B.Tech,4,C,M-CE-41,SC,Tamil Nadu
+EC22-0145,R22EC145,Aadhya Kulkarni,aadhya.kulkarni.ec22145@pragati.edu,F,2004-05-07,ECE,B.Tech,4,C,M-EC-43,OBC,Maharashtra
+EC22-0146,R22EC146,Kabir Singh,kabir.singh.ec22146@pragati.edu,M,2004-09-29,ECE,B.Tech,4,B,M-EC-41,General,Maharashtra
+ME24-0164,R24ME164,Arjun Agarwal,arjun.agarwal.me24164@pragati.edu,M,2006-07-24,ME,B.Tech,2,B,M-ME-22,SC,Andhra Pradesh
+IT23-0134,R23IT134,Gayatri Chopra,gayatri.chopra.it23134@pragati.edu,F,2005-06-03,IT,B.Tech,3,C,M-IT-32,OBC,Maharashtra
+ME22-0156,R22ME156,Harsh Chopra,harsh.chopra.me22156@pragati.edu,M,2004-10-31,ME,B.Tech,4,B,M-ME-42,OBC,Tamil Nadu
+EC22-0148,R22EC148,Meera Reddy,meera.reddy.ec22148@pragati.edu,F,2004-02-14,ECE,B.Tech,4,C,M-EC-42,General,Odisha
+CS24-0160,R24CS160,Aadhya Pillai,aadhya.pillai.cs24160@pragati.edu,F,2006-10-27,CSE,B.Tech,2,B,M-CS-22,ST,Bihar
+CS24-0162,R24CS162,Meera Menon,meera.menon.cs24162@pragati.edu,F,2006-05-24,CSE,B.Tech,2,A,M-CS-22,OBC,Andhra Pradesh
+ME22-0157,R22ME157,Ishaan Reddy,ishaan.reddy.me22157@pragati.edu,M,2004-07-15,ME,B.Tech,4,C,M-ME-43,General,Andhra Pradesh
+CS25-0181,R25CS181,Arjun Joshi,arjun.joshi.cs25181@pragati.edu,M,2007-02-17,CSE,B.Tech,1,A,M-CS-12,SC,Telangana
+CS23-0200,R23CS200,Neha Chopra,neha.chopra.cs23200@pragati.edu,F,2005-08-13,CSE,B.Tech,3,C,M-CS-31,OBC,Tamil Nadu
+IT23-0137,R23IT137,Kavya Menon,kavya.menon.it23137@pragati.edu,F,2005-12-05,IT,B.Tech,3,A,M-IT-33,OBC,Maharashtra
+CS24-0163,R24CS163,Nikhil Chopra,nikhil.chopra.cs24163@pragati.edu,M,2006-03-31,CSE,B.Tech,2,B,M-CS-23,ST,Maharashtra
+IT23-0140,R23IT140,Siddharth Kulkarni,siddharth.kulkarni.it23140@pragati.edu,M,2005-05-13,IT,B.Tech,3,C,M-IT-31,General,Karnataka
+ME22-0159,R22ME159,Meera Patel,meera.patel.me22159@pragati.edu,F,2004-02-03,ME,B.Tech,4,C,M-ME-43,SC,Karnataka
+CS24-0166,R24CS166,Lakshmi Patel,lakshmi.patel.cs24166@pragati.edu,F,2006-01-23,CSE,B.Tech,2,B,M-CS-23,OBC,West Bengal
+ME23-0145,R23ME145,Aarav Sharma,aarav.sharma.me23145@pragati.edu,M,2005-02-05,ME,B.Tech,3,B,M-ME-33,SC,Odisha
+CE25-0138,R25CE138,Tanvi Deshpande,tanvi.deshpande.ce25138@pragati.edu,F,2007-08-27,CE,B.Tech,1,B,M-CE-11,General,Odisha
+IT24-0145,R24IT145,Arjun Sharma,arjun.sharma.it24145@pragati.edu,M,2006-01-25,IT,B.Tech,2,A,M-IT-21,ST,Kerala
+CS22-0182,R22CS182,Ishaan Sharma,ishaan.sharma.cs22182@pragati.edu,M,2004-01-04,CSE,B.Tech,4,A,M-CS-43,SC,Andhra Pradesh
+EC25-0154,R25EC154,Aarav Rao,aarav.rao.ec25154@pragati.edu,M,2007-03-30,ECE,B.Tech,1,B,M-EC-12,General,Telangana
+CS25-0183,R25CS183,Reyansh Agarwal,reyansh.agarwal.cs25183@pragati.edu,M,2007-06-04,CSE,B.Tech,1,C,M-CS-11,General,Bihar
+IT23-0142,R23IT142,Rahul Iyer,rahul.iyer.it23142@pragati.edu,M,2005-03-09,IT,B.Tech,3,A,M-IT-31,OBC,West Bengal
+CE23-0146,R23CE146,Aditya Kulkarni,aditya.kulkarni.ce23146@pragati.edu,M,2005-05-11,CE,B.Tech,3,A,M-CE-31,General,Odisha
+CE22-0135,R22CE135,Reyansh Singh,reyansh.singh.ce22135@pragati.edu,M,2004-06-21,CE,B.Tech,4,B,M-CE-41,EWS,Andhra Pradesh
+ME23-0147,R23ME147,Aishwarya Banerjee,aishwarya.banerjee.me23147@pragati.edu,F,2005-01-12,ME,B.Tech,3,B,M-ME-33,OBC,Uttar Pradesh
+IT24-0147,R24IT147,Kabir Das,kabir.das.it24147@pragati.edu,M,2006-12-12,IT,B.Tech,2,B,M-IT-22,General,Bihar
+ME24-0166,R24ME166,Tanvi Patel,tanvi.patel.me24166@pragati.edu,F,2006-09-29,ME,B.Tech,2,C,M-ME-22,SC,Maharashtra
+ME22-0162,R22ME162,Yash Gupta,yash.gupta.me22162@pragati.edu,M,2004-11-04,ME,B.Tech,4,A,M-ME-43,General,Karnataka
+IT23-0143,R23IT143,Sai Das,sai.das.it23143@pragati.edu,M,2005-11-13,IT,B.Tech,3,B,M-IT-32,General,Andhra Pradesh
+EC22-0151,R22EC151,Reyansh Gupta,reyansh.gupta.ec22151@pragati.edu,M,2004-05-30,ECE,B.Tech,4,A,M-EC-41,OBC,Uttar Pradesh
+CS25-0184,R25CS184,Nandini Agarwal,nandini.agarwal.cs25184@pragati.edu,F,2007-08-23,CSE,B.Tech,1,B,M-CS-13,OBC,Karnataka
+CS24-0167,R24CS167,Neha Reddy,neha.reddy.cs24167@pragati.edu,F,2006-08-05,CSE,B.Tech,2,A,M-CS-23,OBC,Tamil Nadu
+EC25-0155,R25EC155,Aarav Verma,aarav.verma.ec25155@pragati.edu,M,2007-08-18,ECE,B.Tech,1,C,M-EC-12,OBC,Kerala
+CS22-0184,R22CS184,Reyansh Mehta,reyansh.mehta.cs22184@pragati.edu,M,2004-04-29,CSE,B.Tech,4,A,M-CS-43,General,Odisha
+CS23-0203,R23CS203,Aman Kulkarni,aman.kulkarni.cs23203@pragati.edu,M,2005-08-22,CSE,B.Tech,3,B,M-CS-32,OBC,Maharashtra
+ME25-0159,R25ME159,Riya Kumar,riya.kumar.me25159@pragati.edu,F,2007-06-30,ME,B.Tech,1,B,M-ME-11,General,Odisha
+CE24-0121,R24CE121,Vivaan Chopra,vivaan.chopra.ce24121@pragati.edu,M,2006-03-12,CE,B.Tech,2,C,M-CE-23,OBC,Odisha
+EC24-0161,R24EC161,Riya Rao,riya.rao.ec24161@pragati.edu,F,2006-02-14,ECE,B.Tech,2,A,M-EC-21,OBC,Odisha
+ME24-0168,R24ME168,Krishna Kumar,krishna.kumar.me24168@pragati.edu,M,2006-07-14,ME,B.Tech,2,A,M-ME-22,OBC,Tamil Nadu
+CE22-0137,R22CE137,Tanvi Kumar,tanvi.kumar.ce22137@pragati.edu,F,2004-11-02,CE,B.Tech,4,A,M-CE-41,OBC,Telangana
+CS24-0168,R24CS168,Vivaan Patel,vivaan.patel.cs24168@pragati.edu,M,2006-04-11,CSE,B.Tech,2,A,M-CS-23,General,Uttar Pradesh
+IT22-0126,R22IT126,Aarav Chopra,aarav.chopra.it22126@pragati.edu,M,2004-08-05,IT,B.Tech,4,C,M-IT-41,General,Tamil Nadu
+IT24-0149,R24IT149,Arjun Joshi,arjun.joshi.it24149@pragati.edu,M,2006-08-07,IT,B.Tech,2,C,M-IT-22,General,Maharashtra
+CS24-0171,R24CS171,Diya Deshpande,diya.deshpande.cs24171@pragati.edu,F,2006-12-17,CSE,B.Tech,2,C,M-CS-22,OBC,Tamil Nadu
+ME25-0162,R25ME162,Saanvi Rao,saanvi.rao.me25162@pragati.edu,F,2007-11-29,ME,B.Tech,1,C,M-ME-11,General,Kerala
+IT22-0128,R22IT128,Aditya Joshi,aditya.joshi.it22128@pragati.edu,M,2004-04-17,IT,B.Tech,4,A,M-IT-42,OBC,Uttar Pradesh
+EC25-0157,R25EC157,Pooja Pillai,pooja.pillai.ec25157@pragati.edu,F,2007-02-22,ECE,B.Tech,1,B,M-EC-11,SC,Kerala
+CS22-0185,R22CS185,Sai Mehta,sai.mehta.cs22185@pragati.edu,M,2004-01-08,CSE,B.Tech,4,C,M-CS-41,OBC,Bihar
+CS25-0187,R25CS187,Divya Kumar,divya.kumar.cs25187@pragati.edu,F,2007-09-23,CSE,B.Tech,1,B,M-CS-12,OBC,Andhra Pradesh
+CE23-0147,R23CE147,Sai Reddy,sai.reddy.ce23147@pragati.edu,M,2005-10-08,CE,B.Tech,3,B,M-CE-32,General,Kerala
+CS22-0188,R22CS188,Harsh Verma,harsh.verma.cs22188@pragati.edu,M,2004-09-28,CSE,B.Tech,4,C,M-CS-41,General,Karnataka
+CS23-0205,R23CS205,Gayatri Deshpande,gayatri.deshpande.cs23205@pragati.edu,F,2005-11-23,CSE,B.Tech,3,C,M-CS-31,General,Telangana
+CS24-0173,R24CS173,Rohan Singh,rohan.singh.cs24173@pragati.edu,M,2006-12-15,CSE,B.Tech,2,A,M-CS-22,General,Andhra Pradesh
+EC24-0163,R24EC163,Rohan Nair,rohan.nair.ec24163@pragati.edu,M,2006-02-11,ECE,B.Tech,2,A,M-EC-22,OBC,Uttar Pradesh
+EC25-0159,R25EC159,Pooja Banerjee,pooja.banerjee.ec25159@pragati.edu,F,2007-07-25,ECE,B.Tech,1,B,M-EC-12,General,Odisha
+EC24-0166,R24EC166,Divya Agarwal,divya.agarwal.ec24166@pragati.edu,F,2006-02-09,ECE,B.Tech,2,C,M-EC-23,OBC,Bihar
+CS24-0176,R24CS176,Harsh Kumar,harsh.kumar.cs24176@pragati.edu,M,2006-08-18,CSE,B.Tech,2,A,M-CS-21,EWS,Kerala
+CS25-0190,R25CS190,Harsh Joshi,harsh.joshi.cs25190@pragati.edu,M,2007-12-12,CSE,B.Tech,1,B,M-CS-13,SC,Odisha
+ME22-0165,R22ME165,Gayatri Banerjee,gayatri.banerjee.me22165@pragati.edu,F,2004-05-15,ME,B.Tech,4,C,M-ME-43,General,Telangana
+EC23-0154,R23EC154,Diya Pillai,diya.pillai.ec23154@pragati.edu,F,2005-08-06,ECE,B.Tech,3,A,M-EC-31,General,Kerala
+EC22-0152,R22EC152,Aadhya Sharma,aadhya.sharma.ec22152@pragati.edu,F,2004-12-21,ECE,B.Tech,4,A,M-EC-43,ST,Odisha
+ME23-0149,R23ME149,Aditya Deshpande,aditya.deshpande.me23149@pragati.edu,M,2005-04-09,ME,B.Tech,3,C,M-ME-33,SC,West Bengal
+ME23-0152,R23ME152,Lakshmi Kulkarni,lakshmi.kulkarni.me23152@pragati.edu,F,2005-11-21,ME,B.Tech,3,A,M-ME-32,General,West Bengal
+CS23-0206,R23CS206,Saanvi Nair,saanvi.nair.cs23206@pragati.edu,F,2005-11-28,CSE,B.Tech,3,C,M-CS-32,OBC,Odisha
+IT25-0137,R25IT137,Nikhil Kulkarni,nikhil.kulkarni.it25137@pragati.edu,M,2007-07-27,IT,B.Tech,1,C,M-IT-11,SC,Odisha
+EC25-0162,R25EC162,Aman Sharma,aman.sharma.ec25162@pragati.edu,M,2007-09-15,ECE,B.Tech,1,C,M-EC-12,OBC,Odisha
+IT25-0138,R25IT138,Aarav Mehta,aarav.mehta.it25138@pragati.edu,M,2007-01-22,IT,B.Tech,1,A,M-IT-13,SC,Kerala
+ME24-0171,R24ME171,Manish Joshi,manish.joshi.me24171@pragati.edu,M,2006-09-28,ME,B.Tech,2,C,M-ME-22,SC,Andhra Pradesh
+EC25-0163,R25EC163,Aarav Mehta,aarav.mehta.ec25163@pragati.edu,M,2007-07-12,ECE,B.Tech,1,C,M-EC-13,General,Kerala
+ME25-0164,R25ME164,Vivaan Sharma,vivaan.sharma.me25164@pragati.edu,M,2007-07-21,ME,B.Tech,1,A,M-ME-12,OBC,Telangana
+CE24-0123,R24CE123,Harsh Agarwal,harsh.agarwal.ce24123@pragati.edu,M,2006-11-25,CE,B.Tech,2,B,M-CE-22,General,Odisha
+EC23-0155,R23EC155,Shreya Nair,shreya.nair.ec23155@pragati.edu,F,2005-12-05,ECE,B.Tech,3,A,M-EC-32,General,Maharashtra
+CE23-0149,R23CE149,Diya Agarwal,diya.agarwal.ce23149@pragati.edu,F,2005-12-24,CE,B.Tech,3,A,M-CE-33,General,West Bengal
+EC23-0156,R23EC156,Kavya Kumar,kavya.kumar.ec23156@pragati.edu,F,2005-03-04,ECE,B.Tech,3,C,M-EC-33,EWS,Tamil Nadu
+CE24-0124,R24CE124,Lakshmi Verma,lakshmi.verma.ce24124@pragati.edu,F,2006-08-31,CE,B.Tech,2,B,M-CE-23,General,Karnataka
+IT22-0131,R22IT131,Siddharth Patel,siddharth.patel.it22131@pragati.edu,M,2004-11-02,IT,B.Tech,4,A,M-IT-41,General,West Bengal
+EC24-0168,R24EC168,Neha Pillai,neha.pillai.ec24168@pragati.edu,F,2006-07-29,ECE,B.Tech,2,A,M-EC-22,General,Bihar
+EC25-0166,R25EC166,Riya Kulkarni,riya.kulkarni.ec25166@pragati.edu,F,2007-04-04,ECE,B.Tech,1,C,M-EC-12,General,Maharashtra
+CS25-0193,R25CS193,Pallavi Mehta,pallavi.mehta.cs25193@pragati.edu,F,2007-08-02,CSE,B.Tech,1,B,M-CS-13,General,Karnataka
+IT23-0146,R23IT146,Priya Das,priya.das.it23146@pragati.edu,F,2005-01-03,IT,B.Tech,3,C,M-IT-32,ST,Maharashtra
+CE24-0127,R24CE127,Isha Kumar,isha.kumar.ce24127@pragati.edu,F,2006-08-31,CE,B.Tech,2,B,M-CE-21,SC,Odisha
+EC25-0168,R25EC168,Kavya Gupta,kavya.gupta.ec25168@pragati.edu,F,2007-09-18,ECE,B.Tech,1,B,M-EC-13,SC,Tamil Nadu
+CS23-0207,R23CS207,Karthik Verma,karthik.verma.cs23207@pragati.edu,M,2005-09-26,CSE,B.Tech,3,C,M-CS-33,General,Andhra Pradesh
+IT25-0141,R25IT141,Nikhil Singh,nikhil.singh.it25141@pragati.edu,M,2007-06-13,IT,B.Tech,1,B,M-IT-11,OBC,Maharashtra
+CS25-0194,R25CS194,Rahul Patel,rahul.patel.cs25194@pragati.edu,M,2007-07-19,CSE,B.Tech,1,C,M-CS-13,EWS,Kerala
+CS24-0178,R24CS178,Ananya Kulkarni,ananya.kulkarni.cs24178@pragati.edu,F,2006-06-09,CSE,B.Tech,2,B,M-CS-21,General,Kerala
+CE23-0151,R23CE151,Vikram Rao,vikram.rao.ce23151@pragati.edu,M,2005-04-09,CE,B.Tech,3,B,M-CE-33,SC,Bihar
+IT23-0147,R23IT147,Saanvi Gupta,saanvi.gupta.it23147@pragati.edu,F,2005-05-06,IT,B.Tech,3,A,M-IT-31,General,Tamil Nadu
+IT23-0149,R23IT149,Rahul Agarwal,rahul.agarwal.it23149@pragati.edu,M,2005-10-15,IT,B.Tech,3,C,M-IT-33,General,Andhra Pradesh
+EC25-0169,R25EC169,Rohan Kumar,rohan.kumar.ec25169@pragati.edu,M,2007-03-14,ECE,B.Tech,1,A,M-EC-11,General,Bihar
+CS22-0189,R22CS189,Arjun Nair,arjun.nair.cs22189@pragati.edu,M,2004-07-12,CSE,B.Tech,4,B,M-CS-43,SC,Maharashtra
+CS22-0191,R22CS191,Sai Patel,sai.patel.cs22191@pragati.edu,M,2004-01-03,CSE,B.Tech,4,A,M-CS-43,OBC,Bihar
+ME23-0154,R23ME154,Rahul Joshi,rahul.joshi.me23154@pragati.edu,M,2005-05-24,ME,B.Tech,3,C,M-ME-33,General,Bihar
+EC22-0155,R22EC155,Neha Kulkarni,neha.kulkarni.ec22155@pragati.edu,F,2004-04-29,ECE,B.Tech,4,B,M-EC-42,General,West Bengal
+CE24-0130,R24CE130,Nikhil Chopra,nikhil.chopra.ce24130@pragati.edu,M,2006-05-11,CE,B.Tech,2,B,M-CE-22,SC,Uttar Pradesh
+EC25-0172,R25EC172,Aditya Verma,aditya.verma.ec25172@pragati.edu,M,2007-12-09,ECE,B.Tech,1,A,M-EC-11,General,Kerala
+EC25-0174,R25EC174,Rohan Patel,rohan.patel.ec25174@pragati.edu,M,2007-01-12,ECE,B.Tech,1,A,M-EC-12,OBC,West Bengal
+ME25-0166,R25ME166,Yash Banerjee,yash.banerjee.me25166@pragati.edu,M,2007-10-24,ME,B.Tech,1,C,M-ME-13,General,Andhra Pradesh
+CE24-0132,R24CE132,Diya Reddy,diya.reddy.ce24132@pragati.edu,F,2006-05-27,CE,B.Tech,2,A,M-CE-22,General,Karnataka
+ME25-0169,R25ME169,Vivaan Rao,vivaan.rao.me25169@pragati.edu,M,2007-05-24,ME,B.Tech,1,A,M-ME-11,OBC,Kerala
+CE25-0139,R25CE139,Shreya Kumar,shreya.kumar.ce25139@pragati.edu,F,2007-05-12,CE,B.Tech,1,A,M-CE-11,ST,Andhra Pradesh
+ME23-0156,R23ME156,Diya Das,diya.das.me23156@pragati.edu,F,2005-11-17,ME,B.Tech,3,B,M-ME-31,General,Telangana
+CE25-0141,R25CE141,Krishna Mehta,krishna.mehta.ce25141@pragati.edu,M,2007-12-14,CE,B.Tech,1,A,M-CE-11,OBC,Kerala
+CS24-0181,R24CS181,Yash Pillai,yash.pillai.cs24181@pragati.edu,M,2006-11-24,CSE,B.Tech,2,B,M-CS-23,EWS,Maharashtra
+ME24-0172,R24ME172,Varun Deshpande,varun.deshpande.me24172@pragati.edu,M,2006-07-15,ME,B.Tech,2,B,M-ME-22,General,Kerala
+IT24-0151,R24IT151,Priya Das,priya.das.it24151@pragati.edu,F,2006-12-11,IT,B.Tech,2,B,M-IT-21,General,West Bengal
+EC24-0169,R24EC169,Aarav Reddy,aarav.reddy.ec24169@pragati.edu,M,2006-03-20,ECE,B.Tech,2,B,M-EC-23,SC,West Bengal
+ME23-0158,R23ME158,Ananya Iyer,ananya.iyer.me23158@pragati.edu,F,2005-04-28,ME,B.Tech,3,C,M-ME-32,General,Odisha
+CE22-0138,R22CE138,Tanvi Pillai,tanvi.pillai.ce22138@pragati.edu,F,2004-02-04,CE,B.Tech,4,C,M-CE-42,General,Andhra Pradesh
+CE25-0143,R25CE143,Ishaan Reddy,ishaan.reddy.ce25143@pragati.edu,M,2007-04-14,CE,B.Tech,1,A,M-CE-12,EWS,West Bengal
+CS22-0193,R22CS193,Pooja Pillai,pooja.pillai.cs22193@pragati.edu,F,2004-09-18,CSE,B.Tech,4,A,M-CS-41,ST,Tamil Nadu
+ME22-0168,R22ME168,Siddharth Deshpande,siddharth.deshpande.me22168@pragati.edu,M,2004-09-17,ME,B.Tech,4,B,M-ME-42,OBC,Kerala
+ME25-0171,R25ME171,Aadhya Patel,aadhya.patel.me25171@pragati.edu,F,2007-06-02,ME,B.Tech,1,C,M-ME-11,OBC,Kerala
+IT24-0152,R24IT152,Karthik Pillai,karthik.pillai.it24152@pragati.edu,M,2006-01-15,IT,B.Tech,2,C,M-IT-23,OBC,Tamil Nadu
+CS25-0197,R25CS197,Siddharth Singh,siddharth.singh.cs25197@pragati.edu,M,2007-05-10,CSE,B.Tech,1,B,M-CS-12,ST,Kerala
+CS23-0208,R23CS208,Nandini Sharma,nandini.sharma.cs23208@pragati.edu,F,2005-07-20,CSE,B.Tech,3,B,M-CS-31,General,Andhra Pradesh
+ME24-0175,R24ME175,Ananya Menon,ananya.menon.me24175@pragati.edu,F,2006-07-18,ME,B.Tech,2,B,M-ME-22,OBC,Telangana
+EC23-0159,R23EC159,Karthik Iyer,karthik.iyer.ec23159@pragati.edu,M,2005-10-01,ECE,B.Tech,3,B,M-EC-31,OBC,Kerala
+CE23-0153,R23CE153,Aadhya Verma,aadhya.verma.ce23153@pragati.edu,F,2005-11-29,CE,B.Tech,3,B,M-CE-32,General,Telangana
+EC23-0161,R23EC161,Vivaan Rao,vivaan.rao.ec23161@pragati.edu,M,2005-09-19,ECE,B.Tech,3,B,M-EC-33,General,Andhra Pradesh
+CE22-0139,R22CE139,Rohan Singh,rohan.singh.ce22139@pragati.edu,M,2004-02-09,CE,B.Tech,4,A,M-CE-41,EWS,Karnataka
+IT23-0151,R23IT151,Rohan Das,rohan.das.it23151@pragati.edu,M,2005-04-14,IT,B.Tech,3,A,M-IT-33,ST,Telangana
+ME23-0161,R23ME161,Diya Das,diya.das.me23161@pragati.edu,F,2005-03-22,ME,B.Tech,3,A,M-ME-33,ST,Telangana
+CS24-0182,R24CS182,Sai Verma,sai.verma.cs24182@pragati.edu,M,2006-06-10,CSE,B.Tech,2,B,M-CS-23,OBC,Andhra Pradesh
+EC22-0157,R22EC157,Arjun Nair,arjun.nair.ec22157@pragati.edu,M,2004-05-11,ECE,B.Tech,4,C,M-EC-42,General,Uttar Pradesh
+ME23-0162,R23ME162,Nandini Menon,nandini.menon.me23162@pragati.edu,F,2005-04-28,ME,B.Tech,3,B,M-ME-31,ST,Tamil Nadu
+CE22-0142,R22CE142,Aarav Kulkarni,aarav.kulkarni.ce22142@pragati.edu,M,2004-05-27,CE,B.Tech,4,B,M-CE-41,EWS,West Bengal
+ME25-0173,R25ME173,Kavya Mehta,kavya.mehta.me25173@pragati.edu,F,2007-10-13,ME,B.Tech,1,C,M-ME-12,SC,Bihar
+CS25-0200,R25CS200,Priya Kumar,priya.kumar.cs25200@pragati.edu,F,2007-12-13,CSE,B.Tech,1,C,M-CS-12,SC,Tamil Nadu
+IT24-0153,R24IT153,Divya Reddy,divya.reddy.it24153@pragati.edu,F,2006-05-19,IT,B.Tech,2,C,M-IT-22,SC,Kerala
+CS22-0195,R22CS195,Nikhil Singh,nikhil.singh.cs22195@pragati.edu,M,2004-02-12,CSE,B.Tech,4,A,M-CS-41,ST,Telangana
+CS24-0184,R24CS184,Lakshmi Pillai,lakshmi.pillai.cs24184@pragati.edu,F,2006-09-11,CSE,B.Tech,2,C,M-CS-23,General,Maharashtra
+ME23-0165,R23ME165,Vivaan Rao,vivaan.rao.me23165@pragati.edu,M,2005-03-20,ME,B.Tech,3,C,M-ME-32,EWS,West Bengal
+ME23-0168,R23ME168,Aishwarya Rao,aishwarya.rao.me23168@pragati.edu,F,2005-02-23,ME,B.Tech,3,B,M-ME-33,General,Bihar
+ME22-0170,R22ME170,Kavya Gupta,kavya.gupta.me22170@pragati.edu,F,2004-06-19,ME,B.Tech,4,B,M-ME-43,OBC,Kerala
+CE24-0134,R24CE134,Manish Menon,manish.menon.ce24134@pragati.edu,M,2006-01-09,CE,B.Tech,2,A,M-CE-21,OBC,Kerala
+ME24-0178,R24ME178,Rohan Singh,rohan.singh.me24178@pragati.edu,M,2006-04-01,ME,B.Tech,2,C,M-ME-21,OBC,West Bengal
+ME23-0171,R23ME171,Pooja Sharma,pooja.sharma.me23171@pragati.edu,F,2005-06-06,ME,B.Tech,3,A,M-ME-32,SC,Bihar
+CS24-0185,R24CS185,Kabir Nair,kabir.nair.cs24185@pragati.edu,M,2006-04-10,CSE,B.Tech,2,B,M-CS-21,ST,Karnataka
+CS25-0202,R25CS202,Priya Menon,priya.menon.cs25202@pragati.edu,F,2007-11-09,CSE,B.Tech,1,C,M-CS-12,OBC,Andhra Pradesh
+EC24-0171,R24EC171,Kabir Verma,kabir.verma.ec24171@pragati.edu,M,2006-10-28,ECE,B.Tech,2,B,M-EC-22,OBC,Kerala
+CE22-0144,R22CE144,Nandini Nair,nandini.nair.ce22144@pragati.edu,F,2004-10-14,CE,B.Tech,4,B,M-CE-43,General,Andhra Pradesh
+CS22-0197,R22CS197,Varun Chopra,varun.chopra.cs22197@pragati.edu,M,2004-06-03,CSE,B.Tech,4,C,M-CS-42,EWS,Bihar
+EC24-0174,R24EC174,Diya Rao,diya.rao.ec24174@pragati.edu,F,2006-08-20,ECE,B.Tech,2,B,M-EC-21,General,Bihar
+ME25-0176,R25ME176,Pallavi Gupta,pallavi.gupta.me25176@pragati.edu,F,2007-09-07,ME,B.Tech,1,A,M-ME-13,General,Maharashtra
+CS23-0211,R23CS211,Rohan Patel,rohan.patel.cs23211@pragati.edu,M,2005-05-19,CSE,B.Tech,3,B,M-CS-33,OBC,Odisha
+IT25-0144,R25IT144,Kavya Deshpande,kavya.deshpande.it25144@pragati.edu,F,2007-08-20,IT,B.Tech,1,C,M-IT-11,SC,Odisha
+CE24-0137,R24CE137,Neha Reddy,neha.reddy.ce24137@pragati.edu,F,2006-03-23,CE,B.Tech,2,C,M-CE-21,OBC,Uttar Pradesh
+ME23-0172,R23ME172,Siddharth Mehta,siddharth.mehta.me23172@pragati.edu,M,2005-09-16,ME,B.Tech,3,B,M-ME-32,General,Kerala
+CS24-0186,R24CS186,Karthik Agarwal,karthik.agarwal.cs24186@pragati.edu,M,2006-02-27,CSE,B.Tech,2,C,M-CS-22,General,Uttar Pradesh
+CE24-0140,R24CE140,Riya Das,riya.das.ce24140@pragati.edu,F,2006-12-04,CE,B.Tech,2,C,M-CE-22,General,Karnataka
+IT24-0155,R24IT155,Divya Reddy,divya.reddy.it24155@pragati.edu,F,2006-04-04,IT,B.Tech,2,B,M-IT-23,OBC,Odisha
+CE22-0146,R22CE146,Vivaan Patel,vivaan.patel.ce22146@pragati.edu,M,2004-10-01,CE,B.Tech,4,B,M-CE-43,General,Telangana
+CS22-0199,R22CS199,Arjun Pillai,arjun.pillai.cs22199@pragati.edu,M,2004-11-09,CSE,B.Tech,4,A,M-CS-43,General,Telangana
+EC22-0158,R22EC158,Isha Joshi,isha.joshi.ec22158@pragati.edu,F,2004-02-16,ECE,B.Tech,4,A,M-EC-42,General,Telangana
+IT23-0154,R23IT154,Arjun Verma,arjun.verma.it23154@pragati.edu,M,2005-01-29,IT,B.Tech,3,B,M-IT-32,General,West Bengal
+CS23-0212,R23CS212,Nandini Singh,nandini.singh.cs23212@pragati.edu,F,2005-05-11,CSE,B.Tech,3,B,M-CS-33,EWS,Uttar Pradesh
+CE24-0142,R24CE142,Rahul Agarwal,rahul.agarwal.ce24142@pragati.edu,M,2006-12-11,CE,B.Tech,2,C,M-CE-21,OBC,Andhra Pradesh
+CS24-0189,R24CS189,Nandini Chopra,nandini.chopra.cs24189@pragati.edu,F,2006-07-28,CSE,B.Tech,2,B,M-CS-23,SC,Tamil Nadu
+CS22-0201,R22CS201,Arjun Kulkarni,arjun.kulkarni.cs22201@pragati.edu,M,2004-10-16,CSE,B.Tech,4,A,M-CS-41,General,Kerala
+IT22-0132,R22IT132,Ananya Das,ananya.das.it22132@pragati.edu,F,2004-12-21,IT,B.Tech,4,A,M-IT-43,OBC,Tamil Nadu
+ME25-0178,R25ME178,Rahul Mehta,rahul.mehta.me25178@pragati.edu,M,2007-12-20,ME,B.Tech,1,B,M-ME-13,ST,Uttar Pradesh
+ME25-0179,R25ME179,Harsh Kulkarni,harsh.kulkarni.me25179@pragati.edu,M,2007-09-16,ME,B.Tech,1,A,M-ME-11,OBC,Karnataka
+CE22-0149,R22CE149,Neha Iyer,neha.iyer.ce22149@pragati.edu,F,2004-05-20,CE,B.Tech,4,B,M-CE-41,OBC,Andhra Pradesh
+CS25-0203,R25CS203,Aman Banerjee,aman.banerjee.cs25203@pragati.edu,M,2007-11-25,CSE,B.Tech,1,A,M-CS-13,EWS,Tamil Nadu
+IT22-0134,R22IT134,Yash Menon,yash.menon.it22134@pragati.edu,M,2004-03-14,IT,B.Tech,4,B,M-IT-43,General,Andhra Pradesh
+CS24-0191,R24CS191,Reyansh Rao,reyansh.rao.cs24191@pragati.edu,M,2006-06-24,CSE,B.Tech,2,B,M-CS-21,SC,Telangana
+EC23-0163,R23EC163,Vikram Nair,vikram.nair.ec23163@pragati.edu,M,2005-10-25,ECE,B.Tech,3,A,M-EC-32,General,Kerala
+CE25-0145,R25CE145,Yash Iyer,yash.iyer.ce25145@pragati.edu,M,2007-09-17,CE,B.Tech,1,A,M-CE-12,General,Bihar
+ME24-0181,R24ME181,Priya Deshpande,priya.deshpande.me24181@pragati.edu,F,2006-09-24,ME,B.Tech,2,C,M-ME-21,General,Bihar
+EC22-0161,R22EC161,Meera Sharma,meera.sharma.ec22161@pragati.edu,F,2004-06-28,ECE,B.Tech,4,C,M-EC-42,EWS,Bihar
+IT25-0147,R25IT147,Lakshmi Nair,lakshmi.nair.it25147@pragati.edu,F,2007-12-23,IT,B.Tech,1,C,M-IT-13,EWS,Telangana
+CE23-0154,R23CE154,Nikhil Singh,nikhil.singh.ce23154@pragati.edu,M,2005-04-22,CE,B.Tech,3,B,M-CE-33,EWS,Tamil Nadu
+EC25-0175,R25EC175,Reyansh Kumar,reyansh.kumar.ec25175@pragati.edu,M,2007-05-31,ECE,B.Tech,1,B,M-EC-12,EWS,Telangana
+CS24-0194,R24CS194,Aarav Kulkarni,aarav.kulkarni.cs24194@pragati.edu,M,2006-03-30,CSE,B.Tech,2,B,M-CS-22,General,Kerala
+IT22-0137,R22IT137,Rohan Iyer,rohan.iyer.it22137@pragati.edu,M,2004-11-14,IT,B.Tech,4,C,M-IT-42,ST,Telangana
+CS24-0195,R24CS195,Varun Joshi,varun.joshi.cs24195@pragati.edu,M,2006-01-14,CSE,B.Tech,2,C,M-CS-21,General,Uttar Pradesh
+CS22-0202,R22CS202,Pallavi Kulkarni,pallavi.kulkarni.cs22202@pragati.edu,F,2004-03-01,CSE,B.Tech,4,C,M-CS-43,EWS,Andhra Pradesh
+CS25-0205,R25CS205,Aman Gupta,aman.gupta.cs25205@pragati.edu,M,2007-11-20,CSE,B.Tech,1,A,M-CS-13,General,West Bengal
+EC24-0176,R24EC176,Aman Banerjee,aman.banerjee.ec24176@pragati.edu,M,2006-03-11,ECE,B.Tech,2,C,M-EC-23,OBC,Karnataka
+EC24-0178,R24EC178,Arjun Sharma,arjun.sharma.ec24178@pragati.edu,M,2006-09-06,ECE,B.Tech,2,B,M-EC-23,OBC,Uttar Pradesh
+IT22-0138,R22IT138,Gayatri Nair,gayatri.nair.it22138@pragati.edu,F,2004-07-08,IT,B.Tech,4,C,M-IT-41,EWS,Uttar Pradesh
+IT24-0158,R24IT158,Pooja Nair,pooja.nair.it24158@pragati.edu,F,2006-04-22,IT,B.Tech,2,A,M-IT-23,OBC,Tamil Nadu
+CE22-0152,R22CE152,Karthik Agarwal,karthik.agarwal.ce22152@pragati.edu,M,2004-03-08,CE,B.Tech,4,B,M-CE-41,ST,Telangana
+ME23-0174,R23ME174,Kabir Mehta,kabir.mehta.me23174@pragati.edu,M,2005-03-23,ME,B.Tech,3,A,M-ME-32,EWS,Tamil Nadu
+EC22-0163,R22EC163,Sneha Kumar,sneha.kumar.ec22163@pragati.edu,F,2004-08-17,ECE,B.Tech,4,C,M-EC-43,OBC,West Bengal
+CS23-0214,R23CS214,Aman Nair,aman.nair.cs23214@pragati.edu,M,2005-09-14,CSE,B.Tech,3,B,M-CS-33,General,Tamil Nadu
+CE23-0156,R23CE156,Sneha Gupta,sneha.gupta.ce23156@pragati.edu,F,2005-11-01,CE,B.Tech,3,B,M-CE-31,General,Karnataka
+CS23-0217,R23CS217,Krishna Mehta,krishna.mehta.cs23217@pragati.edu,M,2005-02-09,CSE,B.Tech,3,C,M-CS-31,General,Karnataka
+IT22-0141,R22IT141,Krishna Iyer,krishna.iyer.it22141@pragati.edu,M,2004-04-21,IT,B.Tech,4,B,M-IT-43,General,Odisha
+CE22-0155,R22CE155,Aadhya Joshi,aadhya.joshi.ce22155@pragati.edu,F,2004-04-14,CE,B.Tech,4,B,M-CE-41,General,West Bengal
+EC24-0179,R24EC179,Aman Verma,aman.verma.ec24179@pragati.edu,M,2006-08-10,ECE,B.Tech,2,C,M-EC-21,General,Uttar Pradesh
+ME23-0177,R23ME177,Harsh Nair,harsh.nair.me23177@pragati.edu,M,2005-06-03,ME,B.Tech,3,C,M-ME-33,EWS,Uttar Pradesh
+EC23-0166,R23EC166,Gayatri Iyer,gayatri.iyer.ec23166@pragati.edu,F,2005-09-19,ECE,B.Tech,3,C,M-EC-33,General,Karnataka
+ME22-0172,R22ME172,Manish Pillai,manish.pillai.me22172@pragati.edu,M,2004-02-10,ME,B.Tech,4,B,M-ME-42,General,Andhra Pradesh
+CS25-0207,R25CS207,Priya Chopra,priya.chopra.cs25207@pragati.edu,F,2007-10-17,CSE,B.Tech,1,B,M-CS-13,General,Uttar Pradesh
+CS22-0203,R22CS203,Sai Gupta,sai.gupta.cs22203@pragati.edu,M,2004-10-31,CSE,B.Tech,4,A,M-CS-42,OBC,Uttar Pradesh
+IT23-0156,R23IT156,Sai Agarwal,sai.agarwal.it23156@pragati.edu,M,2005-07-05,IT,B.Tech,3,B,M-IT-32,ST,West Bengal
+CS23-0218,R23CS218,Yash Kumar,yash.kumar.cs23218@pragati.edu,M,2005-10-04,CSE,B.Tech,3,A,M-CS-33,OBC,Uttar Pradesh
+CE23-0159,R23CE159,Yash Rao,yash.rao.ce23159@pragati.edu,M,2005-04-14,CE,B.Tech,3,C,M-CE-31,General,Odisha
+CS25-0209,R25CS209,Kavya Pillai,kavya.pillai.cs25209@pragati.edu,F,2007-03-18,CSE,B.Tech,1,B,M-CS-11,General,Uttar Pradesh
+EC25-0176,R25EC176,Aarav Verma,aarav.verma.ec25176@pragati.edu,M,2007-08-23,ECE,B.Tech,1,C,M-EC-11,General,Uttar Pradesh
+ME24-0184,R24ME184,Aarav Iyer,aarav.iyer.me24184@pragati.edu,M,2006-11-23,ME,B.Tech,2,C,M-ME-23,SC,Andhra Pradesh
+ME23-0179,R23ME179,Aadhya Reddy,aadhya.reddy.me23179@pragati.edu,F,2005-07-17,ME,B.Tech,3,B,M-ME-31,SC,Bihar
+IT24-0160,R24IT160,Priya Kumar,priya.kumar.it24160@pragati.edu,F,2006-05-04,IT,B.Tech,2,B,M-IT-21,OBC,West Bengal
+EC23-0168,R23EC168,Nikhil Mehta,nikhil.mehta.ec23168@pragati.edu,M,2005-01-02,ECE,B.Tech,3,B,M-EC-32,SC,Kerala
+CE22-0158,R22CE158,Aman Kumar,aman.kumar.ce22158@pragati.edu,M,2004-07-02,CE,B.Tech,4,A,M-CE-41,SC,Odisha
+ME22-0175,R22ME175,Divya Agarwal,divya.agarwal.me22175@pragati.edu,F,2004-09-07,ME,B.Tech,4,B,M-ME-43,ST,Andhra Pradesh
+ME24-0185,R24ME185,Arjun Nair,arjun.nair.me24185@pragati.edu,M,2006-04-13,ME,B.Tech,2,B,M-ME-23,General,Kerala
+CE22-0160,R22CE160,Nikhil Iyer,nikhil.iyer.ce22160@pragati.edu,M,2004-01-03,CE,B.Tech,4,A,M-CE-42,SC,Maharashtra
+ME22-0176,R22ME176,Krishna Pillai,krishna.pillai.me22176@pragati.edu,M,2004-10-05,ME,B.Tech,4,A,M-ME-42,OBC,Karnataka
+CS24-0198,R24CS198,Gayatri Chopra,gayatri.chopra.cs24198@pragati.edu,F,2006-04-26,CSE,B.Tech,2,C,M-CS-21,OBC,Odisha
+EC23-0169,R23EC169,Nandini Rao,nandini.rao.ec23169@pragati.edu,F,2005-08-28,ECE,B.Tech,3,A,M-EC-32,OBC,Bihar
+CS24-0199,R24CS199,Meera Nair,meera.nair.cs24199@pragati.edu,F,2006-10-20,CSE,B.Tech,2,B,M-CS-22,General,Odisha
+ME22-0177,R22ME177,Aarav Kulkarni,aarav.kulkarni.me22177@pragati.edu,M,2004-03-04,ME,B.Tech,4,C,M-ME-41,SC,Andhra Pradesh
+CE23-0161,R23CE161,Rohan Joshi,rohan.joshi.ce23161@pragati.edu,M,2005-12-07,CE,B.Tech,3,A,M-CE-33,OBC,Tamil Nadu
+EC25-0179,R25EC179,Aarav Deshpande,aarav.deshpande.ec25179@pragati.edu,M,2007-10-11,ECE,B.Tech,1,B,M-EC-11,EWS,Kerala
+IT22-0142,R22IT142,Diya Patel,diya.patel.it22142@pragati.edu,F,2004-07-12,IT,B.Tech,4,A,M-IT-41,OBC,Telangana
+CS25-0211,R25CS211,Harsh Nair,harsh.nair.cs25211@pragati.edu,M,2007-05-14,CSE,B.Tech,1,A,M-CS-13,SC,Bihar
+CE24-0144,R24CE144,Pooja Kumar,pooja.kumar.ce24144@pragati.edu,F,2006-01-14,CE,B.Tech,2,A,M-CE-23,General,Andhra Pradesh
+CS24-0200,R24CS200,Ishaan Mehta,ishaan.mehta.cs24200@pragati.edu,M,2006-01-03,CSE,B.Tech,2,C,M-CS-22,SC,Bihar
+CS23-0220,R23CS220,Harsh Singh,harsh.singh.cs23220@pragati.edu,M,2005-08-26,CSE,B.Tech,3,C,M-CS-33,General,West Bengal
+CS22-0206,R22CS206,Aadhya Kumar,aadhya.kumar.cs22206@pragati.edu,F,2004-03-29,CSE,B.Tech,4,C,M-CS-42,OBC,Andhra Pradesh
+CS22-0208,R22CS208,Pooja Pillai,pooja.pillai.cs22208@pragati.edu,F,2004-12-10,CSE,B.Tech,4,B,M-CS-41,OBC,Telangana
+EC24-0181,R24EC181,Sai Singh,sai.singh.ec24181@pragati.edu,M,2006-03-28,ECE,B.Tech,2,B,M-EC-22,OBC,Maharashtra
+EC25-0181,R25EC181,Nikhil Sharma,nikhil.sharma.ec25181@pragati.edu,M,2007-10-31,ECE,B.Tech,1,B,M-EC-12,OBC,Maharashtra
+IT22-0144,R22IT144,Yash Verma,yash.verma.it22144@pragati.edu,M,2004-01-13,IT,B.Tech,4,C,M-IT-42,General,Karnataka
+CS24-0201,R24CS201,Ishaan Pillai,ishaan.pillai.cs24201@pragati.edu,M,2006-05-21,CSE,B.Tech,2,C,M-CS-23,SC,Andhra Pradesh
+CS25-0214,R25CS214,Ishaan Das,ishaan.das.cs25214@pragati.edu,M,2007-08-15,CSE,B.Tech,1,C,M-CS-11,ST,Maharashtra
+IT25-0149,R25IT149,Riya Joshi,riya.joshi.it25149@pragati.edu,F,2007-09-29,IT,B.Tech,1,B,M-IT-11,General,Kerala
+CS25-0215,R25CS215,Rahul Agarwal,rahul.agarwal.cs25215@pragati.edu,M,2007-02-17,CSE,B.Tech,1,A,M-CS-12,OBC,Maharashtra
+ME24-0186,R24ME186,Harsh Chopra,harsh.chopra.me24186@pragati.edu,M,2006-08-29,ME,B.Tech,2,B,M-ME-21,OBC,Kerala
+CS24-0202,R24CS202,Priya Patel,priya.patel.cs24202@pragati.edu,F,2006-06-30,CSE,B.Tech,2,C,M-CS-21,ST,Kerala
+IT25-0150,R25IT150,Vivaan Gupta,vivaan.gupta.it25150@pragati.edu,M,2007-03-25,IT,B.Tech,1,C,M-IT-13,OBC,Bihar
+IT25-0151,R25IT151,Priya Das,priya.das.it25151@pragati.edu,F,2007-10-09,IT,B.Tech,1,A,M-IT-11,SC,Telangana
+IT22-0146,R22IT146,Karthik Gupta,karthik.gupta.it22146@pragati.edu,M,2004-06-19,IT,B.Tech,4,B,M-IT-42,General,Andhra Pradesh
+CS24-0203,R24CS203,Rohan Joshi,rohan.joshi.cs24203@pragati.edu,M,2006-07-26,CSE,B.Tech,2,A,M-CS-22,General,Telangana
+CS23-0223,R23CS223,Isha Reddy,isha.reddy.cs23223@pragati.edu,F,2005-08-02,CSE,B.Tech,3,A,M-CS-31,General,Kerala
+CE24-0147,R24CE147,Diya Rao,diya.rao.ce24147@pragati.edu,F,2006-09-04,CE,B.Tech,2,B,M-CE-21,General,Andhra Pradesh
+CS25-0216,R25CS216,Aarav Joshi,aarav.joshi.cs25216@pragati.edu,M,2007-10-02,CSE,B.Tech,1,B,M-CS-11,OBC,Bihar
+EC24-0182,R24EC182,Tanvi Banerjee,tanvi.banerjee.ec24182@pragati.edu,F,2006-10-12,ECE,B.Tech,2,C,M-EC-21,OBC,Bihar
+EC23-0172,R23EC172,Isha Kumar,isha.kumar.ec23172@pragati.edu,F,2005-06-29,ECE,B.Tech,3,A,M-EC-31,General,Tamil Nadu
+IT22-0148,R22IT148,Aarav Reddy,aarav.reddy.it22148@pragati.edu,M,2004-12-01,IT,B.Tech,4,C,M-IT-41,General,Kerala
+IT22-0149,R22IT149,Ananya Agarwal,ananya.agarwal.it22149@pragati.edu,F,2004-02-25,IT,B.Tech,4,C,M-IT-41,General,Odisha
+ME24-0188,R24ME188,Kavya Iyer,kavya.iyer.me24188@pragati.edu,F,2006-01-31,ME,B.Tech,2,B,M-ME-22,SC,Tamil Nadu
+ME22-0180,R22ME180,Kabir Deshpande,kabir.deshpande.me22180@pragati.edu,M,2004-08-01,ME,B.Tech,4,B,M-ME-41,OBC,Andhra Pradesh
+CS25-0217,R25CS217,Pallavi Patel,pallavi.patel.cs25217@pragati.edu,F,2007-01-10,CSE,B.Tech,1,C,M-CS-11,ST,West Bengal
+IT22-0151,R22IT151,Gayatri Gupta,gayatri.gupta.it22151@pragati.edu,F,2004-08-02,IT,B.Tech,4,A,M-IT-43,ST,Telangana
+CS24-0204,R24CS204,Kavya Menon,kavya.menon.cs24204@pragati.edu,F,2006-08-22,CSE,B.Tech,2,B,M-CS-21,EWS,Telangana
+EC25-0183,R25EC183,Karthik Joshi,karthik.joshi.ec25183@pragati.edu,M,2007-02-02,ECE,B.Tech,1,C,M-EC-11,OBC,Telangana
+ME25-0181,R25ME181,Reyansh Singh,reyansh.singh.me25181@pragati.edu,M,2007-02-23,ME,B.Tech,1,C,M-ME-13,EWS,Karnataka
+CS24-0205,R24CS205,Reyansh Patel,reyansh.patel.cs24205@pragati.edu,M,2006-02-19,CSE,B.Tech,2,C,M-CS-21,General,Kerala
+IT25-0154,R25IT154,Priya Agarwal,priya.agarwal.it25154@pragati.edu,F,2007-11-08,IT,B.Tech,1,B,M-IT-12,OBC,Bihar
+CE23-0162,R23CE162,Manish Patel,manish.patel.ce23162@pragati.edu,M,2005-01-06,CE,B.Tech,3,B,M-CE-31,OBC,Andhra Pradesh
+CS23-0224,R23CS224,Aishwarya Kulkarni,aishwarya.kulkarni.cs23224@pragati.edu,F,2005-08-20,CSE,B.Tech,3,B,M-CS-31,SC,Telangana
+EC23-0175,R23EC175,Yash Nair,yash.nair.ec23175@pragati.edu,M,2005-03-31,ECE,B.Tech,3,C,M-EC-31,General,Maharashtra
+ME22-0181,R22ME181,Aman Banerjee,aman.banerjee.me22181@pragati.edu,M,2004-05-05,ME,B.Tech,4,C,M-ME-41,General,Karnataka
+CS23-0225,R23CS225,Harsh Pillai,harsh.pillai.cs23225@pragati.edu,M,2005-05-29,CSE,B.Tech,3,C,M-CS-33,OBC,Uttar Pradesh
+CS23-0226,R23CS226,Aarav Verma,aarav.verma.cs23226@pragati.edu,M,2005-05-06,CSE,B.Tech,3,C,M-CS-32,OBC,Odisha
+CS24-0206,R24CS206,Reyansh Joshi,reyansh.joshi.cs24206@pragati.edu,M,2006-12-17,CSE,B.Tech,2,A,M-CS-23,General,Andhra Pradesh
+CE25-0146,R25CE146,Aditya Patel,aditya.patel.ce25146@pragati.edu,M,2007-10-07,CE,B.Tech,1,B,M-CE-11,General,Telangana
+CS23-0228,R23CS228,Riya Iyer,riya.iyer.cs23228@pragati.edu,F,2005-12-20,CSE,B.Tech,3,B,M-CS-32,General,West Bengal
+CS24-0209,R24CS209,Neha Mehta,neha.mehta.cs24209@pragati.edu,F,2006-10-08,CSE,B.Tech,2,B,M-CS-22,General,Odisha
+CS22-0211,R22CS211,Varun Verma,varun.verma.cs22211@pragati.edu,M,2004-04-16,CSE,B.Tech,4,B,M-CS-43,OBC,Kerala
+CS24-0211,R24CS211,Aishwarya Kulkarni,aishwarya.kulkarni.cs24211@pragati.edu,F,2006-02-12,CSE,B.Tech,2,B,M-CS-21,General,Odisha
+EC25-0186,R25EC186,Saanvi Sharma,saanvi.sharma.ec25186@pragati.edu,F,2007-06-06,ECE,B.Tech,1,C,M-EC-13,General,Telangana
+CS24-0213,R24CS213,Vivaan Banerjee,vivaan.banerjee.cs24213@pragati.edu,M,2006-01-04,CSE,B.Tech,2,C,M-CS-22,OBC,Telangana
+EC25-0187,R25EC187,Rohan Agarwal,rohan.agarwal.ec25187@pragati.edu,M,2007-07-09,ECE,B.Tech,1,A,M-EC-11,ST,West Bengal
+EC24-0184,R24EC184,Varun Pillai,varun.pillai.ec24184@pragati.edu,M,2006-05-12,ECE,B.Tech,2,B,M-EC-22,General,West Bengal
+ME22-0182,R22ME182,Isha Verma,isha.verma.me22182@pragati.edu,F,2004-04-15,ME,B.Tech,4,A,M-ME-41,General,Bihar
+CS23-0229,R23CS229,Aadhya Sharma,aadhya.sharma.cs23229@pragati.edu,F,2005-01-24,CSE,B.Tech,3,B,M-CS-32,ST,Kerala
+CE22-0161,R22CE161,Varun Singh,varun.singh.ce22161@pragati.edu,M,2004-12-04,CE,B.Tech,4,B,M-CE-43,OBC,Andhra Pradesh
+EC22-0164,R22EC164,Ishaan Singh,ishaan.singh.ec22164@pragati.edu,M,2004-08-08,ECE,B.Tech,4,A,M-EC-41,OBC,Andhra Pradesh
+CS23-0230,R23CS230,Tanvi Mehta,tanvi.mehta.cs23230@pragati.edu,F,2005-02-16,CSE,B.Tech,3,B,M-CS-32,General,Odisha
+ME25-0184,R25ME184,Aarav Sharma,aarav.sharma.me25184@pragati.edu,M,2007-02-03,ME,B.Tech,1,A,M-ME-12,General,West Bengal
+CE25-0147,R25CE147,Rohan Kulkarni,rohan.kulkarni.ce25147@pragati.edu,M,2007-08-07,CE,B.Tech,1,C,M-CE-12,OBC,Karnataka
+CS23-0232,R23CS232,Tanvi Chopra,tanvi.chopra.cs23232@pragati.edu,F,2005-09-24,CSE,B.Tech,3,A,M-CS-32,OBC,Bihar
+CE24-0148,R24CE148,Meera Kumar,meera.kumar.ce24148@pragati.edu,F,2006-11-05,CE,B.Tech,2,A,M-CE-23,ST,West Bengal
+EC24-0185,R24EC185,Manish Rao,manish.rao.ec24185@pragati.edu,M,2006-12-16,ECE,B.Tech,2,A,M-EC-23,OBC,Andhra Pradesh
+EC23-0176,R23EC176,Vivaan Kumar,vivaan.kumar.ec23176@pragati.edu,M,2005-09-11,ECE,B.Tech,3,A,M-EC-33,General,Telangana
+CE23-0164,R23CE164,Vivaan Agarwal,vivaan.agarwal.ce23164@pragati.edu,M,2005-09-20,CE,B.Tech,3,B,M-CE-32,OBC,Andhra Pradesh
+IT22-0154,R22IT154,Isha Sharma,isha.sharma.it22154@pragati.edu,F,2004-11-29,IT,B.Tech,4,C,M-IT-43,OBC,West Bengal
+ME23-0181,R23ME181,Neha Nair,neha.nair.me23181@pragati.edu,F,2005-05-26,ME,B.Tech,3,B,M-ME-31,General,Maharashtra
+IT22-0157,R22IT157,Gayatri Reddy,gayatri.reddy.it22157@pragati.edu,F,2004-06-26,IT,B.Tech,4,B,M-IT-42,EWS,Karnataka
+ME22-0183,R22ME183,Gayatri Rao,gayatri.rao.me22183@pragati.edu,F,2004-09-29,ME,B.Tech,4,C,M-ME-42,General,Bihar
+EC24-0186,R24EC186,Reyansh Singh,reyansh.singh.ec24186@pragati.edu,M,2006-07-26,ECE,B.Tech,2,C,M-EC-22,General,Telangana
+CS25-0220,R25CS220,Varun Agarwal,varun.agarwal.cs25220@pragati.edu,M,2007-08-17,CSE,B.Tech,1,C,M-CS-11,General,Andhra Pradesh
+IT25-0157,R25IT157,Tanvi Deshpande,tanvi.deshpande.it25157@pragati.edu,F,2007-12-25,IT,B.Tech,1,A,M-IT-12,OBC,Tamil Nadu
+IT25-0160,R25IT160,Varun Chopra,varun.chopra.it25160@pragati.edu,M,2007-12-31,IT,B.Tech,1,C,M-IT-12,ST,Bihar
+CS25-0221,R25CS221,Aadhya Gupta,aadhya.gupta.cs25221@pragati.edu,F,2007-05-12,CSE,B.Tech,1,B,M-CS-11,General,West Bengal
+CS24-0214,R24CS214,Nikhil Rao,nikhil.rao.cs24214@pragati.edu,M,2006-06-21,CSE,B.Tech,2,B,M-CS-23,SC,Tamil Nadu
+IT22-0158,R22IT158,Rohan Singh,rohan.singh.it22158@pragati.edu,M,2004-07-15,IT,B.Tech,4,C,M-IT-43,ST,Tamil Nadu
+CS25-0222,R25CS222,Lakshmi Nair,lakshmi.nair.cs25222@pragati.edu,F,2007-06-21,CSE,B.Tech,1,C,M-CS-13,OBC,Bihar
+CS23-0233,R23CS233,Vivaan Banerjee,vivaan.banerjee.cs23233@pragati.edu,M,2005-11-09,CSE,B.Tech,3,B,M-CS-32,General,Andhra Pradesh
+ME24-0189,R24ME189,Sai Das,sai.das.me24189@pragati.edu,M,2006-11-15,ME,B.Tech,2,C,M-ME-23,General,Karnataka
+ME25-0186,R25ME186,Priya Menon,priya.menon.me25186@pragati.edu,F,2007-02-07,ME,B.Tech,1,A,M-ME-11,OBC,Maharashtra
+ME25-0189,R25ME189,Isha Joshi,isha.joshi.me25189@pragati.edu,F,2007-11-04,ME,B.Tech,1,A,M-ME-11,OBC,Bihar
+IT25-0161,R25IT161,Aishwarya Kumar,aishwarya.kumar.it25161@pragati.edu,F,2007-11-20,IT,B.Tech,1,B,M-IT-11,OBC,West Bengal
+CE24-0151,R24CE151,Vikram Rao,vikram.rao.ce24151@pragati.edu,M,2006-07-09,CE,B.Tech,2,A,M-CE-22,OBC,Andhra Pradesh
+EC22-0166,R22EC166,Kavya Kulkarni,kavya.kulkarni.ec22166@pragati.edu,F,2004-07-19,ECE,B.Tech,4,B,M-EC-41,OBC,Telangana
+CS23-0234,R23CS234,Priya Gupta,priya.gupta.cs23234@pragati.edu,F,2005-11-01,CSE,B.Tech,3,C,M-CS-33,OBC,Andhra Pradesh
+CS24-0217,R24CS217,Gayatri Verma,gayatri.verma.cs24217@pragati.edu,F,2006-08-25,CSE,B.Tech,2,B,M-CS-22,SC,Telangana
+ME24-0191,R24ME191,Lakshmi Kumar,lakshmi.kumar.me24191@pragati.edu,F,2006-10-26,ME,B.Tech,2,A,M-ME-23,OBC,Odisha
+CS25-0224,R25CS224,Gayatri Sharma,gayatri.sharma.cs25224@pragati.edu,F,2007-03-05,CSE,B.Tech,1,B,M-CS-13,OBC,Bihar
+EC23-0179,R23EC179,Shreya Gupta,shreya.gupta.ec23179@pragati.edu,F,2005-10-26,ECE,B.Tech,3,A,M-EC-31,SC,Karnataka
+CE23-0166,R23CE166,Karthik Deshpande,karthik.deshpande.ce23166@pragati.edu,M,2005-11-12,CE,B.Tech,3,B,M-CE-32,SC,Tamil Nadu
+CS23-0237,R23CS237,Neha Pillai,neha.pillai.cs23237@pragati.edu,F,2005-02-16,CSE,B.Tech,3,B,M-CS-33,ST,Bihar
+CS23-0240,R23CS240,Kavya Kumar,kavya.kumar.cs23240@pragati.edu,F,2005-09-26,CSE,B.Tech,3,B,M-CS-31,OBC,West Bengal
+CE22-0163,R22CE163,Reyansh Nair,reyansh.nair.ce22163@pragati.edu,M,2004-06-09,CE,B.Tech,4,B,M-CE-42,SC,Andhra Pradesh
+EC23-0182,R23EC182,Diya Joshi,diya.joshi.ec23182@pragati.edu,F,2005-10-03,ECE,B.Tech,3,B,M-EC-31,SC,Tamil Nadu
+CS24-0218,R24CS218,Vikram Banerjee,vikram.banerjee.cs24218@pragati.edu,M,2006-07-12,CSE,B.Tech,2,B,M-CS-23,OBC,Telangana
+CE25-0149,R25CE149,Rohan Sharma,rohan.sharma.ce25149@pragati.edu,M,2007-03-07,CE,B.Tech,1,A,M-CE-11,EWS,Karnataka
+CE25-0152,R25CE152,Rohan Kulkarni,rohan.kulkarni.ce25152@pragati.edu,M,2007-08-15,CE,B.Tech,1,C,M-CE-11,General,Karnataka
+EC23-0184,R23EC184,Shreya Menon,shreya.menon.ec23184@pragati.edu,F,2005-02-14,ECE,B.Tech,3,B,M-EC-32,General,Bihar
+EC22-0168,R22EC168,Arjun Joshi,arjun.joshi.ec22168@pragati.edu,M,2004-06-03,ECE,B.Tech,4,B,M-EC-43,General,Telangana
+CS22-0212,R22CS212,Harsh Reddy,harsh.reddy.cs22212@pragati.edu,M,2004-03-20,CSE,B.Tech,4,A,M-CS-43,OBC,Kerala
+CS24-0220,R24CS220,Divya Iyer,divya.iyer.cs24220@pragati.edu,F,2006-01-07,CSE,B.Tech,2,C,M-CS-22,EWS,Andhra Pradesh
+EC22-0171,R22EC171,Kavya Singh,kavya.singh.ec22171@pragati.edu,F,2004-10-25,ECE,B.Tech,4,B,M-EC-43,OBC,Telangana
+CS23-0241,R23CS241,Arjun Joshi,arjun.joshi.cs23241@pragati.edu,M,2005-10-25,CSE,B.Tech,3,A,M-CS-33,General,Maharashtra
+ME22-0184,R22ME184,Kabir Nair,kabir.nair.me22184@pragati.edu,M,2004-09-15,ME,B.Tech,4,A,M-ME-42,General,Karnataka
+ME23-0184,R23ME184,Divya Kumar,divya.kumar.me23184@pragati.edu,F,2005-07-11,ME,B.Tech,3,B,M-ME-31,General,Bihar
+CS24-0221,R24CS221,Pooja Iyer,pooja.iyer.cs24221@pragati.edu,F,2006-07-10,CSE,B.Tech,2,C,M-CS-22,OBC,Maharashtra
+EC25-0190,R25EC190,Siddharth Gupta,siddharth.gupta.ec25190@pragati.edu,M,2007-01-28,ECE,B.Tech,1,C,M-EC-11,OBC,Uttar Pradesh
+CS25-0225,R25CS225,Divya Rao,divya.rao.cs25225@pragati.edu,F,2007-02-13,CSE,B.Tech,1,C,M-CS-13,ST,Telangana
+CE24-0152,R24CE152,Vikram Deshpande,vikram.deshpande.ce24152@pragati.edu,M,2006-10-10,CE,B.Tech,2,C,M-CE-22,OBC,Karnataka
+CS25-0228,R25CS228,Riya Banerjee,riya.banerjee.cs25228@pragati.edu,F,2007-09-23,CSE,B.Tech,1,C,M-CS-11,EWS,Maharashtra
+EC23-0185,R23EC185,Vikram Mehta,vikram.mehta.ec23185@pragati.edu,M,2005-12-25,ECE,B.Tech,3,A,M-EC-31,OBC,Andhra Pradesh
+EC25-0193,R25EC193,Aditya Reddy,aditya.reddy.ec25193@pragati.edu,M,2007-08-06,ECE,B.Tech,1,C,M-EC-13,SC,West Bengal
+IT25-0162,R25IT162,Saanvi Patel,saanvi.patel.it25162@pragati.edu,F,2007-12-13,IT,B.Tech,1,A,M-IT-12,General,West Bengal
+ME23-0187,R23ME187,Siddharth Das,siddharth.das.me23187@pragati.edu,M,2005-08-11,ME,B.Tech,3,C,M-ME-33,OBC,Kerala
+ME24-0192,R24ME192,Rahul Nair,rahul.nair.me24192@pragati.edu,M,2006-03-15,ME,B.Tech,2,A,M-ME-23,SC,Telangana
+EC24-0188,R24EC188,Vivaan Pillai,vivaan.pillai.ec24188@pragati.edu,M,2006-12-06,ECE,B.Tech,2,B,M-EC-21,SC,Karnataka
+ME22-0187,R22ME187,Gayatri Singh,gayatri.singh.me22187@pragati.edu,F,2004-12-03,ME,B.Tech,4,A,M-ME-42,General,Andhra Pradesh
+CE23-0167,R23CE167,Lakshmi Rao,lakshmi.rao.ce23167@pragati.edu,F,2005-05-28,CE,B.Tech,3,B,M-CE-31,General,Maharashtra
+IT22-0161,R22IT161,Manish Rao,manish.rao.it22161@pragati.edu,M,2004-02-04,IT,B.Tech,4,C,M-IT-42,General,Odisha
+EC25-0195,R25EC195,Aditya Iyer,aditya.iyer.ec25195@pragati.edu,M,2007-07-02,ECE,B.Tech,1,A,M-EC-11,SC,Andhra Pradesh
+CS23-0244,R23CS244,Divya Menon,divya.menon.cs23244@pragati.edu,F,2005-09-05,CSE,B.Tech,3,A,M-CS-32,General,Maharashtra
+ME23-0188,R23ME188,Harsh Kulkarni,harsh.kulkarni.me23188@pragati.edu,M,2005-04-23,ME,B.Tech,3,B,M-ME-33,General,Odisha
+EC24-0189,R24EC189,Saanvi Das,saanvi.das.ec24189@pragati.edu,F,2006-01-02,ECE,B.Tech,2,A,M-EC-22,General,Kerala
+IT24-0161,R24IT161,Riya Das,riya.das.it24161@pragati.edu,F,2006-09-30,IT,B.Tech,2,C,M-IT-21,OBC,Bihar
+CS22-0215,R22CS215,Kavya Kulkarni,kavya.kulkarni.cs22215@pragati.edu,F,2004-11-23,CSE,B.Tech,4,B,M-CS-42,SC,Maharashtra
+CE23-0170,R23CE170,Arjun Pillai,arjun.pillai.ce23170@pragati.edu,M,2005-03-31,CE,B.Tech,3,A,M-CE-32,General,West Bengal
+IT23-0158,R23IT158,Divya Kumar,divya.kumar.it23158@pragati.edu,F,2005-02-01,IT,B.Tech,3,A,M-IT-31,General,Karnataka
+ME23-0191,R23ME191,Divya Gupta,divya.gupta.me23191@pragati.edu,F,2005-10-25,ME,B.Tech,3,A,M-ME-32,General,Kerala
+CS24-0223,R24CS223,Rohan Banerjee,rohan.banerjee.cs24223@pragati.edu,M,2006-11-26,CSE,B.Tech,2,A,M-CS-22,General,Andhra Pradesh
+CE24-0155,R24CE155,Aditya Iyer,aditya.iyer.ce24155@pragati.edu,M,2006-05-28,CE,B.Tech,2,A,M-CE-23,OBC,Karnataka
+CS25-0229,R25CS229,Meera Gupta,meera.gupta.cs25229@pragati.edu,F,2007-10-08,CSE,B.Tech,1,B,M-CS-11,General,Bihar
+CS25-0231,R25CS231,Priya Verma,priya.verma.cs25231@pragati.edu,F,2007-11-19,CSE,B.Tech,1,B,M-CS-11,ST,Maharashtra
+CE24-0158,R24CE158,Isha Banerjee,isha.banerjee.ce24158@pragati.edu,F,2006-07-08,CE,B.Tech,2,B,M-CE-21,General,Maharashtra
+CE24-0159,R24CE159,Manish Joshi,manish.joshi.ce24159@pragati.edu,M,2006-12-19,CE,B.Tech,2,B,M-CE-22,SC,Maharashtra
+CS24-0225,R24CS225,Priya Sharma,priya.sharma.cs24225@pragati.edu,F,2006-01-14,CSE,B.Tech,2,B,M-CS-21,OBC,Karnataka
+EC23-0187,R23EC187,Rahul Iyer,rahul.iyer.ec23187@pragati.edu,M,2005-07-02,ECE,B.Tech,3,C,M-EC-32,General,Tamil Nadu
+ME24-0193,R24ME193,Arjun Chopra,arjun.chopra.me24193@pragati.edu,M,2006-02-24,ME,B.Tech,2,C,M-ME-23,General,Odisha
+CE24-0161,R24CE161,Aishwarya Nair,aishwarya.nair.ce24161@pragati.edu,F,2006-10-08,CE,B.Tech,2,A,M-CE-21,OBC,West Bengal
+IT22-0163,R22IT163,Aarav Sharma,aarav.sharma.it22163@pragati.edu,M,2004-05-31,IT,B.Tech,4,C,M-IT-41,General,West Bengal
+EC24-0190,R24EC190,Nikhil Pillai,nikhil.pillai.ec24190@pragati.edu,M,2006-07-04,ECE,B.Tech,2,A,M-EC-23,General,Odisha
+ME23-0193,R23ME193,Aishwarya Deshpande,aishwarya.deshpande.me23193@pragati.edu,F,2005-05-09,ME,B.Tech,3,A,M-ME-33,General,Odisha
+ME23-0195,R23ME195,Karthik Mehta,karthik.mehta.me23195@pragati.edu,M,2005-03-19,ME,B.Tech,3,C,M-ME-32,General,Kerala
+ME23-0197,R23ME197,Neha Verma,neha.verma.me23197@pragati.edu,F,2005-03-16,ME,B.Tech,3,B,M-ME-33,ST,Odisha
+EC25-0197,R25EC197,Aman Gupta,aman.gupta.ec25197@pragati.edu,M,2007-07-29,ECE,B.Tech,1,A,M-EC-12,General,Kerala
+CS22-0217,R22CS217,Siddharth Kulkarni,siddharth.kulkarni.cs22217@pragati.edu,M,2004-06-26,CSE,B.Tech,4,A,M-CS-42,OBC,Bihar
+CE24-0163,R24CE163,Reyansh Reddy,reyansh.reddy.ce24163@pragati.edu,M,2006-12-23,CE,B.Tech,2,A,M-CE-22,SC,Uttar Pradesh
+CE25-0155,R25CE155,Gayatri Mehta,gayatri.mehta.ce25155@pragati.edu,F,2007-05-03,CE,B.Tech,1,C,M-CE-11,General,Uttar Pradesh
+ME25-0191,R25ME191,Gayatri Singh,gayatri.singh.me25191@pragati.edu,F,2007-08-07,ME,B.Tech,1,B,M-ME-12,General,Maharashtra
+CS24-0227,R24CS227,Saanvi Rao,saanvi.rao.cs24227@pragati.edu,F,2006-02-21,CSE,B.Tech,2,B,M-CS-22,SC,Karnataka
+CS23-0246,R23CS246,Rohan Rao,rohan.rao.cs23246@pragati.edu,M,2005-01-14,CSE,B.Tech,3,B,M-CS-31,SC,Telangana
+ME23-0198,R23ME198,Vivaan Verma,vivaan.verma.me23198@pragati.edu,M,2005-03-01,ME,B.Tech,3,B,M-ME-33,General,West Bengal
+CS24-0230,R24CS230,Aadhya Verma,aadhya.verma.cs24230@pragati.edu,F,2006-12-30,CSE,B.Tech,2,A,M-CS-22,OBC,Tamil Nadu
+CE22-0166,R22CE166,Tanvi Chopra,tanvi.chopra.ce22166@pragati.edu,F,2004-02-10,CE,B.Tech,4,C,M-CE-41,OBC,Tamil Nadu
+IT23-0160,R23IT160,Sneha Reddy,sneha.reddy.it23160@pragati.edu,F,2005-05-02,IT,B.Tech,3,B,M-IT-31,General,Tamil Nadu
+ME23-0201,R23ME201,Kavya Kulkarni,kavya.kulkarni.me23201@pragati.edu,F,2005-11-03,ME,B.Tech,3,C,M-ME-33,OBC,West Bengal
+CE22-0168,R22CE168,Aditya Patel,aditya.patel.ce22168@pragati.edu,M,2004-07-27,CE,B.Tech,4,B,M-CE-42,ST,Maharashtra
+IT24-0163,R24IT163,Siddharth Joshi,siddharth.joshi.it24163@pragati.edu,M,2006-03-03,IT,B.Tech,2,B,M-IT-22,General,Uttar Pradesh
+IT25-0163,R25IT163,Pallavi Reddy,pallavi.reddy.it25163@pragati.edu,F,2007-08-28,IT,B.Tech,1,B,M-IT-13,General,Andhra Pradesh
+EC25-0199,R25EC199,Pooja Reddy,pooja.reddy.ec25199@pragati.edu,F,2007-11-14,ECE,B.Tech,1,B,M-EC-13,SC,Maharashtra
+EC22-0174,R22EC174,Siddharth Kulkarni,siddharth.kulkarni.ec22174@pragati.edu,M,2004-08-25,ECE,B.Tech,4,B,M-EC-42,General,Odisha
+IT24-0165,R24IT165,Manish Kumar,manish.kumar.it24165@pragati.edu,M,2006-01-04,IT,B.Tech,2,A,M-IT-21,General,Tamil Nadu
+EC25-0200,R25EC200,Reyansh Singh,reyansh.singh.ec25200@pragati.edu,M,2007-03-01,ECE,B.Tech,1,C,M-EC-13,General,Maharashtra
+CE24-0165,R24CE165,Varun Gupta,varun.gupta.ce24165@pragati.edu,M,2006-07-23,CE,B.Tech,2,B,M-CE-23,General,Odisha
+EC23-0189,R23EC189,Rohan Chopra,rohan.chopra.ec23189@pragati.edu,M,2005-10-14,ECE,B.Tech,3,C,M-EC-31,General,Telangana
+CS24-0232,R24CS232,Arjun Gupta,arjun.gupta.cs24232@pragati.edu,M,2006-01-01,CSE,B.Tech,2,B,M-CS-22,OBC,Tamil Nadu
+IT25-0164,R25IT164,Aman Agarwal,aman.agarwal.it25164@pragati.edu,M,2007-12-16,IT,B.Tech,1,A,M-IT-13,General,Odisha
+IT25-0165,R25IT165,Tanvi Banerjee,tanvi.banerjee.it25165@pragati.edu,F,2007-04-25,IT,B.Tech,1,B,M-IT-13,General,Karnataka
+CS24-0233,R24CS233,Tanvi Verma,tanvi.verma.cs24233@pragati.edu,F,2006-09-05,CSE,B.Tech,2,A,M-CS-22,OBC,Tamil Nadu
+CS22-0218,R22CS218,Saanvi Chopra,saanvi.chopra.cs22218@pragati.edu,F,2004-11-23,CSE,B.Tech,4,C,M-CS-41,OBC,Maharashtra
+ME23-0204,R23ME204,Sai Mehta,sai.mehta.me23204@pragati.edu,M,2005-06-29,ME,B.Tech,3,B,M-ME-33,OBC,Telangana
+IT23-0161,R23IT161,Karthik Sharma,karthik.sharma.it23161@pragati.edu,M,2005-09-11,IT,B.Tech,3,B,M-IT-32,SC,Bihar
+CE23-0172,R23CE172,Lakshmi Kulkarni,lakshmi.kulkarni.ce23172@pragati.edu,F,2005-09-27,CE,B.Tech,3,B,M-CE-32,General,Odisha
+CS22-0221,R22CS221,Kabir Das,kabir.das.cs22221@pragati.edu,M,2004-10-26,CSE,B.Tech,4,A,M-CS-41,General,Karnataka
+CS23-0249,R23CS249,Gayatri Sharma,gayatri.sharma.cs23249@pragati.edu,F,2005-09-29,CSE,B.Tech,3,C,M-CS-33,OBC,Tamil Nadu
+ME25-0192,R25ME192,Arjun Deshpande,arjun.deshpande.me25192@pragati.edu,M,2007-02-12,ME,B.Tech,1,A,M-ME-11,General,Karnataka
+CE22-0170,R22CE170,Sai Rao,sai.rao.ce22170@pragati.edu,M,2004-11-03,CE,B.Tech,4,B,M-CE-41,General,Tamil Nadu
+CS24-0234,R24CS234,Krishna Pillai,krishna.pillai.cs24234@pragati.edu,M,2006-10-14,CSE,B.Tech,2,B,M-CS-23,General,West Bengal
+CS24-0235,R24CS235,Riya Deshpande,riya.deshpande.cs24235@pragati.edu,F,2006-07-19,CSE,B.Tech,2,C,M-CS-23,General,Tamil Nadu
+CS24-0237,R24CS237,Isha Pillai,isha.pillai.cs24237@pragati.edu,F,2006-12-04,CSE,B.Tech,2,B,M-CS-22,OBC,Odisha
+EC25-0202,R25EC202,Meera Reddy,meera.reddy.ec25202@pragati.edu,F,2007-07-15,ECE,B.Tech,1,C,M-EC-11,SC,Bihar
+EC24-0192,R24EC192,Reyansh Joshi,reyansh.joshi.ec24192@pragati.edu,M,2006-10-23,ECE,B.Tech,2,B,M-EC-22,General,Karnataka
+CS23-0250,R23CS250,Priya Iyer,priya.iyer.cs23250@pragati.edu,F,2005-08-09,CSE,B.Tech,3,A,M-CS-32,EWS,Andhra Pradesh
+CS23-0252,R23CS252,Sneha Chopra,sneha.chopra.cs23252@pragati.edu,F,2005-12-27,CSE,B.Tech,3,C,M-CS-31,SC,Tamil Nadu
+EC23-0190,R23EC190,Karthik Banerjee,karthik.banerjee.ec23190@pragati.edu,M,2005-05-12,ECE,B.Tech,3,A,M-EC-32,OBC,Bihar
+CE24-0166,R24CE166,Sneha Reddy,sneha.reddy.ce24166@pragati.edu,F,2006-09-04,CE,B.Tech,2,C,M-CE-23,OBC,Telangana
+ME24-0194,R24ME194,Gayatri Das,gayatri.das.me24194@pragati.edu,F,2006-03-27,ME,B.Tech,2,C,M-ME-22,General,West Bengal
+EC23-0192,R23EC192,Aarav Rao,aarav.rao.ec23192@pragati.edu,M,2005-09-06,ECE,B.Tech,3,A,M-EC-32,OBC,Bihar
+CS25-0234,R25CS234,Ishaan Joshi,ishaan.joshi.cs25234@pragati.edu,M,2007-09-07,CSE,B.Tech,1,A,M-CS-11,General,Uttar Pradesh
+CS22-0224,R22CS224,Siddharth Mehta,siddharth.mehta.cs22224@pragati.edu,M,2004-12-04,CSE,B.Tech,4,A,M-CS-43,OBC,West Bengal
+CS23-0254,R23CS254,Ananya Menon,ananya.menon.cs23254@pragati.edu,F,2005-07-04,CSE,B.Tech,3,C,M-CS-32,General,West Bengal
+ME25-0194,R25ME194,Tanvi Agarwal,tanvi.agarwal.me25194@pragati.edu,F,2007-03-04,ME,B.Tech,1,B,M-ME-11,SC,Maharashtra
+CE24-0169,R24CE169,Harsh Patel,harsh.patel.ce24169@pragati.edu,M,2006-01-02,CE,B.Tech,2,A,M-CE-21,ST,Kerala
+CE22-0173,R22CE173,Kavya Verma,kavya.verma.ce22173@pragati.edu,F,2004-04-20,CE,B.Tech,4,C,M-CE-43,General,Karnataka
+CE22-0174,R22CE174,Vikram Rao,vikram.rao.ce22174@pragati.edu,M,2004-11-05,CE,B.Tech,4,B,M-CE-42,General,Andhra Pradesh
+CE22-0176,R22CE176,Aishwarya Agarwal,aishwarya.agarwal.ce22176@pragati.edu,F,2004-02-04,CE,B.Tech,4,B,M-CE-43,OBC,Andhra Pradesh
+CE23-0173,R23CE173,Aman Nair,aman.nair.ce23173@pragati.edu,M,2005-06-29,CE,B.Tech,3,B,M-CE-32,General,Maharashtra
+CS22-0225,R22CS225,Pallavi Patel,pallavi.patel.cs22225@pragati.edu,F,2004-01-19,CSE,B.Tech,4,A,M-CS-41,EWS,Karnataka
+CS23-0257,R23CS257,Ananya Banerjee,ananya.banerjee.cs23257@pragati.edu,F,2005-06-14,CSE,B.Tech,3,A,M-CS-33,OBC,Kerala
+IT22-0164,R22IT164,Saanvi Pillai,saanvi.pillai.it22164@pragati.edu,F,2004-01-20,IT,B.Tech,4,C,M-IT-41,General,Kerala
+EC22-0175,R22EC175,Vikram Kumar,vikram.kumar.ec22175@pragati.edu,M,2004-10-12,ECE,B.Tech,4,B,M-EC-42,OBC,Maharashtra
+CS24-0240,R24CS240,Pooja Pillai,pooja.pillai.cs24240@pragati.edu,F,2006-11-25,CSE,B.Tech,2,B,M-CS-21,OBC,Andhra Pradesh
+ME25-0197,R25ME197,Aishwarya Verma,aishwarya.verma.me25197@pragati.edu,F,2007-03-21,ME,B.Tech,1,C,M-ME-11,EWS,Kerala
+EC23-0195,R23EC195,Kabir Rao,kabir.rao.ec23195@pragati.edu,M,2005-01-23,ECE,B.Tech,3,B,M-EC-31,OBC,Kerala
+EC23-0198,R23EC198,Ishaan Nair,ishaan.nair.ec23198@pragati.edu,M,2005-07-22,ECE,B.Tech,3,A,M-EC-33,SC,Odisha
+CS24-0242,R24CS242,Aishwarya Joshi,aishwarya.joshi.cs24242@pragati.edu,F,2006-09-21,CSE,B.Tech,2,C,M-CS-23,EWS,Tamil Nadu
+CS24-0244,R24CS244,Rahul Joshi,rahul.joshi.cs24244@pragati.edu,M,2006-05-24,CSE,B.Tech,2,B,M-CS-21,General,Karnataka
+CS25-0237,R25CS237,Manish Kumar,manish.kumar.cs25237@pragati.edu,M,2007-02-17,CSE,B.Tech,1,C,M-CS-12,OBC,Andhra Pradesh
+CE23-0174,R23CE174,Ishaan Kulkarni,ishaan.kulkarni.ce23174@pragati.edu,M,2005-04-21,CE,B.Tech,3,B,M-CE-31,ST,Telangana
+EC25-0205,R25EC205,Meera Menon,meera.menon.ec25205@pragati.edu,F,2007-12-23,ECE,B.Tech,1,C,M-EC-12,General,Karnataka
+ME25-0200,R25ME200,Sai Reddy,sai.reddy.me25200@pragati.edu,M,2007-01-04,ME,B.Tech,1,C,M-ME-13,OBC,Maharashtra
+CS23-0260,R23CS260,Vikram Mehta,vikram.mehta.cs23260@pragati.edu,M,2005-08-14,CSE,B.Tech,3,B,M-CS-32,General,Andhra Pradesh
+IT22-0167,R22IT167,Kabir Das,kabir.das.it22167@pragati.edu,M,2004-11-25,IT,B.Tech,4,A,M-IT-43,SC,Uttar Pradesh
+IT22-0170,R22IT170,Nikhil Agarwal,nikhil.agarwal.it22170@pragati.edu,M,2004-01-04,IT,B.Tech,4,A,M-IT-42,OBC,Bihar
+ME25-0203,R25ME203,Rahul Reddy,rahul.reddy.me25203@pragati.edu,M,2007-02-28,ME,B.Tech,1,B,M-ME-12,SC,Andhra Pradesh
+ME23-0207,R23ME207,Rohan Menon,rohan.menon.me23207@pragati.edu,M,2005-08-27,ME,B.Tech,3,A,M-ME-33,SC,Andhra Pradesh
+CS22-0226,R22CS226,Aditya Menon,aditya.menon.cs22226@pragati.edu,M,2004-07-01,CSE,B.Tech,4,B,M-CS-43,SC,Maharashtra
+CE23-0177,R23CE177,Shreya Kulkarni,shreya.kulkarni.ce23177@pragati.edu,F,2005-04-18,CE,B.Tech,3,C,M-CE-33,OBC,Odisha
+CS25-0238,R25CS238,Lakshmi Nair,lakshmi.nair.cs25238@pragati.edu,F,2007-02-12,CSE,B.Tech,1,C,M-CS-11,OBC,Bihar
+CE24-0170,R24CE170,Riya Banerjee,riya.banerjee.ce24170@pragati.edu,F,2006-06-14,CE,B.Tech,2,C,M-CE-21,OBC,Odisha
+CS24-0246,R24CS246,Siddharth Iyer,siddharth.iyer.cs24246@pragati.edu,M,2006-05-22,CSE,B.Tech,2,B,M-CS-21,General,Andhra Pradesh
+CS25-0241,R25CS241,Krishna Kumar,krishna.kumar.cs25241@pragati.edu,M,2007-12-27,CSE,B.Tech,1,B,M-CS-12,General,Tamil Nadu
+ME23-0210,R23ME210,Gayatri Joshi,gayatri.joshi.me23210@pragati.edu,F,2005-04-05,ME,B.Tech,3,B,M-ME-33,SC,Kerala
+CS25-0243,R25CS243,Siddharth Kulkarni,siddharth.kulkarni.cs25243@pragati.edu,M,2007-10-10,CSE,B.Tech,1,A,M-CS-11,General,West Bengal
+IT23-0163,R23IT163,Ishaan Kulkarni,ishaan.kulkarni.it23163@pragati.edu,M,2005-08-24,IT,B.Tech,3,B,M-IT-31,OBC,Tamil Nadu
+IT25-0168,R25IT168,Siddharth Sharma,siddharth.sharma.it25168@pragati.edu,M,2007-08-21,IT,B.Tech,1,A,M-IT-11,General,Andhra Pradesh
+CS24-0249,R24CS249,Nikhil Pillai,nikhil.pillai.cs24249@pragati.edu,M,2006-02-24,CSE,B.Tech,2,C,M-CS-22,OBC,Kerala
+ME24-0197,R24ME197,Kabir Chopra,kabir.chopra.me24197@pragati.edu,M,2006-12-28,ME,B.Tech,2,A,M-ME-23,SC,West Bengal
+CE23-0180,R23CE180,Pallavi Reddy,pallavi.reddy.ce23180@pragati.edu,F,2005-02-23,CE,B.Tech,3,A,M-CE-31,General,Telangana
+CE23-0181,R23CE181,Aditya Kumar,aditya.kumar.ce23181@pragati.edu,M,2005-07-20,CE,B.Tech,3,B,M-CE-32,OBC,Bihar
+IT24-0166,R24IT166,Lakshmi Banerjee,lakshmi.banerjee.it24166@pragati.edu,F,2006-02-07,IT,B.Tech,2,C,M-IT-23,General,Andhra Pradesh
+EC25-0207,R25EC207,Meera Pillai,meera.pillai.ec25207@pragati.edu,F,2007-04-13,ECE,B.Tech,1,A,M-EC-13,General,Andhra Pradesh
+CS24-0250,R24CS250,Divya Das,divya.das.cs24250@pragati.edu,F,2006-05-01,CSE,B.Tech,2,A,M-CS-23,OBC,Andhra Pradesh
+CS25-0246,R25CS246,Siddharth Sharma,siddharth.sharma.cs25246@pragati.edu,M,2007-03-20,CSE,B.Tech,1,A,M-CS-12,OBC,Andhra Pradesh
+CS23-0261,R23CS261,Lakshmi Joshi,lakshmi.joshi.cs23261@pragati.edu,F,2005-11-24,CSE,B.Tech,3,B,M-CS-32,SC,Odisha
+CE24-0171,R24CE171,Rohan Kumar,rohan.kumar.ce24171@pragati.edu,M,2006-07-19,CE,B.Tech,2,B,M-CE-22,General,Uttar Pradesh
+CE22-0178,R22CE178,Ananya Das,ananya.das.ce22178@pragati.edu,F,2004-12-29,CE,B.Tech,4,C,M-CE-41,ST,Odisha
+ME22-0190,R22ME190,Manish Singh,manish.singh.me22190@pragati.edu,M,2004-11-22,ME,B.Tech,4,C,M-ME-41,General,Bihar
+EC25-0209,R25EC209,Rohan Banerjee,rohan.banerjee.ec25209@pragati.edu,M,2007-12-05,ECE,B.Tech,1,A,M-EC-12,OBC,Tamil Nadu
+EC24-0194,R24EC194,Pallavi Nair,pallavi.nair.ec24194@pragati.edu,F,2006-04-07,ECE,B.Tech,2,C,M-EC-22,OBC,Kerala
+EC22-0177,R22EC177,Nandini Chopra,nandini.chopra.ec22177@pragati.edu,F,2004-03-30,ECE,B.Tech,4,B,M-EC-43,SC,Uttar Pradesh
+EC24-0197,R24EC197,Diya Das,diya.das.ec24197@pragati.edu,F,2006-03-08,ECE,B.Tech,2,B,M-EC-23,SC,Andhra Pradesh
+IT23-0166,R23IT166,Priya Deshpande,priya.deshpande.it23166@pragati.edu,F,2005-02-15,IT,B.Tech,3,A,M-IT-33,OBC,Kerala
+CS24-0252,R24CS252,Aishwarya Patel,aishwarya.patel.cs24252@pragati.edu,F,2006-12-17,CSE,B.Tech,2,C,M-CS-23,General,Kerala
+CS22-0227,R22CS227,Nandini Deshpande,nandini.deshpande.cs22227@pragati.edu,F,2004-12-20,CSE,B.Tech,4,C,M-CS-41,EWS,Tamil Nadu
+CE23-0184,R23CE184,Vikram Banerjee,vikram.banerjee.ce23184@pragati.edu,M,2005-02-18,CE,B.Tech,3,A,M-CE-33,ST,West Bengal
+EC24-0199,R24EC199,Harsh Kumar,harsh.kumar.ec24199@pragati.edu,M,2006-04-12,ECE,B.Tech,2,C,M-EC-21,General,Bihar
+CE25-0157,R25CE157,Lakshmi Deshpande,lakshmi.deshpande.ce25157@pragati.edu,F,2007-03-22,CE,B.Tech,1,B,M-CE-12,General,Maharashtra
+CS22-0228,R22CS228,Varun Mehta,varun.mehta.cs22228@pragati.edu,M,2004-05-07,CSE,B.Tech,4,C,M-CS-43,EWS,Bihar
+EC24-0200,R24EC200,Meera Kulkarni,meera.kulkarni.ec24200@pragati.edu,F,2006-10-08,ECE,B.Tech,2,C,M-EC-23,EWS,Karnataka
+CS25-0248,R25CS248,Divya Joshi,divya.joshi.cs25248@pragati.edu,F,2007-09-06,CSE,B.Tech,1,C,M-CS-13,General,Bihar
+CS23-0264,R23CS264,Rahul Sharma,rahul.sharma.cs23264@pragati.edu,M,2005-08-20,CSE,B.Tech,3,C,M-CS-33,ST,Kerala
+CS24-0255,R24CS255,Priya Joshi,priya.joshi.cs24255@pragati.edu,F,2006-01-14,CSE,B.Tech,2,C,M-CS-21,OBC,Karnataka
+CS23-0267,R23CS267,Yash Deshpande,yash.deshpande.cs23267@pragati.edu,M,2005-03-25,CSE,B.Tech,3,C,M-CS-32,General,Maharashtra
+CE22-0181,R22CE181,Krishna Nair,krishna.nair.ce22181@pragati.edu,M,2004-02-13,CE,B.Tech,4,A,M-CE-42,General,Karnataka
+IT25-0170,R25IT170,Riya Deshpande,riya.deshpande.it25170@pragati.edu,F,2007-02-14,IT,B.Tech,1,C,M-IT-12,EWS,Tamil Nadu
+EC24-0201,R24EC201,Manish Verma,manish.verma.ec24201@pragati.edu,M,2006-09-14,ECE,B.Tech,2,A,M-EC-22,General,Bihar
+EC22-0180,R22EC180,Krishna Pillai,krishna.pillai.ec22180@pragati.edu,M,2004-12-12,ECE,B.Tech,4,C,M-EC-43,General,Tamil Nadu
+IT22-0173,R22IT173,Diya Verma,diya.verma.it22173@pragati.edu,F,2004-11-20,IT,B.Tech,4,C,M-IT-43,ST,Uttar Pradesh
+EC25-0210,R25EC210,Krishna Menon,krishna.menon.ec25210@pragati.edu,M,2007-09-04,ECE,B.Tech,1,A,M-EC-13,OBC,Maharashtra
+CS25-0250,R25CS250,Kavya Iyer,kavya.iyer.cs25250@pragati.edu,F,2007-04-28,CSE,B.Tech,1,C,M-CS-13,EWS,Telangana
+CE24-0172,R24CE172,Krishna Singh,krishna.singh.ce24172@pragati.edu,M,2006-07-23,CE,B.Tech,2,A,M-CE-21,SC,West Bengal
+ME25-0206,R25ME206,Divya Deshpande,divya.deshpande.me25206@pragati.edu,F,2007-05-09,ME,B.Tech,1,C,M-ME-11,General,Telangana
+ME24-0200,R24ME200,Rahul Reddy,rahul.reddy.me24200@pragati.edu,M,2006-05-06,ME,B.Tech,2,A,M-ME-23,General,Bihar
+EC25-0211,R25EC211,Varun Chopra,varun.chopra.ec25211@pragati.edu,M,2007-04-21,ECE,B.Tech,1,A,M-EC-13,SC,West Bengal
+CS22-0230,R22CS230,Varun Sharma,varun.sharma.cs22230@pragati.edu,M,2004-12-02,CSE,B.Tech,4,C,M-CS-43,OBC,West Bengal
+CE24-0174,R24CE174,Aman Kumar,aman.kumar.ce24174@pragati.edu,M,2006-06-26,CE,B.Tech,2,B,M-CE-21,General,Odisha
+IT24-0167,R24IT167,Aishwarya Singh,aishwarya.singh.it24167@pragati.edu,F,2006-07-03,IT,B.Tech,2,A,M-IT-22,OBC,Telangana
+CS25-0251,R25CS251,Krishna Rao,krishna.rao.cs25251@pragati.edu,M,2007-03-02,CSE,B.Tech,1,B,M-CS-11,General,Telangana
+IT23-0169,R23IT169,Pooja Menon,pooja.menon.it23169@pragati.edu,F,2005-10-24,IT,B.Tech,3,A,M-IT-31,General,Tamil Nadu
+ME22-0192,R22ME192,Isha Joshi,isha.joshi.me22192@pragati.edu,F,2004-02-22,ME,B.Tech,4,A,M-ME-42,General,Karnataka
+EC22-0183,R22EC183,Rohan Banerjee,rohan.banerjee.ec22183@pragati.edu,M,2004-07-17,ECE,B.Tech,4,C,M-EC-41,OBC,Kerala
+ME25-0209,R25ME209,Tanvi Pillai,tanvi.pillai.me25209@pragati.edu,F,2007-02-25,ME,B.Tech,1,B,M-ME-13,OBC,Karnataka
+ME23-0211,R23ME211,Nandini Joshi,nandini.joshi.me23211@pragati.edu,F,2005-10-19,ME,B.Tech,3,A,M-ME-33,General,Karnataka
+CS25-0253,R25CS253,Aditya Patel,aditya.patel.cs25253@pragati.edu,M,2007-05-12,CSE,B.Tech,1,A,M-CS-13,OBC,Kerala
+CE25-0159,R25CE159,Ishaan Gupta,ishaan.gupta.ce25159@pragati.edu,M,2007-04-27,CE,B.Tech,1,C,M-CE-11,General,Karnataka
+IT24-0170,R24IT170,Aadhya Menon,aadhya.menon.it24170@pragati.edu,F,2006-02-03,IT,B.Tech,2,B,M-IT-23,EWS,West Bengal
+EC24-0202,R24EC202,Kabir Patel,kabir.patel.ec24202@pragati.edu,M,2006-11-01,ECE,B.Tech,2,C,M-EC-23,ST,West Bengal
+CS23-0268,R23CS268,Pooja Nair,pooja.nair.cs23268@pragati.edu,F,2005-07-02,CSE,B.Tech,3,B,M-CS-31,ST,Kerala
+CE25-0160,R25CE160,Kabir Agarwal,kabir.agarwal.ce25160@pragati.edu,M,2007-05-28,CE,B.Tech,1,A,M-CE-12,General,Andhra Pradesh
+CS23-0271,R23CS271,Kabir Das,kabir.das.cs23271@pragati.edu,M,2005-05-09,CSE,B.Tech,3,A,M-CS-33,General,Maharashtra
+CS22-0233,R22CS233,Pallavi Chopra,pallavi.chopra.cs22233@pragati.edu,F,2004-08-09,CSE,B.Tech,4,A,M-CS-41,OBC,Kerala
+EC22-0184,R22EC184,Isha Das,isha.das.ec22184@pragati.edu,F,2004-01-25,ECE,B.Tech,4,C,M-EC-41,OBC,Telangana
+CS24-0258,R24CS258,Arjun Verma,arjun.verma.cs24258@pragati.edu,M,2006-11-04,CSE,B.Tech,2,B,M-CS-22,General,West Bengal
+CS22-0234,R22CS234,Manish Kulkarni,manish.kulkarni.cs22234@pragati.edu,M,2004-06-27,CSE,B.Tech,4,A,M-CS-41,OBC,Odisha
+EC23-0201,R23EC201,Rohan Iyer,rohan.iyer.ec23201@pragati.edu,M,2005-02-13,ECE,B.Tech,3,C,M-EC-31,OBC,Tamil Nadu
+IT24-0171,R24IT171,Pooja Rao,pooja.rao.it24171@pragati.edu,F,2006-03-12,IT,B.Tech,2,C,M-IT-23,General,Maharashtra
+CE24-0177,R24CE177,Riya Kumar,riya.kumar.ce24177@pragati.edu,F,2006-06-15,CE,B.Tech,2,A,M-CE-23,General,Tamil Nadu
+IT22-0176,R22IT176,Aman Agarwal,aman.agarwal.it22176@pragati.edu,M,2004-07-28,IT,B.Tech,4,B,M-IT-42,OBC,Telangana
+ME25-0210,R25ME210,Krishna Iyer,krishna.iyer.me25210@pragati.edu,M,2007-01-28,ME,B.Tech,1,C,M-ME-13,EWS,West Bengal
+EC23-0204,R23EC204,Sai Joshi,sai.joshi.ec23204@pragati.edu,M,2005-08-26,ECE,B.Tech,3,A,M-EC-31,ST,Uttar Pradesh
+ME25-0211,R25ME211,Vivaan Rao,vivaan.rao.me25211@pragati.edu,M,2007-09-21,ME,B.Tech,1,A,M-ME-13,SC,Tamil Nadu
+EC24-0203,R24EC203,Ananya Mehta,ananya.mehta.ec24203@pragati.edu,F,2006-04-08,ECE,B.Tech,2,B,M-EC-23,OBC,Tamil Nadu
+EC22-0186,R22EC186,Pallavi Menon,pallavi.menon.ec22186@pragati.edu,F,2004-05-14,ECE,B.Tech,4,C,M-EC-41,OBC,Uttar Pradesh
+CE24-0180,R24CE180,Sneha Das,sneha.das.ce24180@pragati.edu,F,2006-04-16,CE,B.Tech,2,C,M-CE-22,General,Telangana
+IT25-0171,R25IT171,Aditya Singh,aditya.singh.it25171@pragati.edu,M,2007-01-09,IT,B.Tech,1,B,M-IT-12,General,West Bengal
+CS23-0274,R23CS274,Diya Menon,diya.menon.cs23274@pragati.edu,F,2005-07-09,CSE,B.Tech,3,C,M-CS-31,General,West Bengal
+ME25-0213,R25ME213,Divya Kulkarni,divya.kulkarni.me25213@pragati.edu,F,2007-05-13,ME,B.Tech,1,C,M-ME-12,OBC,Bihar
+ME23-0214,R23ME214,Shreya Nair,shreya.nair.me23214@pragati.edu,F,2005-04-21,ME,B.Tech,3,C,M-ME-32,General,West Bengal
+CS24-0261,R24CS261,Saanvi Rao,saanvi.rao.cs24261@pragati.edu,F,2006-12-26,CSE,B.Tech,2,C,M-CS-23,General,Kerala
+IT25-0174,R25IT174,Varun Verma,varun.verma.it25174@pragati.edu,M,2007-10-18,IT,B.Tech,1,C,M-IT-11,General,Andhra Pradesh
+CE24-0182,R24CE182,Krishna Das,krishna.das.ce24182@pragati.edu,M,2006-10-16,CE,B.Tech,2,B,M-CE-22,OBC,Bihar
+ME23-0216,R23ME216,Riya Singh,riya.singh.me23216@pragati.edu,F,2005-04-11,ME,B.Tech,3,C,M-ME-33,OBC,Bihar
+CE25-0161,R25CE161,Pallavi Patel,pallavi.patel.ce25161@pragati.edu,F,2007-09-20,CE,B.Tech,1,B,M-CE-11,OBC,Bihar
+EC24-0206,R24EC206,Tanvi Iyer,tanvi.iyer.ec24206@pragati.edu,F,2006-06-11,ECE,B.Tech,2,B,M-EC-23,General,Uttar Pradesh
+ME24-0203,R24ME203,Rohan Sharma,rohan.sharma.me24203@pragati.edu,M,2006-08-31,ME,B.Tech,2,C,M-ME-23,EWS,Uttar Pradesh
+IT22-0178,R22IT178,Rohan Agarwal,rohan.agarwal.it22178@pragati.edu,M,2004-02-11,IT,B.Tech,4,B,M-IT-42,General,West Bengal
+CE24-0184,R24CE184,Neha Pillai,neha.pillai.ce24184@pragati.edu,F,2006-09-18,CE,B.Tech,2,B,M-CE-21,General,Tamil Nadu
+IT23-0170,R23IT170,Priya Menon,priya.menon.it23170@pragati.edu,F,2005-02-03,IT,B.Tech,3,A,M-IT-33,General,West Bengal
+ME24-0204,R24ME204,Reyansh Deshpande,reyansh.deshpande.me24204@pragati.edu,M,2006-04-15,ME,B.Tech,2,A,M-ME-23,General,Maharashtra
+IT25-0177,R25IT177,Gayatri Iyer,gayatri.iyer.it25177@pragati.edu,F,2007-04-27,IT,B.Tech,1,A,M-IT-12,OBC,Andhra Pradesh
+EC22-0188,R22EC188,Lakshmi Nair,lakshmi.nair.ec22188@pragati.edu,F,2004-11-28,ECE,B.Tech,4,A,M-EC-42,General,Tamil Nadu
+ME23-0218,R23ME218,Riya Gupta,riya.gupta.me23218@pragati.edu,F,2005-05-04,ME,B.Tech,3,C,M-ME-31,OBC,Odisha
+EC24-0208,R24EC208,Sneha Banerjee,sneha.banerjee.ec24208@pragati.edu,F,2006-02-23,ECE,B.Tech,2,A,M-EC-23,OBC,Odisha
+CE23-0186,R23CE186,Shreya Gupta,shreya.gupta.ce23186@pragati.edu,F,2005-06-16,CE,B.Tech,3,B,M-CE-31,General,Andhra Pradesh
+IT24-0173,R24IT173,Varun Singh,varun.singh.it24173@pragati.edu,M,2006-05-05,IT,B.Tech,2,C,M-IT-23,General,Andhra Pradesh
+EC24-0210,R24EC210,Kavya Banerjee,kavya.banerjee.ec24210@pragati.edu,F,2006-07-10,ECE,B.Tech,2,C,M-EC-23,OBC,Bihar
+IT24-0176,R24IT176,Aadhya Kulkarni,aadhya.kulkarni.it24176@pragati.edu,F,2006-09-23,IT,B.Tech,2,B,M-IT-21,General,Kerala
+IT24-0178,R24IT178,Aman Banerjee,aman.banerjee.it24178@pragati.edu,M,2006-11-07,IT,B.Tech,2,C,M-IT-23,SC,Tamil Nadu
+IT25-0179,R25IT179,Vikram Agarwal,vikram.agarwal.it25179@pragati.edu,M,2007-10-02,IT,B.Tech,1,A,M-IT-13,OBC,Maharashtra
+CS23-0275,R23CS275,Ishaan Rao,ishaan.rao.cs23275@pragati.edu,M,2005-11-10,CSE,B.Tech,3,C,M-CS-32,SC,Telangana
+CS23-0276,R23CS276,Kavya Kulkarni,kavya.kulkarni.cs23276@pragati.edu,F,2005-12-29,CSE,B.Tech,3,B,M-CS-31,SC,Telangana
+ME22-0193,R22ME193,Sai Pillai,sai.pillai.me22193@pragati.edu,M,2004-08-14,ME,B.Tech,4,A,M-ME-41,OBC,Bihar
+ME24-0207,R24ME207,Isha Rao,isha.rao.me24207@pragati.edu,F,2006-01-26,ME,B.Tech,2,C,M-ME-21,General,Bihar
+ME24-0208,R24ME208,Rahul Kumar,rahul.kumar.me24208@pragati.edu,M,2006-05-05,ME,B.Tech,2,C,M-ME-22,EWS,Bihar
+CS25-0254,R25CS254,Vikram Agarwal,vikram.agarwal.cs25254@pragati.edu,M,2007-07-30,CSE,B.Tech,1,A,M-CS-13,General,Maharashtra
+IT23-0173,R23IT173,Pooja Agarwal,pooja.agarwal.it23173@pragati.edu,F,2005-08-27,IT,B.Tech,3,C,M-IT-31,General,Maharashtra
+CS22-0237,R22CS237,Kavya Kulkarni,kavya.kulkarni.cs22237@pragati.edu,F,2004-09-13,CSE,B.Tech,4,C,M-CS-41,SC,Kerala
+ME22-0196,R22ME196,Isha Deshpande,isha.deshpande.me22196@pragati.edu,F,2004-12-06,ME,B.Tech,4,C,M-ME-41,OBC,Telangana
+CE22-0182,R22CE182,Riya Nair,riya.nair.ce22182@pragati.edu,F,2004-10-13,CE,B.Tech,4,C,M-CE-41,General,Telangana
+CS25-0257,R25CS257,Rohan Deshpande,rohan.deshpande.cs25257@pragati.edu,M,2007-07-31,CSE,B.Tech,1,A,M-CS-12,General,Uttar Pradesh
+ME22-0197,R22ME197,Manish Chopra,manish.chopra.me22197@pragati.edu,M,2004-08-19,ME,B.Tech,4,A,M-ME-41,General,Odisha
+CS25-0258,R25CS258,Ananya Nair,ananya.nair.cs25258@pragati.edu,F,2007-05-15,CSE,B.Tech,1,B,M-CS-12,OBC,Maharashtra
+CS22-0240,R22CS240,Gayatri Sharma,gayatri.sharma.cs22240@pragati.edu,F,2004-11-01,CSE,B.Tech,4,C,M-CS-41,General,West Bengal
+CS25-0259,R25CS259,Harsh Joshi,harsh.joshi.cs25259@pragati.edu,M,2007-09-09,CSE,B.Tech,1,A,M-CS-11,OBC,Maharashtra
+CS22-0243,R22CS243,Meera Mehta,meera.mehta.cs22243@pragati.edu,F,2004-03-16,CSE,B.Tech,4,C,M-CS-41,OBC,Telangana
+ME25-0214,R25ME214,Riya Mehta,riya.mehta.me25214@pragati.edu,F,2007-10-25,ME,B.Tech,1,C,M-ME-12,OBC,Andhra Pradesh
+CE24-0186,R24CE186,Diya Patel,diya.patel.ce24186@pragati.edu,F,2006-01-01,CE,B.Tech,2,B,M-CE-21,ST,Odisha
+CS24-0264,R24CS264,Ishaan Patel,ishaan.patel.cs24264@pragati.edu,M,2006-07-30,CSE,B.Tech,2,B,M-CS-22,OBC,Bihar
+EC22-0191,R22EC191,Pallavi Menon,pallavi.menon.ec22191@pragati.edu,F,2004-01-29,ECE,B.Tech,4,C,M-EC-42,OBC,Bihar
+ME23-0219,R23ME219,Isha Das,isha.das.me23219@pragati.edu,F,2005-08-23,ME,B.Tech,3,B,M-ME-32,General,Karnataka
+CE24-0187,R24CE187,Priya Das,priya.das.ce24187@pragati.edu,F,2006-11-26,CE,B.Tech,2,B,M-CE-22,EWS,Telangana
+EC24-0213,R24EC213,Yash Banerjee,yash.banerjee.ec24213@pragati.edu,M,2006-05-26,ECE,B.Tech,2,A,M-EC-21,General,Bihar
+CS24-0265,R24CS265,Kavya Reddy,kavya.reddy.cs24265@pragati.edu,F,2006-09-20,CSE,B.Tech,2,A,M-CS-22,General,West Bengal
+EC25-0212,R25EC212,Gayatri Nair,gayatri.nair.ec25212@pragati.edu,F,2007-03-18,ECE,B.Tech,1,A,M-EC-12,General,Maharashtra
+IT24-0179,R24IT179,Karthik Gupta,karthik.gupta.it24179@pragati.edu,M,2006-09-06,IT,B.Tech,2,A,M-IT-22,General,Odisha
+CE25-0162,R25CE162,Priya Kulkarni,priya.kulkarni.ce25162@pragati.edu,F,2007-08-13,CE,B.Tech,1,B,M-CE-13,EWS,Telangana
+IT24-0180,R24IT180,Kavya Patel,kavya.patel.it24180@pragati.edu,F,2006-04-02,IT,B.Tech,2,A,M-IT-23,General,Odisha
+ME23-0221,R23ME221,Isha Verma,isha.verma.me23221@pragati.edu,F,2005-05-08,ME,B.Tech,3,B,M-ME-32,General,Tamil Nadu
+CS23-0278,R23CS278,Vikram Das,vikram.das.cs23278@pragati.edu,M,2005-06-01,CSE,B.Tech,3,B,M-CS-32,General,Bihar
+IT24-0181,R24IT181,Siddharth Deshpande,siddharth.deshpande.it24181@pragati.edu,M,2006-09-09,IT,B.Tech,2,C,M-IT-22,General,West Bengal
+CE25-0163,R25CE163,Lakshmi Kumar,lakshmi.kumar.ce25163@pragati.edu,F,2007-08-09,CE,B.Tech,1,A,M-CE-11,OBC,West Bengal
+EC22-0194,R22EC194,Karthik Nair,karthik.nair.ec22194@pragati.edu,M,2004-05-10,ECE,B.Tech,4,A,M-EC-43,SC,Andhra Pradesh
+IT24-0182,R24IT182,Meera Mehta,meera.mehta.it24182@pragati.edu,F,2006-03-03,IT,B.Tech,2,B,M-IT-22,General,Telangana
+CE23-0189,R23CE189,Gayatri Mehta,gayatri.mehta.ce23189@pragati.edu,F,2005-06-06,CE,B.Tech,3,A,M-CE-31,OBC,Odisha
+CE22-0183,R22CE183,Yash Reddy,yash.reddy.ce22183@pragati.edu,M,2004-08-17,CE,B.Tech,4,B,M-CE-41,General,Tamil Nadu
+IT24-0183,R24IT183,Priya Das,priya.das.it24183@pragati.edu,F,2006-05-22,IT,B.Tech,2,C,M-IT-22,OBC,Andhra Pradesh
+EC23-0207,R23EC207,Pooja Verma,pooja.verma.ec23207@pragati.edu,F,2005-09-12,ECE,B.Tech,3,C,M-EC-33,General,West Bengal
+EC23-0210,R23EC210,Aadhya Reddy,aadhya.reddy.ec23210@pragati.edu,F,2005-05-20,ECE,B.Tech,3,A,M-EC-31,EWS,Maharashtra
+EC22-0195,R22EC195,Siddharth Agarwal,siddharth.agarwal.ec22195@pragati.edu,M,2004-04-19,ECE,B.Tech,4,B,M-EC-41,SC,Karnataka
+IT22-0179,R22IT179,Rahul Pillai,rahul.pillai.it22179@pragati.edu,M,2004-06-24,IT,B.Tech,4,C,M-IT-43,General,West Bengal
+CS24-0267,R24CS267,Aditya Reddy,aditya.reddy.cs24267@pragati.edu,M,2006-05-30,CSE,B.Tech,2,A,M-CS-23,OBC,Uttar Pradesh
+CE23-0191,R23CE191,Sai Patel,sai.patel.ce23191@pragati.edu,M,2005-11-05,CE,B.Tech,3,C,M-CE-31,SC,Karnataka
+CE25-0165,R25CE165,Arjun Reddy,arjun.reddy.ce25165@pragati.edu,M,2007-06-20,CE,B.Tech,1,A,M-CE-11,OBC,Andhra Pradesh
+ME22-0200,R22ME200,Riya Kumar,riya.kumar.me22200@pragati.edu,F,2004-06-09,ME,B.Tech,4,B,M-ME-43,OBC,Kerala
+CE23-0194,R23CE194,Priya Reddy,priya.reddy.ce23194@pragati.edu,F,2005-01-05,CE,B.Tech,3,B,M-CE-31,General,Maharashtra
+ME25-0215,R25ME215,Reyansh Mehta,reyansh.mehta.me25215@pragati.edu,M,2007-02-23,ME,B.Tech,1,B,M-ME-12,ST,Karnataka
+ME23-0222,R23ME222,Pooja Sharma,pooja.sharma.me23222@pragati.edu,F,2005-05-31,ME,B.Tech,3,C,M-ME-33,OBC,Andhra Pradesh
+ME25-0218,R25ME218,Meera Rao,meera.rao.me25218@pragati.edu,F,2007-05-06,ME,B.Tech,1,A,M-ME-13,General,Kerala
+EC25-0214,R25EC214,Aarav Pillai,aarav.pillai.ec25214@pragati.edu,M,2007-07-06,ECE,B.Tech,1,C,M-EC-11,ST,Odisha
+EC22-0197,R22EC197,Divya Pillai,divya.pillai.ec22197@pragati.edu,F,2004-03-30,ECE,B.Tech,4,C,M-EC-43,ST,Tamil Nadu
+CS23-0279,R23CS279,Rahul Joshi,rahul.joshi.cs23279@pragati.edu,M,2005-09-12,CSE,B.Tech,3,C,M-CS-31,General,Maharashtra
+EC22-0200,R22EC200,Lakshmi Kulkarni,lakshmi.kulkarni.ec22200@pragati.edu,F,2004-01-02,ECE,B.Tech,4,B,M-EC-41,SC,Odisha
+CS25-0260,R25CS260,Rahul Pillai,rahul.pillai.cs25260@pragati.edu,M,2007-03-04,CSE,B.Tech,1,A,M-CS-11,SC,Tamil Nadu
+CS24-0269,R24CS269,Aishwarya Banerjee,aishwarya.banerjee.cs24269@pragati.edu,F,2006-08-31,CSE,B.Tech,2,B,M-CS-21,OBC,Andhra Pradesh
+EC25-0215,R25EC215,Vikram Reddy,vikram.reddy.ec25215@pragati.edu,M,2007-10-09,ECE,B.Tech,1,C,M-EC-12,OBC,Maharashtra
+IT22-0181,R22IT181,Gayatri Chopra,gayatri.chopra.it22181@pragati.edu,F,2004-01-15,IT,B.Tech,4,B,M-IT-42,OBC,Andhra Pradesh
+CS24-0272,R24CS272,Aadhya Sharma,aadhya.sharma.cs24272@pragati.edu,F,2006-11-01,CSE,B.Tech,2,B,M-CS-23,General,Andhra Pradesh
+ME22-0203,R22ME203,Vikram Sharma,vikram.sharma.me22203@pragati.edu,M,2004-06-19,ME,B.Tech,4,C,M-ME-42,General,Andhra Pradesh
+CE23-0197,R23CE197,Reyansh Joshi,reyansh.joshi.ce23197@pragati.edu,M,2005-03-23,CE,B.Tech,3,A,M-CE-31,OBC,Andhra Pradesh
+CS25-0263,R25CS263,Rahul Pillai,rahul.pillai.cs25263@pragati.edu,M,2007-09-23,CSE,B.Tech,1,C,M-CS-11,General,Uttar Pradesh
+CS22-0246,R22CS246,Kabir Pillai,kabir.pillai.cs22246@pragati.edu,M,2004-11-15,CSE,B.Tech,4,B,M-CS-43,General,West Bengal
+IT22-0182,R22IT182,Gayatri Nair,gayatri.nair.it22182@pragati.edu,F,2004-01-19,IT,B.Tech,4,B,M-IT-43,General,Karnataka
+ME23-0224,R23ME224,Kabir Patel,kabir.patel.me23224@pragati.edu,M,2005-11-25,ME,B.Tech,3,A,M-ME-31,ST,Tamil Nadu
+ME22-0205,R22ME205,Ananya Verma,ananya.verma.me22205@pragati.edu,F,2004-10-12,ME,B.Tech,4,B,M-ME-41,OBC,Bihar
+CS22-0248,R22CS248,Yash Mehta,yash.mehta.cs22248@pragati.edu,M,2004-05-10,CSE,B.Tech,4,A,M-CS-41,General,Odisha
+ME25-0221,R25ME221,Nikhil Das,nikhil.das.me25221@pragati.edu,M,2007-09-03,ME,B.Tech,1,B,M-ME-12,General,West Bengal
+CS23-0281,R23CS281,Nikhil Kulkarni,nikhil.kulkarni.cs23281@pragati.edu,M,2005-09-07,CSE,B.Tech,3,B,M-CS-33,General,Odisha
+IT23-0175,R23IT175,Ishaan Chopra,ishaan.chopra.it23175@pragati.edu,M,2005-04-18,IT,B.Tech,3,C,M-IT-32,ST,Karnataka
+CE23-0199,R23CE199,Aditya Patel,aditya.patel.ce23199@pragati.edu,M,2005-12-13,CE,B.Tech,3,A,M-CE-33,OBC,Telangana
+CS22-0250,R22CS250,Aman Kulkarni,aman.kulkarni.cs22250@pragati.edu,M,2004-05-04,CSE,B.Tech,4,C,M-CS-42,SC,Uttar Pradesh
+CS22-0252,R22CS252,Meera Patel,meera.patel.cs22252@pragati.edu,F,2004-02-27,CSE,B.Tech,4,A,M-CS-43,SC,Maharashtra
+IT23-0176,R23IT176,Arjun Kulkarni,arjun.kulkarni.it23176@pragati.edu,M,2005-05-06,IT,B.Tech,3,A,M-IT-31,General,Andhra Pradesh
+EC22-0201,R22EC201,Krishna Pillai,krishna.pillai.ec22201@pragati.edu,M,2004-05-18,ECE,B.Tech,4,B,M-EC-41,EWS,Kerala
+CE24-0189,R24CE189,Neha Deshpande,neha.deshpande.ce24189@pragati.edu,F,2006-11-05,CE,B.Tech,2,A,M-CE-22,ST,Maharashtra
+CE22-0184,R22CE184,Neha Sharma,neha.sharma.ce22184@pragati.edu,F,2004-01-23,CE,B.Tech,4,B,M-CE-42,General,Tamil Nadu
+CS23-0282,R23CS282,Nandini Pillai,nandini.pillai.cs23282@pragati.edu,F,2005-08-15,CSE,B.Tech,3,C,M-CS-33,ST,Kerala
+CS23-0285,R23CS285,Aarav Chopra,aarav.chopra.cs23285@pragati.edu,M,2005-03-17,CSE,B.Tech,3,A,M-CS-31,General,Karnataka
+ME25-0224,R25ME224,Kavya Deshpande,kavya.deshpande.me25224@pragati.edu,F,2007-07-21,ME,B.Tech,1,B,M-ME-11,OBC,Bihar
+CS25-0266,R25CS266,Ishaan Mehta,ishaan.mehta.cs25266@pragati.edu,M,2007-07-24,CSE,B.Tech,1,A,M-CS-12,ST,Karnataka
+CE23-0200,R23CE200,Aadhya Iyer,aadhya.iyer.ce23200@pragati.edu,F,2005-07-21,CE,B.Tech,3,A,M-CE-31,General,Uttar Pradesh
+ME24-0210,R24ME210,Vikram Verma,vikram.verma.me24210@pragati.edu,M,2006-05-18,ME,B.Tech,2,A,M-ME-21,OBC,Maharashtra
+CS24-0274,R24CS274,Ananya Rao,ananya.rao.cs24274@pragati.edu,F,2006-05-04,CSE,B.Tech,2,C,M-CS-22,EWS,West Bengal
+ME24-0211,R24ME211,Divya Pillai,divya.pillai.me24211@pragati.edu,F,2006-11-30,ME,B.Tech,2,A,M-ME-23,General,Telangana
+CS24-0277,R24CS277,Krishna Nair,krishna.nair.cs24277@pragati.edu,M,2006-03-07,CSE,B.Tech,2,B,M-CS-22,OBC,Bihar
+IT25-0181,R25IT181,Nandini Deshpande,nandini.deshpande.it25181@pragati.edu,F,2007-11-09,IT,B.Tech,1,B,M-IT-12,General,Uttar Pradesh
+EC24-0216,R24EC216,Pallavi Chopra,pallavi.chopra.ec24216@pragati.edu,F,2006-05-31,ECE,B.Tech,2,C,M-EC-21,SC,Tamil Nadu
+EC23-0213,R23EC213,Nandini Iyer,nandini.iyer.ec23213@pragati.edu,F,2005-10-26,ECE,B.Tech,3,B,M-EC-32,EWS,Karnataka
+ME23-0227,R23ME227,Aman Menon,aman.menon.me23227@pragati.edu,M,2005-10-12,ME,B.Tech,3,A,M-ME-33,SC,Karnataka
+ME23-0229,R23ME229,Pooja Pillai,pooja.pillai.me23229@pragati.edu,F,2005-09-13,ME,B.Tech,3,C,M-ME-33,OBC,Kerala
+CE23-0202,R23CE202,Rahul Mehta,rahul.mehta.ce23202@pragati.edu,M,2005-04-29,CE,B.Tech,3,A,M-CE-31,OBC,Karnataka
+CE25-0167,R25CE167,Yash Singh,yash.singh.ce25167@pragati.edu,M,2007-02-07,CE,B.Tech,1,B,M-CE-13,General,Karnataka
+EC22-0203,R22EC203,Riya Banerjee,riya.banerjee.ec22203@pragati.edu,F,2004-07-22,ECE,B.Tech,4,A,M-EC-42,ST,Bihar
+CS24-0279,R24CS279,Nandini Gupta,nandini.gupta.cs24279@pragati.edu,F,2006-02-21,CSE,B.Tech,2,C,M-CS-21,OBC,Uttar Pradesh
+ME22-0208,R22ME208,Aadhya Agarwal,aadhya.agarwal.me22208@pragati.edu,F,2004-01-13,ME,B.Tech,4,A,M-ME-41,OBC,Karnataka
+CE24-0192,R24CE192,Nikhil Nair,nikhil.nair.ce24192@pragati.edu,M,2006-12-07,CE,B.Tech,2,C,M-CE-22,OBC,Maharashtra
+IT23-0177,R23IT177,Divya Kumar,divya.kumar.it23177@pragati.edu,F,2005-09-02,IT,B.Tech,3,A,M-IT-31,OBC,Maharashtra
+EC25-0218,R25EC218,Sneha Kumar,sneha.kumar.ec25218@pragati.edu,F,2007-07-07,ECE,B.Tech,1,B,M-EC-11,General,Karnataka
+IT25-0184,R25IT184,Vivaan Kulkarni,vivaan.kulkarni.it25184@pragati.edu,M,2007-12-22,IT,B.Tech,1,B,M-IT-11,General,Uttar Pradesh
+CS22-0253,R22CS253,Aman Chopra,aman.chopra.cs22253@pragati.edu,M,2004-12-28,CSE,B.Tech,4,C,M-CS-41,General,Uttar Pradesh
+ME23-0232,R23ME232,Varun Kulkarni,varun.kulkarni.me23232@pragati.edu,M,2005-01-29,ME,B.Tech,3,A,M-ME-31,OBC,Kerala
+IT25-0186,R25IT186,Aishwarya Verma,aishwarya.verma.it25186@pragati.edu,F,2007-10-19,IT,B.Tech,1,B,M-IT-12,OBC,Odisha
+ME23-0235,R23ME235,Isha Mehta,isha.mehta.me23235@pragati.edu,F,2005-02-16,ME,B.Tech,3,A,M-ME-33,General,Karnataka
+ME24-0214,R24ME214,Aditya Deshpande,aditya.deshpande.me24214@pragati.edu,M,2006-05-01,ME,B.Tech,2,B,M-ME-22,OBC,West Bengal
+ME23-0237,R23ME237,Riya Rao,riya.rao.me23237@pragati.edu,F,2005-09-17,ME,B.Tech,3,A,M-ME-32,General,Odisha
+IT25-0187,R25IT187,Pooja Pillai,pooja.pillai.it25187@pragati.edu,F,2007-11-16,IT,B.Tech,1,B,M-IT-11,General,Kerala
+IT23-0178,R23IT178,Rohan Patel,rohan.patel.it23178@pragati.edu,M,2005-12-05,IT,B.Tech,3,B,M-IT-31,General,Odisha
+ME25-0226,R25ME226,Saanvi Deshpande,saanvi.deshpande.me25226@pragati.edu,F,2007-12-14,ME,B.Tech,1,B,M-ME-12,OBC,West Bengal
+ME24-0217,R24ME217,Pallavi Iyer,pallavi.iyer.me24217@pragati.edu,F,2006-04-15,ME,B.Tech,2,A,M-ME-23,General,Karnataka
+EC22-0205,R22EC205,Diya Pillai,diya.pillai.ec22205@pragati.edu,F,2004-07-01,ECE,B.Tech,4,B,M-EC-41,OBC,Kerala
+CE24-0194,R24CE194,Aman Joshi,aman.joshi.ce24194@pragati.edu,M,2006-01-16,CE,B.Tech,2,C,M-CE-23,OBC,Karnataka
+CS25-0267,R25CS267,Arjun Kulkarni,arjun.kulkarni.cs25267@pragati.edu,M,2007-10-14,CSE,B.Tech,1,A,M-CS-12,ST,Telangana
+CE24-0197,R24CE197,Divya Kumar,divya.kumar.ce24197@pragati.edu,F,2006-02-25,CE,B.Tech,2,B,M-CE-22,General,Odisha
+CS22-0254,R22CS254,Ishaan Joshi,ishaan.joshi.cs22254@pragati.edu,M,2004-08-25,CSE,B.Tech,4,B,M-CS-43,SC,Telangana
+CS24-0281,R24CS281,Kabir Agarwal,kabir.agarwal.cs24281@pragati.edu,M,2006-11-22,CSE,B.Tech,2,A,M-CS-22,OBC,Maharashtra
+EC24-0217,R24EC217,Nikhil Reddy,nikhil.reddy.ec24217@pragati.edu,M,2006-10-16,ECE,B.Tech,2,C,M-EC-21,ST,Karnataka
+CS22-0256,R22CS256,Lakshmi Patel,lakshmi.patel.cs22256@pragati.edu,F,2004-04-24,CSE,B.Tech,4,C,M-CS-41,EWS,Telangana
+CS23-0287,R23CS287,Varun Deshpande,varun.deshpande.cs23287@pragati.edu,M,2005-04-14,CSE,B.Tech,3,C,M-CS-33,General,Odisha
+CS23-0289,R23CS289,Aditya Agarwal,aditya.agarwal.cs23289@pragati.edu,M,2005-01-29,CSE,B.Tech,3,A,M-CS-33,General,Tamil Nadu
+IT24-0185,R24IT185,Aadhya Kumar,aadhya.kumar.it24185@pragati.edu,F,2006-10-06,IT,B.Tech,2,A,M-IT-22,OBC,Maharashtra
+ME24-0220,R24ME220,Rahul Nair,rahul.nair.me24220@pragati.edu,M,2006-04-06,ME,B.Tech,2,A,M-ME-23,General,Andhra Pradesh
+CS24-0283,R24CS283,Kavya Kulkarni,kavya.kulkarni.cs24283@pragati.edu,F,2006-12-20,CSE,B.Tech,2,C,M-CS-22,SC,Odisha
+ME23-0238,R23ME238,Rohan Singh,rohan.singh.me23238@pragati.edu,M,2005-01-21,ME,B.Tech,3,C,M-ME-31,General,Odisha
+ME23-0241,R23ME241,Neha Iyer,neha.iyer.me23241@pragati.edu,F,2005-02-24,ME,B.Tech,3,A,M-ME-33,ST,Bihar
+CS25-0268,R25CS268,Pooja Pillai,pooja.pillai.cs25268@pragati.edu,F,2007-03-21,CSE,B.Tech,1,B,M-CS-12,ST,Karnataka
+CS24-0285,R24CS285,Varun Banerjee,varun.banerjee.cs24285@pragati.edu,M,2006-07-18,CSE,B.Tech,2,C,M-CS-22,OBC,Karnataka
+CE24-0198,R24CE198,Yash Das,yash.das.ce24198@pragati.edu,M,2006-05-26,CE,B.Tech,2,C,M-CE-21,OBC,Kerala
+ME24-0222,R24ME222,Priya Singh,priya.singh.me24222@pragati.edu,F,2006-03-16,ME,B.Tech,2,C,M-ME-21,General,Andhra Pradesh
+EC24-0218,R24EC218,Kabir Deshpande,kabir.deshpande.ec24218@pragati.edu,M,2006-05-08,ECE,B.Tech,2,C,M-EC-23,EWS,Odisha
+ME22-0209,R22ME209,Pooja Agarwal,pooja.agarwal.me22209@pragati.edu,F,2004-03-08,ME,B.Tech,4,C,M-ME-42,OBC,Uttar Pradesh
+CS23-0292,R23CS292,Riya Verma,riya.verma.cs23292@pragati.edu,F,2005-06-30,CSE,B.Tech,3,A,M-CS-33,OBC,Telangana
+IT22-0184,R22IT184,Aditya Mehta,aditya.mehta.it22184@pragati.edu,M,2004-01-10,IT,B.Tech,4,A,M-IT-41,SC,Bihar
+ME25-0227,R25ME227,Krishna Das,krishna.das.me25227@pragati.edu,M,2007-09-15,ME,B.Tech,1,C,M-ME-11,SC,Maharashtra
+CS23-0295,R23CS295,Gayatri Chopra,gayatri.chopra.cs23295@pragati.edu,F,2005-06-09,CSE,B.Tech,3,B,M-CS-32,General,Bihar
+ME22-0210,R22ME210,Varun Mehta,varun.mehta.me22210@pragati.edu,M,2004-05-08,ME,B.Tech,4,A,M-ME-41,General,Kerala
+EC22-0206,R22EC206,Priya Agarwal,priya.agarwal.ec22206@pragati.edu,F,2004-01-13,ECE,B.Tech,4,B,M-EC-43,General,Tamil Nadu
+ME22-0212,R22ME212,Reyansh Menon,reyansh.menon.me22212@pragati.edu,M,2004-05-31,ME,B.Tech,4,B,M-ME-42,EWS,Tamil Nadu
+EC23-0216,R23EC216,Pooja Pillai,pooja.pillai.ec23216@pragati.edu,F,2005-03-09,ECE,B.Tech,3,C,M-EC-32,OBC,Andhra Pradesh
+IT23-0181,R23IT181,Sai Joshi,sai.joshi.it23181@pragati.edu,M,2005-08-27,IT,B.Tech,3,A,M-IT-31,General,Andhra Pradesh
+CS24-0287,R24CS287,Varun Gupta,varun.gupta.cs24287@pragati.edu,M,2006-09-13,CSE,B.Tech,2,B,M-CS-23,General,Bihar
+CS24-0288,R24CS288,Krishna Pillai,krishna.pillai.cs24288@pragati.edu,M,2006-06-21,CSE,B.Tech,2,B,M-CS-22,ST,Maharashtra
+ME23-0242,R23ME242,Aditya Sharma,aditya.sharma.me23242@pragati.edu,M,2005-09-26,ME,B.Tech,3,A,M-ME-32,OBC,Tamil Nadu
+CS23-0296,R23CS296,Aman Agarwal,aman.agarwal.cs23296@pragati.edu,M,2005-01-21,CSE,B.Tech,3,B,M-CS-33,General,Tamil Nadu
+CS22-0259,R22CS259,Pooja Rao,pooja.rao.cs22259@pragati.edu,F,2004-08-22,CSE,B.Tech,4,A,M-CS-43,General,Telangana
+CS23-0299,R23CS299,Aman Patel,aman.patel.cs23299@pragati.edu,M,2005-06-13,CSE,B.Tech,3,A,M-CS-31,SC,Maharashtra
+CS25-0269,R25CS269,Vikram Joshi,vikram.joshi.cs25269@pragati.edu,M,2007-01-07,CSE,B.Tech,1,B,M-CS-13,SC,West Bengal
+ME22-0214,R22ME214,Tanvi Rao,tanvi.rao.me22214@pragati.edu,F,2004-05-11,ME,B.Tech,4,B,M-ME-42,OBC,Kerala
+IT22-0187,R22IT187,Priya Banerjee,priya.banerjee.it22187@pragati.edu,F,2004-01-16,IT,B.Tech,4,A,M-IT-41,OBC,Bihar
+CE23-0204,R23CE204,Tanvi Banerjee,tanvi.banerjee.ce23204@pragati.edu,F,2005-04-12,CE,B.Tech,3,A,M-CE-32,General,Andhra Pradesh
+CS24-0289,R24CS289,Pallavi Agarwal,pallavi.agarwal.cs24289@pragati.edu,F,2006-07-05,CSE,B.Tech,2,C,M-CS-22,SC,Andhra Pradesh
+ME23-0243,R23ME243,Rahul Kumar,rahul.kumar.me23243@pragati.edu,M,2005-03-05,ME,B.Tech,3,A,M-ME-33,General,Odisha
+IT23-0182,R23IT182,Manish Nair,manish.nair.it23182@pragati.edu,M,2005-02-21,IT,B.Tech,3,B,M-IT-33,General,Bihar
+IT23-0184,R23IT184,Sneha Deshpande,sneha.deshpande.it23184@pragati.edu,F,2005-01-11,IT,B.Tech,3,A,M-IT-32,General,Kerala
+CE25-0168,R25CE168,Meera Agarwal,meera.agarwal.ce25168@pragati.edu,F,2007-12-14,CE,B.Tech,1,B,M-CE-13,SC,West Bengal
+CE23-0206,R23CE206,Riya Banerjee,riya.banerjee.ce23206@pragati.edu,F,2005-10-27,CE,B.Tech,3,B,M-CE-32,OBC,Uttar Pradesh
+CE24-0201,R24CE201,Shreya Agarwal,shreya.agarwal.ce24201@pragati.edu,F,2006-08-08,CE,B.Tech,2,A,M-CE-22,OBC,Tamil Nadu
+CS24-0292,R24CS292,Neha Sharma,neha.sharma.cs24292@pragati.edu,F,2006-06-06,CSE,B.Tech,2,C,M-CS-22,General,Telangana
+CS22-0260,R22CS260,Aditya Menon,aditya.menon.cs22260@pragati.edu,M,2004-12-25,CSE,B.Tech,4,A,M-CS-43,General,Kerala
+ME22-0216,R22ME216,Kavya Rao,kavya.rao.me22216@pragati.edu,F,2004-11-10,ME,B.Tech,4,A,M-ME-41,General,Telangana
+CS25-0272,R25CS272,Krishna Chopra,krishna.chopra.cs25272@pragati.edu,M,2007-11-06,CSE,B.Tech,1,C,M-CS-13,SC,Bihar
+ME23-0244,R23ME244,Siddharth Iyer,siddharth.iyer.me23244@pragati.edu,M,2005-07-23,ME,B.Tech,3,C,M-ME-31,General,Maharashtra
+CS22-0230,R22CS230,Varun Sharma,varun.sharma.cs22230@pragati.edu,M,2004-12-02,CSE,B.Tech,4,C,M-CS-43,OBC,West Bengal
+CS24-0233,R24CS233,Tanvi Verma,tanvi.verma.cs24233@pragati.edu,F,2006-09-05,CSE,B.Tech,2,A,M-CS-22,OBC,Tamil Nadu
+CE22-0102,R22CE102,Sai Chopra,sai.chopra.ce22102@pragati.edu,M,2004-01-31,CE,B.Tech,4,A,M-CE-42,ST,Bihar
+ME24-0129,R24ME129,Neha Pillai,neha.pillai.me24129@pragati.edu,F,2006-10-12,ME,B.Tech,2,A,M-ME-21,EWS,Kerala
+ME23-0154,R23ME154,Rahul Joshi,rahul.joshi.me23154@pragati.edu,M,2005-05-24,ME,B.Tech,3,C,M-ME-33,General,Bihar
+IT22-0110,R22IT110,Nikhil Das,nikhil.das.it22110@pragati.edu,M,2004-02-06,IT,B.Tech,4,B,M-IT-43,ST,Karnataka
+CS24-0220,R24CS220,Divya Iyer,divya.iyer.cs24220@pragati.edu,F,2006-01-07,CSE,B.Tech,2,C,M-CS-22,EWS,Andhra Pradesh
+EC25-0149,R25EC149,Gayatri Rao,gayatri.rao.ec25149@pragati.edu,F,2007-05-08,ECE,B.Tech,1,B,M-EC-12,General,Bihar

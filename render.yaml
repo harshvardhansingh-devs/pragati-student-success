@@ -1,0 +1,14 @@
+# Render Blueprint: New → Blueprint → select this repo.
+services:
+  - type: web
+    name: pragati
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: DATABASE_URL        # Supabase → Connect → Session pooler URI (port 5432). Leave empty to use SQLite.
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ANTHROPIC_API_KEY   # optional: enables AI Copilot & AI briefs
+        sync: false

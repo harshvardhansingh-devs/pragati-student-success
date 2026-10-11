@@ -1,0 +1,2477 @@
+student_id,activity_type,title,date,role
+IT25-0122,event,Event activity,26 Jun 2026,participant
+EC23-0169,club,Club activity,2025-08-31,participant
+EC22-0104,sports,Sports activity,2025-09-30,participant
+EC25-0163,club,Club activity,23 Jan 2026,participant
+EC24-0149,event,Event activity,2026-01-14,participant
+ME23-0136,sports,Sports activity,27/04/2026,participant
+CS25-0229,event,Event activity,12 Dec 2025,participant
+ME24-0153,volunteering,Volunteering activity,18 Aug 2025,participant
+ME25-0209,hackathon,Hackathon activity,2026-01-08,participant
+CS22-0234,hackathon,Hackathon activity,04 May 2026,participant
+CS23-0296,event,Event activity,2025-10-28,organizer
+CS24-0279,event,Event activity,2026-04-12,participant
+CE24-0117,event,Event activity,2025-09-21,participant
+ME23-0147,volunteering,Volunteering activity,21 May 2026,organizer
+CS23-0207,volunteering,Volunteering activity,16/03/2026,lead
+EC25-0142,club,Club activity,2025-10-27,participant
+IT23-0134,certification,Certification activity,2025-12-28,organizer
+CS25-0187,event,Event activity,2025-12-02,organizer
+CE24-0123,certification,Certification activity,13 Aug 2025,participant
+ME24-0109,certification,Certification activity,2025-08-26,organizer
+CS24-0121,event,Event activity,2026-02-27,participant
+CS25-0141,certification,Certification activity,06/07/2026,lead
+CE23-0106,certification,Certification activity,17 Sep 2025,organizer
+EC25-0129,certification,Certification activity,2025-11-20,participant
+ME22-0187,certification,Certification activity,18 Apr 2026,participant
+EC25-0118,volunteering,Volunteering activity,04 Nov 2025,participant
+CS25-0140,hackathon,Hackathon activity,2025-09-29,participant
+CS23-0185,sports,Sports activity,27 Jun 2026,participant
+IT24-0142,hackathon,Hackathon activity,22 Apr 2026,participant
+ME22-0182,event,Event activity,2026-02-12,participant
+CE24-0103,certification,Certification activity,25/12/2025,participant
+ME22-0181,certification,Certification activity,17/02/2026,participant
+ME24-0137,volunteering,Volunteering activity,01 Jul 2026,lead
+EC22-0197,club,Club activity,2025-12-30,lead
+ME22-0151,club,Club activity,2026-03-31,lead
+ME22-0203,event,Event activity,31 Mar 2026,participant
+EC25-0183,club,Club activity,19 May 2026,organizer
+CS22-0123,certification,Certification activity,10 Apr 2026,organizer
+CS25-0268,club,Club activity,03/12/2025,participant
+EC24-0155,certification,Certification activity,31 May 2026,participant
+CS25-0231,club,Club activity,14 Oct 2025,participant
+IT24-0114,event,Event activity,09/03/2026,organizer
+EC25-0151,club,Club activity,2025-11-26,participant
+IT23-0109,hackathon,Hackathon activity,19 Oct 2025,participant
+ME25-0159,club,Club activity,22/08/2025,lead
+EC25-0157,sports,Sports activity,30/11/2025,participant
+CS23-0167,sports,Sports activity,22 Mar 2026,lead
+IT23-0146,hackathon,Hackathon activity,14 Mar 2026,participant
+ME22-0151,sports,Sports activity,2025-10-02,participant
+CE25-0157,certification,Certification activity,20/03/2026,participant
+CE22-0163,hackathon,Hackathon activity,27 Jun 2026,organizer
+EC24-0169,hackathon,Hackathon activity,2026-04-08,participant
+CE22-0129,club,Club activity,23/05/2026,participant
+ME23-0201,hackathon,Hackathon activity,2025-08-28,participant
+CS23-0261,club,Club activity,2025-11-11,participant
+EC23-0145,certification,Certification activity,05 Apr 2026,participant
+ME22-0187,club,Club activity,2026-05-13,organizer
+EC23-0143,certification,Certification activity,2026-05-05,participant
+CS24-0249,event,Event activity,2026-01-23,organizer
+EC24-0216,club,Club activity,2026-06-15,participant
+EC22-0125,certification,Certification activity,2026-04-29,participant
+CS22-0211,volunteering,Volunteering activity,06/04/2026,participant
+ME24-0207,event,Event activity,23 Aug 2025,participant
+CS24-0237,club,Club activity,17 Jun 2026,lead
+IT24-0183,sports,Sports activity,25/08/2025,organizer
+CE25-0138,hackathon,Hackathon activity,2026-03-11,lead
+ME23-0242,certification,Certification activity,2026-02-21,organizer
+ME24-0105,sports,Sports activity,08/03/2026,lead
+EC24-0149,event,Event activity,13/08/2025,participant
+CE23-0140,club,Club activity,09/01/2026,organizer
+CS24-0272,volunteering,Volunteering activity,24/12/2025,participant
+ME23-0201,club,Club activity,03 Jan 2026,participant
+CS22-0156,volunteering,Volunteering activity,09/10/2025,participant
+EC22-0136,sports,Sports activity,16 Nov 2025,organizer
+ME24-0105,hackathon,Hackathon activity,2025-12-18,lead
+CS22-0104,club,Club activity,09 Oct 2025,lead
+ME25-0117,sports,Sports activity,2025-08-16,participant
+CS25-0272,club,Club activity,2026-03-28,participant
+CS22-0233,certification,Certification activity,24 Dec 2025,lead
+IT24-0185,club,Club activity,14 Jun 2026,participant
+IT25-0133,sports,Sports activity,2026-03-05,participant
+EC23-0131,volunteering,Volunteering activity,2026-06-22,participant
+CS24-0234,club,Club activity,24 Mar 2026,organizer
+ME22-0159,sports,Sports activity,19 May 2026,participant
+CS23-0295,sports,Sports activity,05/09/2025,organizer
+IT23-0178,club,Club activity,28 Nov 2025,participant
+CS23-0162,club,Club activity,21 Sep 2025,participant
+CS23-0261,volunteering,Volunteering activity,15 Apr 2026,participant
+IT22-0158,club,Club activity,01 Jan 2026,lead
+ME24-0130,club,Club activity,23 Mar 2026,participant
+ME23-0204,club,Club activity,2026-05-26,participant
+CE22-0158,sports,Sports activity,31/03/2026,participant
+ME23-0229,event,Event activity,12/04/2026,participant
+EC23-0184,certification,Certification activity,15 Feb 2026,participant
+CS25-0137,event,Event activity,2025-09-21,participant
+CS23-0261,sports,Sports activity,2026-01-28,participant
+CS24-0250,sports,Sports activity,13 Apr 2026,participant
+IT22-0149,event,Event activity,06 Feb 2026,participant
+CS24-0106,event,Event activity,01 Feb 2026,participant
+CS23-0257,certification,Certification activity,20/05/2026,participant
+ME25-0209,club,Club activity,20/06/2026,lead
+CE25-0168,volunteering,Volunteering activity,08 Mar 2026,participant
+CS22-0119,certification,Certification activity,11 Apr 2026,participant
+CS23-0162,event,Event activity,2025-10-22,participant
+CS23-0162,volunteering,Volunteering activity,2026-07-01,participant
+CS25-0243,club,Club activity,2026-01-20,participant
+CS22-0252,club,Club activity,15/08/2025,lead
+IT24-0119,club,Club activity,17/08/2025,participant
+IT25-0122,club,Club activity,2026-03-03,participant
+CE23-0177,sports,Sports activity,2025-12-24,participant
+CS24-0181,volunteering,Volunteering activity,2026-05-20,participant
+EC24-0200,event,Event activity,16/12/2025,participant
+CS23-0226,volunteering,Volunteering activity,20/04/2026,lead
+EC23-0151,certification,Certification activity,17/10/2025,participant
+IT22-0115,event,Event activity,08/10/2025,lead
+CE23-0153,event,Event activity,2026-05-16,participant
+IT23-0105,sports,Sports activity,2026-06-01,participant
+IT23-0151,club,Club activity,26/02/2026,participant
+CS23-0226,volunteering,Volunteering activity,17/04/2026,organizer
+ME22-0121,club,Club activity,13/01/2026,participant
+CS22-0225,club,Club activity,22/11/2025,participant
+EC24-0199,sports,Sports activity,25 Nov 2025,participant
+ME22-0177,event,Event activity,16 Sep 2025,organizer
+CE25-0132,event,Event activity,09/10/2025,participant
+CE25-0113,sports,Sports activity,13/05/2026,participant
+CS25-0220,sports,Sports activity,2026-02-12,lead
+ME23-0201,certification,Certification activity,26/01/2026,lead
+ME24-0153,club,Club activity,23/05/2026,lead
+CE24-0140,club,Club activity,23/12/2025,participant
+ME25-0179,certification,Certification activity,2026-04-28,participant
+EC24-0176,volunteering,Volunteering activity,18/12/2025,participant
+EC23-0156,event,Event activity,2025-09-28,participant
+ME22-0104,certification,Certification activity,22/10/2025,participant
+CS25-0130,club,Club activity,25 Oct 2025,participant
+EC22-0166,sports,Sports activity,2026-04-10,participant
+ME25-0227,sports,Sports activity,2026-01-07,organizer
+CE24-0114,event,Event activity,2026-02-10,participant
+EC25-0163,event,Event activity,26/06/2026,organizer
+IT24-0106,certification,Certification activity,22 Apr 2026,participant
+CE22-0135,event,Event activity,2025-09-28,participant
+CS24-0184,club,Club activity,13/02/2026,participant
+EC25-0149,certification,Certification activity,22/02/2026,participant
+CE24-0140,event,Event activity,17/04/2026,participant
+ME24-0185,event,Event activity,2026-05-01,lead
+IT25-0120,event,Event activity,21 Nov 2025,participant
+CS24-0194,sports,Sports activity,29 Apr 2026,participant
+ME22-0122,club,Club activity,2025-11-25,participant
+EC23-0141,event,Event activity,21 Jun 2026,participant
+CE25-0109,event,Event activity,15 Sep 2025,participant
+EC25-0159,certification,Certification activity,05/12/2025,lead
+EC24-0188,certification,Certification activity,23/11/2025,organizer
+EC24-0161,certification,Certification activity,13 Dec 2025,organizer
+ME24-0121,event,Event activity,17/10/2025,participant
+CS22-0243,certification,Certification activity,09/11/2025,participant
+CS24-0127,event,Event activity,31/10/2025,organizer
+CE23-0101,certification,Certification activity,2025-09-18,participant
+CS24-0249,hackathon,Hackathon activity,2026-03-25,lead
+ME23-0162,club,Club activity,17 Nov 2025,organizer
+CE24-0115,certification,Certification activity,17/08/2025,lead
+CS24-0235,hackathon,Hackathon activity,04 Feb 2026,lead
+CS23-0289,event,Event activity,26/09/2025,lead
+EC24-0200,event,Event activity,2026-01-14,organizer
+IT22-0117,event,Event activity,22/08/2025,organizer
+CS23-0203,hackathon,Hackathon activity,2026-05-26,lead
+CS23-0267,hackathon,Hackathon activity,19 Jan 2026,participant
+CE22-0129,certification,Certification activity,06 Jul 2026,participant
+CE24-0158,hackathon,Hackathon activity,2026-07-05,participant
+ME24-0159,sports,Sports activity,13/02/2026,participant
+CE23-0114,hackathon,Hackathon activity,16 Aug 2025,lead
+CS24-0144,sports,Sports activity,06/12/2025,organizer
+CS25-0140,event,Event activity,23/11/2025,participant
+CS23-0237,event,Event activity,08/02/2026,participant
+CE22-0181,sports,Sports activity,16/09/2025,lead
+ME24-0191,certification,Certification activity,2026-04-15,organizer
+CE25-0132,event,Event activity,11 Oct 2025,participant
+CE23-0151,club,Club activity,2025-09-03,lead
+ME23-0201,certification,Certification activity,14 Mar 2026,lead
+CS22-0218,volunteering,Volunteering activity,29/05/2026,participant
+IT22-0131,certification,Certification activity,2026-04-15,lead
+IT23-0111,event,Event activity,2025-09-21,lead
+CS23-0211,sports,Sports activity,05 Dec 2025,lead
+CS23-0192,club,Club activity,22/06/2026,organizer
+CE23-0153,sports,Sports activity,29 Oct 2025,lead
+EC25-0212,hackathon,Hackathon activity,07 Jun 2026,participant
+IT22-0110,club,Club activity,24 Oct 2025,participant
+CS24-0225,sports,Sports activity,02/09/2025,organizer
+IT22-0151,volunteering,Volunteering activity,2025-12-01,lead
+EC24-0202,club,Club activity,07 Feb 2026,lead
+CS25-0269,certification,Certification activity,2025-10-15,participant
+ME25-0104,event,Event activity,04 Feb 2026,lead
+CS24-0133,club,Club activity,08 Nov 2025,participant
+CS22-0206,sports,Sports activity,11 Jan 2026,participant
+EC25-0108,club,Club activity,2025-11-28,lead
+CE23-0132,event,Event activity,2026-05-20,lead
+CS24-0261,event,Event activity,18/02/2026,participant
+CE25-0105,hackathon,Hackathon activity,14 Dec 2025,participant
+ME25-0227,certification,Certification activity,11/05/2026,participant
+ME23-0221,club,Club activity,23/04/2026,organizer
+CS22-0129,event,Event activity,2026-05-01,organizer
+ME23-0141,volunteering,Volunteering activity,25 Aug 2025,participant
+ME25-0224,certification,Certification activity,13 Feb 2026,participant
+CE24-0132,volunteering,Volunteering activity,09 Nov 2025,lead
+ME24-0220,club,Club activity,10 Mar 2026,participant
+CS25-0167,hackathon,Hackathon activity,2026-04-22,participant
+EC24-0163,hackathon,Hackathon activity,05 Sep 2025,lead
+CS22-0119,sports,Sports activity,14/12/2025,participant
+CS22-0259,certification,Certification activity,2026-04-28,participant
+EC22-0168,club,Club activity,2026-05-25,participant
+ME22-0212,club,Club activity,13/10/2025,lead
+EC24-0166,hackathon,Hackathon activity,16 Feb 2026,lead
+CE24-0169,certification,Certification activity,30/09/2025,participant
+EC23-0168,certification,Certification activity,06/07/2026,organizer
+CE25-0157,event,Event activity,11 Feb 2026,participant
+EC23-0179,certification,Certification activity,27/10/2025,participant
+ME23-0193,certification,Certification activity,09 Oct 2025,organizer
+EC22-0163,volunteering,Volunteering activity,20/01/2026,lead
+ME23-0187,volunteering,Volunteering activity,23 May 2026,participant
+EC25-0115,hackathon,Hackathon activity,21/08/2025,participant
+EC25-0169,hackathon,Hackathon activity,27/01/2026,participant
+EC24-0161,sports,Sports activity,19/10/2025,participant
+CS22-0129,club,Club activity,10/12/2025,organizer
+CS25-0197,certification,Certification activity,15/11/2025,organizer
+CE23-0114,certification,Certification activity,24/02/2026,lead
+ME24-0211,club,Club activity,14 Jun 2026,organizer
+IT22-0117,club,Club activity,23/09/2025,participant
+EC23-0179,event,Event activity,25 Jun 2026,participant
+CE25-0145,certification,Certification activity,20 Dec 2025,participant
+EC23-0161,club,Club activity,25 Jan 2026,organizer
+ME22-0176,sports,Sports activity,06/02/2026,lead
+CS23-0107,sports,Sports activity,16 Feb 2026,participant
+CS23-0289,certification,Certification activity,2025-12-05,lead
+CE24-0103,volunteering,Volunteering activity,03/11/2025,participant
+IT23-0134,event,Event activity,08 May 2026,lead
+ME25-0104,event,Event activity,2026-02-28,participant
+CS25-0228,volunteering,Volunteering activity,26/05/2026,participant
+CE23-0199,event,Event activity,16 Feb 2026,participant
+CE24-0144,event,Event activity,20 Feb 2026,lead
+CE22-0102,club,Club activity,18 Jun 2026,lead
+CE22-0138,hackathon,Hackathon activity,27 Dec 2025,participant
+IT23-0119,hackathon,Hackathon activity,01/01/2026,organizer
+CS23-0250,hackathon,Hackathon activity,20 Mar 2026,organizer
+IT24-0165,sports,Sports activity,10 Feb 2026,participant
+CS23-0162,sports,Sports activity,26/05/2026,organizer
+IT22-0158,event,Event activity,2026-01-10,lead
+EC22-0137,club,Club activity,2026-06-20,participant
+CS22-0221,event,Event activity,14 Dec 2025,participant
+IT25-0181,hackathon,Hackathon activity,2025-11-27,participant
+EC24-0116,certification,Certification activity,02/04/2026,organizer
+EC22-0121,hackathon,Hackathon activity,16 Jun 2026,participant
+CS24-0110,hackathon,Hackathon activity,2025-10-15,participant
+CS23-0233,sports,Sports activity,02 Dec 2025,participant
+EC24-0189,volunteering,Volunteering activity,2025-12-09,participant
+EC25-0155,club,Club activity,25 Nov 2025,participant
+CE22-0155,volunteering,Volunteering activity,21 Dec 2025,lead
+CE24-0161,sports,Sports activity,2026-04-03,participant
+EC24-0155,certification,Certification activity,31 May 2026,participant
+ME22-0109,volunteering,Volunteering activity,05/11/2025,participant
+IT22-0173,event,Event activity,2026-02-17,participant
+ME22-0162,club,Club activity,01/06/2026,organizer
+CE23-0101,club,Club activity,2026-03-28,participant
+CS25-0241,hackathon,Hackathon activity,16/04/2026,participant
+ME24-0143,volunteering,Volunteering activity,2026-03-15,participant
+IT23-0146,event,Event activity,21/12/2025,lead
+CS24-0252,event,Event activity,2026-05-26,participant
+ME24-0217,event,Event activity,15 Jun 2026,participant
+CE23-0118,club,Club activity,13 May 2026,organizer
+CS22-0146,certification,Certification activity,09/10/2025,participant
+CS24-0206,sports,Sports activity,04 Feb 2026,participant
+CS24-0279,certification,Certification activity,06 Mar 2026,lead
+CS25-0140,hackathon,Hackathon activity,04 Jan 2026,participant
+EC22-0183,hackathon,Hackathon activity,17 Jun 2026,participant
+IT23-0120,volunteering,Volunteering activity,03/09/2025,participant
+CS24-0265,club,Club activity,06/06/2026,participant
+EC24-0202,certification,Certification activity,2026-04-15,lead
+CS22-0202,certification,Certification activity,2025-10-10,participant
+CS23-0139,sports,Sports activity,26 Oct 2025,participant
+CS24-0136,club,Club activity,2025-09-26,participant
+EC25-0215,certification,Certification activity,16 Sep 2025,participant
+CS23-0140,event,Event activity,20 Jun 2026,participant
+EC25-0179,hackathon,Hackathon activity,13 Apr 2026,organizer
+EC24-0161,event,Event activity,2026-04-09,participant
+ME22-0127,sports,Sports activity,2026-03-10,lead
+EC22-0116,hackathon,Hackathon activity,14 Jun 2026,participant
+EC22-0138,sports,Sports activity,04/04/2026,participant
+ME22-0104,event,Event activity,29 Jan 2026,participant
+CE24-0144,event,Event activity,18/06/2026,participant
+EC23-0207,event,Event activity,22 Apr 2026,participant
+IT25-0119,certification,Certification activity,26/03/2026,participant
+ME24-0157,sports,Sports activity,05/06/2026,participant
+IT25-0168,volunteering,Volunteering activity,2025-08-24,participant
+CE25-0145,volunteering,Volunteering activity,2026-01-22,participant
+CS22-0225,club,Club activity,23/05/2026,organizer
+CS24-0189,sports,Sports activity,27 Feb 2026,organizer
+IT24-0151,event,Event activity,2026-04-11,participant
+CS24-0252,event,Event activity,15/11/2025,participant
+CE23-0110,sports,Sports activity,02/07/2026,participant
+ME23-0177,volunteering,Volunteering activity,19/02/2026,participant
+EC22-0152,sports,Sports activity,2026-06-18,participant
+ME25-0119,event,Event activity,03 Jan 2026,organizer
+IT22-0179,sports,Sports activity,02/03/2026,organizer
+ME22-0175,event,Event activity,2026-06-09,participant
+IT25-0126,club,Club activity,02/03/2026,participant
+CE24-0198,event,Event activity,26/04/2026,participant
+ME24-0193,club,Club activity,2026-05-05,participant
+CE23-0146,sports,Sports activity,2026-05-30,lead
+CE24-0132,sports,Sports activity,06 Jul 2026,participant
+CS23-0203,certification,Certification activity,10 Jan 2026,lead
+EC24-0136,hackathon,Hackathon activity,2025-10-21,participant
+ME23-0181,event,Event activity,05 Jun 2026,organizer
+CE25-0134,sports,Sports activity,04/01/2026,participant
+CE23-0132,event,Event activity,01 Jul 2026,lead
+IT23-0123,hackathon,Hackathon activity,21/11/2025,participant
+CS22-0237,event,Event activity,2025-09-11,participant
+ME25-0191,club,Club activity,23/09/2025,participant
+CE25-0139,certification,Certification activity,29/05/2026,lead
+CS24-0244,hackathon,Hackathon activity,28 Mar 2026,participant
+ME25-0194,event,Event activity,16/03/2026,lead
+IT25-0122,club,Club activity,2026-05-27,participant
+IT23-0111,sports,Sports activity,25/04/2026,lead
+CS24-0272,certification,Certification activity,2026-05-29,lead
+CS23-0115,certification,Certification activity,18/01/2026,participant
+IT24-0149,club,Club activity,26/11/2025,lead
+ME25-0141,club,Club activity,2026-03-28,participant
+EC25-0147,certification,Certification activity,2025-10-16,organizer
+IT24-0149,certification,Certification activity,13/05/2026,participant
+EC22-0148,hackathon,Hackathon activity,11/02/2026,participant
+EC24-0116,club,Club activity,25 Dec 2025,lead
+CS24-0272,event,Event activity,21/04/2026,lead
+EC24-0123,sports,Sports activity,14/02/2026,participant
+CS24-0264,club,Club activity,25 Oct 2025,organizer
+CE23-0181,volunteering,Volunteering activity,03/10/2025,lead
+CS25-0101,event,Event activity,2026-02-20,participant
+CS25-0254,sports,Sports activity,2025-10-25,participant
+CE23-0110,hackathon,Hackathon activity,2026-06-09,participant
+CS25-0160,club,Club activity,12/09/2025,participant
+ME22-0132,sports,Sports activity,2025-08-16,participant
+EC23-0111,hackathon,Hackathon activity,31/03/2026,organizer
+IT23-0166,event,Event activity,29/05/2026,participant
+ME24-0197,club,Club activity,2025-10-30,participant
+IT25-0162,club,Club activity,02/05/2026,participant
+IT25-0129,hackathon,Hackathon activity,2025-09-25,participant
+CS25-0200,event,Event activity,2026-02-12,participant
+EC25-0157,club,Club activity,03/11/2025,organizer
+CS24-0261,event,Event activity,22/03/2026,organizer
+CS22-0189,club,Club activity,2025-09-08,participant
+CS25-0183,club,Club activity,06 Sep 2025,participant
+IT22-0123,club,Club activity,2026-03-21,lead
+IT23-0146,event,Event activity,14 Nov 2025,participant
+CS25-0209,hackathon,Hackathon activity,2025-09-15,lead
+EC22-0197,club,Club activity,25 Mar 2026,participant
+ME23-0143,event,Event activity,08/01/2026,participant
+EC22-0152,event,Event activity,20/03/2026,participant
+CE24-0124,event,Event activity,02 Apr 2026,organizer
+CS25-0101,sports,Sports activity,23/03/2026,lead
+IT22-0158,event,Event activity,14 May 2026,lead
+IT22-0114,event,Event activity,15/08/2025,organizer
+IT23-0123,certification,Certification activity,2026-05-07,participant
+CS25-0139,volunteering,Volunteering activity,14/03/2026,participant
+EC25-0149,certification,Certification activity,24 Dec 2025,participant
+ME22-0124,sports,Sports activity,20/06/2026,organizer
+CS23-0198,hackathon,Hackathon activity,2026-01-11,participant
+EC25-0172,certification,Certification activity,07 Jan 2026,organizer
+EC24-0163,club,Club activity,27/10/2025,participant
+EC23-0179,certification,Certification activity,19 Feb 2026,lead
+CE24-0198,club,Club activity,2026-06-29,participant
+CE24-0186,event,Event activity,2026-05-15,participant
+CS24-0199,event,Event activity,08 Jan 2026,lead
+EC25-0199,event,Event activity,08 Feb 2026,organizer
+CS25-0147,sports,Sports activity,2025-09-24,lead
+CS23-0205,certification,Certification activity,25 Oct 2025,organizer
+ME23-0138,volunteering,Volunteering activity,30/12/2025,participant
+CE24-0189,club,Club activity,01 Feb 2026,participant
+EC24-0199,hackathon,Hackathon activity,06 Dec 2025,organizer
+CE23-0167,hackathon,Hackathon activity,29 Apr 2026,organizer
+CS23-0289,certification,Certification activity,01 Dec 2025,lead
+CE22-0184,event,Event activity,19 Nov 2025,participant
+ME23-0181,sports,Sports activity,02/09/2025,participant
+IT23-0170,volunteering,Volunteering activity,2026-01-11,participant
+CE24-0114,volunteering,Volunteering activity,24 Sep 2025,lead
+CS22-0243,event,Event activity,2025-09-25,lead
+IT23-0126,event,Event activity,21 Aug 2025,organizer
+CE22-0102,event,Event activity,06 Jun 2026,participant
+ME23-0145,club,Club activity,04 Sep 2025,lead
+CS23-0182,sports,Sports activity,29/05/2026,participant
+CE22-0138,club,Club activity,31 Jan 2026,lead
+CS24-0272,sports,Sports activity,27/01/2026,participant
+CS24-0202,volunteering,Volunteering activity,23/12/2025,lead
+EC24-0202,hackathon,Hackathon activity,2026-04-13,participant
+ME25-0150,event,Event activity,17 Sep 2025,organizer
+EC22-0203,club,Club activity,2025-12-18,participant
+ME22-0104,sports,Sports activity,2025-11-25,participant
+ME23-0161,certification,Certification activity,21 Feb 2026,participant
+CE22-0109,event,Event activity,2026-04-19,lead
+EC22-0195,club,Club activity,02 Mar 2026,participant
+EC24-0202,certification,Certification activity,2025-10-07,participant
+CS22-0211,hackathon,Hackathon activity,2025-09-01,participant
+CS24-0261,hackathon,Hackathon activity,2025-10-14,participant
+IT24-0182,hackathon,Hackathon activity,2026-04-03,participant
+CS22-0253,hackathon,Hackathon activity,28/04/2026,participant
+CE22-0139,club,Club activity,2025-11-13,participant
+ME23-0238,hackathon,Hackathon activity,22 May 2026,lead
+CS24-0211,volunteering,Volunteering activity,2026-02-17,participant
+CS24-0127,club,Club activity,24/08/2025,participant
+EC24-0144,certification,Certification activity,2025-12-27,participant
+CE23-0202,sports,Sports activity,04 Oct 2025,organizer
+CE22-0109,club,Club activity,2026-05-24,participant
+ME25-0194,event,Event activity,10/10/2025,participant
+CS24-0152,club,Club activity,2025-09-15,participant
+ME22-0190,certification,Certification activity,2025-08-17,participant
+CE22-0173,volunteering,Volunteering activity,27 Dec 2025,participant
+CS23-0257,club,Club activity,14 Jan 2026,participant
+CE25-0138,club,Club activity,22/03/2026,lead
+CS24-0279,volunteering,Volunteering activity,17/05/2026,participant
+IT22-0138,club,Club activity,17/08/2025,participant
+CS22-0171,certification,Certification activity,03 Dec 2025,participant
+CS25-0214,club,Club activity,2025-09-03,organizer
+CS25-0141,certification,Certification activity,18 Jun 2026,organizer
+CS22-0225,club,Club activity,03/02/2026,participant
+CS25-0228,hackathon,Hackathon activity,02 Dec 2025,participant
+CS24-0249,volunteering,Volunteering activity,13/05/2026,participant
+EC25-0169,certification,Certification activity,2025-10-01,participant
+CS24-0171,sports,Sports activity,2025-09-09,organizer
+ME22-0200,event,Event activity,12 Sep 2025,lead
+CS25-0222,club,Club activity,08/01/2026,participant
+CE25-0159,sports,Sports activity,21 Nov 2025,participant
+ME22-0212,volunteering,Volunteering activity,2026-01-18,participant
+CE22-0102,event,Event activity,20/02/2026,lead
+CE22-0178,club,Club activity,19 Mar 2026,participant
+ME22-0140,club,Club activity,23 Jun 2026,organizer
+EC23-0176,hackathon,Hackathon activity,2025-11-06,lead
+CS25-0180,certification,Certification activity,2025-09-11,participant
+ME23-0242,club,Club activity,18/02/2026,participant
+CE25-0107,event,Event activity,2025-10-14,participant
+CS22-0260,volunteering,Volunteering activity,2025-11-23,participant
+IT22-0157,certification,Certification activity,15 Jun 2026,participant
+CE22-0102,event,Event activity,2025-09-18,participant
+CE23-0204,club,Club activity,12 Sep 2025,participant
+ME22-0203,volunteering,Volunteering activity,2026-03-17,organizer
+EC22-0186,volunteering,Volunteering activity,2025-10-05,participant
+EC25-0115,club,Club activity,05 Feb 2026,lead
+EC24-0123,volunteering,Volunteering activity,2025-09-03,organizer
+CS25-0176,sports,Sports activity,22/05/2026,participant
+ME24-0175,club,Club activity,08 Dec 2025,lead
+EC25-0197,club,Club activity,24/12/2025,participant
+IT23-0111,certification,Certification activity,2026-05-22,lead
+IT22-0138,club,Club activity,19/11/2025,participant
+CS25-0124,event,Event activity,22 Dec 2025,participant
+EC25-0151,club,Club activity,2025-09-24,participant
+IT25-0147,hackathon,Hackathon activity,03/12/2025,lead
+CS23-0246,club,Club activity,06 Dec 2025,participant
+IT23-0170,hackathon,Hackathon activity,07 May 2026,participant
+CS24-0279,certification,Certification activity,06 Mar 2026,lead
+CE23-0204,club,Club activity,16 Jan 2026,participant
+CS24-0203,hackathon,Hackathon activity,04 Feb 2026,organizer
+IT23-0111,certification,Certification activity,27/10/2025,lead
+IT24-0185,hackathon,Hackathon activity,28 Nov 2025,lead
+CE22-0146,certification,Certification activity,19 Jun 2026,participant
+CS25-0263,sports,Sports activity,08/02/2026,participant
+EC25-0142,club,Club activity,2026-02-25,lead
+CE24-0130,certification,Certification activity,2025-11-08,organizer
+CE23-0125,volunteering,Volunteering activity,02 Jan 2026,participant
+CS24-0171,sports,Sports activity,01 May 2026,participant
+CE23-0114,club,Club activity,22 Aug 2025,participant
+CS24-0157,event,Event activity,13/12/2025,participant
+EC23-0198,event,Event activity,07/02/2026,organizer
+IT23-0123,event,Event activity,12/01/2026,participant
+ME23-0128,event,Event activity,28/02/2026,participant
+ME22-0190,event,Event activity,21 Feb 2026,organizer
+ME25-0169,event,Event activity,24 Feb 2026,participant
+ME22-0143,sports,Sports activity,18 Nov 2025,participant
+ME25-0119,event,Event activity,2025-09-27,participant
+ME23-0162,club,Club activity,04/11/2025,participant
+CE23-0107,certification,Certification activity,2025-11-10,participant
+IT25-0151,hackathon,Hackathon activity,16/10/2025,participant
+CS23-0203,hackathon,Hackathon activity,04 Jul 2026,participant
+IT23-0181,sports,Sports activity,2026-05-30,participant
+CS23-0225,event,Event activity,03 Jun 2026,participant
+CS23-0276,club,Club activity,16/06/2026,participant
+EC22-0132,sports,Sports activity,17/12/2025,participant
+EC25-0195,club,Club activity,29 Apr 2026,participant
+CE25-0160,club,Club activity,18 Apr 2026,lead
+CE23-0116,club,Club activity,2025-11-26,participant
+CS24-0152,volunteering,Volunteering activity,19/02/2026,organizer
+ME22-0196,certification,Certification activity,03/10/2025,participant
+CE25-0138,sports,Sports activity,06 Apr 2026,participant
+CS23-0233,club,Club activity,2026-07-04,participant
+CE25-0124,event,Event activity,2026-01-29,lead
+CS23-0153,event,Event activity,18/05/2026,participant
+CS22-0128,event,Event activity,20/06/2026,organizer
+CS25-0127,club,Club activity,08 Jun 2026,participant
+EC25-0157,hackathon,Hackathon activity,25/04/2026,participant
+IT23-0166,hackathon,Hackathon activity,19/11/2025,participant
+CS24-0157,club,Club activity,05 Dec 2025,participant
+CE23-0181,club,Club activity,25/10/2025,participant
+IT22-0157,sports,Sports activity,27/04/2026,participant
+CS24-0232,sports,Sports activity,20/05/2026,participant
+ME24-0150,certification,Certification activity,06/02/2026,organizer
+ME22-0101,club,Club activity,16 Apr 2026,participant
+CS23-0289,event,Event activity,26/09/2025,lead
+CS22-0110,club,Club activity,01 Sep 2025,lead
+IT24-0122,club,Club activity,08 Feb 2026,organizer
+CS23-0141,certification,Certification activity,2026-06-19,participant
+EC24-0192,volunteering,Volunteering activity,13 Nov 2025,participant
+ME25-0194,volunteering,Volunteering activity,02 May 2026,participant
+ME25-0227,volunteering,Volunteering activity,13 Mar 2026,lead
+ME22-0165,sports,Sports activity,2026-06-16,participant
+CS23-0289,hackathon,Hackathon activity,2025-12-18,participant
+EC24-0185,hackathon,Hackathon activity,12 Nov 2025,participant
+ME22-0212,club,Club activity,2026-04-04,lead
+ME25-0194,certification,Certification activity,12/02/2026,participant
+CE24-0184,certification,Certification activity,26/10/2025,lead
+EC22-0175,event,Event activity,2026-05-17,participant
+CS24-0272,event,Event activity,29 Aug 2025,lead
+CE24-0142,certification,Certification activity,2025-09-23,participant
+ME23-0229,event,Event activity,13/04/2026,participant
+ME24-0155,certification,Certification activity,16 May 2026,participant
+EC24-0190,event,Event activity,22 Jun 2026,participant
+ME22-0121,event,Event activity,17/05/2026,participant
+CS25-0222,sports,Sports activity,2025-10-07,lead
+IT24-0181,club,Club activity,18 Jan 2026,participant
+CS22-0227,event,Event activity,31/10/2025,organizer
+CS24-0252,event,Event activity,2025-10-19,organizer
+CS23-0157,club,Club activity,12/05/2026,participant
+CS24-0255,event,Event activity,2026-01-19,participant
+IT24-0142,hackathon,Hackathon activity,09/10/2025,organizer
+CE25-0132,event,Event activity,22 Feb 2026,participant
+ME24-0188,volunteering,Volunteering activity,2026-03-07,lead
+CS22-0237,sports,Sports activity,2026-06-19,participant
+IT23-0181,certification,Certification activity,11/03/2026,participant
+EC25-0181,sports,Sports activity,2025-12-01,participant
+CE25-0109,certification,Certification activity,30 Oct 2025,participant
+ME25-0221,club,Club activity,18/05/2026,participant
+EC24-0188,volunteering,Volunteering activity,22/09/2025,participant
+CS22-0218,club,Club activity,2026-06-14,participant
+ME23-0242,club,Club activity,2026-03-20,participant
+CE25-0107,volunteering,Volunteering activity,13 Aug 2025,lead
+CS24-0265,club,Club activity,19 Sep 2025,participant
+CS24-0283,volunteering,Volunteering activity,2025-11-30,participant
+EC25-0190,volunteering,Volunteering activity,04/06/2026,organizer
+CE24-0132,event,Event activity,2025-10-29,participant
+EC22-0121,certification,Certification activity,2026-01-07,participant
+CE23-0153,event,Event activity,06 Sep 2025,participant
+ME25-0159,hackathon,Hackathon activity,17/10/2025,participant
+CS24-0138,hackathon,Hackathon activity,2025-09-22,participant
+EC25-0200,sports,Sports activity,01/04/2026,participant
+CS23-0107,club,Club activity,28 Jan 2026,organizer
+IT23-0173,sports,Sports activity,14 Mar 2026,participant
+EC23-0131,hackathon,Hackathon activity,2025-09-30,participant
+ME23-0229,certification,Certification activity,2025-11-09,participant
+CS23-0145,sports,Sports activity,25/08/2025,organizer
+CS23-0170,club,Club activity,2025-09-16,participant
+ME25-0192,event,Event activity,29 Nov 2025,participant
+ME22-0147,certification,Certification activity,2026-06-28,participant
+CS23-0206,club,Club activity,25 Apr 2026,organizer
+CE22-0176,event,Event activity,31/10/2025,participant
+CE22-0119,volunteering,Volunteering activity,10/06/2026,participant
+EC23-0213,sports,Sports activity,04 Feb 2026,participant
+CS25-0116,club,Club activity,2026-01-17,participant
+EC23-0172,hackathon,Hackathon activity,2026-07-06,organizer
+EC23-0125,club,Club activity,11 Oct 2025,lead
+IT25-0141,volunteering,Volunteering activity,17 Apr 2026,participant
+CE25-0147,club,Club activity,03/11/2025,lead
+CE25-0126,event,Event activity,13/01/2026,lead
+CS23-0271,club,Club activity,24 Nov 2025,organizer
+CS23-0142,club,Club activity,30/10/2025,lead
+ME24-0191,volunteering,Volunteering activity,20 May 2026,participant
+CE25-0127,club,Club activity,03/09/2025,lead
+ME23-0145,certification,Certification activity,30 Jan 2026,lead
+ME22-0132,certification,Certification activity,19 Apr 2026,organizer
+CS23-0240,club,Club activity,13/10/2025,participant
+ME24-0126,club,Club activity,10 Jun 2026,organizer
+CS23-0189,club,Club activity,25/12/2025,participant
+IT22-0123,club,Club activity,2026-01-16,participant
+ME24-0222,club,Club activity,13 Feb 2026,lead
+IT25-0151,event,Event activity,11 Aug 2025,organizer
+CS23-0267,event,Event activity,2026-03-21,participant
+ME22-0181,hackathon,Hackathon activity,06/11/2025,participant
+CS22-0230,volunteering,Volunteering activity,2025-09-24,participant
+CS22-0145,hackathon,Hackathon activity,08/02/2026,participant
+IT23-0106,club,Club activity,15/10/2025,organizer
+IT24-0171,event,Event activity,06 Sep 2025,participant
+CS23-0203,hackathon,Hackathon activity,17/11/2025,participant
+CS25-0176,sports,Sports activity,13 Nov 2025,participant
+CE25-0110,event,Event activity,03 Jan 2026,organizer
+ME23-0143,event,Event activity,15 May 2026,organizer
+CS24-0264,volunteering,Volunteering activity,2025-11-03,participant
+ME23-0201,club,Club activity,2026-01-29,participant
+ME23-0238,certification,Certification activity,14/12/2025,participant
+ME24-0157,volunteering,Volunteering activity,2026-06-04,lead
+EC25-0147,club,Club activity,10/03/2026,participant
+IT24-0170,sports,Sports activity,14/11/2025,participant
+CS22-0197,certification,Certification activity,04 Jun 2026,organizer
+CS24-0244,event,Event activity,06/12/2025,lead
+ME24-0128,certification,Certification activity,03 Sep 2025,participant
+ME23-0123,hackathon,Hackathon activity,2025-09-18,participant
+ME22-0181,certification,Certification activity,17 May 2026,organizer
+CS23-0139,event,Event activity,17/02/2026,lead
+CS24-0144,event,Event activity,2026-02-20,participant
+ME24-0148,certification,Certification activity,15 Dec 2025,participant
+CS24-0209,event,Event activity,05/06/2026,lead
+IT25-0163,certification,Certification activity,2026-06-12,participant
+EC23-0152,certification,Certification activity,2025-09-16,organizer
+CE24-0101,hackathon,Hackathon activity,2025-10-11,participant
+CE23-0132,event,Event activity,2026-04-03,lead
+CE22-0176,club,Club activity,08 Apr 2026,lead
+CS24-0204,club,Club activity,29/06/2026,participant
+CE22-0155,certification,Certification activity,2025-12-11,participant
+IT24-0152,event,Event activity,2025-08-22,participant
+IT22-0112,club,Club activity,27 Apr 2026,participant
+CE25-0157,volunteering,Volunteering activity,2026-02-05,lead
+IT25-0149,event,Event activity,13/03/2026,participant
+CS24-0184,event,Event activity,28 Nov 2025,organizer
+CS22-0237,sports,Sports activity,2026-06-19,participant
+EC22-0134,event,Event activity,03 Dec 2025,participant
+CS22-0233,club,Club activity,08/03/2026,lead
+CS23-0122,hackathon,Hackathon activity,16 Apr 2026,participant
+ME22-0168,volunteering,Volunteering activity,2025-11-12,participant
+ME22-0151,volunteering,Volunteering activity,2026-04-20,participant
+EC22-0129,sports,Sports activity,29 Aug 2025,lead
+EC25-0136,volunteering,Volunteering activity,19 Jun 2026,organizer
+IT25-0179,sports,Sports activity,2025-10-13,participant
+CE25-0109,event,Event activity,20/05/2026,organizer
+ME23-0244,sports,Sports activity,12 Nov 2025,participant
+CE24-0189,club,Club activity,14 Jan 2026,participant
+CS22-0259,event,Event activity,2026-03-17,participant
+CE22-0161,certification,Certification activity,09 May 2026,lead
+CS22-0108,hackathon,Hackathon activity,17 Jun 2026,organizer
+CS23-0281,club,Club activity,2026-05-29,participant
+IT24-0135,club,Club activity,2026-05-01,participant
+CS25-0140,event,Event activity,2025-11-18,lead
+IT24-0130,certification,Certification activity,20/03/2026,lead
+CS24-0255,certification,Certification activity,14/11/2025,participant
+ME24-0143,event,Event activity,02 Jun 2026,participant
+CS22-0202,sports,Sports activity,16 Dec 2025,participant
+CS22-0129,hackathon,Hackathon activity,2026-03-27,participant
+IT24-0103,club,Club activity,2025-09-09,participant
+IT25-0127,club,Club activity,2025-12-10,organizer
+IT25-0134,club,Club activity,2026-01-11,participant
+EC23-0134,event,Event activity,2025-10-26,participant
+CS23-0122,club,Club activity,2025-12-22,participant
+CS22-0138,event,Event activity,13/05/2026,lead
+EC22-0103,certification,Certification activity,2026-06-14,participant
+ME25-0144,club,Club activity,12 Feb 2026,participant
+CE23-0132,sports,Sports activity,22 Dec 2025,lead
+EC24-0123,club,Club activity,13/08/2025,participant
+CS25-0243,club,Club activity,11 Nov 2025,participant
+CE24-0117,club,Club activity,2025-08-18,participant
+CS22-0165,club,Club activity,09/04/2026,participant
+EC25-0210,volunteering,Volunteering activity,25/03/2026,participant
+CS22-0104,club,Club activity,2025-10-20,lead
+IT23-0123,certification,Certification activity,2025-11-16,organizer
+CE22-0129,sports,Sports activity,01 May 2026,participant
+CS22-0134,volunteering,Volunteering activity,19 Oct 2025,participant
+EC23-0125,sports,Sports activity,2026-01-25,participant
+EC22-0161,event,Event activity,18/03/2026,participant
+CS23-0223,club,Club activity,23/03/2026,participant
+CS23-0281,certification,Certification activity,2026-04-03,participant
+CE24-0170,hackathon,Hackathon activity,2025-10-08,participant
+ME22-0165,club,Club activity,2025-12-21,participant
+CE22-0139,certification,Certification activity,05/09/2025,lead
+EC24-0208,event,Event activity,31 Oct 2025,organizer
+IT25-0181,club,Club activity,25/11/2025,lead
+EC23-0143,volunteering,Volunteering activity,30/11/2025,participant
+EC22-0171,club,Club activity,24/10/2025,organizer
+ME23-0143,hackathon,Hackathon activity,30/08/2025,organizer
+ME23-0162,sports,Sports activity,24/01/2026,participant
+CS22-0254,certification,Certification activity,2025-09-25,participant
+CS25-0107,event,Event activity,2026-03-30,participant
+CE22-0106,sports,Sports activity,29 Aug 2025,participant
+EC24-0208,certification,Certification activity,22/05/2026,lead
+CE24-0132,event,Event activity,22 Nov 2025,participant
+EC22-0129,hackathon,Hackathon activity,2026-01-05,participant
+CS23-0296,hackathon,Hackathon activity,10/04/2026,organizer
+IT22-0182,club,Club activity,12 Apr 2026,lead
+ME24-0146,sports,Sports activity,2025-11-21,participant
+ME24-0159,club,Club activity,24/11/2025,participant
+CS22-0110,event,Event activity,09 Sep 2025,participant
+CE25-0160,event,Event activity,03 Dec 2025,participant
+ME25-0191,certification,Certification activity,17 Jan 2026,participant
+CS24-0121,hackathon,Hackathon activity,17/05/2026,organizer
+EC25-0124,volunteering,Volunteering activity,2025-11-03,participant
+EC25-0168,volunteering,Volunteering activity,2026-03-15,participant
+CE22-0160,event,Event activity,2025-11-10,participant
+IT22-0110,club,Club activity,16/05/2026,participant
+ME25-0189,sports,Sports activity,2025-10-21,organizer
+IT22-0151,certification,Certification activity,20 Nov 2025,participant
+CS25-0243,hackathon,Hackathon activity,04/07/2026,lead
+EC25-0147,certification,Certification activity,22 Nov 2025,organizer
+CS23-0142,certification,Certification activity,19 Mar 2026,participant
+ME24-0188,club,Club activity,2025-10-01,lead
+CS22-0250,certification,Certification activity,2025-11-07,participant
+EC22-0132,sports,Sports activity,17/12/2025,participant
+ME22-0182,club,Club activity,2026-04-11,participant
+CS25-0229,hackathon,Hackathon activity,21 Sep 2025,organizer
+EC25-0157,club,Club activity,2026-02-11,participant
+CS24-0220,club,Club activity,2025-09-08,lead
+ME23-0214,sports,Sports activity,27 Jan 2026,participant
+CE22-0163,event,Event activity,19/11/2025,participant
+EC22-0197,sports,Sports activity,2026-03-18,lead
+CE24-0144,event,Event activity,27 Mar 2026,participant
+CS23-0225,hackathon,Hackathon activity,2025-10-25,organizer
+CS24-0199,event,Event activity,2026-05-12,lead
+ME23-0105,volunteering,Volunteering activity,11/12/2025,participant
+CS22-0259,certification,Certification activity,17/01/2026,participant
+EC22-0151,event,Event activity,2026-02-16,participant
+CS23-0107,certification,Certification activity,09 Feb 2026,participant
+CE25-0161,event,Event activity,15/10/2025,lead
+CS24-0150,certification,Certification activity,16/11/2025,organizer
+ME23-0219,event,Event activity,13 Apr 2026,participant
+CE24-0132,event,Event activity,2026-03-01,lead
+CS23-0107,event,Event activity,22 May 2026,participant
+CS25-0137,sports,Sports activity,30/04/2026,participant
+CS25-0101,sports,Sports activity,2025-12-15,participant
+CS25-0220,hackathon,Hackathon activity,2026-06-02,participant
+EC22-0120,club,Club activity,2025-08-26,organizer
+CS25-0107,sports,Sports activity,18/06/2026,lead
+CS23-0244,club,Club activity,07 Mar 2026,participant
+CE22-0161,volunteering,Volunteering activity,2026-05-28,participant
+CE22-0135,certification,Certification activity,09 Dec 2025,participant
+EC24-0158,certification,Certification activity,19/06/2026,participant
+ME23-0145,sports,Sports activity,04 Jan 2026,participant
+CE25-0124,volunteering,Volunteering activity,28/04/2026,participant
+CS25-0200,volunteering,Volunteering activity,2025-09-27,participant
+EC22-0108,hackathon,Hackathon activity,2026-06-08,participant
+IT25-0126,event,Event activity,18 Mar 2026,participant
+IT22-0114,hackathon,Hackathon activity,2026-04-05,participant
+EC24-0194,event,Event activity,12/06/2026,participant
+CE22-0116,hackathon,Hackathon activity,06 Sep 2025,participant
+CE24-0132,sports,Sports activity,2025-11-11,lead
+ME23-0244,hackathon,Hackathon activity,2026-06-26,lead
+ME25-0203,club,Club activity,2026-03-31,lead
+CE22-0116,certification,Certification activity,03 May 2026,organizer
+CS23-0233,club,Club activity,2026-06-06,participant
+EC22-0125,event,Event activity,27/09/2025,lead
+EC22-0108,event,Event activity,04/04/2026,participant
+CE23-0145,certification,Certification activity,14/05/2026,participant
+IT24-0167,hackathon,Hackathon activity,28/06/2026,participant
+ME25-0164,volunteering,Volunteering activity,2025-08-28,participant
+IT22-0141,certification,Certification activity,16 Sep 2025,participant
+CE23-0202,hackathon,Hackathon activity,11/11/2025,participant
+CE23-0177,club,Club activity,24 Aug 2025,participant
+CS24-0130,club,Club activity,01 Mar 2026,participant
+CE25-0145,club,Club activity,2026-01-01,participant
+CE23-0184,club,Club activity,2026-04-14,organizer
+CS22-0250,event,Event activity,01 Mar 2026,participant
+CE23-0116,sports,Sports activity,28/05/2026,participant
+CE23-0116,certification,Certification activity,28/09/2025,participant
+CS23-0261,event,Event activity,25/09/2025,lead
+CS23-0136,event,Event activity,28 Apr 2026,participant
+ME25-0169,event,Event activity,25 Jan 2026,participant
+CS22-0259,event,Event activity,26 Nov 2025,participant
+IT23-0111,club,Club activity,27 Jun 2026,organizer
+CS25-0250,club,Club activity,18 May 2026,participant
+EC25-0207,certification,Certification activity,09 Sep 2025,organizer
+EC25-0187,event,Event activity,2025-12-04,participant
+CS24-0138,hackathon,Hackathon activity,31/03/2026,participant
+CS23-0185,club,Club activity,23/11/2025,participant
+IT25-0126,club,Club activity,06 Mar 2026,organizer
+CS24-0160,club,Club activity,2025-12-22,organizer
+EC23-0207,certification,Certification activity,28/11/2025,participant
+EC22-0144,event,Event activity,30/12/2025,organizer
+CS23-0261,volunteering,Volunteering activity,09/09/2025,organizer
+CS23-0129,club,Club activity,2026-02-26,participant
+ME23-0113,certification,Certification activity,23/06/2026,participant
+IT23-0166,event,Event activity,08/11/2025,participant
+CS22-0106,hackathon,Hackathon activity,2025-12-19,participant
+EC24-0202,club,Club activity,20/01/2026,participant
+CS23-0237,certification,Certification activity,21 Mar 2026,lead
+CS25-0267,sports,Sports activity,2025-08-12,lead
+CE23-0110,event,Event activity,14 Dec 2025,participant
+EC23-0141,certification,Certification activity,14/01/2026,participant
+CS24-0199,hackathon,Hackathon activity,01/05/2026,lead
+IT23-0113,volunteering,Volunteering activity,05 Mar 2026,participant
+CE22-0149,sports,Sports activity,07/12/2025,lead
+CS22-0123,club,Club activity,25 Apr 2026,participant
+ME24-0113,club,Club activity,09 Oct 2025,participant
+CE22-0138,club,Club activity,20 Nov 2025,organizer
+CS23-0208,club,Club activity,2026-06-05,participant
+IT24-0147,club,Club activity,14/04/2026,participant
+IT24-0130,event,Event activity,2026-02-10,participant
+EC25-0157,hackathon,Hackathon activity,25/04/2026,participant
+CS25-0216,volunteering,Volunteering activity,17/12/2025,participant
+ME24-0193,event,Event activity,10 May 2026,participant
+CS22-0195,club,Club activity,2026-05-08,participant
+IT22-0137,hackathon,Hackathon activity,21/10/2025,participant
+EC24-0118,volunteering,Volunteering activity,2026-02-19,participant
+ME23-0198,event,Event activity,21 Jan 2026,participant
+CS23-0157,club,Club activity,19/06/2026,participant
+ME25-0110,event,Event activity,27 Feb 2026,lead
+EC23-0195,volunteering,Volunteering activity,27/06/2026,participant
+CS24-0200,club,Club activity,12/06/2026,organizer
+CS22-0191,hackathon,Hackathon activity,17/12/2025,organizer
+CS25-0173,event,Event activity,2026-02-07,lead
+IT25-0186,volunteering,Volunteering activity,2025-09-17,participant
+CS23-0218,sports,Sports activity,09 Jan 2026,participant
+CS24-0201,volunteering,Volunteering activity,02/03/2026,participant
+EC24-0176,volunteering,Volunteering activity,18/12/2025,participant
+ME24-0168,volunteering,Volunteering activity,06/02/2026,lead
+ME22-0134,club,Club activity,2025-09-01,participant
+IT23-0118,hackathon,Hackathon activity,14 Oct 2025,participant
+IT25-0187,certification,Certification activity,02 Nov 2025,participant
+ME24-0157,event,Event activity,18/10/2025,organizer
+IT22-0149,certification,Certification activity,22/10/2025,participant
+CE23-0170,club,Club activity,2026-04-29,participant
+ME23-0149,certification,Certification activity,2025-08-25,participant
+CS25-0222,club,Club activity,2025-09-28,participant
+CE25-0157,event,Event activity,2025-10-10,lead
+ME25-0203,hackathon,Hackathon activity,2025-11-23,participant
+EC23-0131,hackathon,Hackathon activity,2026-01-26,lead
+CS25-0169,club,Club activity,19 Dec 2025,lead
+EC22-0108,club,Club activity,2025-11-16,participant
+CE22-0126,club,Club activity,2025-09-27,participant
+CS23-0299,certification,Certification activity,2026-04-07,participant
+CS25-0167,event,Event activity,15/06/2026,lead
+CS24-0139,club,Club activity,20 Nov 2025,participant
+EC24-0184,club,Club activity,25 Oct 2025,participant
+CS24-0288,hackathon,Hackathon activity,2026-06-04,lead
+IT22-0158,certification,Certification activity,2025-12-03,lead
+CS24-0136,event,Event activity,10 Oct 2025,participant
+ME24-0185,hackathon,Hackathon activity,12 Nov 2025,participant
+CE24-0189,sports,Sports activity,23 Oct 2025,participant
+EC22-0139,club,Club activity,05/09/2025,participant
+CE22-0155,sports,Sports activity,16/10/2025,participant
+CS23-0171,certification,Certification activity,2026-01-17,participant
+CS24-0121,certification,Certification activity,11/02/2026,organizer
+EC25-0166,club,Club activity,06 Nov 2025,lead
+CE23-0204,hackathon,Hackathon activity,14/09/2025,participant
+CE23-0197,certification,Certification activity,2026-05-14,participant
+CS25-0184,certification,Certification activity,26/08/2025,organizer
+CS24-0214,hackathon,Hackathon activity,28 Apr 2026,participant
+EC23-0189,event,Event activity,19/02/2026,participant
+CS23-0115,sports,Sports activity,2026-04-24,participant
+CE23-0154,event,Event activity,09 Oct 2025,organizer
+ME23-0201,event,Event activity,13/08/2025,participant
+EC22-0188,club,Club activity,28/09/2025,participant
+CE25-0147,certification,Certification activity,14 Jan 2026,participant
+EC24-0194,volunteering,Volunteering activity,2026-03-27,lead
+CE25-0105,hackathon,Hackathon activity,10 Mar 2026,participant
+CS25-0220,club,Club activity,13 May 2026,participant
+CS23-0154,certification,Certification activity,01/02/2026,participant
+ME23-0165,certification,Certification activity,10/05/2026,participant
+CS22-0146,volunteering,Volunteering activity,2026-03-25,participant
+IT22-0142,hackathon,Hackathon activity,22 Mar 2026,participant
+EC22-0197,club,Club activity,01/12/2025,lead
+EC23-0216,hackathon,Hackathon activity,15/02/2026,lead
+CS22-0243,hackathon,Hackathon activity,12 Oct 2025,lead
+EC23-0168,certification,Certification activity,2026-04-02,participant
+EC23-0153,hackathon,Hackathon activity,07 May 2026,lead
+EC24-0126,event,Event activity,09 Jan 2026,participant
+ME22-0165,sports,Sports activity,12/02/2026,participant
+CS23-0153,event,Event activity,14 Aug 2025,participant
+IT23-0163,event,Event activity,25/10/2025,participant
+CS22-0176,event,Event activity,15 Aug 2025,participant
+EC22-0123,volunteering,Volunteering activity,04/03/2026,organizer
+CE23-0112,event,Event activity,13 Apr 2026,lead
+CE25-0165,certification,Certification activity,09/01/2026,participant
+CE24-0137,club,Club activity,2026-06-16,participant
+ME25-0227,certification,Certification activity,01/02/2026,participant
+ME24-0200,event,Event activity,17 May 2026,participant
+IT23-0143,sports,Sports activity,2025-11-05,lead
+ME24-0153,volunteering,Volunteering activity,18 Aug 2025,participant
+CS24-0125,certification,Certification activity,2026-02-18,participant
+CE24-0189,certification,Certification activity,19/08/2025,participant
+CE25-0163,volunteering,Volunteering activity,2026-06-20,organizer
+CS24-0244,sports,Sports activity,27/01/2026,organizer
+CE25-0113,club,Club activity,2025-08-18,participant
+CS25-0222,sports,Sports activity,26/05/2026,participant
+EC24-0144,event,Event activity,26/04/2026,participant
+CE24-0117,certification,Certification activity,04 Apr 2026,participant
+CE23-0103,club,Club activity,2026-01-10,participant
+CS22-0218,sports,Sports activity,14/03/2026,participant
+CE25-0162,certification,Certification activity,2025-09-26,participant
+ME23-0149,event,Event activity,06/10/2025,lead
+CS24-0227,event,Event activity,14 Feb 2026,participant
+CS23-0205,club,Club activity,25 Jan 2026,participant
+IT23-0111,club,Club activity,14 Mar 2026,organizer
+IT23-0161,hackathon,Hackathon activity,14/12/2025,participant
+IT23-0103,sports,Sports activity,11/01/2026,participant
+IT25-0137,certification,Certification activity,25 Sep 2025,participant
+CE25-0161,event,Event activity,2026-04-16,organizer
+EC22-0174,sports,Sports activity,29/05/2026,participant
+ME25-0203,hackathon,Hackathon activity,11/10/2025,participant
+CE22-0183,hackathon,Hackathon activity,07 Jan 2026,participant
+ME22-0151,volunteering,Volunteering activity,13 Nov 2025,participant
+ME25-0117,club,Club activity,22/08/2025,lead
+CE24-0132,event,Event activity,20 Dec 2025,lead
+CE23-0189,sports,Sports activity,03/01/2026,participant
+IT24-0151,certification,Certification activity,06/01/2026,participant
+ME22-0147,sports,Sports activity,2026-03-03,participant
+IT23-0143,hackathon,Hackathon activity,04/06/2026,participant
+CS24-0234,sports,Sports activity,10/01/2026,participant
+IT22-0151,club,Club activity,2026-01-26,lead
+CS23-0117,event,Event activity,30 May 2026,organizer
+CE23-0110,sports,Sports activity,12 Sep 2025,organizer
+CE24-0117,certification,Certification activity,23 Oct 2025,organizer
+CE24-0123,club,Club activity,19/10/2025,lead
+CS22-0224,club,Club activity,2025-11-22,participant
+CS25-0167,certification,Certification activity,29 Jan 2026,lead
+CS23-0233,club,Club activity,01/11/2025,organizer
+EC22-0174,club,Club activity,2025-10-25,organizer
+CS23-0176,hackathon,Hackathon activity,27 Jun 2026,participant
+CS25-0202,club,Club activity,2025-09-21,organizer
+EC25-0211,event,Event activity,06 May 2026,participant
+CS25-0229,sports,Sports activity,19/05/2026,participant
+IT24-0163,certification,Certification activity,04/05/2026,participant
+CE22-0149,certification,Certification activity,31 Oct 2025,lead
+EC25-0123,hackathon,Hackathon activity,2025-11-14,participant
+CE24-0113,hackathon,Hackathon activity,02/07/2026,lead
+IT23-0119,hackathon,Hackathon activity,01/01/2026,organizer
+ME23-0201,event,Event activity,13/08/2025,participant
+IT24-0181,event,Event activity,14/09/2025,organizer
+EC22-0130,club,Club activity,2026-05-15,participant
+IT22-0151,sports,Sports activity,2026-02-19,lead
+ME23-0152,certification,Certification activity,03 Jun 2026,participant
+CE22-0129,event,Event activity,08 Mar 2026,lead
+CS25-0129,hackathon,Hackathon activity,2026-03-07,participant
+EC23-0131,sports,Sports activity,2025-11-15,participant
+ME24-0140,volunteering,Volunteering activity,02/02/2026,participant
+CE22-0138,event,Event activity,21/01/2026,participant
+CS25-0234,hackathon,Hackathon activity,2025-12-03,lead
+CE24-0177,event,Event activity,09 May 2026,lead
+EC25-0113,event,Event activity,2025-12-11,participant
+IT23-0170,sports,Sports activity,2026-01-26,participant
+CS24-0279,hackathon,Hackathon activity,19/03/2026,participant
+EC23-0148,event,Event activity,16/03/2026,organizer
+ME22-0196,sports,Sports activity,2025-10-30,organizer
+EC25-0176,club,Club activity,2026-06-03,participant
+IT25-0119,volunteering,Volunteering activity,2026-07-05,participant
+CE22-0126,event,Event activity,19/04/2026,participant
+CE23-0166,club,Club activity,23 Jun 2026,participant
+EC24-0113,club,Club activity,13 Dec 2025,participant
+EC25-0124,event,Event activity,25/05/2026,participant
+IT25-0163,event,Event activity,29 May 2026,participant
+CS24-0272,sports,Sports activity,07/11/2025,lead
+EC24-0210,event,Event activity,2025-09-07,participant
+IT24-0149,hackathon,Hackathon activity,26/08/2025,participant
+CE24-0106,volunteering,Volunteering activity,19 May 2026,participant
+EC22-0197,hackathon,Hackathon activity,2026-03-31,participant
+ME24-0148,club,Club activity,28 Apr 2026,lead
+EC23-0192,event,Event activity,19/06/2026,lead
+ME23-0125,volunteering,Volunteering activity,22 May 2026,lead
+CS22-0228,club,Club activity,01/05/2026,participant
+CS25-0243,hackathon,Hackathon activity,2025-10-10,lead
+EC25-0211,hackathon,Hackathon activity,19 Jun 2026,participant
+CS25-0140,sports,Sports activity,17/09/2025,lead
+CS23-0179,hackathon,Hackathon activity,26/09/2025,participant
+ME24-0121,club,Club activity,2025-08-28,participant
+EC25-0187,event,Event activity,2025-12-04,participant
+EC25-0155,sports,Sports activity,05 Jul 2026,participant
+CE24-0104,event,Event activity,2025-12-31,lead
+CS23-0119,club,Club activity,09/04/2026,lead
+ME22-0109,club,Club activity,2026-05-11,participant
+CS25-0139,certification,Certification activity,04/03/2026,participant
+IT23-0169,certification,Certification activity,07/11/2025,participant
+ME24-0168,hackathon,Hackathon activity,22 Oct 2025,lead
+EC25-0163,club,Club activity,14 Nov 2025,participant
+CS24-0227,volunteering,Volunteering activity,11/11/2025,participant
+ME25-0227,club,Club activity,04 Jan 2026,participant
+ME24-0214,certification,Certification activity,2025-12-06,organizer
+CS25-0139,volunteering,Volunteering activity,11/06/2026,participant
+CS22-0165,event,Event activity,07/03/2026,participant
+ME24-0207,volunteering,Volunteering activity,13/10/2025,lead
+CS22-0243,hackathon,Hackathon activity,27 Mar 2026,lead
+IT25-0150,volunteering,Volunteering activity,14/08/2025,participant
+EC22-0139,hackathon,Hackathon activity,2025-08-31,lead
+CE23-0125,club,Club activity,13 Aug 2025,lead
+EC22-0168,volunteering,Volunteering activity,28/06/2026,participant
+CE23-0102,sports,Sports activity,17/11/2025,participant
+EC22-0102,volunteering,Volunteering activity,14 Jun 2026,participant
+IT24-0132,club,Club activity,21/06/2026,lead
+EC24-0110,sports,Sports activity,13/03/2026,participant
+CS22-0259,club,Club activity,30/01/2026,lead
+CE23-0181,certification,Certification activity,18/04/2026,participant
+CS24-0171,hackathon,Hackathon activity,2025-11-22,lead
+EC22-0197,sports,Sports activity,23/01/2026,lead
+EC22-0186,club,Club activity,23/09/2025,participant
+EC22-0171,hackathon,Hackathon activity,2026-05-15,participant
+CS24-0110,club,Club activity,19/06/2026,organizer
+ME25-0113,event,Event activity,27 Feb 2026,participant
+ME22-0196,event,Event activity,27/10/2025,participant
+CS22-0123,club,Club activity,30 Apr 2026,participant
+CE24-0152,hackathon,Hackathon activity,2026-01-25,participant
+ME22-0170,event,Event activity,2026-01-29,participant
+CS25-0194,club,Club activity,23 Dec 2025,participant
+CS25-0116,certification,Certification activity,11/11/2025,participant
+CS23-0141,volunteering,Volunteering activity,14/01/2026,participant
+CS23-0207,event,Event activity,26/08/2025,participant
+ME25-0150,certification,Certification activity,23/11/2025,organizer
+CS22-0259,club,Club activity,25/11/2025,participant
+CS24-0195,sports,Sports activity,30 Aug 2025,organizer
+CS23-0205,event,Event activity,03/10/2025,participant
+ME23-0214,event,Event activity,04 Nov 2025,participant
+ME23-0218,event,Event activity,27 Apr 2026,participant
+CE22-0158,hackathon,Hackathon activity,24/04/2026,participant
+CS23-0179,volunteering,Volunteering activity,19/09/2025,participant
+EC24-0202,club,Club activity,07 Feb 2026,lead
+IT25-0170,certification,Certification activity,2026-01-19,lead
+IT24-0132,club,Club activity,21/06/2026,lead
+EC23-0172,hackathon,Hackathon activity,2026-07-02,participant
+CE22-0161,club,Club activity,2026-01-25,participant
+EC23-0198,hackathon,Hackathon activity,2025-09-02,participant
+CS24-0265,certification,Certification activity,18/02/2026,organizer
+ME23-0149,event,Event activity,2025-12-09,participant
+CE24-0115,club,Club activity,18 Aug 2025,participant
+IT24-0139,sports,Sports activity,03/05/2026,lead
+IT25-0168,event,Event activity,10/11/2025,participant
+CE25-0145,event,Event activity,06 Dec 2025,organizer
+EC23-0207,volunteering,Volunteering activity,2026-06-16,participant
+ME24-0162,volunteering,Volunteering activity,2025-09-24,participant
+EC22-0123,hackathon,Hackathon activity,07 Apr 2026,lead
+EC25-0129,certification,Certification activity,2025-11-20,participant
+CS24-0127,volunteering,Volunteering activity,30 Oct 2025,participant
+CS23-0109,event,Event activity,2025-10-07,organizer
+CS23-0162,club,Club activity,20 May 2026,participant
+CS24-0234,sports,Sports activity,18 Mar 2026,participant
+ME22-0127,club,Club activity,20 Mar 2026,participant
+EC23-0185,event,Event activity,14 Dec 2025,participant
+CE22-0144,hackathon,Hackathon activity,13 Nov 2025,participant
+CE23-0153,club,Club activity,04 Apr 2026,lead
+CS22-0243,club,Club activity,2025-11-13,participant
+CS25-0216,event,Event activity,2026-05-18,organizer
+CE22-0135,event,Event activity,2025-09-28,participant
+CS24-0110,sports,Sports activity,2026-05-15,participant
+EC23-0147,club,Club activity,04/09/2025,participant
+EC22-0104,event,Event activity,2026-05-29,participant
+IT23-0181,certification,Certification activity,2026-05-22,organizer
+ME22-0203,certification,Certification activity,07 Jun 2026,participant
+IT22-0134,certification,Certification activity,08 Oct 2025,participant
+IT23-0128,sports,Sports activity,2026-06-16,lead
+EC22-0186,hackathon,Hackathon activity,15 Sep 2025,organizer
+IT24-0117,event,Event activity,26/08/2025,organizer
+CE25-0105,event,Event activity,15/03/2026,participant
+CS24-0272,event,Event activity,23 Sep 2025,participant
+EC22-0197,event,Event activity,09/12/2025,participant
+IT22-0164,certification,Certification activity,29/05/2026,organizer
+CE22-0121,event,Event activity,10 Nov 2025,participant
+CS25-0167,sports,Sports activity,10/03/2026,participant
+CE23-0122,certification,Certification activity,21 Aug 2025,participant
+CE23-0114,volunteering,Volunteering activity,27/09/2025,lead
+EC23-0210,certification,Certification activity,21 Aug 2025,organizer
+ME23-0201,club,Club activity,2026-03-08,lead
+CE23-0173,club,Club activity,2026-02-19,organizer
+EC22-0183,club,Club activity,2026-02-25,participant
+EC25-0147,event,Event activity,2026-03-30,organizer
+CE25-0127,hackathon,Hackathon activity,19 Aug 2025,participant
+CE25-0143,hackathon,Hackathon activity,30 Dec 2025,participant
+CS24-0184,sports,Sports activity,30 Mar 2026,participant
+ME25-0227,sports,Sports activity,2026-02-05,participant
+CS23-0229,sports,Sports activity,01/09/2025,participant
+ME23-0168,hackathon,Hackathon activity,21 Oct 2025,participant
+ME25-0215,event,Event activity,2026-06-25,organizer
+ME23-0218,hackathon,Hackathon activity,08/10/2025,participant
+CE23-0121,certification,Certification activity,2025-10-16,participant
+CS22-0134,sports,Sports activity,06/05/2026,participant
+CS23-0117,sports,Sports activity,26/01/2026,participant
+EC25-0151,sports,Sports activity,20 Mar 2026,organizer
+CS23-0142,certification,Certification activity,2026-06-15,organizer
+CS23-0159,sports,Sports activity,10 Apr 2026,lead
+CS25-0229,event,Event activity,13/02/2026,participant
+ME25-0192,club,Club activity,16/10/2025,lead
+CS25-0207,event,Event activity,2026-05-09,participant
+EC25-0218,certification,Certification activity,2025-12-24,participant
+CS23-0289,certification,Certification activity,30 Jan 2026,participant
+IT22-0126,certification,Certification activity,2026-02-14,participant
+CS23-0167,club,Club activity,03 Oct 2025,participant
+EC24-0102,hackathon,Hackathon activity,01/07/2026,participant
+ME22-0197,club,Club activity,30/03/2026,participant
+ME25-0129,event,Event activity,23/09/2025,lead
+CE23-0153,club,Club activity,2026-07-01,participant
+ME25-0126,certification,Certification activity,20/11/2025,participant
+CE25-0132,event,Event activity,30/08/2025,participant
+CS25-0194,hackathon,Hackathon activity,2026-05-14,participant
+EC23-0198,hackathon,Hackathon activity,2025-09-02,participant
+ME25-0227,club,Club activity,2025-10-08,lead
+ME24-0186,club,Club activity,2025-10-23,participant
+EC22-0186,event,Event activity,12/01/2026,participant
+EC24-0171,event,Event activity,15/11/2025,participant
+CS24-0234,club,Club activity,02/06/2026,organizer
+CE24-0123,certification,Certification activity,13 Oct 2025,lead
+ME25-0129,sports,Sports activity,2025-09-02,participant
+EC23-0141,hackathon,Hackathon activity,2025-11-28,lead
+CE22-0138,sports,Sports activity,2025-12-10,lead
+CE23-0167,volunteering,Volunteering activity,26 Feb 2026,lead
+CS25-0217,hackathon,Hackathon activity,2025-11-17,participant
+CE22-0138,club,Club activity,24/04/2026,participant
+EC22-0197,club,Club activity,15 Nov 2025,organizer
+CS23-0292,club,Club activity,2026-05-22,organizer
+CE22-0109,certification,Certification activity,24/04/2026,lead
+CS25-0228,hackathon,Hackathon activity,23/01/2026,participant
+IT22-0120,certification,Certification activity,27 Sep 2025,participant
+EC22-0183,sports,Sports activity,2025-11-11,participant
+IT24-0135,volunteering,Volunteering activity,08/02/2026,participant
+ME23-0152,event,Event activity,14/06/2026,participant
+IT25-0137,hackathon,Hackathon activity,22 May 2026,organizer
+IT25-0108,sports,Sports activity,19 May 2026,organizer
+CS22-0228,club,Club activity,15 Nov 2025,participant
+ME24-0217,event,Event activity,14/08/2025,participant
+CS25-0169,club,Club activity,13 Jun 2026,organizer
+EC22-0106,club,Club activity,07/11/2025,participant
+CE25-0109,volunteering,Volunteering activity,01/06/2026,participant
+EC23-0108,club,Club activity,2026-03-06,participant
+EC25-0166,club,Club activity,11/11/2025,participant
+CE24-0115,club,Club activity,22 Oct 2025,participant
+IT22-0117,club,Club activity,08 Dec 2025,participant
+CS22-0221,certification,Certification activity,07/10/2025,participant
+IT22-0184,event,Event activity,2025-10-04,participant
+CS22-0243,certification,Certification activity,19 Nov 2025,lead
+CE25-0145,event,Event activity,29 Oct 2025,participant
+CS23-0200,sports,Sports activity,03/07/2026,participant
+EC25-0154,hackathon,Hackathon activity,16/05/2026,participant
+CS22-0117,event,Event activity,08 Nov 2025,participant
+CE22-0138,club,Club activity,10 Dec 2025,participant
+ME25-0176,club,Club activity,2026-07-04,participant
+IT22-0106,hackathon,Hackathon activity,04/02/2026,participant
+IT23-0111,certification,Certification activity,29/03/2026,lead
+IT24-0103,event,Event activity,2025-09-14,lead
+CS25-0246,volunteering,Volunteering activity,15 May 2026,organizer
+CE24-0121,hackathon,Hackathon activity,2025-08-14,participant
+EC25-0175,event,Event activity,24/01/2026,participant
+IT22-0107,volunteering,Volunteering activity,11 Feb 2026,lead
+CE23-0125,sports,Sports activity,2026-04-19,lead
+CS22-0171,event,Event activity,02 Jan 2026,organizer
+EC23-0131,certification,Certification activity,20 Dec 2025,participant
+ME25-0210,volunteering,Volunteering activity,18 Oct 2025,participant
+IT23-0113,club,Club activity,2025-12-14,participant
+CS23-0134,event,Event activity,2026-02-13,lead
+CE23-0161,event,Event activity,2025-09-23,participant
+ME22-0104,club,Club activity,03 Dec 2025,participant
+EC23-0131,club,Club activity,06/05/2026,organizer
+CE24-0114,volunteering,Volunteering activity,24 Sep 2025,lead
+CS25-0184,club,Club activity,19/08/2025,participant
+ME24-0162,club,Club activity,18/01/2026,participant
+ME25-0159,club,Club activity,23/12/2025,participant
+EC23-0145,hackathon,Hackathon activity,19 Jan 2026,participant
+CS23-0162,volunteering,Volunteering activity,09/02/2026,organizer
+CS23-0205,club,Club activity,03/09/2025,lead
+ME23-0145,event,Event activity,27 Aug 2025,lead
+CE22-0146,club,Club activity,18 Feb 2026,participant
+ME23-0244,club,Club activity,2026-05-25,participant
+CS25-0152,certification,Certification activity,08/04/2026,participant
+ME25-0108,event,Event activity,12/10/2025,lead
+CE24-0113,sports,Sports activity,2025-08-25,participant
+CS23-0150,club,Club activity,2025-11-19,organizer
+CS23-0162,club,Club activity,2025-10-21,lead
+CE24-0132,volunteering,Volunteering activity,11 Apr 2026,lead
+IT24-0128,event,Event activity,16 Mar 2026,lead
+CS22-0211,hackathon,Hackathon activity,09 Jan 2026,participant
+CE24-0132,hackathon,Hackathon activity,07/03/2026,participant
+CS25-0267,volunteering,Volunteering activity,28/08/2025,organizer
+IT25-0184,event,Event activity,21 Apr 2026,participant
+IT24-0182,event,Event activity,07/03/2026,participant
+CS23-0225,sports,Sports activity,27 Feb 2026,participant
+CS23-0226,certification,Certification activity,2026-02-08,organizer
+CS23-0192,event,Event activity,2025-10-31,participant
+CS22-0119,volunteering,Volunteering activity,06 Feb 2026,participant
+CE24-0103,volunteering,Volunteering activity,16/10/2025,participant
+EC22-0171,certification,Certification activity,21/02/2026,participant
+EC25-0210,sports,Sports activity,26 Mar 2026,participant
+EC24-0189,volunteering,Volunteering activity,2025-12-09,participant
+CS24-0206,event,Event activity,20/11/2025,participant
+ME25-0149,club,Club activity,19/03/2026,participant
+EC24-0161,hackathon,Hackathon activity,28/12/2025,lead
+CS22-0173,hackathon,Hackathon activity,11/03/2026,organizer
+ME23-0201,event,Event activity,2025-08-20,lead
+CE24-0123,club,Club activity,13 Aug 2025,participant
+CE22-0121,hackathon,Hackathon activity,12/12/2025,participant
+EC23-0111,event,Event activity,2025-12-30,participant
+CE22-0104,hackathon,Hackathon activity,18 Feb 2026,participant
+CS23-0211,club,Club activity,19 Aug 2025,lead
+ME22-0123,event,Event activity,2026-07-02,participant
+CE24-0103,event,Event activity,02 Jan 2026,participant
+ME23-0218,hackathon,Hackathon activity,12/02/2026,organizer
+EC25-0140,club,Club activity,2026-02-05,participant
+CE23-0110,certification,Certification activity,19 Dec 2025,lead
+EC23-0163,club,Club activity,26/10/2025,lead
+IT24-0170,club,Club activity,11/11/2025,participant
+ME23-0149,event,Event activity,24 Sep 2025,participant
+EC24-0179,club,Club activity,10/06/2026,participant
+CS24-0232,event,Event activity,21 Oct 2025,lead
+CS22-0138,club,Club activity,04 Oct 2025,participant
+CE23-0125,event,Event activity,08 Feb 2026,participant
+ME23-0172,event,Event activity,15/08/2025,participant
+CE24-0142,hackathon,Hackathon activity,17 Dec 2025,participant
+CS23-0119,club,Club activity,17 Oct 2025,participant
+EC25-0113,sports,Sports activity,24 Aug 2025,participant
+ME24-0171,event,Event activity,03 Jul 2026,organizer
+CS23-0226,club,Club activity,29 Jun 2026,lead
+IT25-0122,event,Event activity,2025-10-10,organizer
+CS24-0272,certification,Certification activity,21 Sep 2025,lead
+EC22-0180,event,Event activity,24/04/2026,participant
+IT25-0135,club,Club activity,21 Nov 2025,participant
+ME25-0189,club,Club activity,2025-12-27,lead
+CS24-0252,volunteering,Volunteering activity,2026-02-18,participant
+ME22-0203,club,Club activity,26 May 2026,lead
+CE23-0112,certification,Certification activity,21 Mar 2026,participant
+EC23-0147,hackathon,Hackathon activity,19/02/2026,participant
+ME24-0217,club,Club activity,26/11/2025,participant
+IT25-0170,club,Club activity,29/08/2025,participant
+CE24-0170,volunteering,Volunteering activity,04/10/2025,lead
+ME25-0135,certification,Certification activity,22/08/2025,organizer
+EC25-0133,club,Club activity,2025-09-20,participant
+CE22-0139,sports,Sports activity,18 Mar 2026,participant
+ME24-0186,club,Club activity,28/12/2025,participant
+ME22-0132,club,Club activity,08 Nov 2025,lead
+CS24-0244,sports,Sports activity,27/01/2026,organizer
+ME24-0186,volunteering,Volunteering activity,17/11/2025,lead
+IT23-0113,club,Club activity,2026-07-05,lead
+EC25-0115,hackathon,Hackathon activity,01/01/2026,participant
+EC22-0151,sports,Sports activity,2026-05-02,participant
+CS24-0199,event,Event activity,2025-09-10,lead
+CE24-0106,club,Club activity,15/08/2025,participant
+CS23-0195,hackathon,Hackathon activity,27/10/2025,organizer
+ME23-0128,event,Event activity,25 Feb 2026,participant
+IT22-0128,event,Event activity,2025-09-07,lead
+ME23-0195,certification,Certification activity,2026-04-29,participant
+CS23-0203,volunteering,Volunteering activity,2026-01-16,lead
+CS24-0217,club,Club activity,22/05/2026,participant
+CS25-0266,certification,Certification activity,28/03/2026,lead
+IT25-0181,event,Event activity,2026-01-18,participant
+ME24-0113,volunteering,Volunteering activity,11/12/2025,participant
+CS23-0184,event,Event activity,04/04/2026,participant
+CE23-0149,hackathon,Hackathon activity,2026-01-02,participant
+CS24-0209,volunteering,Volunteering activity,03 Mar 2026,lead
+CE23-0202,event,Event activity,2026-03-30,participant
+EC24-0194,event,Event activity,09/09/2025,lead
+CS22-0135,event,Event activity,2025-08-15,participant
+ME25-0192,event,Event activity,06/02/2026,participant
+CE24-0137,event,Event activity,03/05/2026,organizer
+CS23-0207,club,Club activity,2025-11-20,participant
+EC23-0119,club,Club activity,11 May 2026,participant
+IT22-0120,club,Club activity,2026-06-01,participant
+EC22-0197,club,Club activity,25/01/2026,lead
+ME23-0161,volunteering,Volunteering activity,11/02/2026,participant
+ME23-0174,club,Club activity,24/02/2026,participant
+CS25-0141,hackathon,Hackathon activity,04/07/2026,participant
+IT24-0182,certification,Certification activity,27/02/2026,participant
+IT23-0109,sports,Sports activity,2026-01-04,participant
+CE24-0159,event,Event activity,06 Nov 2025,participant
+ME24-0132,club,Club activity,02 Sep 2025,organizer
+CS23-0271,sports,Sports activity,2025-12-14,participant
+EC24-0123,club,Club activity,07 Nov 2025,participant
+CS24-0272,volunteering,Volunteering activity,30/10/2025,participant
+CS25-0243,event,Event activity,19 Jan 2026,lead
+CE23-0106,hackathon,Hackathon activity,02 Jan 2026,participant
+CS23-0203,sports,Sports activity,31 May 2026,participant
+CS25-0169,event,Event activity,25/09/2025,participant
+IT23-0116,club,Club activity,2026-05-27,participant
+ME25-0117,volunteering,Volunteering activity,04/01/2026,participant
+IT25-0149,sports,Sports activity,2025-11-04,lead
+IT25-0126,certification,Certification activity,26 Feb 2026,lead
+IT23-0131,hackathon,Hackathon activity,2026-06-01,lead
+CS23-0137,club,Club activity,11/01/2026,organizer
+EC25-0200,certification,Certification activity,29/04/2026,lead
+ME23-0138,certification,Certification activity,2025-12-21,lead
+IT25-0149,certification,Certification activity,18/04/2026,organizer
+EC23-0207,hackathon,Hackathon activity,2026-04-29,organizer
+CE23-0145,certification,Certification activity,12/01/2026,participant
+CS23-0228,event,Event activity,08 Mar 2026,participant
+CS23-0233,club,Club activity,2025-11-29,participant
+CS24-0173,event,Event activity,03 Jul 2026,participant
+CS22-0240,club,Club activity,22/10/2025,organizer
+ME25-0194,club,Club activity,30 Mar 2026,participant
+CS22-0135,event,Event activity,2025-10-04,participant
+ME22-0131,certification,Certification activity,16 Apr 2026,participant
+CS25-0127,club,Club activity,05/12/2025,organizer
+EC25-0215,event,Event activity,2026-06-21,participant
+ME24-0130,hackathon,Hackathon activity,13 Aug 2025,participant
+EC24-0192,certification,Certification activity,17 Nov 2025,participant
+EC23-0105,club,Club activity,10 Feb 2026,participant
+CE23-0164,sports,Sports activity,29/08/2025,lead
+CS24-0186,hackathon,Hackathon activity,18/01/2026,participant
+CS22-0217,event,Event activity,08 Apr 2026,participant
+ME23-0188,club,Club activity,08/09/2025,participant
+CS24-0173,certification,Certification activity,08 Jan 2026,organizer
+EC24-0181,certification,Certification activity,20/06/2026,participant
+EC24-0192,hackathon,Hackathon activity,03/05/2026,participant
+CS24-0189,event,Event activity,2026-02-05,participant
+IT25-0163,club,Club activity,29 Apr 2026,participant
+IT22-0173,sports,Sports activity,16/09/2025,lead
+EC25-0140,event,Event activity,2026-07-04,participant
+EC22-0174,club,Club activity,05/11/2025,participant
+ME22-0176,club,Club activity,28 May 2026,lead
+CS24-0186,certification,Certification activity,15 Mar 2026,organizer
+EC23-0125,event,Event activity,23 Aug 2025,participant
+CS22-0129,volunteering,Volunteering activity,02 Mar 2026,participant
+CE24-0144,event,Event activity,26/04/2026,organizer
+ME23-0204,volunteering,Volunteering activity,2025-09-28,participant
+CS24-0106,club,Club activity,31/10/2025,participant
+CE22-0135,club,Club activity,2026-04-06,participant
+CS24-0173,certification,Certification activity,08 Jan 2026,organizer
+IT23-0111,volunteering,Volunteering activity,25/10/2025,participant
+ME24-0175,event,Event activity,2025-11-30,participant
+EC24-0118,certification,Certification activity,09/04/2026,participant
+CE23-0199,event,Event activity,16 Feb 2026,participant
+EC24-0161,volunteering,Volunteering activity,01 Feb 2026,organizer
+IT25-0122,sports,Sports activity,28/03/2026,participant
+CS22-0225,event,Event activity,28/08/2025,participant
+EC22-0148,club,Club activity,30 Apr 2026,participant
+EC24-0216,event,Event activity,2026-04-02,participant
+CS22-0119,event,Event activity,2026-05-19,organizer
+EC24-0163,sports,Sports activity,10/12/2025,participant
+EC22-0121,sports,Sports activity,22/03/2026,participant
+IT22-0187,sports,Sports activity,2025-09-23,participant
+CS25-0140,certification,Certification activity,07/03/2026,lead
+CS23-0281,event,Event activity,10/12/2025,participant
+CE22-0163,event,Event activity,2026-01-03,lead
+CS25-0229,sports,Sports activity,02 Nov 2025,participant
+IT23-0137,club,Club activity,20 Jun 2026,participant
+ME22-0210,certification,Certification activity,22/05/2026,participant
+CS25-0170,volunteering,Volunteering activity,03/10/2025,organizer
+ME24-0222,club,Club activity,07/05/2026,lead
+CE24-0144,club,Club activity,2026-05-24,lead
+ME23-0201,club,Club activity,15/01/2026,lead
+ME25-0191,event,Event activity,22 Dec 2025,organizer
+ME25-0227,certification,Certification activity,2026-01-08,lead
+CS24-0147,club,Club activity,16 Apr 2026,participant
+ME23-0165,club,Club activity,25 Jun 2026,participant
+EC22-0180,club,Club activity,08 May 2026,participant
+ME24-0143,volunteering,Volunteering activity,2025-09-26,lead
+CS25-0200,event,Event activity,2026-02-21,participant
+IT23-0147,event,Event activity,10/02/2026,participant
+ME22-0212,hackathon,Hackathon activity,2025-08-26,lead
+CS24-0157,event,Event activity,17 Apr 2026,lead
+CS23-0234,sports,Sports activity,16/09/2025,organizer
+ME22-0131,event,Event activity,2026-03-06,organizer
+CS25-0130,club,Club activity,2026-02-25,participant
+CS24-0138,event,Event activity,08 Oct 2025,participant
+ME24-0116,certification,Certification activity,2026-01-15,participant
+CE23-0180,certification,Certification activity,18 Aug 2025,participant
+ME25-0137,hackathon,Hackathon activity,17 Mar 2026,organizer
+ME22-0114,sports,Sports activity,16 Jun 2026,participant
+CE23-0153,club,Club activity,27 Jun 2026,participant
+CS24-0250,club,Club activity,02 Sep 2025,participant
+CE22-0152,volunteering,Volunteering activity,2025-12-17,participant
+ME25-0197,event,Event activity,17 Dec 2025,organizer
+CS22-0221,event,Event activity,01 Dec 2025,participant
+EC25-0210,sports,Sports activity,2025-09-17,lead
+CE22-0149,event,Event activity,30/11/2025,lead
+EC24-0123,club,Club activity,2025-12-17,participant
+ME23-0145,certification,Certification activity,02/04/2026,participant
+IT25-0135,volunteering,Volunteering activity,2026-02-23,participant
+IT25-0126,event,Event activity,2025-09-11,participant
+EC23-0152,sports,Sports activity,18 Aug 2025,participant
+EC24-0161,event,Event activity,23 Apr 2026,participant
+CS22-0145,hackathon,Hackathon activity,15/12/2025,participant
+IT22-0115,sports,Sports activity,18 Sep 2025,participant
+CE23-0128,club,Club activity,24/02/2026,organizer
+CS24-0279,club,Club activity,28 Mar 2026,participant
+CS23-0122,certification,Certification activity,13 Jun 2026,participant
+CS23-0140,club,Club activity,2026-03-27,participant
+CS25-0139,volunteering,Volunteering activity,11/06/2026,participant
+CE25-0126,certification,Certification activity,28 Apr 2026,participant
+IT23-0169,sports,Sports activity,04/10/2025,lead
+CS25-0251,sports,Sports activity,25/12/2025,participant
+ME22-0170,club,Club activity,14 May 2026,participant
+EC25-0179,event,Event activity,06/02/2026,participant
+ME22-0148,event,Event activity,29 Oct 2025,participant
+CS23-0137,event,Event activity,2025-10-16,participant
+EC25-0133,certification,Certification activity,27/12/2025,participant
+CS24-0287,sports,Sports activity,25/04/2026,participant
+CE22-0160,event,Event activity,25/06/2026,participant
+CS23-0261,sports,Sports activity,2026-02-19,participant
+ME25-0194,event,Event activity,16/03/2026,lead
+ME23-0149,certification,Certification activity,15/10/2025,lead
+CE24-0158,hackathon,Hackathon activity,2026-01-27,organizer
+CS25-0266,certification,Certification activity,31/10/2025,organizer
+CS22-0259,sports,Sports activity,19/02/2026,lead
+IT22-0128,certification,Certification activity,09 Feb 2026,participant
+CS25-0152,event,Event activity,26/02/2026,organizer
+CE25-0107,volunteering,Volunteering activity,23/06/2026,participant
+CE23-0140,event,Event activity,01 Oct 2025,organizer
+CS22-0252,volunteering,Volunteering activity,2025-12-27,organizer
+ME25-0108,event,Event activity,2026-01-26,lead
+CS24-0201,club,Club activity,2026-01-13,participant
+ME25-0227,club,Club activity,2026-06-23,lead
+EC23-0147,hackathon,Hackathon activity,2026-02-20,organizer
+EC23-0187,certification,Certification activity,26 Apr 2026,participant
+IT22-0128,event,Event activity,2025-10-03,participant
+CS23-0192,hackathon,Hackathon activity,20/02/2026,participant
+CS25-0253,club,Club activity,27/02/2026,participant
+IT22-0120,sports,Sports activity,18 Oct 2025,participant
+EC25-0195,club,Club activity,05/04/2026,lead
+CS25-0130,event,Event activity,11 May 2026,participant
+IT23-0160,event,Event activity,2026-07-01,participant
+ME24-0157,certification,Certification activity,14/08/2025,participant
+CE23-0118,hackathon,Hackathon activity,19/08/2025,participant
+CS24-0162,hackathon,Hackathon activity,01/06/2026,participant
+CS22-0240,certification,Certification activity,2025-08-21,participant
+EC22-0194,hackathon,Hackathon activity,14/08/2025,participant
+IT24-0155,club,Club activity,2025-10-10,organizer
+CS24-0214,hackathon,Hackathon activity,16 Dec 2025,participant
+EC23-0131,sports,Sports activity,2026-01-30,participant
+ME24-0119,club,Club activity,2026-01-11,participant
+CE23-0142,hackathon,Hackathon activity,2025-09-04,participant
+EC23-0131,event,Event activity,2025-12-09,lead
+CE24-0169,hackathon,Hackathon activity,06 Feb 2026,participant
+EC23-0131,sports,Sports activity,05/04/2026,lead
+CS25-0169,event,Event activity,09/06/2026,lead
+CS23-0162,hackathon,Hackathon activity,2026-03-09,participant
+CS23-0205,sports,Sports activity,29/12/2025,lead
+EC24-0213,certification,Certification activity,08 May 2026,participant
+CE24-0123,sports,Sports activity,01 May 2026,lead
+CS24-0103,sports,Sports activity,2025-09-21,participant
+ME24-0116,club,Club activity,2025-10-10,participant
+CS24-0230,hackathon,Hackathon activity,2026-06-03,participant
+CE25-0126,sports,Sports activity,16/03/2026,participant
+ME23-0145,sports,Sports activity,15/05/2026,organizer
+ME25-0179,club,Club activity,2026-05-25,participant
+CE24-0201,certification,Certification activity,18/03/2026,organizer
+CS24-0272,event,Event activity,27/09/2025,lead
+CE24-0114,certification,Certification activity,24/06/2026,organizer
+IT22-0182,hackathon,Hackathon activity,2026-03-07,organizer
+IT25-0154,club,Club activity,18/10/2025,participant
+CS23-0107,sports,Sports activity,29 Mar 2026,participant
+ME23-0204,club,Club activity,24 Sep 2025,participant
+CE25-0102,volunteering,Volunteering activity,2026-06-05,participant
+EC22-0151,event,Event activity,23 Apr 2026,participant
+IT22-0158,certification,Certification activity,2026-02-10,participant
+ME24-0217,volunteering,Volunteering activity,09/04/2026,participant
+ME23-0197,club,Club activity,02/02/2026,participant
+CE25-0162,club,Club activity,12 Feb 2026,participant
+EC24-0139,sports,Sports activity,2025-10-14,participant
+CS24-0121,club,Club activity,16/02/2026,participant
+CS22-0122,event,Event activity,22/08/2025,participant
+EC25-0186,club,Club activity,27 Nov 2025,organizer
+CS23-0292,volunteering,Volunteering activity,2025-08-14,participant
+IT25-0138,hackathon,Hackathon activity,12 Jun 2026,participant
+EC25-0111,certification,Certification activity,2026-02-08,organizer
+CS24-0121,hackathon,Hackathon activity,10/02/2026,lead
+IT24-0166,hackathon,Hackathon activity,02 May 2026,participant
+EC25-0121,volunteering,Volunteering activity,12 Feb 2026,organizer
+ME23-0221,club,Club activity,05/10/2025,participant
+CS24-0162,sports,Sports activity,2025-12-18,participant
+IT24-0179,club,Club activity,01 Apr 2026,organizer
+IT25-0151,hackathon,Hackathon activity,05 Nov 2025,organizer
+ME25-0203,event,Event activity,2026-03-31,participant
+CS22-0173,volunteering,Volunteering activity,2025-10-01,participant
+CS22-0103,event,Event activity,2026-03-12,organizer
+CS23-0203,hackathon,Hackathon activity,12 Mar 2026,organizer
+ME25-0122,event,Event activity,10/04/2026,organizer
+CS25-0167,sports,Sports activity,23/12/2025,participant
+EC23-0163,hackathon,Hackathon activity,2025-10-29,participant
+ME22-0159,event,Event activity,2026-03-03,participant
+IT24-0170,club,Club activity,07 May 2026,participant
+CS23-0182,sports,Sports activity,22 Jun 2026,participant
+CS24-0119,certification,Certification activity,30 May 2026,participant
+EC22-0106,club,Club activity,30/06/2026,lead
+IT22-0158,event,Event activity,20 Apr 2026,lead
+CE22-0161,certification,Certification activity,2025-09-25,participant
+CS23-0127,event,Event activity,22/10/2025,participant
+ME23-0154,sports,Sports activity,2025-09-27,organizer
+CS22-0149,volunteering,Volunteering activity,21/06/2026,participant
+CE24-0189,certification,Certification activity,02 Nov 2025,organizer
+CS24-0220,club,Club activity,02 May 2026,participant
+CS22-0159,hackathon,Hackathon activity,2026-05-05,participant
+CS24-0217,event,Event activity,11 Apr 2026,participant
+EC22-0114,event,Event activity,2026-04-21,participant
+IT22-0158,sports,Sports activity,2025-10-02,participant
+CE25-0138,event,Event activity,10 May 2026,participant
+ME23-0144,hackathon,Hackathon activity,2026-03-24,organizer
+EC22-0155,volunteering,Volunteering activity,31/01/2026,participant
+ME24-0133,club,Club activity,2026-04-09,lead
+CS22-0193,club,Club activity,2025-08-18,participant
+CE24-0103,event,Event activity,23/01/2026,lead
+CE24-0142,club,Club activity,27 May 2026,participant
+IT24-0166,club,Club activity,22 Dec 2025,organizer
+IT25-0174,event,Event activity,2025-08-21,participant
+ME23-0116,hackathon,Hackathon activity,13 May 2026,participant
+EC23-0141,sports,Sports activity,2026-03-18,participant
+EC23-0169,certification,Certification activity,01 Jul 2026,participant
+ME25-0194,volunteering,Volunteering activity,02 May 2026,participant
+ME23-0168,hackathon,Hackathon activity,10/05/2026,participant
+IT22-0115,event,Event activity,2026-02-20,lead
+CE23-0121,club,Club activity,29/10/2025,participant
+IT24-0128,volunteering,Volunteering activity,08/11/2025,participant
+CS25-0268,volunteering,Volunteering activity,2026-04-30,participant
+CE22-0166,hackathon,Hackathon activity,2025-11-29,participant
+IT22-0187,volunteering,Volunteering activity,12 Mar 2026,participant
+EC22-0138,sports,Sports activity,04/04/2026,participant
+CS23-0162,certification,Certification activity,01/10/2025,participant
+ME22-0124,club,Club activity,18/12/2025,lead
+CE25-0146,certification,Certification activity,14/04/2026,lead
+EC22-0104,club,Club activity,2026-01-17,participant
+IT22-0122,certification,Certification activity,15/05/2026,participant
+ME22-0209,hackathon,Hackathon activity,30 May 2026,participant
+ME23-0162,event,Event activity,2026-06-29,organizer
+IT23-0113,volunteering,Volunteering activity,17/10/2025,participant
+IT25-0187,certification,Certification activity,2025-08-19,participant
+CS24-0265,club,Club activity,06 Jun 2026,participant
+IT22-0106,club,Club activity,2026-02-20,participant
+ME22-0127,certification,Certification activity,2026-04-07,participant
+ME23-0105,certification,Certification activity,29/01/2026,participant
+CS25-0246,sports,Sports activity,2026-03-11,participant
+IT22-0179,certification,Certification activity,2025-09-03,participant
+EC25-0151,club,Club activity,20 Feb 2026,participant
+ME24-0109,hackathon,Hackathon activity,14 Mar 2026,participant
+IT24-0106,sports,Sports activity,01/03/2026,participant
+ME23-0165,club,Club activity,25 Jun 2026,participant
+EC25-0193,certification,Certification activity,02 Apr 2026,participant
+IT22-0103,club,Club activity,27 Nov 2025,lead
+IT22-0158,sports,Sports activity,28 Mar 2026,participant
+CS23-0276,club,Club activity,2025-10-10,organizer
+ME23-0210,sports,Sports activity,14 Apr 2026,organizer
+CS25-0225,event,Event activity,22 May 2026,participant
+ME25-0126,certification,Certification activity,16 Jun 2026,organizer
+EC22-0108,volunteering,Volunteering activity,2025-12-28,lead
+EC25-0168,event,Event activity,22/03/2026,participant
+CE24-0114,event,Event activity,15 Mar 2026,lead
+CS24-0292,club,Club activity,2025-09-21,organizer
+IT23-0113,certification,Certification activity,25 Mar 2026,participant
+IT22-0173,event,Event activity,18 Aug 2025,participant
+CS24-0244,club,Club activity,2026-04-22,organizer
+CE23-0172,certification,Certification activity,21 Apr 2026,participant
+CS22-0128,hackathon,Hackathon activity,28/12/2025,organizer
+IT25-0147,club,Club activity,2025-12-06,organizer
+CS23-0162,event,Event activity,2026-01-08,participant
+CE25-0147,hackathon,Hackathon activity,12/02/2026,organizer
+CS22-0243,volunteering,Volunteering activity,21 Feb 2026,lead
+EC25-0111,event,Event activity,26 May 2026,organizer
+ME22-0203,event,Event activity,2026-01-07,participant
+EC23-0172,sports,Sports activity,29/01/2026,lead
+EC24-0161,sports,Sports activity,2025-11-09,participant
+CS24-0171,volunteering,Volunteering activity,30/09/2025,participant
+EC25-0200,event,Event activity,2025-09-04,lead
+ME24-0153,event,Event activity,2026-05-02,organizer
+ME24-0129,hackathon,Hackathon activity,27 Nov 2025,organizer
+IT23-0158,club,Club activity,2026-05-03,lead
+EC24-0110,volunteering,Volunteering activity,23/11/2025,organizer
+EC25-0175,event,Event activity,2025-09-03,lead
+CS22-0260,event,Event activity,24 Nov 2025,organizer
+EC24-0102,club,Club activity,23/03/2026,participant
+IT25-0164,event,Event activity,2025-08-23,participant
+EC22-0201,volunteering,Volunteering activity,27 Mar 2026,participant
+EC23-0111,event,Event activity,16 Nov 2025,organizer
+IT24-0103,hackathon,Hackathon activity,2025-09-24,participant
+ME25-0206,club,Club activity,02 Jun 2026,lead
+IT24-0112,certification,Certification activity,2026-06-13,participant
+CS22-0193,sports,Sports activity,12 Aug 2025,organizer
+EC23-0103,sports,Sports activity,02/07/2026,participant
+CE22-0138,club,Club activity,17 Jun 2026,participant
+CE24-0201,club,Club activity,10/03/2026,participant
+CE24-0155,certification,Certification activity,20/04/2026,participant
+IT24-0166,sports,Sports activity,2026-02-07,participant
+IT24-0163,club,Club activity,09 Feb 2026,organizer
+CS25-0169,club,Club activity,2025-10-06,lead
+EC24-0136,event,Event activity,28/01/2026,organizer
+EC25-0168,sports,Sports activity,02/07/2026,participant
+CE23-0170,hackathon,Hackathon activity,16/04/2026,participant
+ME23-0162,event,Event activity,2026-02-27,participant
+CE23-0154,event,Event activity,24 Feb 2026,organizer
+CE23-0137,hackathon,Hackathon activity,11 Dec 2025,organizer
+ME24-0188,club,Club activity,10/11/2025,lead
+CE22-0161,club,Club activity,2025-11-08,lead
+ME24-0178,club,Club activity,08 Mar 2026,participant
+CS23-0281,volunteering,Volunteering activity,29 Nov 2025,participant
+IT24-0114,club,Club activity,2025-08-25,lead
+EC23-0118,hackathon,Hackathon activity,05 Dec 2025,organizer
+CS24-0136,sports,Sports activity,03/09/2025,participant
+CE24-0166,hackathon,Hackathon activity,05 Feb 2026,organizer
+CS25-0241,event,Event activity,09/05/2026,participant
+ME25-0194,certification,Certification activity,2026-03-03,participant
+CS24-0235,event,Event activity,05 Sep 2025,participant
+CS24-0230,certification,Certification activity,2025-12-31,organizer
+EC24-0181,volunteering,Volunteering activity,2026-04-12,participant
+ME23-0165,club,Club activity,01 Mar 2026,organizer
+CE24-0152,event,Event activity,31/12/2025,participant
+CE22-0138,certification,Certification activity,2025-11-08,lead
+CS24-0189,event,Event activity,2026-03-16,participant
+IT23-0116,event,Event activity,22/11/2025,participant
+ME22-0151,sports,Sports activity,2025-12-27,participant
+CE25-0124,sports,Sports activity,27 Jan 2026,participant
+CS24-0171,volunteering,Volunteering activity,2026-02-27,participant
+CE22-0121,sports,Sports activity,2025-12-03,participant
+EC22-0168,certification,Certification activity,14/04/2026,lead
+CS24-0234,club,Club activity,24 Mar 2026,organizer
+ME22-0162,club,Club activity,2025-12-23,participant
+ME24-0130,club,Club activity,29 Jan 2026,participant
+CS25-0222,hackathon,Hackathon activity,03/01/2026,participant
+CE23-0174,sports,Sports activity,18 Aug 2025,participant
+EC23-0179,sports,Sports activity,04/11/2025,participant
+CS23-0192,event,Event activity,27/02/2026,participant
+ME23-0237,club,Club activity,07/05/2026,participant
+EC24-0144,volunteering,Volunteering activity,15/09/2025,participant
+ME25-0126,sports,Sports activity,30/05/2026,participant
+CS25-0180,certification,Certification activity,04/06/2026,participant
+CE23-0114,sports,Sports activity,2026-02-24,participant
+CS24-0279,certification,Certification activity,2025-11-18,organizer
+CE22-0135,club,Club activity,05 Feb 2026,participant
+ME25-0106,volunteering,Volunteering activity,03/02/2026,participant
+CS25-0194,certification,Certification activity,17 Oct 2025,participant
+CS23-0289,volunteering,Volunteering activity,01/06/2026,participant
+IT22-0164,club,Club activity,11/01/2026,participant
+CE25-0126,sports,Sports activity,04/09/2025,participant
+CS25-0170,sports,Sports activity,18/06/2026,lead
+ME24-0143,certification,Certification activity,08/02/2026,participant
+EC24-0208,club,Club activity,14 Nov 2025,participant
+EC23-0175,event,Event activity,19/11/2025,participant
+EC25-0113,club,Club activity,11 Sep 2025,organizer
+EC25-0187,club,Club activity,2025-08-19,participant
+CE23-0181,club,Club activity,18 Feb 2026,lead
+ME24-0116,sports,Sports activity,2026-01-23,participant
+CS23-0229,certification,Certification activity,15 Oct 2025,participant
+CE23-0154,sports,Sports activity,2026-01-30,participant
+CS23-0225,club,Club activity,2026-04-01,participant
+EC23-0179,volunteering,Volunteering activity,22/06/2026,lead
+EC24-0217,club,Club activity,10 Nov 2025,participant
+EC23-0207,club,Club activity,29 Aug 2025,participant
+ME25-0137,hackathon,Hackathon activity,2025-12-08,lead
+CS24-0199,hackathon,Hackathon activity,19 May 2026,lead
+ME25-0115,club,Club activity,15/05/2026,participant
+CE25-0157,club,Club activity,27 Apr 2026,lead
+ME23-0110,hackathon,Hackathon activity,2025-11-22,participant
+ME22-0172,event,Event activity,2026-02-22,participant
+CS22-0199,club,Club activity,19 Sep 2025,organizer
+ME24-0186,volunteering,Volunteering activity,2026-02-04,lead
+EC25-0172,sports,Sports activity,29 Jun 2026,lead
+EC22-0194,event,Event activity,2025-11-06,participant
+ME23-0145,volunteering,Volunteering activity,12 Aug 2025,lead
+CS25-0173,sports,Sports activity,25 Feb 2026,lead
+EC22-0155,event,Event activity,03/02/2026,lead
+CS22-0193,certification,Certification activity,2026-05-08,lead
+CE23-0204,event,Event activity,02 Feb 2026,organizer
+CE23-0103,club,Club activity,2025-09-24,participant
+CS24-0249,event,Event activity,2025-09-14,participant
+IT23-0142,certification,Certification activity,21 Aug 2025,organizer
+ME24-0137,certification,Certification activity,05/12/2025,participant
+IT25-0107,certification,Certification activity,20 Jun 2026,participant
+IT22-0123,club,Club activity,27 Aug 2025,participant
+IT25-0150,club,Club activity,07 Dec 2025,participant
+CS24-0201,hackathon,Hackathon activity,21/04/2026,participant
+IT23-0123,event,Event activity,18 Dec 2025,participant
+IT25-0122,event,Event activity,24/03/2026,participant
+CE22-0176,event,Event activity,23/12/2025,organizer
+CE23-0112,sports,Sports activity,22 Feb 2026,organizer
+EC24-0161,volunteering,Volunteering activity,25 May 2026,participant
+CS23-0223,certification,Certification activity,11/12/2025,organizer
+CS23-0217,club,Club activity,27 Mar 2026,participant
+ME22-0197,sports,Sports activity,2026-01-08,lead
+CS24-0116,certification,Certification activity,2026-03-13,participant
+IT24-0161,club,Club activity,07/04/2026,participant
+IT24-0176,sports,Sports activity,2026-03-21,lead
+EC24-0139,volunteering,Volunteering activity,29 Sep 2025,participant
+IT22-0179,sports,Sports activity,2025-09-27,organizer
+ME25-0155,sports,Sports activity,10/04/2026,participant
+CE24-0104,event,Event activity,16 Nov 2025,organizer
+CS22-0243,event,Event activity,04 Apr 2026,lead
+IT24-0161,volunteering,Volunteering activity,2026-04-11,organizer
+CS23-0203,event,Event activity,09/09/2025,lead
+CS24-0153,certification,Certification activity,18/06/2026,participant
+ME23-0129,club,Club activity,2026-01-31,participant
+EC24-0203,club,Club activity,20/06/2026,participant
+IT23-0120,hackathon,Hackathon activity,2026-01-01,organizer
+CE24-0194,certification,Certification activity,17 Aug 2025,participant
+CS25-0211,certification,Certification activity,2025-09-17,participant
+ME24-0200,sports,Sports activity,11/02/2026,participant
+IT22-0125,sports,Sports activity,10 May 2026,participant
+EC24-0189,club,Club activity,21/03/2026,participant
+EC24-0158,event,Event activity,27 Aug 2025,participant
+CE22-0135,club,Club activity,16/09/2025,participant
+IT23-0118,certification,Certification activity,25 Dec 2025,participant
+CS22-0145,event,Event activity,2026-01-19,participant
+IT23-0181,event,Event activity,25 Feb 2026,participant
+ME22-0115,event,Event activity,2026-06-02,participant
+ME25-0227,event,Event activity,2026-06-16,participant
+EC25-0115,club,Club activity,06 Dec 2025,lead
+ME25-0181,certification,Certification activity,2025-11-27,participant
+CE25-0157,event,Event activity,2025-10-17,participant
+IT23-0176,event,Event activity,25 Nov 2025,participant
+CS25-0124,sports,Sports activity,2025-08-25,participant
+CS23-0176,volunteering,Volunteering activity,2025-09-16,participant
+ME25-0166,club,Club activity,14 Sep 2025,participant
+IT22-0158,hackathon,Hackathon activity,02 Oct 2025,participant
+CS23-0195,event,Event activity,07/03/2026,participant
+CS23-0208,event,Event activity,07/03/2026,organizer
+ME22-0212,event,Event activity,2026-04-08,participant
+EC23-0168,event,Event activity,2026-06-08,participant
+EC24-0116,sports,Sports activity,26 Feb 2026,lead
+CS22-0193,club,Club activity,2026-04-26,participant
+ME24-0101,certification,Certification activity,23 Apr 2026,organizer
+CE23-0114,club,Club activity,27/04/2026,participant
+EC24-0201,event,Event activity,31 Oct 2025,participant
+ME25-0147,certification,Certification activity,09/06/2026,participant
+IT24-0158,certification,Certification activity,2026-01-06,participant
+CS24-0220,club,Club activity,2026-04-10,participant
+CS24-0206,event,Event activity,09 Feb 2026,lead
+EC22-0136,sports,Sports activity,13/06/2026,participant
+CS23-0295,event,Event activity,2025-10-27,participant
+EC22-0134,hackathon,Hackathon activity,05 Nov 2025,participant
+CE24-0121,club,Club activity,2025-12-25,lead
+CE22-0163,club,Club activity,2026-04-05,lead
+IT22-0117,hackathon,Hackathon activity,09/02/2026,lead
+CS24-0252,club,Club activity,2026-02-25,participant
+EC25-0195,event,Event activity,15/05/2026,participant
+ME22-0197,hackathon,Hackathon activity,2026-05-18,participant
+ME22-0176,event,Event activity,20/09/2025,lead
+CE22-0138,event,Event activity,2026-06-12,participant
+CE25-0110,certification,Certification activity,2026-04-08,lead
+CE22-0152,event,Event activity,06/09/2025,participant
+CS23-0137,volunteering,Volunteering activity,30/05/2026,participant
+CE23-0132,volunteering,Volunteering activity,2026-06-09,organizer
+ME23-0125,certification,Certification activity,2025-09-24,participant
+CS24-0195,club,Club activity,01 Apr 2026,participant
+CS23-0299,event,Event activity,06/07/2026,participant
+IT22-0138,event,Event activity,2025-11-09,participant
+CE24-0169,event,Event activity,06 Mar 2026,participant
+CE22-0178,club,Club activity,06/06/2026,participant
+CE25-0146,event,Event activity,24/10/2025,participant
+CE25-0141,certification,Certification activity,30 Nov 2025,participant
+IT23-0118,certification,Certification activity,25 Dec 2025,participant
+ME22-0132,event,Event activity,10/04/2026,participant
+EC22-0197,volunteering,Volunteering activity,29/09/2025,participant
+CE24-0104,club,Club activity,08 Sep 2025,participant
+IT23-0106,hackathon,Hackathon activity,13/09/2025,participant
+CS25-0184,event,Event activity,2025-11-10,participant
+CE25-0124,club,Club activity,2026-05-06,participant
+CS25-0190,volunteering,Volunteering activity,19 May 2026,participant
+EC23-0125,volunteering,Volunteering activity,30/06/2026,participant
+CE24-0198,volunteering,Volunteering activity,2025-11-30,organizer
+CS23-0142,sports,Sports activity,15 Mar 2026,lead
+IT24-0183,event,Event activity,2026-04-20,participant
+ME22-0176,sports,Sports activity,2025-12-11,participant
+ME24-0132,club,Club activity,08/09/2025,lead
+EC25-0193,sports,Sports activity,29/03/2026,participant
+IT24-0153,hackathon,Hackathon activity,24/08/2025,participant
+CS23-0203,event,Event activity,2025-12-05,participant
+ME24-0140,sports,Sports activity,16 Jun 2026,participant
+ME24-0222,event,Event activity,2025-09-17,participant
+CS24-0206,certification,Certification activity,18/04/2026,participant
+IT25-0160,volunteering,Volunteering activity,06 May 2026,participant
+EC22-0125,club,Club activity,2026-05-15,participant
+CS23-0203,hackathon,Hackathon activity,15/04/2026,participant
+IT25-0151,event,Event activity,22/06/2026,participant
+ME25-0197,hackathon,Hackathon activity,20/04/2026,lead
+CS22-0156,club,Club activity,25 Nov 2025,participant
+CE25-0141,certification,Certification activity,2026-03-04,participant
+CS24-0199,club,Club activity,11/01/2026,participant
+IT25-0112,club,Club activity,2025-10-08,participant
+EC22-0125,certification,Certification activity,13 Jun 2026,organizer
+CS22-0227,sports,Sports activity,06 Feb 2026,organizer
+IT24-0152,club,Club activity,09 Dec 2025,participant
+CE24-0163,sports,Sports activity,2026-06-01,participant
+ME22-0192,club,Club activity,10 Sep 2025,organizer
+CE23-0114,sports,Sports activity,01/10/2025,participant
+ME24-0102,hackathon,Hackathon activity,11 Apr 2026,participant
+CE23-0101,volunteering,Volunteering activity,2026-04-01,participant
+IT25-0130,club,Club activity,15 Jan 2026,participant
+IT25-0160,sports,Sports activity,17/12/2025,participant
+IT25-0135,certification,Certification activity,2026-05-22,participant
+CS23-0250,volunteering,Volunteering activity,18 Sep 2025,organizer
+EC23-0122,club,Club activity,14/05/2026,organizer
+CE23-0135,club,Club activity,2026-02-05,lead
+EC24-0216,certification,Certification activity,14/03/2026,organizer
+ME22-0205,event,Event activity,16/11/2025,participant
+IT25-0134,sports,Sports activity,2025-10-31,participant
+CS25-0140,event,Event activity,2025-09-19,participant
+ME23-0138,certification,Certification activity,01/03/2026,organizer
+CS25-0214,volunteering,Volunteering activity,21 Apr 2026,participant
+CS25-0254,sports,Sports activity,2025-09-10,participant
+CS25-0101,volunteering,Volunteering activity,21 May 2026,organizer
+CS22-0260,sports,Sports activity,2026-04-29,lead
+CE22-0102,certification,Certification activity,2026-05-17,organizer
+CS22-0234,certification,Certification activity,07/02/2026,participant
+CS25-0225,event,Event activity,22 May 2026,participant
+ME22-0203,sports,Sports activity,29/05/2026,lead
+CS23-0142,club,Club activity,18/12/2025,participant
+ME23-0198,event,Event activity,01 Feb 2026,participant
+EC25-0199,club,Club activity,13/04/2026,participant
+CE22-0161,certification,Certification activity,19/12/2025,participant
+CS23-0203,club,Club activity,2026-01-01,lead
+CS22-0188,event,Event activity,06/04/2026,participant
+CS22-0145,event,Event activity,06/11/2025,participant
+EC25-0162,sports,Sports activity,2026-06-24,organizer
+EC24-0139,hackathon,Hackathon activity,08 Sep 2025,participant
+EC23-0141,club,Club activity,2025-12-28,participant
+ME25-0108,sports,Sports activity,27 Mar 2026,organizer
+ME22-0193,club,Club activity,2026-05-27,participant
+ME24-0162,event,Event activity,2025-10-02,participant
+ME25-0221,certification,Certification activity,07 Feb 2026,organizer
+IT25-0104,volunteering,Volunteering activity,11/02/2026,organizer
+CE23-0115,club,Club activity,2026-04-26,participant
+CE23-0122,certification,Certification activity,21 Aug 2025,participant
+ME22-0193,hackathon,Hackathon activity,2025-09-07,participant
+CS25-0116,club,Club activity,2026-02-09,participant
+CS24-0249,volunteering,Volunteering activity,2025-08-29,organizer
+CE24-0161,hackathon,Hackathon activity,20/04/2026,participant
+EC24-0189,club,Club activity,2026-07-04,participant
+CE23-0147,certification,Certification activity,2026-04-01,organizer
+CE23-0170,event,Event activity,27 Mar 2026,participant
+ME25-0117,club,Club activity,01/07/2026,participant
+CS24-0292,event,Event activity,27/03/2026,participant
+EC25-0195,volunteering,Volunteering activity,2026-02-12,participant
+IT25-0144,sports,Sports activity,2026-05-16,organizer
+ME23-0244,club,Club activity,2026-01-22,participant
+CS25-0251,sports,Sports activity,2026-05-23,participant
+ME23-0149,sports,Sports activity,16/02/2026,participant
+CS25-0147,club,Club activity,2025-11-23,participant
+CS24-0252,event,Event activity,09 May 2026,organizer
+CE23-0186,sports,Sports activity,13 Aug 2025,participant
+ME22-0143,volunteering,Volunteering activity,01 Oct 2025,participant
+EC25-0163,club,Club activity,04 Sep 2025,participant
+ME25-0194,club,Club activity,28/09/2025,participant
+EC25-0210,club,Club activity,24 Aug 2025,participant
+CE24-0174,volunteering,Volunteering activity,15 Dec 2025,participant
+CE22-0137,club,Club activity,11 Apr 2026,organizer
+ME23-0201,certification,Certification activity,2025-10-09,lead
+IT24-0125,event,Event activity,09 Nov 2025,participant
+ME23-0149,certification,Certification activity,27 Mar 2026,participant
+IT22-0164,club,Club activity,2026-06-07,participant
+CE24-0170,event,Event activity,2025-12-13,participant
+EC25-0176,club,Club activity,2026-06-03,participant
+EC25-0108,sports,Sports activity,18/08/2025,organizer
+ME22-0203,club,Club activity,30 Sep 2025,organizer
+EC22-0188,event,Event activity,17/01/2026,participant
+EC24-0213,sports,Sports activity,25 Jun 2026,lead
+CS24-0119,event,Event activity,19/10/2025,participant
+CS22-0159,club,Club activity,2026-01-29,participant
+CS22-0195,club,Club activity,05 Dec 2025,lead
+CE23-0164,event,Event activity,2026-05-08,participant
+EC25-0179,sports,Sports activity,20/04/2026,participant
+EC25-0123,event,Event activity,20/05/2026,participant
+CE24-0163,hackathon,Hackathon activity,2026-06-19,participant
+IT23-0181,event,Event activity,18 Nov 2025,lead
+IT24-0139,volunteering,Volunteering activity,17 Sep 2025,participant
+CS22-0224,hackathon,Hackathon activity,17/10/2025,participant
+CS23-0279,event,Event activity,2025-12-22,participant
+CE24-0163,club,Club activity,05/06/2026,lead
+IT23-0131,sports,Sports activity,02/07/2026,participant
+ME25-0144,hackathon,Hackathon activity,09/10/2025,organizer
+EC22-0134,certification,Certification activity,2026-03-08,organizer
+CE22-0149,certification,Certification activity,2026-02-07,organizer
+ME24-0116,certification,Certification activity,2026-01-15,participant
+CS25-0140,club,Club activity,29 Oct 2025,participant
+EC25-0149,event,Event activity,2025-09-18,participant
+CS22-0138,club,Club activity,2026-05-27,participant
+EC24-0210,event,Event activity,08/09/2025,participant
+CS23-0182,club,Club activity,08 Oct 2025,participant
+ME24-0222,certification,Certification activity,08/05/2026,participant
+ME23-0129,event,Event activity,04 Apr 2026,participant
+EC23-0122,club,Club activity,14 Sep 2025,lead
+IT23-0111,certification,Certification activity,17/04/2026,lead
+CE24-0123,club,Club activity,2026-02-02,participant
+CE25-0157,club,Club activity,2026-03-16,participant
+EC25-0183,event,Event activity,08/03/2026,participant
+CS25-0209,volunteering,Volunteering activity,12 Nov 2025,participant
+IT23-0119,hackathon,Hackathon activity,05/04/2026,participant
+CS25-0151,certification,Certification activity,14 Dec 2025,participant
+CS25-0134,certification,Certification activity,02 Feb 2026,participant
+CS23-0261,certification,Certification activity,04 Dec 2025,organizer
+EC22-0129,sports,Sports activity,2026-06-10,participant
+CS23-0142,club,Club activity,2025-09-10,lead
+CS22-0259,sports,Sports activity,15/03/2026,participant
+EC25-0144,hackathon,Hackathon activity,26 Aug 2025,organizer
+ME22-0134,club,Club activity,18/05/2026,participant
+ME22-0143,certification,Certification activity,2026-04-11,lead
+EC22-0116,volunteering,Volunteering activity,13 Nov 2025,participant
+ME22-0208,event,Event activity,13 Apr 2026,participant
+CE25-0146,volunteering,Volunteering activity,24 Aug 2025,organizer
+EC23-0115,volunteering,Volunteering activity,2026-04-30,participant
+CE24-0172,club,Club activity,10 Mar 2026,participant
+CS22-0138,club,Club activity,2026-02-25,lead
+ME22-0209,event,Event activity,10 Sep 2025,participant
+CS25-0250,hackathon,Hackathon activity,10 May 2026,participant
+CS23-0261,volunteering,Volunteering activity,15 Apr 2026,participant
+ME23-0218,event,Event activity,2026-01-01,organizer
+CS24-0233,club,Club activity,2025-12-03,lead
+CS25-0144,volunteering,Volunteering activity,25/06/2026,participant
+EC25-0115,event,Event activity,2026-01-09,participant
+IT22-0128,club,Club activity,15/06/2026,participant
+ME25-0213,volunteering,Volunteering activity,19 Dec 2025,participant
+CS24-0279,hackathon,Hackathon activity,04 Dec 2025,participant
+CE25-0117,hackathon,Hackathon activity,08 May 2026,participant
+CS24-0233,certification,Certification activity,30/03/2026,lead
+ME24-0153,certification,Certification activity,09 Dec 2025,participant
+CS22-0159,certification,Certification activity,2026-01-06,organizer
+EC22-0203,certification,Certification activity,14 Apr 2026,participant
+CS25-0266,hackathon,Hackathon activity,30/03/2026,participant
+ME23-0144,club,Club activity,18 Nov 2025,participant
+CE22-0161,volunteering,Volunteering activity,09/10/2025,participant
+EC24-0217,club,Club activity,24/03/2026,participant
+CS22-0203,certification,Certification activity,2026-01-25,participant
+CS23-0228,sports,Sports activity,2025-11-28,organizer
+CS24-0119,event,Event activity,02 Jun 2026,organizer
+CS22-0227,certification,Certification activity,15/04/2026,participant
+CS24-0223,certification,Certification activity,2026-02-22,organizer
+IT23-0177,event,Event activity,18/05/2026,lead
+CS24-0274,event,Event activity,19 Apr 2026,participant
+CS23-0170,hackathon,Hackathon activity,17/03/2026,participant
+ME25-0140,volunteering,Volunteering activity,2026-03-05,participant
+CS22-0230,certification,Certification activity,25 Jan 2026,participant
+CS23-0203,event,Event activity,18 Oct 2025,organizer
+CE25-0160,club,Club activity,24/02/2026,participant
+CE23-0122,event,Event activity,2026-06-23,lead
+CS23-0217,certification,Certification activity,2026-03-02,organizer
+EC23-0168,event,Event activity,27 Jun 2026,organizer
+IT25-0163,club,Club activity,2025-11-02,participant
+IT24-0135,certification,Certification activity,05 May 2026,participant
+IT22-0187,event,Event activity,2026-05-28,participant
+CS23-0172,club,Club activity,10/11/2025,participant
+ME23-0143,event,Event activity,23/10/2025,lead
+ME22-0181,event,Event activity,18/08/2025,lead
+ME23-0145,certification,Certification activity,21 Dec 2025,participant
+CS23-0289,volunteering,Volunteering activity,2026-07-05,participant
+CS23-0226,sports,Sports activity,15 Mar 2026,participant
+CE24-0155,event,Event activity,12 Jun 2026,lead
+IT22-0120,certification,Certification activity,10/05/2026,participant
+ME22-0131,club,Club activity,05/06/2026,participant
+ME22-0208,certification,Certification activity,05/06/2026,organizer
+ME23-0125,sports,Sports activity,04/04/2026,participant
+CE22-0139,club,Club activity,02 Oct 2025,participant
+CS22-0237,hackathon,Hackathon activity,22/06/2026,organizer
+EC23-0145,certification,Certification activity,27 Mar 2026,lead
+CS25-0173,club,Club activity,14/10/2025,participant
+CE25-0161,sports,Sports activity,27 Feb 2026,organizer
+EC22-0152,volunteering,Volunteering activity,01 Mar 2026,participant
+ME24-0214,sports,Sports activity,2025-09-03,organizer
+ME23-0113,hackathon,Hackathon activity,04/07/2026,participant
+CE23-0115,certification,Certification activity,06 Nov 2025,organizer
+EC22-0188,certification,Certification activity,2025-08-11,participant
+ME25-0126,volunteering,Volunteering activity,10 Sep 2025,participant
+ME22-0123,certification,Certification activity,01 Jul 2026,lead
+EC23-0145,club,Club activity,21/10/2025,participant
+ME22-0134,club,Club activity,2026-05-23,participant
+ME24-0148,club,Club activity,2026-04-18,organizer
+CS23-0237,club,Club activity,30 Oct 2025,participant
+CS22-0225,club,Club activity,23/05/2026,organizer
+CS22-0225,sports,Sports activity,15/06/2026,participant
+EC22-0194,volunteering,Volunteering activity,22/06/2026,participant
+CS23-0142,event,Event activity,21 Mar 2026,lead
+ME22-0190,club,Club activity,2026-02-07,lead
+ME25-0179,event,Event activity,2025-08-22,participant
+CE25-0168,event,Event activity,21/10/2025,participant
+EC25-0163,club,Club activity,23 Jan 2026,participant
+EC22-0108,certification,Certification activity,2025-08-19,participant
+IT24-0149,event,Event activity,04/09/2025,participant
+CS25-0169,club,Club activity,12 Jan 2026,organizer
+EC25-0210,club,Club activity,12/01/2026,participant
+CS23-0107,club,Club activity,30/12/2025,participant
+IT24-0170,hackathon,Hackathon activity,18 Apr 2026,participant
+CS23-0198,hackathon,Hackathon activity,2026-03-19,participant
+CS25-0263,event,Event activity,05/07/2026,organizer
+CE23-0140,hackathon,Hackathon activity,22 Oct 2025,participant
+CE23-0184,sports,Sports activity,2026-06-11,lead
+CS25-0183,event,Event activity,12/10/2025,organizer
+CS24-0272,certification,Certification activity,20 Mar 2026,lead
+IT23-0106,volunteering,Volunteering activity,04 Jul 2026,participant
+ME25-0227,hackathon,Hackathon activity,16/01/2026,lead
+EC23-0137,event,Event activity,2025-10-22,participant
+CS25-0170,event,Event activity,14 Aug 2025,organizer
+CS25-0173,certification,Certification activity,15 Mar 2026,participant
+ME23-0172,club,Club activity,27 Jan 2026,organizer
+EC22-0197,volunteering,Volunteering activity,09 Apr 2026,participant
+EC23-0172,volunteering,Volunteering activity,17/10/2025,lead
+CS25-0194,event,Event activity,26 May 2026,participant
+ME24-0101,club,Club activity,09/01/2026,participant
+EC25-0163,event,Event activity,2026-01-28,participant
+CS24-0265,club,Club activity,24 Sep 2025,participant
+CS25-0254,club,Club activity,11 Oct 2025,participant
+CS23-0282,volunteering,Volunteering activity,28 Feb 2026,participant
+ME24-0188,volunteering,Volunteering activity,19 Mar 2026,lead
+CE22-0111,hackathon,Hackathon activity,31/05/2026,participant
+IT24-0179,club,Club activity,2026-01-27,lead
+ME25-0181,club,Club activity,18/09/2025,organizer
+CS25-0116,sports,Sports activity,2026-05-04,lead
+EC22-0125,certification,Certification activity,13 Jun 2026,organizer
+ME25-0137,club,Club activity,17/01/2026,participant
+EC24-0102,certification,Certification activity,22 Dec 2025,participant
+CS23-0281,club,Club activity,02/02/2026,participant
+CS24-0199,club,Club activity,03 Dec 2025,participant
+IT23-0111,event,Event activity,2025-08-22,participant
+CE25-0113,event,Event activity,2025-12-02,participant
+IT23-0103,event,Event activity,15 Jan 2026,lead
+CE24-0192,club,Club activity,2026-04-12,lead
+IT22-0178,club,Club activity,21 Nov 2025,lead
+CS25-0224,volunteering,Volunteering activity,15/12/2025,participant
+IT22-0114,event,Event activity,13 Sep 2025,participant
+ME24-0146,certification,Certification activity,28 Apr 2026,participant
+EC23-0145,event,Event activity,16/01/2026,participant
+CS23-0159,club,Club activity,2026-03-26,organizer
+ME24-0208,certification,Certification activity,03 Jul 2026,organizer
+CS25-0269,hackathon,Hackathon activity,21/06/2026,lead
+ME22-0205,event,Event activity,2025-08-26,participant
+CS24-0130,volunteering,Volunteering activity,2025-08-25,participant
+CE22-0152,event,Event activity,07 Apr 2026,participant
+CS22-0176,club,Club activity,08 Sep 2025,participant
+CS22-0171,club,Club activity,14/02/2026,organizer
+CS25-0150,certification,Certification activity,20/09/2025,participant
+CE23-0122,hackathon,Hackathon activity,11 Dec 2025,participant
+EC24-0161,certification,Certification activity,04/12/2025,organizer
+CS23-0165,event,Event activity,11/06/2026,participant
+IT25-0149,hackathon,Hackathon activity,17 Jun 2026,participant
+IT25-0149,club,Club activity,2026-02-07,organizer
+CS23-0170,event,Event activity,27 Jan 2026,lead
+CS22-0162,event,Event activity,21/06/2026,participant
+CE24-0101,event,Event activity,2026-03-23,participant
+CS24-0264,event,Event activity,30 Sep 2025,organizer
+ME22-0214,volunteering,Volunteering activity,18/12/2025,participant
+ME25-0119,event,Event activity,08 Apr 2026,participant
+CE25-0138,event,Event activity,13/03/2026,participant
+EC22-0125,event,Event activity,18/11/2025,lead
+EC25-0200,club,Club activity,17 Apr 2026,lead
+CS24-0213,hackathon,Hackathon activity,22/10/2025,organizer
+ME23-0224,event,Event activity,03/11/2025,participant
+CE22-0166,event,Event activity,2026-06-28,participant
+EC23-0172,sports,Sports activity,02 Oct 2025,lead
+CS23-0279,certification,Certification activity,26/06/2026,participant
+CS23-0119,event,Event activity,09/01/2026,participant
+EC23-0189,volunteering,Volunteering activity,29 Sep 2025,participant
+IT22-0158,certification,Certification activity,23 Jan 2026,participant
+CS24-0124,event,Event activity,01/01/2026,participant
+ME23-0229,event,Event activity,19 Jan 2026,participant
+CS25-0243,certification,Certification activity,09/12/2025,organizer
+CE25-0161,event,Event activity,16 Feb 2026,organizer
+IT24-0122,club,Club activity,2025-09-01,organizer
+CS22-0259,club,Club activity,25 Oct 2025,organizer
+ME24-0153,club,Club activity,18/12/2025,participant
+IT25-0170,certification,Certification activity,11 Sep 2025,participant
+EC24-0116,certification,Certification activity,02/04/2026,organizer
+EC23-0172,hackathon,Hackathon activity,28/02/2026,participant
+EC22-0163,volunteering,Volunteering activity,20 Apr 2026,participant
+CS23-0120,hackathon,Hackathon activity,2025-12-19,participant
+EC25-0127,certification,Certification activity,2026-04-19,organizer
+EC25-0187,event,Event activity,30 Sep 2025,lead
+EC23-0122,event,Event activity,03 Mar 2026,lead
+IT22-0115,event,Event activity,05/12/2025,lead
+EC22-0108,volunteering,Volunteering activity,22 Jan 2026,participant
+CS24-0189,certification,Certification activity,18 Aug 2025,organizer
+CS24-0252,sports,Sports activity,26 Oct 2025,participant
+EC22-0136,club,Club activity,07 Nov 2025,participant
+CE23-0142,certification,Certification activity,27/08/2025,participant
+IT22-0106,event,Event activity,22 Apr 2026,participant
+ME23-0133,club,Club activity,2025-09-16,participant
+CS25-0139,sports,Sports activity,28/06/2026,participant
+IT23-0154,club,Club activity,2026-03-13,organizer
+EC25-0212,event,Event activity,07 Dec 2025,participant
+EC24-0119,event,Event activity,15 Oct 2025,participant
+CE24-0172,certification,Certification activity,15 Jan 2026,participant
+CE25-0110,event,Event activity,2025-10-17,lead
+CE22-0109,event,Event activity,2026-04-15,participant
+ME24-0108,sports,Sports activity,27/06/2026,participant
+ME24-0188,club,Club activity,19/10/2025,participant
+ME23-0125,hackathon,Hackathon activity,2026-06-07,participant
+IT25-0112,certification,Certification activity,10 Sep 2025,participant
+CS25-0214,certification,Certification activity,24 Dec 2025,participant
+EC24-0174,event,Event activity,21/03/2026,organizer
+CE24-0170,hackathon,Hackathon activity,26 Jun 2026,lead
+IT25-0126,club,Club activity,06/11/2025,organizer
+EC23-0131,club,Club activity,2025-11-14,lead
+CS22-0250,hackathon,Hackathon activity,2026-05-01,participant
+CS25-0147,event,Event activity,01 Nov 2025,participant
+ME23-0221,club,Club activity,18/12/2025,organizer
+CS23-0276,club,Club activity,16/06/2026,participant
+CS25-0169,certification,Certification activity,16/09/2025,lead
+CS22-0119,certification,Certification activity,2025-10-24,organizer
+CS23-0145,certification,Certification activity,10/06/2026,organizer
+EC22-0108,club,Club activity,08/12/2025,organizer
+IT23-0173,sports,Sports activity,14 Mar 2026,participant
+CS23-0117,certification,Certification activity,21 Apr 2026,participant
+IT23-0111,event,Event activity,27 May 2026,lead
+CS24-0252,sports,Sports activity,06 Feb 2026,participant
+ME25-0189,event,Event activity,03/11/2025,participant
+CE24-0101,sports,Sports activity,2025-12-20,participant
+CS25-0224,sports,Sports activity,2025-11-18,participant
+ME22-0190,sports,Sports activity,13/12/2025,participant
+EC22-0201,hackathon,Hackathon activity,2025-09-26,lead
+IT24-0114,club,Club activity,18 Jun 2026,participant
+CS25-0268,club,Club activity,28 Nov 2025,participant
+CE23-0110,hackathon,Hackathon activity,14 Mar 2026,organizer
+IT24-0167,event,Event activity,2026-06-11,lead
+ME24-0113,volunteering,Volunteering activity,2025-11-06,participant
+CE24-0161,hackathon,Hackathon activity,20/04/2026,participant
+CS23-0271,club,Club activity,2026-06-01,lead
+IT24-0130,club,Club activity,22/05/2026,organizer
+EC25-0129,certification,Certification activity,19/03/2026,participant
+CS23-0107,sports,Sports activity,2025-12-07,lead
+ME24-0185,certification,Certification activity,2026-05-07,participant
+EC22-0177,event,Event activity,29/03/2026,organizer
+CS22-0248,event,Event activity,24 Jun 2026,participant
+EC25-0195,volunteering,Volunteering activity,2026-03-12,participant
+ME23-0244,club,Club activity,03 Mar 2026,participant
+CE24-0189,club,Club activity,2026-06-21,lead
+EC24-0189,hackathon,Hackathon activity,2025-10-09,participant
+ME25-0149,certification,Certification activity,16/03/2026,participant
+ME22-0181,certification,Certification activity,18/01/2026,lead
+CS22-0199,club,Club activity,2025-12-11,participant
+CE23-0170,certification,Certification activity,18/06/2026,participant
+CE24-0158,club,Club activity,02 May 2026,participant
+EC23-0143,certification,Certification activity,17/08/2025,participant
+CS23-0148,event,Event activity,22 Oct 2025,lead
+EC23-0118,volunteering,Volunteering activity,02/10/2025,organizer
+CS24-0184,event,Event activity,14 Aug 2025,lead
+ME25-0122,club,Club activity,2025-11-30,participant
+CS24-0252,event,Event activity,10 Nov 2025,participant
+EC24-0110,hackathon,Hackathon activity,02 Jan 2026,organizer
+CS25-0220,certification,Certification activity,23 Nov 2025,lead
+ME23-0110,club,Club activity,31 Jan 2026,participant
+CS23-0289,event,Event activity,2025-11-27,participant
+CS25-0147,hackathon,Hackathon activity,18 Aug 2025,participant
+ME23-0201,certification,Certification activity,16 Apr 2026,participant
+EC25-0207,certification,Certification activity,29 Dec 2025,participant
+CS24-0157,club,Club activity,2025-08-24,participant
+CE22-0129,sports,Sports activity,2026-01-15,participant
+CS22-0221,club,Club activity,2026-03-26,participant
+CS22-0145,volunteering,Volunteering activity,13 May 2026,participant
+IT23-0142,volunteering,Volunteering activity,15 Sep 2025,organizer
+CE24-0142,certification,Certification activity,2026-03-08,organizer
+ME25-0162,volunteering,Volunteering activity,19 Dec 2025,participant
+CS24-0214,event,Event activity,2026-02-10,lead
+ME24-0105,club,Club activity,2025-08-19,participant
+EC24-0200,club,Club activity,29 Oct 2025,participant
+CS24-0107,club,Club activity,2025-10-07,participant
+CS22-0227,certification,Certification activity,20/08/2025,participant
+ME24-0168,sports,Sports activity,2026-01-12,participant
+CS23-0223,club,Club activity,30/11/2025,participant
+EC22-0158,club,Club activity,2026-06-09,participant
+CS24-0191,certification,Certification activity,01 May 2026,participant
+EC23-0119,club,Club activity,09 Feb 2026,participant
+CE22-0109,sports,Sports activity,01 Jun 2026,lead
+ME22-0193,event,Event activity,2026-04-28,participant
+CS24-0107,certification,Certification activity,2026-02-08,participant
+CE24-0132,hackathon,Hackathon activity,16 Aug 2025,lead
+ME25-0141,certification,Certification activity,2026-03-10,participant
+EC25-0157,sports,Sports activity,30/11/2025,participant
+ME23-0144,club,Club activity,03 Apr 2026,organizer
+ME22-0115,club,Club activity,17 Aug 2025,participant
+IT23-0156,volunteering,Volunteering activity,24/11/2025,participant
+CS22-0122,event,Event activity,22/08/2025,participant
+IT23-0146,hackathon,Hackathon activity,18/01/2026,participant
+CE25-0124,certification,Certification activity,2026-01-22,lead
+CS24-0252,club,Club activity,09/03/2026,lead
+EC25-0115,club,Club activity,30 Apr 2026,participant
+CS23-0203,club,Club activity,2025-10-02,lead
+ME24-0188,event,Event activity,29 Jan 2026,participant
+ME25-0214,event,Event activity,2026-01-07,organizer
+EC25-0153,sports,Sports activity,04/09/2025,participant
+CE24-0177,certification,Certification activity,02/01/2026,participant
+ME23-0144,club,Club activity,2025-10-26,participant
+CS22-0104,sports,Sports activity,2026-01-20,participant
+EC24-0121,volunteering,Volunteering activity,20 Jan 2026,organizer
+CE24-0114,club,Club activity,2026-06-19,participant
+EC25-0200,volunteering,Volunteering activity,16 Jan 2026,lead
+IT25-0115,certification,Certification activity,04/01/2026,organizer
+CS24-0213,sports,Sports activity,14/01/2026,participant
+IT22-0115,club,Club activity,2025-11-24,lead
+CS23-0228,sports,Sports activity,18 Mar 2026,participant
+ME25-0192,event,Event activity,2026-02-23,participant
+ME22-0151,club,Club activity,12/09/2025,lead
+CS24-0191,event,Event activity,25 Sep 2025,participant
+CE25-0105,club,Club activity,15 Jan 2026,participant
+IT24-0142,certification,Certification activity,25/10/2025,participant
+CE23-0161,club,Club activity,2025-10-09,participant
+CE23-0107,hackathon,Hackathon activity,16/11/2025,lead
+CE25-0160,certification,Certification activity,17/11/2025,lead
+IT25-0165,club,Club activity,12 Nov 2025,participant
+CS24-0140,event,Event activity,02/01/2026,participant
+ME24-0193,volunteering,Volunteering activity,2026-02-07,participant
+IT23-0163,certification,Certification activity,30 Oct 2025,participant
+CE25-0160,event,Event activity,2026-02-19,participant
+CE24-0119,hackathon,Hackathon activity,27 Aug 2025,participant
+EC25-0200,hackathon,Hackathon activity,2026-03-07,organizer
+CS24-0110,club,Club activity,19/06/2026,organizer
+CS24-0107,hackathon,Hackathon activity,01/10/2025,participant
+CE23-0186,club,Club activity,2026-04-30,participant
+CE23-0173,volunteering,Volunteering activity,29 Apr 2026,lead
+IT22-0151,event,Event activity,2025-09-06,organizer
+EC23-0179,sports,Sports activity,13 Jan 2026,participant
+CS24-0182,volunteering,Volunteering activity,2026-03-19,participant
+EC24-0202,sports,Sports activity,19 Jun 2026,participant
+CS24-0225,club,Club activity,2026-03-18,participant
+ME24-0189,club,Club activity,02/11/2025,participant
+ME25-0117,event,Event activity,2026-05-17,participant
+ME25-0162,certification,Certification activity,2026-01-27,participant
+CS23-0261,event,Event activity,2026-04-11,lead
+CS24-0185,event,Event activity,26 May 2026,participant
+CS23-0170,event,Event activity,28/10/2025,participant
+CS25-0119,club,Club activity,2026-04-28,participant
+ME24-0119,club,Club activity,12/08/2025,participant
+ME24-0157,club,Club activity,15 Jan 2026,participant
+ME23-0219,volunteering,Volunteering activity,23/11/2025,participant
+CE22-0160,event,Event activity,06 Mar 2026,participant
+IT24-0135,sports,Sports activity,2026-01-01,lead
+CS23-0232,club,Club activity,2026-06-08,participant
+CE22-0121,volunteering,Volunteering activity,2025-11-16,organizer
+ME22-0210,hackathon,Hackathon activity,08 Nov 2025,organizer
+ME22-0101,sports,Sports activity,27/05/2026,participant
+CS24-0272,sports,Sports activity,2026-05-23,lead
+CE24-0132,club,Club activity,18/10/2025,lead
+CS22-0162,certification,Certification activity,20/06/2026,participant
+EC24-0102,certification,Certification activity,2026-04-13,organizer
+ME23-0162,event,Event activity,05/01/2026,organizer
+ME22-0216,certification,Certification activity,07/03/2026,participant
+CE25-0143,hackathon,Hackathon activity,05 Mar 2026,participant
+IT23-0160,hackathon,Hackathon activity,12 Jan 2026,participant
+CE23-0177,sports,Sports activity,29/06/2026,lead
+CS24-0244,event,Event activity,17 May 2026,participant
+CE23-0146,event,Event activity,12 Apr 2026,participant
+EC24-0202,hackathon,Hackathon activity,09 Mar 2026,lead
+EC23-0172,sports,Sports activity,20 Jan 2026,lead
+ME25-0137,certification,Certification activity,2026-02-24,participant
+ME24-0188,event,Event activity,13 Dec 2025,participant
+EC23-0192,certification,Certification activity,07/09/2025,participant
+CS25-0169,club,Club activity,01 May 2026,participant
+CS25-0183,sports,Sports activity,18 Dec 2025,organizer
+CE23-0181,sports,Sports activity,2025-12-12,organizer
+EC23-0145,hackathon,Hackathon activity,2026-04-26,organizer
+IT25-0162,event,Event activity,2025-12-24,lead
+IT24-0142,volunteering,Volunteering activity,09/09/2025,participant
+CS23-0165,event,Event activity,2025-09-16,participant
+CS25-0107,club,Club activity,12 Nov 2025,participant
+CS22-0129,volunteering,Volunteering activity,10 Sep 2025,organizer
+EC22-0163,certification,Certification activity,06 Jul 2026,participant
+CS22-0171,event,Event activity,22 Nov 2025,lead
+ME24-0197,certification,Certification activity,2025-09-08,participant
+ME23-0222,certification,Certification activity,18/10/2025,organizer
+CE24-0121,club,Club activity,2025-10-22,participant
+ME22-0183,sports,Sports activity,02 Nov 2025,participant
+ME24-0128,event,Event activity,01 Apr 2026,participant
+CS22-0135,event,Event activity,2025-12-23,participant
+CS23-0112,sports,Sports activity,22 Nov 2025,participant
+EC22-0123,certification,Certification activity,2026-01-12,participant
+CE24-0123,event,Event activity,29/04/2026,lead
+IT22-0182,certification,Certification activity,09 Dec 2025,participant
+IT25-0163,event,Event activity,2025-12-29,participant
+EC24-0217,event,Event activity,2025-08-31,participant
+ME23-0237,event,Event activity,14 Jan 2026,organizer
+IT23-0177,club,Club activity,2026-06-29,participant
+CS22-0155,club,Club activity,2026-03-08,participant
+ME23-0221,sports,Sports activity,10/06/2026,participant
+ME22-0124,event,Event activity,24/01/2026,lead
+CE23-0156,volunteering,Volunteering activity,2026-06-23,lead
+CE22-0137,certification,Certification activity,15 Jan 2026,organizer
+CE23-0204,volunteering,Volunteering activity,2025-10-25,participant
+IT25-0120,club,Club activity,2025-10-26,participant
+IT23-0111,event,Event activity,14/12/2025,lead
+IT25-0132,event,Event activity,2026-02-28,organizer
+CE24-0101,club,Club activity,2026-06-29,participant
+CE24-0170,volunteering,Volunteering activity,22 Apr 2026,participant
+EC23-0148,sports,Sports activity,06 Jan 2026,organizer
+ME25-0142,volunteering,Volunteering activity,2025-11-16,organizer
+EC22-0171,club,Club activity,2026-01-18,participant
+EC25-0179,volunteering,Volunteering activity,13/03/2026,organizer
+EC25-0154,event,Event activity,07 May 2026,organizer
+CS24-0237,hackathon,Hackathon activity,26/01/2026,participant
+EC25-0153,club,Club activity,2026-04-12,participant
+CS24-0274,event,Event activity,19 Apr 2026,participant
+CE25-0157,club,Club activity,27/03/2026,lead
+EC24-0192,hackathon,Hackathon activity,20 Dec 2025,participant
+EC24-0202,event,Event activity,03 Jan 2026,participant
+EC22-0186,event,Event activity,2026-04-26,participant
+CS23-0206,hackathon,Hackathon activity,20 Oct 2025,participant
+CE24-0189,certification,Certification activity,2025-12-31,lead
+CS22-0227,certification,Certification activity,09 Mar 2026,organizer
+ME25-0149,hackathon,Hackathon activity,2025-09-24,participant
+ME24-0143,club,Club activity,2026-02-19,lead
+CS24-0201,hackathon,Hackathon activity,21/04/2026,participant
+CE24-0132,event,Event activity,25 Feb 2026,lead
+IT23-0178,club,Club activity,28 Nov 2025,participant
+ME24-0207,volunteering,Volunteering activity,05 Mar 2026,organizer
+IT22-0115,event,Event activity,2025-10-24,participant
+ME25-0104,sports,Sports activity,2025-12-01,participant
+ME25-0140,hackathon,Hackathon activity,16/12/2025,participant
+CS23-0261,hackathon,Hackathon activity,2026-06-09,participant
+EC25-0209,hackathon,Hackathon activity,17 Sep 2025,lead
+CE23-0184,event,Event activity,2026-01-18,participant
+EC23-0145,hackathon,Hackathon activity,2025-12-31,lead
+EC25-0202,hackathon,Hackathon activity,09/04/2026,participant
+CE24-0103,certification,Certification activity,15 May 2026,participant
+CS23-0203,hackathon,Hackathon activity,23/06/2026,organizer
+IT23-0131,hackathon,Hackathon activity,28/05/2026,participant
+EC25-0190,club,Club activity,04/05/2026,organizer
+ME25-0169,sports,Sports activity,2026-02-24,participant
+CS23-0109,event,Event activity,02 Sep 2025,participant
+EC22-0203,club,Club activity,26 Oct 2025,participant
+ME22-0143,event,Event activity,13/05/2026,participant
+ME23-0149,event,Event activity,26 Mar 2026,participant
+IT25-0165,hackathon,Hackathon activity,05/03/2026,participant
+CS25-0116,certification,Certification activity,19 Oct 2025,participant
+CE22-0144,club,Club activity,21 Jun 2026,participant
+ME23-0218,volunteering,Volunteering activity,29/10/2025,participant
+CE25-0117,volunteering,Volunteering activity,05 Nov 2025,participant
+ME24-0188,volunteering,Volunteering activity,28/08/2025,lead
+IT25-0149,volunteering,Volunteering activity,25/06/2026,lead
+CS24-0171,club,Club activity,31/10/2025,organizer
+EC24-0105,sports,Sports activity,2025-09-18,participant
+CS23-0218,volunteering,Volunteering activity,03 Jul 2026,organizer
+EC25-0199,event,Event activity,2026-01-30,lead
+ME25-0135,event,Event activity,21/09/2025,organizer
+IT22-0115,event,Event activity,2026-06-15,participant
+ME25-0144,hackathon,Hackathon activity,2025-11-27,organizer
+ME25-0104,event,Event activity,25 Jan 2026,participant
+IT25-0107,event,Event activity,23 Mar 2026,participant
+CE22-0149,event,Event activity,21/10/2025,participant
+CE25-0138,hackathon,Hackathon activity,28 Sep 2025,lead
+CS23-0117,hackathon,Hackathon activity,05 Mar 2026,lead
+IT24-0138,club,Club activity,2026-06-03,participant
+CS23-0295,certification,Certification activity,26/12/2025,lead
+IT23-0160,certification,Certification activity,2026-06-09,participant
+IT23-0137,event,Event activity,21/01/2026,organizer
+IT24-0170,club,Club activity,11/11/2025,participant
+ME22-0122,sports,Sports activity,23 Oct 2025,participant
+EC25-0110,hackathon,Hackathon activity,19/09/2025,organizer
+ME23-0244,hackathon,Hackathon activity,27 Feb 2026,lead
+CE23-0142,club,Club activity,17/05/2026,participant
+CS25-0263,certification,Certification activity,2025-10-26,lead
+EC23-0140,club,Club activity,15/08/2025,organizer
+EC25-0140,certification,Certification activity,30/05/2026,participant
+EC25-0104,club,Club activity,10/03/2026,participant
+ME24-0217,club,Club activity,09/04/2026,participant
+ME22-0190,sports,Sports activity,2025-10-19,lead
+CS22-0119,event,Event activity,04/06/2026,organizer
+ME23-0145,hackathon,Hackathon activity,2026-03-26,organizer
+IT23-0176,club,Club activity,09/09/2025,participant
+IT22-0117,event,Event activity,2026-03-09,participant
+EC23-0153,event,Event activity,16/11/2025,participant
+EC25-0200,sports,Sports activity,03/06/2026,participant
+ME23-0244,event,Event activity,20/10/2025,organizer
+ME25-0206,sports,Sports activity,18/04/2026,lead
+EC22-0146,club,Club activity,20/05/2026,participant
+EC24-0128,volunteering,Volunteering activity,14/12/2025,participant
+CE24-0161,event,Event activity,07 Jun 2026,participant
+CS23-0165,hackathon,Hackathon activity,18 Jun 2026,organizer
+CE22-0160,certification,Certification activity,06/06/2026,lead
+ME23-0152,volunteering,Volunteering activity,02/02/2026,participant
+EC25-0195,hackathon,Hackathon activity,2026-05-19,participant
+CS25-0176,club,Club activity,30/01/2026,participant
+CS24-0138,event,Event activity,29 Oct 2025,participant
+EC24-0142,certification,Certification activity,22/04/2026,lead
+CE25-0141,certification,Certification activity,30 Nov 2025,participant
+CS24-0265,club,Club activity,03 Jun 2026,organizer
+CS22-0156,sports,Sports activity,2025-11-24,lead
+CE23-0173,event,Event activity,17/12/2025,participant
+EC25-0108,hackathon,Hackathon activity,26 Jan 2026,participant
+CE23-0107,certification,Certification activity,09/09/2025,lead
+CS25-0238,volunteering,Volunteering activity,2025-11-14,participant
+ME25-0206,hackathon,Hackathon activity,11/05/2026,participant
+EC22-0168,sports,Sports activity,2026-04-21,participant
+ME23-0221,volunteering,Volunteering activity,01 May 2026,participant
+ME23-0149,club,Club activity,27/01/2026,lead
+EC23-0145,sports,Sports activity,2026-04-07,lead
+IT25-0160,event,Event activity,13/05/2026,organizer
+CE24-0123,event,Event activity,2026-04-14,lead
+ME23-0172,club,Club activity,21/04/2026,participant
+EC24-0146,club,Club activity,12/10/2025,organizer
+CS25-0260,event,Event activity,01 Jul 2026,participant
+IT25-0149,hackathon,Hackathon activity,30/08/2025,lead
+EC23-0140,certification,Certification activity,13 Nov 2025,participant
+CS23-0182,certification,Certification activity,08/06/2026,lead
+CS23-0119,event,Event activity,2026-06-30,participant
+EC22-0171,event,Event activity,18 Mar 2026,participant
+IT24-0149,event,Event activity,2025-10-01,participant
+CS24-0235,sports,Sports activity,18/12/2025,participant
+CS25-0209,event,Event activity,27 Aug 2025,organizer
+CE22-0149,event,Event activity,2026-03-27,lead
+CS25-0238,volunteering,Volunteering activity,2026-06-13,participant
+IT24-0122,club,Club activity,2025-10-16,participant
+EC24-0151,event,Event activity,11 Apr 2026,participant
+CS22-0128,club,Club activity,10 Jan 2026,participant
+CE22-0116,certification,Certification activity,03/07/2026,participant
+CS23-0233,sports,Sports activity,14 Aug 2025,organizer
+CE25-0157,club,Club activity,29/12/2025,lead
+EC25-0195,sports,Sports activity,03 Dec 2025,organizer
+CS22-0141,event,Event activity,15 Nov 2025,participant
+CS25-0164,club,Club activity,20 Jan 2026,participant
+EC22-0130,club,Club activity,15/10/2025,participant
+CS24-0201,hackathon,Hackathon activity,24/12/2025,organizer
+CS22-0110,sports,Sports activity,28 Nov 2025,organizer
+ME22-0136,sports,Sports activity,21/03/2026,participant
+CS22-0193,event,Event activity,31 Oct 2025,organizer
+CE22-0135,sports,Sports activity,12/03/2026,lead
+CE23-0145,certification,Certification activity,12/02/2026,participant
+CS25-0241,club,Club activity,25 Jan 2026,lead
+ME23-0197,certification,Certification activity,2026-06-21,participant
+CS25-0203,hackathon,Hackathon activity,27/06/2026,participant
+CS24-0279,hackathon,Hackathon activity,2026-01-09,organizer
+EC24-0208,club,Club activity,14 Nov 2025,participant
+IT22-0122,event,Event activity,2026-01-04,participant
+IT24-0178,sports,Sports activity,14/06/2026,organizer
+CS24-0264,sports,Sports activity,17/01/2026,participant
+ME24-0186,certification,Certification activity,14 Oct 2025,lead
+ME24-0211,club,Club activity,2026-05-24,participant
+EC25-0200,sports,Sports activity,05/04/2026,participant
+CE22-0161,hackathon,Hackathon activity,07/01/2026,participant
+CS22-0212,certification,Certification activity,02 Sep 2025,participant
+IT22-0182,event,Event activity,21 Feb 2026,participant
+CS24-0274,event,Event activity,25/11/2025,lead
+CS22-0212,club,Club activity,2026-04-14,lead
+CS23-0257,club,Club activity,04/12/2025,participant
+CE25-0146,event,Event activity,2026-05-17,participant
+ME24-0129,hackathon,Hackathon activity,27 Nov 2025,organizer
+CS25-0268,club,Club activity,2025-12-11,participant
+CE23-0137,event,Event activity,11 Nov 2025,participant
+EC25-0193,club,Club activity,2026-01-11,participant
+CE23-0184,event,Event activity,10/02/2026,participant
+ME23-0201,club,Club activity,02/03/2026,lead
+CE23-0167,volunteering,Volunteering activity,04/01/2026,participant
+CS25-0209,certification,Certification activity,26/05/2026,lead
+CS24-0116,club,Club activity,2025-09-07,participant
+ME23-0198,event,Event activity,26/02/2026,participant
+ME25-0192,hackathon,Hackathon activity,22 Nov 2025,lead
+IT22-0151,event,Event activity,2026-02-12,lead
+CE22-0184,hackathon,Hackathon activity,2026-03-09,participant
+CS24-0171,hackathon,Hackathon activity,2026-07-03,participant
+CS22-0115,club,Club activity,2026-04-10,organizer
+EC24-0210,event,Event activity,26/09/2025,participant
+ME23-0147,event,Event activity,27 Apr 2026,lead
+CS23-0254,hackathon,Hackathon activity,2025-08-19,lead
+CE22-0135,volunteering,Volunteering activity,01 Feb 2026,participant
+CS22-0182,club,Club activity,2025-09-17,lead
+CE24-0114,club,Club activity,2026-05-13,lead
+IT22-0151,club,Club activity,2026-06-28,lead
+CS24-0272,event,Event activity,2026-01-13,lead
+CS25-0229,certification,Certification activity,20 Dec 2025,organizer
+ME22-0212,volunteering,Volunteering activity,10 Apr 2026,participant
+CE24-0174,certification,Certification activity,2025-09-21,participant
+IT22-0167,volunteering,Volunteering activity,11 May 2026,participant
+EC23-0179,hackathon,Hackathon activity,22 Mar 2026,participant
+ME23-0103,certification,Certification activity,2026-02-20,lead
+EC23-0134,event,Event activity,27 Dec 2025,participant
+IT24-0181,sports,Sports activity,2026-03-11,participant
+IT25-0134,club,Club activity,2026-04-13,participant
+ME25-0164,sports,Sports activity,21/04/2026,participant
+CS23-0103,club,Club activity,21/10/2025,participant
+CE24-0123,certification,Certification activity,31 Dec 2025,participant
+CS23-0133,hackathon,Hackathon activity,13 Feb 2026,participant
+CS24-0267,sports,Sports activity,2026-05-06,organizer
+CE24-0189,event,Event activity,2026-03-05,participant
+CE24-0166,event,Event activity,15/09/2025,organizer
+CS23-0109,certification,Certification activity,06/02/2026,participant
+ME24-0200,volunteering,Volunteering activity,24 Nov 2025,participant
+ME24-0157,club,Club activity,2026-04-11,participant
+ME22-0109,club,Club activity,2026-01-05,organizer
+IT22-0158,club,Club activity,16/09/2025,lead
+CS24-0153,hackathon,Hackathon activity,2026-05-14,participant
+CS25-0250,hackathon,Hackathon activity,2025-10-29,participant
+CE22-0104,event,Event activity,12 Nov 2025,participant
+ME25-0164,club,Club activity,14/11/2025,lead
+IT22-0158,sports,Sports activity,02 Jan 2026,organizer
+EC25-0149,sports,Sports activity,2026-02-01,organizer
+CE25-0157,hackathon,Hackathon activity,2025-10-07,lead
+CS23-0205,club,Club activity,15/12/2025,participant
+ME22-0118,certification,Certification activity,2026-01-24,participant
+EC25-0147,event,Event activity,09 Apr 2026,organizer
+CS23-0217,hackathon,Hackathon activity,06/05/2026,lead
+CS22-0115,certification,Certification activity,19/01/2026,participant
+CS23-0141,event,Event activity,2026-04-20,participant
+IT23-0131,event,Event activity,2026-03-19,organizer
+CS25-0241,certification,Certification activity,28 Apr 2026,lead
+CS22-0237,club,Club activity,2025-11-02,lead
+EC25-0195,event,Event activity,24 Feb 2026,lead
+IT22-0181,event,Event activity,2026-05-03,participant
+ME22-0212,event,Event activity,30/08/2025,participant
+IT22-0137,club,Club activity,04/01/2026,participant
+ME22-0200,club,Club activity,03 Sep 2025,organizer
+CS23-0240,certification,Certification activity,01 Apr 2026,participant
+CS24-0203,event,Event activity,2026-01-21,participant
+CS23-0226,hackathon,Hackathon activity,03 Dec 2025,lead
+CE22-0138,hackathon,Hackathon activity,20 Jun 2026,participant
+EC25-0153,sports,Sports activity,2026-02-06,participant
+CS22-0259,certification,Certification activity,2026-04-06,organizer
+CS25-0214,hackathon,Hackathon activity,17 Aug 2025,participant
+EC25-0195,club,Club activity,02/02/2026,participant
+CS23-0203,hackathon,Hackathon activity,13/03/2026,participant
+CS24-0162,event,Event activity,18/04/2026,organizer
+CE24-0189,hackathon,Hackathon activity,05 Mar 2026,participant
+ME22-0118,volunteering,Volunteering activity,12/10/2025,participant
+CS23-0211,hackathon,Hackathon activity,15/12/2025,organizer
+CE25-0157,event,Event activity,2025-10-14,lead
+EC23-0216,certification,Certification activity,24 Jan 2026,participant
+EC25-0102,event,Event activity,06 Apr 2026,lead
+ME23-0198,sports,Sports activity,08/11/2025,organizer
+CS22-0199,certification,Certification activity,25 Apr 2026,lead
+ME22-0212,certification,Certification activity,2026-01-10,lead
+ME24-0148,club,Club activity,2025-11-08,lead
+ME24-0119,certification,Certification activity,11/03/2026,participant
+IT23-0123,event,Event activity,31 Aug 2025,participant
+CE24-0174,volunteering,Volunteering activity,25/03/2026,participant
+IT23-0113,certification,Certification activity,09/09/2025,participant
