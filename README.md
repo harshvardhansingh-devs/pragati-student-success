@@ -70,6 +70,7 @@ All accounts use the password **`Prajna@2026`**. The login page also has one-cli
 | HoD, CSE | hod.cse@prajna.demo | CSE department only |
 | Faculty Mentor | mentor@prajna.demo | Own mentees only |
 | Placement Officer | tpo@prajna.demo | Whole institution |
+| Student | student@prajna.demo | Only their own "My Progress" page: score, goals, AI study tips |
 
 ## Repo layout
 ```

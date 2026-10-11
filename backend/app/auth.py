@@ -25,6 +25,7 @@ USERS = {
     "hod.cse@prajna.demo": dict(name="Dr. Suresh Menon", role="hod", title="HoD, Computer Science", scope={"dept": "CSE"}),
     "mentor@prajna.demo": dict(name="Prof. Kavitha Iyer", role="mentor", title="Faculty Mentor (CSE Y3)", scope={"mentor_id": "M-CS-31"}),
     "tpo@prajna.demo": dict(name="Mr. Rajesh Kulkarni", role="tpo", title="Training & Placement Officer", scope={}),
+    "student@prajna.demo": dict(name="Neha Deshpande", role="student", title="Student · CSE Year 3", scope={"student_id": "CS23-0115"}),
 }
 _PW = {_hash(DEMO_PASSWORD), _hash(LEGACY_PASSWORD)}
 
@@ -58,6 +59,13 @@ def current_user(cred: HTTPAuthorizationCredentials = Depends(HTTPBearer(auto_er
     if email not in USERS:
         raise HTTPException(401, "Unknown user")
     return public(email)
+
+
+def staff_only(user=Depends(current_user)):
+    """Institution-wide views and write actions: every role except students."""
+    if user["role"] == "student":
+        raise HTTPException(403, "Not available for student accounts")
+    return user
 
 
 def require_admin(user=Depends(current_user)):

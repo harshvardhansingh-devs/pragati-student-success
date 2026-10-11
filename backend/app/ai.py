@@ -150,15 +150,30 @@ def template_brief(s):
             f"Talking points: ask about {d[0][0]}, agree one measurable target for the next 2 weeks.")
 
 
-def brief(s, actions):
+def template_tips(s):
+    """Deterministic student-facing tips used when no AI provider is available."""
+    d = sorted(((k, s[f"d_{k}"]) for k in ["academic", "attendance", "lms", "placement", "skills", "engagement"]), key=lambda x: x[1])
+    return (f"Strengths: your {d[-1][0]} ({d[-1][1]:.0f}/100) and {d[-2][0]} ({d[-2][1]:.0f}/100) are working well. Keep it up.\n"
+            f"Focus area: {d[0][0]} ({d[0][1]:.0f}/100) is pulling your score down the most.\n"
+            f"This week: pick one small, measurable goal for {d[0][0]} and try it in the goal simulator.\n"
+            f"Ask your mentor: about the support options listed on this page.")
+
+
+def brief(s, actions, audience="mentor"):
     keep = ["student_id", "dept", "year", "success_score", "band", "trend_4w", "segment", "academic_risk", "academic_risk_prob",
             "placement_risk", "placement_risk_prob", "academic_rules", "academic_drivers", "placement_drivers", "cgpa",
             "active_backlogs", "attendance_term", "attendance_recent", "assignment_completion", "coding", "aptitude",
             "mock_interviews", "satisfaction"] + [f"d_{d}" for d in ["academic", "attendance", "lms", "placement", "skills", "engagement"]]
     payload = {k: (None if isinstance(s[k], float) and pd.isna(s[k]) else s[k]) for k in keep}
-    prompt = ("Write a mentor-meeting brief for this student (data below). Exactly 4 short labelled lines: "
-              "Strengths, Concerns, Talking points, Suggested action. Under 90 words, plain text, warm and non-judgemental. "
-              f"Recommended actions available: {actions}.\n\n{json.dumps(payload, default=str)}")
+    if audience == "student":
+        prompt = ("You are a supportive academic coach writing directly to a college student about their own data (below). "
+                  "Address them as 'you'. Exactly 4 short labelled lines: Strengths, Focus area, This week, Ask your mentor. "
+                  "Under 90 words, plain text, encouraging, specific and practical; never mention 'risk' or probabilities. "
+                  f"Support options available: {actions}.\n\n{json.dumps(payload, default=str)}")
+    else:
+        prompt = ("Write a mentor-meeting brief for this student (data below). Exactly 4 short labelled lines: "
+                  "Strengths, Concerns, Talking points, Suggested action. Under 90 words, plain text, warm and non-judgemental. "
+                  f"Recommended actions available: {actions}.\n\n{json.dumps(payload, default=str)}")
     for name, client, model in providers():
         try:
             text = (client.chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}], temperature=0.4)
@@ -167,4 +182,4 @@ def brief(s, actions):
                 return dict(brief=text, source="ai", provider=f"{name} · {model}")
         except openai.OpenAIError:
             continue
-    return dict(brief=template_brief(s), source="template", provider=None)
+    return dict(brief=template_tips(s) if audience == "student" else template_brief(s), source="template", provider=None)

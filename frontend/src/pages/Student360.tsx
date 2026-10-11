@@ -9,8 +9,14 @@ import AssignPanel from './AssignPanel'
 const SIM_FIELDS = ['attendance_term', 'attendance_recent', 'assignment_completion', 'internal_avg', 'coding', 'aptitude', 'mock_interviews', 'certifications']
 const SOURCES = ['Academic', 'Attendance', 'LMS', 'Engagement', 'Placement', 'Skills', 'Feedback', 'Skills / Engagement']
 
-export default function Student360() {
-  const { id } = useParams()
+// Student-facing wording: supportive, never 'risk'
+const STUDENT_TIER: Record<string, string> = { High: 'Needs attention', Medium: 'Keep an eye on it', Low: 'On track' }
+
+/** Staff view of any student, or (selfId) a student's own "My Progress" view: same data, supportive wording, no staff actions. */
+export default function Student360({ selfId }: { selfId?: string }) {
+  const params = useParams()
+  const id = selfId ?? params.id
+  const self = !!selfId
   const nav = useNavigate()
   const { data: d, error, loading, reload } = useApi(`/students/${id}`)
   const [sim, setSim] = useState<Record<string, number>>({})
@@ -38,7 +44,8 @@ export default function Student360() {
 
   return (
     <div>
-      <button onClick={() => nav(-1)} className="mb-3 inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink"><ArrowLeft className="h-4 w-4" /> Back</button>
+      {self ? <p className="mb-3 text-sm text-ink-2">Welcome back, {p.name.split(' ')[0]}. Here's where you stand this term and what would help most.</p>
+        : <button onClick={() => nav(-1)} className="mb-3 inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink"><ArrowLeft className="h-4 w-4" /> Back</button>}
 
       <div className="card mb-4 overflow-hidden">
         <div className="hero h-16 sm:h-20" aria-hidden />
@@ -61,8 +68,8 @@ export default function Student360() {
         </div>
         <div className="flex flex-wrap items-center gap-2 border-t border-line px-5 py-3">
           <span className="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent-ink">Segment: {sc.segment}</span>
-          <RiskBadge tier={d.risk.academic.tier} label="Academic risk" />
-          <RiskBadge tier={d.risk.placement.tier} label="Placement risk" />
+          <RiskBadge tier={d.risk.academic.tier} label="Academic risk" text={self ? `Academics: ${STUDENT_TIER[d.risk.academic.tier]}` : undefined} />
+          <RiskBadge tier={d.risk.placement.tier} label="Placement risk" text={self ? `Placement: ${STUDENT_TIER[d.risk.placement.tier]}` : undefined} />
           {sc.sliding && <span className="rounded-full bg-critical/10 px-2.5 py-1 text-xs font-medium text-critical-text">Sliding: −{Math.abs(sc.trend_4w).toFixed(1)} pts in 4 weeks</span>}
           {sc.low_confidence && <span className="rounded-full bg-warn/15 px-2.5 py-1 text-xs font-medium text-warn-text">Low confidence: missing data</span>}
           <nav className="ml-auto flex flex-wrap gap-1 text-xs" aria-label="Sections">
@@ -78,21 +85,22 @@ export default function Student360() {
         {(['academic', 'placement'] as const).map((k) => {
           const r = d.risk[k]
           return (
-            <Card key={k} title={<span className="inline-flex items-center gap-1.5"><ShieldAlert className="h-4 w-4" /> {k === 'academic' ? 'Academic' : 'Placement'} risk flag</span>}
-              subtitle={k === 'academic' ? 'Chance of a new backlog or SGPA below 6 next semester' : 'Chance of not being placement-ready by placement season'}
-              action={<div className="text-right"><RiskBadge tier={r.tier} /><div className="mt-1 text-xs text-muted">{pct(r.probability)} model probability</div></div>}>
-              {r.rules.length > 0 && <div className="mb-2 rounded-lg bg-critical/10 p-2 text-sm text-critical-text">Rule triggered: {r.rules.join('; ')}</div>}
-              <div className="text-xs font-medium text-muted">Why: top drivers (explainable AI)</div>
+            <Card key={k} title={<span className="inline-flex items-center gap-1.5"><ShieldAlert className="h-4 w-4" /> {self ? (k === 'academic' ? 'Academic outlook' : 'Placement readiness') : `${k === 'academic' ? 'Academic' : 'Placement'} risk flag`}</span>}
+              subtitle={self ? (k === 'academic' ? 'Based on your marks, attendance and LMS activity' : 'Based on your aptitude, coding, skills and mock interviews')
+                : k === 'academic' ? 'Chance of a new backlog or SGPA below 6 next semester' : 'Chance of not being placement-ready by placement season'}
+              action={self ? <RiskBadge tier={r.tier} text={STUDENT_TIER[r.tier]} /> : <div className="text-right"><RiskBadge tier={r.tier} /><div className="mt-1 text-xs text-muted">{pct(r.probability)} model probability</div></div>}>
+              {r.rules.length > 0 && <div className="mb-2 rounded-lg bg-critical/10 p-2 text-sm text-critical-text">{self ? 'Important: ' : 'Rule triggered: '}{r.rules.join('; ')}</div>}
+              <div className="text-xs font-medium text-muted">{self ? "What's holding this back" : 'Why: top drivers (explainable AI)'}</div>
               {r.drivers.length && r.tier !== 'Low' ? (
                 <ul className="mt-1.5 space-y-2">
                   {r.drivers.map((x: any) => (
                     <li key={x.feature} className="flex items-center justify-between gap-3 text-sm">
-                      <span>{x.label}: <b>{fmt(x.value, x.value % 1 ? 1 : 0)}</b> <span className="text-muted">(cohort median {fmt(x.cohort_median, 1)})</span></span>
+                      <span>{x.label}: <b>{fmt(x.value, x.value % 1 ? 1 : 0)}</b> <span className="text-muted">(median of all students {fmt(x.cohort_median, 1)})</span></span>
                       <span className="w-24 shrink-0"><span className="block h-1.5 rounded-full bg-critical" style={{ width: `${Math.min(100, x.impact * 80)}%` }} title={`impact ${x.impact}`} /></span>
                     </li>
                   ))}
                 </ul>
-              ) : <p className="mt-1 text-sm text-ink-2">No significant risk drivers, indicators are at or above the cohort.</p>}
+              ) : <p className="mt-1 text-sm text-ink-2">{self ? "You're at or above your classmates here. Keep it up!" : 'No significant risk drivers, indicators are at or above the cohort.'}</p>}
             </Card>
           )
         })}
@@ -114,7 +122,7 @@ export default function Student360() {
             series={[{ name: 'Student', data: d.history.score }, { name: 'Cohort avg', data: d.history.cohort, dashed: true, color: 'var(--muted)' }]}
             colors={[getComputedStyle(document.documentElement).getPropertyValue('--s1').trim(), '#898781']} />
         </Card>
-        <Card className="lg:col-span-2" title={<span className="inline-flex items-center gap-1.5"><FlaskConical className="h-4 w-4" /> What-if simulator</span>} subtitle="Move a target and see the score and risk change">
+        <Card className="lg:col-span-2" title={<span className="inline-flex items-center gap-1.5"><FlaskConical className="h-4 w-4" /> {self ? 'Goal simulator' : 'What-if simulator'}</span>} subtitle={self ? 'Set a target and see how your score could change' : 'Move a target and see the score and risk change'}>
           <div className="space-y-2.5">
             {SIM_FIELDS.map((f) => {
               const i = ind[f]
@@ -142,31 +150,31 @@ export default function Student360() {
       </div>
 
       <div id="actions" className="mt-4 grid scroll-mt-20 gap-4 lg:grid-cols-2">
-        <Card title={<span className="inline-flex items-center gap-1.5"><Lightbulb className="h-4 w-4" /> Recommended interventions</span>} subtitle="Generated from this student's risk drivers and segment playbook">
+        <Card title={<span className="inline-flex items-center gap-1.5"><Lightbulb className="h-4 w-4" /> {self ? 'Suggested next steps' : 'Recommended interventions'}</span>} subtitle={self ? "Based on what's holding your score back" : "Generated from this student's risk drivers and segment playbook"}>
           {assign && <AssignPanel ids={[p.student_id]} preset={[assign.action, assign.owner]} reason={assign.reason} onDone={() => { setAssign(null); reload() }} />}
           <ul className="space-y-2">
             {d.recommendations.map((r: any) => (
               <li key={r.action} className="flex items-center justify-between gap-3 rounded-lg border border-line p-3">
-                <div><div className="text-sm font-medium">{r.action}</div><div className="text-xs text-muted">Owner: {r.owner} · because: {r.reason}</div></div>
-                <Button variant="outline" onClick={() => setAssign(r)}>Assign</Button>
+                <div><div className="text-sm font-medium">{r.action}</div><div className="text-xs text-muted">{self ? `Who can help: ${r.owner} · why: ${r.reason.replace(/ \((academic|placement) risk\)/, '')}` : `Owner: ${r.owner} · because: ${r.reason}`}</div></div>
+                {!self && <Button variant="outline" onClick={() => setAssign(r)}>Assign</Button>}
               </li>
             ))}
             {!d.recommendations.length && <li className="text-sm text-ink-2">No interventions needed. Consider this student as a peer mentor.</li>}
           </ul>
           {d.interventions.length > 0 && (
             <div className="mt-4">
-              <div className="text-xs font-medium text-muted">Intervention history</div>
+              <div className="text-xs font-medium text-muted">{self ? 'Support assigned to you' : 'Intervention history'}</div>
               <ul className="mt-1 divide-y divide-line text-sm">
                 {d.interventions.map((iv: any) => <li key={iv.id} className="flex justify-between py-1.5"><span>{iv.action}</span><span className="text-xs text-muted">{iv.status} · due {iv.due_date}</span></li>)}
               </ul>
             </div>
           )}
         </Card>
-        <Card title={<span className="inline-flex items-center gap-1.5"><Bot className="h-4 w-4" /> AI mentor brief</span>} subtitle="One-click briefing before a mentor meeting (IDs and numbers only are sent to the AI)"
-          action={<Button onClick={getBrief} disabled={briefBusy}>{briefBusy ? 'Generating…' : brief ? 'Regenerate' : 'Generate'}</Button>}>
-          {brief ? <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{brief.brief}</pre> : <p className="text-sm text-ink-2">Generate a short brief with strengths, concerns, talking points and a suggested action.</p>}
+        <Card title={<span className="inline-flex items-center gap-1.5"><Bot className="h-4 w-4" /> {self ? 'My AI coach' : 'AI mentor brief'}</span>} subtitle={self ? 'Personal tips from your data (only numbers are sent to the AI, never your name)' : 'One-click briefing before a mentor meeting (IDs and numbers only are sent to the AI)'}
+          action={<Button onClick={getBrief} disabled={briefBusy}>{briefBusy ? 'Generating…' : brief ? 'Regenerate' : self ? 'Get my tips' : 'Generate'}</Button>}>
+          {brief ? <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{brief.brief}</pre> : <p className="text-sm text-ink-2">{self ? 'Get your strengths, one focus area and a plan for this week.' : 'Generate a short brief with strengths, concerns, talking points and a suggested action.'}</p>}
           {brief && <p className="mt-2 text-xs text-muted">Source: {brief.source === 'ai' ? brief.provider : 'rule-based template (no AI provider available)'}</p>}
-          {p.comments && <div className="mt-4 flex gap-2 rounded-lg bg-surface-2 p-3 text-sm text-ink-2"><MessageSquareQuote className="h-4 w-4 shrink-0" /> Student feedback: "{p.comments}"</div>}
+          {p.comments && <div className="mt-4 flex gap-2 rounded-lg bg-surface-2 p-3 text-sm text-ink-2"><MessageSquareQuote className="h-4 w-4 shrink-0" /> {self ? 'Your feedback' : 'Student feedback'}: "{p.comments}"</div>}
         </Card>
       </div>
 

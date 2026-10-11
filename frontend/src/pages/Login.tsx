@@ -9,6 +9,7 @@ const DEMO = [
   { email: 'hod.cse@prajna.demo', role: 'HoD, Computer Science', desc: 'CSE department only' },
   { email: 'mentor@prajna.demo', role: 'Faculty Mentor', desc: 'Own mentees only (CSE Year 3)' },
   { email: 'tpo@prajna.demo', role: 'Placement Officer', desc: 'Whole institution, placement focus' },
+  { email: 'student@prajna.demo', role: 'Student', desc: 'My own progress, goals and AI study tips' },
 ]
 const DEMO_PASSWORD = 'Prajna@2026'
 

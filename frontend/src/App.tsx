@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { BrowserRouter, NavLink, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
-import { Bot, Boxes, Database, LayoutDashboard, ListChecks, LogOut, Menu, Moon, Scale, Search, ShieldAlert, Sun, Users, X } from 'lucide-react'
+import { Bot, Boxes, Database, LayoutDashboard, ListChecks, LogOut, Menu, Moon, Scale, Search, ShieldAlert, Sun, TrendingUp, Users, X } from 'lucide-react'
 import { api, getSession, setSession, type Session } from './api'
 import { Avatar, BandBadge, Toaster, Wordmark, fmt, useApi } from './ui'
 import Login from './pages/Login'
@@ -31,6 +31,12 @@ const NAV: { group: string; items: NavItem[] }[] = [
     { to: '/copilot', label: 'AI Copilot', icon: Bot },
     { to: '/data', label: 'Data Integration', icon: Database },
     { to: '/methodology', label: 'Score Methodology', icon: Scale },
+  ] },
+]
+const STUDENT_NAV: { group: string; items: NavItem[] }[] = [
+  { group: 'Me', items: [
+    { to: '/', label: 'My Progress', icon: TrendingUp, end: true },
+    { to: '/methodology', label: 'How my score works', icon: Scale },
   ] },
 ]
 const TITLES: Record<string, string> = { '/': 'Overview', '/at-risk': 'At-Risk Students', '/students': 'All Students', '/interventions': 'Interventions',
@@ -113,18 +119,20 @@ function Layout({ children }: { children: ReactNode }) {
   const { session, logout } = useAuth()
   const [open, setOpen] = useState(false)
   const loc = useLocation()
-  const { data: ov } = useApi('/overview')
+  const isStudent = session!.user.role === 'student'
+  const { data: ov } = useApi(isStudent ? null : '/overview')
   useEffect(() => { setOpen(false); window.scrollTo(0, 0) }, [loc.pathname])
   const u = session!.user
-  const scope = u.scope.dept ? `${u.scope.dept} department` : u.scope.mentor_id ? 'My mentees' : 'All departments'
+  const scope = u.scope.student_id ? 'My own record' : u.scope.dept ? `${u.scope.dept} department` : u.scope.mentor_id ? 'My mentees' : 'All departments'
   const badges = { risk: ov?.kpis.academic_high, open: ov?.kpis.open_interventions }
-  const title = loc.pathname.startsWith('/students/') ? 'Student 360' : TITLES[loc.pathname] ?? ''
+  const title = isStudent ? (loc.pathname === '/' ? 'My Progress' : 'How my score works')
+    : loc.pathname.startsWith('/students/') ? 'Student 360' : TITLES[loc.pathname] ?? ''
 
   const nav = (
     <nav className="flex h-full flex-col bg-nav text-nav-ink" aria-label="Main">
       <div className="px-5 py-5"><Wordmark size={38} light /></div>
       <div className="flex-1 overflow-y-auto px-3">
-        {NAV.map((g) => (
+        {(isStudent ? STUDENT_NAV : NAV).map((g) => (
           <div key={g.group} className="mb-4">
             <div className="px-3 pb-1.5 text-[10px] font-semibold uppercase tracking-widest opacity-60">{g.group}</div>
             <ul className="space-y-0.5">
@@ -175,7 +183,7 @@ function Layout({ children }: { children: ReactNode }) {
         <div className="mx-auto flex max-w-[1400px] items-center gap-3 px-4 py-2.5 sm:px-6">
           <button onClick={() => setOpen(true)} aria-label="Open menu" className="rounded-lg p-1.5 text-ink-2 hover:bg-surface-2 lg:hidden"><Menu className="h-5 w-5" /></button>
           <div className="hidden min-w-0 text-sm font-semibold text-ink md:block md:w-44">{title}</div>
-          <div className="flex flex-1 justify-center"><GlobalSearch /></div>
+          <div className="flex flex-1 justify-center">{!isStudent && <GlobalSearch />}</div>
           {ov && <span className="hidden whitespace-nowrap rounded-full border border-line px-2.5 py-1 text-[11px] text-muted xl:inline">Data as of {new Date(ov.as_of).toLocaleDateString()}</span>}
           <ThemeToggle />
         </div>
@@ -201,6 +209,14 @@ function Routed() {
   }
   return (
     <AuthCtx.Provider value={ctx}>
+      {session?.user.role === 'student' ? (
+        <Routes>
+          <Route path="/login" element={<Navigate to="/" replace />} />
+          <Route path="/" element={<Protected><Student360 selfId={session.user.scope.student_id} /></Protected>} />
+          <Route path="/methodology" element={<Protected><Methodology /></Protected>} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      ) : (
       <Routes>
         <Route path="/login" element={session ? <Navigate to="/" replace /> : <Login />} />
         <Route path="/" element={<Protected><Overview /></Protected>} />
@@ -214,6 +230,7 @@ function Routed() {
         <Route path="/methodology" element={<Protected><Methodology /></Protected>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      )}
     </AuthCtx.Provider>
   )
 }

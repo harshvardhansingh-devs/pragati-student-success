@@ -111,11 +111,11 @@ const RISK: Record<string, { cls: string; Icon: typeof CheckCircle2 }> = {
   Medium: { cls: 'text-warn-text bg-warn/15', Icon: AlertTriangle },
   Low: { cls: 'text-good-text bg-good/10', Icon: CheckCircle2 },
 }
-export function RiskBadge({ tier, label }: { tier: string; label?: string }) {
+export function RiskBadge({ tier, label, text }: { tier: string; label?: string; text?: string }) {
   const r = RISK[tier] ?? RISK.Low
   return (
     <span className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-medium ${r.cls}`}>
-      <r.Icon className="h-3 w-3" aria-hidden /> {label ? `${label}: ` : ''}{tier}
+      <r.Icon className="h-3 w-3" aria-hidden /> {text ?? `${label ? `${label}: ` : ''}${tier}`}
     </span>
   )
 }

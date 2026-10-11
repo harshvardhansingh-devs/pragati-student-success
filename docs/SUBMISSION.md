@@ -17,7 +17,7 @@ Two logistic-regression models, retrained on every data load, predict academic s
 
 K-Means segmentation finds six named groups (for example "Academic Star, Placement-Unready"), each with a playbook that can be assigned in one click. An AI Copilot (Groq / OpenRouter / Gemini with fallback) answers questions through read-only analytics tools and AI mentor briefs prepare meetings; the AI sees IDs and numbers only.
 
-Role-based access (Principal, HoD, Mentor, Placement Officer), an audit log and a fairness check support responsible use, aligned with India's DPDP Act 2023.
+Role-based access (Principal, HoD, Mentor, Placement Officer, and a Student self-view), an audit log and a fairness check support responsible use, aligned with India's DPDP Act 2023.
 
 **Tech stack**
 React 19 + TypeScript + Vite + Tailwind + ECharts · FastAPI (Python) · pandas, scikit-learn, SciPy · PostgreSQL (Supabase) · Groq / OpenRouter / Gemini (OpenAI-compatible APIs) · Docker on Render · GitHub Actions
@@ -34,5 +34,6 @@ Open the app and click any role on the login page (one click, no typing). Or sig
 - HoD, CSE: hod.cse@prajna.demo (CSE only)
 - Faculty Mentor: mentor@prajna.demo (own mentees only)
 - Placement Officer: tpo@prajna.demo
+- Student: student@prajna.demo (sees only their own progress, a goal simulator and AI study tips)
 
 Suggested path: Overview → Action Center → At-Risk Students → a student's Student 360 (risk drivers, what-if, Assign, AI brief) → Segments → AI Copilot → Data Integration → Score Methodology. The data is synthetic (1,200 students) and contains no real student information.

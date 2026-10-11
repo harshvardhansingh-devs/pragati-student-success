@@ -79,6 +79,8 @@ def _load(run_id):
     scores = table("an_scores")
     for c in JSON_COLS:
         scores[c] = scores[c].map(json.loads)
+    for c in ("sliding", "low_confidence"):  # SQLite returns 0/1, Postgres true/false; normalise for every caller
+        scores[c] = scores[c].astype(bool)
     labels = table("raw_outcome_labels")
     labels["student_id"] = labels.student_id.map(pipeline.norm_id)
     labels = labels.set_index("student_id").astype(int)

@@ -1,7 +1,7 @@
 # API Reference (v1)
 
 Base URL: `/api/v1` · Auth: `Authorization: Bearer <JWT>` from `/auth/login` · Interactive docs: **`/api/docs`** (OpenAPI).
-Every response is automatically restricted to the caller's scope (an HoD sees only their department, a mentor only their mentees).
+Every response is automatically restricted to the caller's scope (an HoD sees only their department, a mentor only their mentees, a student only themselves). Students can call only `/auth/*`, `/students/{own id}` (+ `/simulate`, `/brief`) and `/model`; everything else returns 403.
 
 ## Auth
 | Method | Path | Purpose |

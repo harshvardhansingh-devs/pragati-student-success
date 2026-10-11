@@ -1,6 +1,6 @@
 const KEY = 'prajna.session'
 
-export type User = { email: string; name: string; role: 'admin' | 'hod' | 'mentor' | 'tpo'; title: string; scope: Record<string, string> }
+export type User = { email: string; name: string; role: 'admin' | 'hod' | 'mentor' | 'tpo' | 'student'; title: string; scope: Record<string, string> }
 export type Session = { token: string; user: User }
 
 export function getSession(): Session | null {

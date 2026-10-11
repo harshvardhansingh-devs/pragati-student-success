@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy import text
 
 from . import ai, auth, pipeline, scoring, store
-from .auth import current_user, require_admin, scope
+from .auth import current_user, require_admin, scope, staff_only
 from .db import ROOT, engine
 
 
@@ -115,7 +115,7 @@ def demo_accounts():
 
 # --- Dashboard ---------------------------------------------------------------------------------------
 @api.get("/overview")
-def overview(user=Depends(current_user)):
+def overview(user=Depends(staff_only)):
     st = store.state()
     df = scores(user)
     iv = interventions_df()
@@ -160,7 +160,7 @@ def scoped_insights(df, st):
 
 
 @api.get("/trends")
-def trends(group_by: str = "dept", metric: str = "success_score", user=Depends(current_user)):
+def trends(group_by: str = "dept", metric: str = "success_score", user=Depends(staff_only)):
     if group_by not in ("dept", "year", "segment", "band") or metric not in ["success_score"] + scoring.DOMAINS:
         raise HTTPException(400, "Unsupported group_by or metric")
     df = scores(user)
@@ -170,7 +170,7 @@ def trends(group_by: str = "dept", metric: str = "success_score", user=Depends(c
 
 
 @api.get("/hotspots/subjects")
-def hotspots(user=Depends(current_user)):
+def hotspots(user=Depends(staff_only)):
     df = scores(user)
     s = store.state()["subjects"]
     s = s[s.dept.isin(df.dept.unique())].sort_values("fail_rate", ascending=False)
@@ -182,7 +182,7 @@ def hotspots(user=Depends(current_user)):
 def list_students(dept: str = None, year: str = None, section: str = None, band: str = None, academic_risk: str = None,
                   placement_risk: str = None, segment: str = None, sliding: bool = None, q: str = None, mentor_id: str = None,
                   below_75: bool = None, focus: str = None, sort: str = "-academic_risk_prob", page: int = 1, size: int = 25,
-                  user=Depends(current_user)):
+                  user=Depends(staff_only)):
     df = apply_filters(scores(user), dept, year, section, band, academic_risk, placement_risk, segment, sliding, q, mentor_id, below_75)
     key = sort.lstrip("-")
     if key in df.columns:
@@ -279,12 +279,12 @@ def simulate(sid: str, body: Simulate, user=Depends(current_user)):
 @api.post("/students/{sid}/brief")
 def mentor_brief(sid: str, user=Depends(current_user)):
     s = get_row(sid, user)
-    return ai.brief(s, [r["action"] for r in recommendations(s)])
+    return ai.brief(s, [r["action"] for r in recommendations(s)], audience="student" if user["role"] == "student" else "mentor")
 
 
 # --- Segments, fairness, model ----------------------------------------------------------------------
 @api.get("/segments")
-def segments(user=Depends(current_user)):
+def segments(user=Depends(staff_only)):
     df = scores(user)
     out = []
     for name, (proto, playbook) in scoring.SEGMENTS.items():
@@ -297,7 +297,7 @@ def segments(user=Depends(current_user)):
 
 
 @api.get("/fairness")
-def fairness(user=Depends(current_user)):
+def fairness(user=Depends(staff_only)):
     return clean(scoring.fairness(scores(user)))
 
 
@@ -331,7 +331,7 @@ class PatchIntervention(BaseModel):
 
 
 @api.get("/interventions")
-def list_interventions(status: str = None, user=Depends(current_user)):
+def list_interventions(status: str = None, user=Depends(staff_only)):
     df = scores(user)
     iv = interventions_df()
     iv = iv[iv.student_id.isin(df.student_id)]
@@ -344,7 +344,7 @@ def list_interventions(status: str = None, user=Depends(current_user)):
 
 
 @api.post("/interventions")
-def create_interventions(body: NewIntervention, user=Depends(current_user)):
+def create_interventions(body: NewIntervention, user=Depends(staff_only)):
     df = scores(user).set_index("student_id")
     missing = [s for s in body.student_ids if s not in df.index]
     if missing:
@@ -362,7 +362,7 @@ def create_interventions(body: NewIntervention, user=Depends(current_user)):
 
 
 @api.patch("/interventions/{iid}")
-def update_intervention(iid: int, body: PatchIntervention, user=Depends(current_user)):
+def update_intervention(iid: int, body: PatchIntervention, user=Depends(staff_only)):
     iv = interventions_df()
     row = iv[iv.id == iid]
     if row.empty or row.iloc[0].student_id not in set(scores(user).student_id):
@@ -377,7 +377,7 @@ def update_intervention(iid: int, body: PatchIntervention, user=Depends(current_
 
 # --- Data integration & config ------------------------------------------------------------------------
 @api.get("/data-quality")
-def data_quality(user=Depends(current_user)):
+def data_quality(user=Depends(staff_only)):
     st = store.state()
     return clean(dict(sources=records(st["quality"]), run=dict(run_id=st["run_id"], finished_at=st["finished_at"], **st["summary"]),
                       steps=["Ingest raw files (append-only raw_* tables)", "Validate types & ranges → quarantine bad values",
@@ -438,7 +438,7 @@ class Question(BaseModel):
 
 
 @api.post("/copilot/query")
-def copilot(body: Question, user=Depends(current_user)):
+def copilot(body: Question, user=Depends(staff_only)):
     return clean(ai.copilot(body.question, scores(user)))
 
 

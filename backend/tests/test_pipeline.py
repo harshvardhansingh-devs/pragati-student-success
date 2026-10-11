@@ -36,6 +36,22 @@ def test_end_to_end():
         auth.login("admin@prajna.demo", "wrong"); raise AssertionError("bad password accepted")
     except HTTPException as e:
         assert e.status_code == 401
+    # student role: sees only their own record, blocked from staff views and write actions
+    from fastapi.testclient import TestClient
+    from app.main import app
+    with TestClient(app) as client:
+        tok = client.post("/api/v1/auth/login", json={"email": "student@prajna.demo", "password": "Prajna@2026"}).json()["token"]
+        h = {"Authorization": f"Bearer {tok}"}
+        me = client.get("/api/v1/auth/me", headers=h).json()
+        assert me["role"] == "student" and me["scope"] == {"student_id": "CS23-0115"}
+        assert client.get("/api/v1/students/CS23-0115", headers=h).status_code == 200
+        assert client.get("/api/v1/students/CS22-0155", headers=h).status_code == 404       # someone else
+        assert client.post("/api/v1/students/CS23-0115/simulate", json={"overrides": {"coding": 70}}, headers=h).status_code == 200
+        assert client.post("/api/v1/students/CS23-0115/brief", headers=h).status_code == 200
+        for path in ["/api/v1/overview", "/api/v1/students", "/api/v1/segments", "/api/v1/interventions", "/api/v1/data-quality"]:
+            assert client.get(path, headers=h).status_code == 403, path
+        assert client.post("/api/v1/interventions", json={"student_ids": ["CS23-0115"], "action": "x" * 5}, headers=h).status_code == 403
+        assert client.post("/api/v1/copilot/query", json={"question": "hi"}, headers=h).status_code == 403
     # what-if: better coding + mocks must not increase placement risk
     row = s[s.placement_risk == "High"].iloc[0].to_dict()
     feats = {k: row[k] for k in ["student_id", "dept", "year"] + list(scoring.INDICATORS) + ["attendance_trend", "lms_trend"]}
